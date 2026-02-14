@@ -127,7 +127,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/assets_for_test_arrow_plate_left.res",
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/late_left.res",
 "save_to_file/path": "uid://cagkvohp3hw0w"
 },
 "assets_for_test_arrow_plate_right": {
@@ -136,7 +136,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/assets_for_test_arrow_plate_right.res",
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/plate_right.res",
 "save_to_file/path": "uid://dstmwufd2ptu1"
 },
 "assets_for_test_bg_0_001": {
@@ -145,7 +145,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/assets_for_test_bg_0_001.res",
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/bg_0_001.res",
 "save_to_file/path": "uid://sg1kjjxbj1w4"
 },
 "assets_for_test_bg_1_001": {
@@ -154,7 +154,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/assets_for_test_bg_1_001.res",
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/bg_1_001.res",
 "save_to_file/path": "uid://b60xkkhk2ukd5"
 },
 "assets_for_test_bigflowers_props": {
@@ -163,7 +163,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/assets_for_test_bigflowers_props.res",
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/bigflowers_props.res",
 "save_to_file/path": "uid://hn5n3oiafckr"
 },
 "assets_for_test_door": {
@@ -172,7 +172,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/assets_for_test_door.res",
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/door.res",
 "save_to_file/path": "uid://c1eolqxpfy73a"
 },
 "assets_for_test_drygrass_props": {
@@ -181,7 +181,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/assets_for_test_drygrass_props.res",
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/drygrass_props.res",
 "save_to_file/path": "uid://cspsma6fvxleo"
 },
 "assets_for_test_fg_0_001": {
@@ -190,7 +190,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/assets_for_test_fg_0_001.res",
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/fg_0_001.res",
 "save_to_file/path": "uid://ci64sxpv07a5k"
 },
 "assets_for_test_fg_1_001": {
@@ -199,7 +199,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/assets_for_test_fg_1_001.res",
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/fg_1_001.res",
 "save_to_file/path": "uid://cvq2xyiyktkpo"
 },
 "assets_for_test_flowers_props": {
@@ -208,7 +208,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/assets_for_test_flowers_props.res",
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/flowers_props.res",
 "save_to_file/path": "uid://cwokke2wcvplh"
 },
 "assets_for_test_grass_props": {
@@ -217,7 +217,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/assets_for_test_grass_props.res",
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/grass_props.res",
 "save_to_file/path": "uid://chcgb104khnn0"
 },
 "assets_for_test_trap_suspended_anim": {
@@ -226,7 +226,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/assets_for_test_trap_suspended_anim.res",
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/trap_suspended_anim.res",
 "save_to_file/path": "uid://b35eu23oi6j8t"
 },
 "assets_for_test_wood_slab_left": {
@@ -235,7 +235,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/assets_for_test_wood_slab_left.res",
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/wood_slab_left.res",
 "save_to_file/path": "uid://ce66cuitro5k5"
 },
 "assets_for_test_wood_slab_middle": {
@@ -244,7 +244,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/assets_for_test_wood_slab_middle.res",
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/wood_slab_middle.res",
 "save_to_file/path": "uid://bkixwijgjoaib"
 },
 "assets_for_test_wood_slab_right": {
@@ -253,7 +253,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/assets_for_test_wood_slab_right.res",
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/wood_slab_right.res",
 "save_to_file/path": "uid://cbynrkqnvd8mk"
 },
 "assets_for_test_wooden_plate": {
@@ -262,7 +262,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/assets_for_test_wooden_plate.res",
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/wooden_plate.res",
 "save_to_file/path": "uid://bsfsv7ijpye3a"
 }
 }
