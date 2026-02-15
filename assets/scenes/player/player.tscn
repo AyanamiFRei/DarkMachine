@@ -259,7 +259,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"attack1",
-"speed": 5.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -285,7 +285,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"attack2",
-"speed": 5.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -323,7 +323,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"death",
-"speed": 5.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -337,7 +337,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"fall",
-"speed": 5.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -375,7 +375,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 5.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -389,7 +389,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"jump",
-"speed": 5.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -418,7 +418,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"run",
-"speed": 5.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -435,7 +435,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"take_hit",
-"speed": 5.0
+"speed": 8.0
 }]
 
 [node name="player" type="CharacterBody3D" unique_id=2121593867]
@@ -458,14 +458,18 @@ near = 0.002
 
 [node name="CoyoteTimer" type="Timer" parent="." unique_id=2074633047]
 unique_name_in_owner = true
+wait_time = 0.1
 
 [node name="JumpBufferTimer" type="Timer" parent="." unique_id=1368774789]
 unique_name_in_owner = true
+wait_time = 0.2
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="." unique_id=902764751]
 transform = Transform3D(-0.29999784, 0, 0.0011414477, 0, 0.3, 0, -0.0011414477, 0, -0.29999784, 0, 0, 0)
 sprite_frames = SubResource("SpriteFrames_u84jc")
-animation = &"take_hit"
+animation = &"fall"
+frame = 2
+frame_progress = 0.36851493
 
 [connection signal="timeout" from="CoyoteTimer" to="." method="_on_coyote_timer_timeout"]
 [connection signal="timeout" from="JumpBufferTimer" to="." method="_on_jump_buffer_timer_timeout"]

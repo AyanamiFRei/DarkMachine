@@ -27,12 +27,12 @@ func _on_play_mouse_entered():
 	print("Курсор на Play")
 	
 	# Увеличиваем кнопку
-	var mesh = play_button.get_node("MeshInstance3D")
+	var mesh = $Play_button/play_button_mesh
 	if mesh:
 		mesh.scale = Vector3(1.2, 1.2, 1.2)
 	
 	# Меняем цвет текста на желтый
-	var label = play_button.get_node("Label3D")
+	var label = $Play_button/play_button_mesh/Label3D
 	if label:
 		label.modulate = Color.YELLOW
 
@@ -41,12 +41,12 @@ func _on_play_mouse_exited():
 	print("Курсор ушел с Play")
 	
 	# Возвращаем размер
-	var mesh = play_button.get_node("MeshInstance3D")
+	var mesh = $Play_button/play_button_mesh
 	if mesh:
 		mesh.scale = Vector3(1.0, 1.0, 1.0)
 	
 	# Возвращаем цвет текста на белый
-	var label = play_button.get_node("Label3D")
+	var label = $Play_button/play_button_mesh/Label3D
 	if label:
 		label.modulate = Color.WHITE
 
@@ -56,7 +56,7 @@ func _on_play_input_event(camera: Camera3D, event: InputEvent, position: Vector3
 		print("Клик по Play!")
 		
 		# Анимация нажатия (кнопка уходит вниз и возвращается)
-		var mesh = play_button.get_node("MeshInstance3D")
+		var mesh = $Play_button/play_button_mesh
 		if mesh:
 			# Запоминаем позицию
 			var original_y = mesh.position.y
@@ -75,11 +75,11 @@ func _on_exit_mouse_entered():
 	# Навели курсор на Exit
 	print("Курсор на Exit")
 	
-	var mesh = exit_button.get_node("MeshInstance3D")
+	var mesh = $Exit_button/exit_button_mesh
 	if mesh:
 		mesh.scale = Vector3(1.2, 1.2, 1.2)
 	
-	var label = exit_button.get_node("Label3D")
+	var label = $Exit_button/exit_button_mesh/Label3D
 	if label:
 		label.modulate = Color.YELLOW
 
@@ -87,11 +87,11 @@ func _on_exit_mouse_exited():
 	# Убрали курсор с Exit
 	print("Курсор ушел с Exit")
 	
-	var mesh = exit_button.get_node("MeshInstance3D")
+	var mesh = $Exit_button/exit_button_mesh
 	if mesh:
 		mesh.scale = Vector3(1.0, 1.0, 1.0)
 	
-	var label = exit_button.get_node("Label3D")
+	var label = $Exit_button/exit_button_mesh/Label3D
 	if label:
 		label.modulate = Color.WHITE
 
@@ -100,7 +100,7 @@ func _on_exit_input_event(camera: Camera3D, event: InputEvent, position: Vector3
 		print("Клик по Exit!")
 		
 		# Анимация нажатия
-		var mesh = exit_button.get_node("MeshInstance3D")
+		var mesh = $Exit_button/exit_button_mesh
 		if mesh:
 			var original_y = mesh.position.y
 			mesh.position.y = original_y - 0.2
