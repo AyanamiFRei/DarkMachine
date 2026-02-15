@@ -12,13 +12,14 @@
 [ext_resource type="ArrayMesh" uid="uid://chcgb104khnn0" path="res://assets/gltf_file/mesh/grass_props.res" id="10_ycdy4"]
 [ext_resource type="ArrayMesh" uid="uid://cagkvohp3hw0w" path="res://assets/gltf_file/mesh/late_left.res" id="11_w48qg"]
 [ext_resource type="ArrayMesh" uid="uid://hn5n3oiafckr" path="res://assets/gltf_file/mesh/bigflowers_props.res" id="12_vivmo"]
-[ext_resource type="PackedScene" uid="uid://hhuwvsvd0m0q" path="res://scripts/char.tscn" id="13_ycdy4"]
+[ext_resource type="PackedScene" uid="uid://cw86i1wgw62jl" path="res://assets/scenes/player/player.tscn" id="13_ycdy4"]
+[ext_resource type="PackedScene" uid="uid://dnqjrn6h3xs1a" path="res://assets/scenes/enemies/enemy_1.tscn" id="14_w48qg"]
 
 [node name="Main" type="Node3D" unique_id=1601780411]
 transform = Transform3D(-6.6977963, 0, -5.6460914e-07, 0, 6.6977963, 0, 5.8554e-07, 0, -6.4583764, 0, 0, 0)
 
 [node name="background" type="Node3D" parent="." unique_id=2049569544]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, -0.18474102)
+transform = Transform3D(2, 0, 0, 0, -8.742278e-08, -2, 0, 2, -8.742278e-08, 0, 0, -0.18474102)
 
 [node name="Bg0001" type="MeshInstance3D" parent="background" unique_id=706913559]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.18474102, -8.075286e-09)
@@ -68,9 +69,23 @@ skeleton = NodePath("../..")
 
 [node name="wood_platform_1" parent="platform" unique_id=1574098578 instance=ExtResource("5_lquwl")]
 transform = Transform3D(-4.371139e-09, 0, -0.1, 0, 0.1, 0, 0.1, 0, -4.371139e-09, 0.89838195, -0.1470275, -1.0013837)
+collision_layer = 3
+collision_mask = 3
 
 [node name="wood_platform_2" parent="platform" unique_id=1156023947 instance=ExtResource("6_kek77")]
 transform = Transform3D(-4.371138e-09, 0, 0.10000002, 0, 0.10000002, 0, -0.10000002, 0, -4.37114e-09, 0.6977771, -0.14753434, -1.0013053)
+
+[node name="wood_platform_2" parent="platform/wood_platform_2" unique_id=64104809 instance=ExtResource("6_kek77")]
+transform = Transform3D(1.1000001, 0, 0, 0, 1.1, 0, 0, 0, 1.1, -0.0056009293, -0.047220826, 4.120207)
+
+[node name="wood_platform_2" parent="platform/wood_platform_2/wood_platform_2" unique_id=1524407237 instance=ExtResource("6_kek77")]
+transform = Transform3D(1.1000004, 0, 0, 0, 1.1, 0, 1.4210855e-14, 0, 1.1, -0.0056028366, -0.047220826, 2.0841417)
+
+[node name="wood_platform_2" parent="platform/wood_platform_2/wood_platform_2/wood_platform_2" unique_id=812488351 instance=ExtResource("6_kek77")]
+transform = Transform3D(1.1000001, 0, 2.842171e-14, 0, 1.1, 0, -2.842171e-14, 0, 1.1, -0.0055999756, -0.047220707, 2.084979)
+
+[node name="wood_platform_2" parent="platform/wood_platform_2/wood_platform_2/wood_platform_2/wood_platform_2" unique_id=1873711452 instance=ExtResource("6_kek77")]
+transform = Transform3D(1.0999999, 0, -1.4210855e-14, 0, 1.0999999, 0, -1.4210855e-14, 0, 1.0999999, -0.0056009293, -0.047220826, 2.0427551)
 
 [node name="wood_platform_3" parent="platform" unique_id=1549726992 instance=ExtResource("5_lquwl")]
 transform = Transform3D(1.3113417e-08, 0, 0.1, 0, 0.1, 0, -0.1, 0, 1.3113417e-08, 0.29740822, -0.1470275, -1.0237243)
@@ -79,7 +94,7 @@ transform = Transform3D(1.3113417e-08, 0, 0.1, 0, 0.1, 0, -0.1, 0, 1.3113417e-08
 transform = Transform3D(-4.371139e-09, 0, -0.1, 0, 0.1, 0, 0.1, 0, -4.371139e-09, 0.49801308, -0.14753434, -1.0238026)
 
 [node name="wood_platform_5" parent="platform" unique_id=971576558 instance=ExtResource("5_lquwl")]
-transform = Transform3D(-4.371139e-09, 0, -0.1, 0, 0.1, 0, 0.1, 0, -4.371139e-09, 0.098076165, 0.073512234, -1.0013837)
+transform = Transform3D(-4.371139e-09, 0, -0.10000001, 0, 0.10000001, 0, 0.10000001, 0, -4.3711395e-09, 0.09360688, 0.073512234, -1.0013838)
 
 [node name="wood_platform_6" parent="platform" unique_id=375964130 instance=ExtResource("6_kek77")]
 transform = Transform3D(-4.371139e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, -4.371139e-09, -0.10252869, 0.0730054, -1.0013053)
@@ -473,5 +488,8 @@ skeleton = NodePath("../../background")
 transform = Transform3D(-0.9271708, 0, 0.37463892, 0, 1, 0, -0.37463892, 0, -0.9271708, -8.024103, 0.15881228, -1.0843436)
 text = "ALT+F4"
 
-[node name="CharacterBody3D" parent="." unique_id=1786057394 instance=ExtResource("13_ycdy4")]
-transform = Transform3D(1, 0, -3.3705305e-09, 0, 1, 0, 3.240899e-09, 0, 1.04, 0.84617627, 0.1067875, -1.0122209)
+[node name="player" parent="." unique_id=2121593867 instance=ExtResource("13_ycdy4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6394885, 0.23614003, -1.0105687)
+
+[node name="enemy1" parent="." unique_id=761590198 instance=ExtResource("14_w48qg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1219458, 0.6632902, -0.9933436)

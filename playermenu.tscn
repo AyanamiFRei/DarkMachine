@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://dpt25fw2yhmhy"]
+
+[ext_resource type="Script" uid="uid://3yr38ea3x3rn" path="res://playermenu.gd" id="1_lyl02"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_qbvim"]
+size = Vector3(1, 1, 0.1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wjiv6"]
+size = Vector3(1, 1, 0.33398438)
+
+[node name="playermenu" type="Node3D" unique_id=2030517269]
+script = ExtResource("1_lyl02")
+
+[node name="leave" type="Node3D" parent="." unique_id=301797464]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="leave" unique_id=2046694859]
+mesh = SubResource("BoxMesh_qbvim")
+
+[node name="Label3D" type="Label3D" parent="leave/MeshInstance3D" unique_id=1746415774]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.051807463)
+text = "leave"
+
+[node name="Area3D" type="Area3D" parent="leave/MeshInstance3D" unique_id=1595555076]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="leave/MeshInstance3D/Area3D" unique_id=1544298239]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.005859375)
+shape = SubResource("BoxShape3D_wjiv6")
+
+[node name="continue" type="Node3D" parent="leave" unique_id=928416496]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="leave/continue" unique_id=1729365055]
+mesh = SubResource("BoxMesh_qbvim")
+
+[node name="Label3D" type="Label3D" parent="leave/continue/MeshInstance3D" unique_id=841244102]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.051807463)
+text = "leave"
+
+[node name="Area3D" type="Area3D" parent="leave/continue/MeshInstance3D" unique_id=1052081470]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="leave/continue/MeshInstance3D/Area3D" unique_id=1513755322]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.005859375)
+shape = SubResource("BoxShape3D_wjiv6")
