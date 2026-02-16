@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dvae0i46geseu"]
+
+[ext_resource type="Texture2D" uid="uid://bg2lg0xucxy05" path="res://assets/png/assets_for_test_door.png" id="1_fx36g"]
+
+[resource]
+resource_name = "door"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_fx36g")
+roughness = 0.5
+texture_filter = 0
+texture_repeat = false

@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://kyqpdmprrbpx"]
+
+[ext_resource type="Script" uid="uid://dbkgfsduk8sn4" path="res://scripts/player.gd" id="1_0s3u6"]
+[ext_resource type="Texture2D" uid="uid://b8a5w5jcm1u2v" path="res://icon.svg" id="2_qm0ti"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fhbv5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_qm0ti")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0s3u6"]
+
+[node name="player" type="CharacterBody3D" unique_id=424564432]
+script = ExtResource("1_0s3u6")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="." unique_id=152308576]
+transform = Transform3D(0.999961, -0.00857162, 0.002129686, 0.008569584, 0.9999628, 0.00096323836, -0.002137863, -0.000944951, 0.99999726, 0, 0, 0)
+sprite_frames = SubResource("SpriteFrames_fhbv5")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=319819803]
+shape = SubResource("CapsuleShape3D_0s3u6")
