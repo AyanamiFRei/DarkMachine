@@ -2,14 +2,13 @@ extends CharacterBody3D
 
 
 #const SPEED = 5.0
-#const JUMP_VELOCITY = 6
+
 
 var type = "player"
 
 var speed = 4
-var jump1 = 8
 var speed_mult = 1
-var jump_mult = 1
+var jump_velocity = 6
 
 var health = 100
 var dmg = 100
@@ -143,7 +142,7 @@ func _on_coyote_timer_timeout() -> void:
 	coyote_time_active = false
 
 func jump():
-	velocity.y = jump1 * jump_mult
+	velocity.y = jump_velocity
 
 
 

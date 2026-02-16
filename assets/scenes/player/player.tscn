@@ -458,9 +458,11 @@ near = 0.002
 
 [node name="CoyoteTimer" type="Timer" parent="." unique_id=2074633047]
 unique_name_in_owner = true
+wait_time = 0.1
 
 [node name="JumpBufferTimer" type="Timer" parent="." unique_id=1368774789]
 unique_name_in_owner = true
+wait_time = 0.2
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="." unique_id=902764751]
 transform = Transform3D(-0.29999784, 0, 0.0011414477, 0, 0.3, 0, -0.0011414477, 0, -0.29999784, 0, 0, 0)
