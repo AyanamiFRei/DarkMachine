@@ -2,12 +2,14 @@ extends CharacterBody3D
 
 
 #const SPEED = 5.0
+#const JUMP_VELOCITY = 6
 
 var type = "player"
 
 var speed = 4
+var jump1 = 8
 var speed_mult = 1
-var jump_velocity = 6
+var jump_mult = 1
 
 var health = 100
 var dmg = 100
@@ -51,7 +53,7 @@ func _physics_process(delta: float) -> void:
 			coyote_time_active = false
 			
 	if Input.is_action_just_pressed("leave") :
-		get_tree().change_scene_to_file("res://assets/scenes/menu.tscn")
+		get_tree().change_scene_to_file("res://assets/scenes/ingamemenu.tscn")
 	
 	if health <= 0:
 		_on_death()
@@ -141,7 +143,7 @@ func _on_coyote_timer_timeout() -> void:
 	coyote_time_active = false
 
 func jump():
-	velocity.y = jump_velocity
+	velocity.y = jump1 * jump_mult
 
 
 
