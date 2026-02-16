@@ -5,6 +5,7 @@ extends Node3D
 @export var exit_button: Node3D
 
 func _ready():
+	
 	# Подключаем сигналы для кнопки Play
 	if play_button:
 		var play_area = play_button.get_node("Area3D")
@@ -50,7 +51,7 @@ func _on_play_mouse_exited():
 	if label:
 		label.modulate = Color.WHITE
 
-func _on_play_input_event(camera: Camera3D, event: InputEvent, position: Vector3, normal: Vector3, shape_idx: int):
+func _on_play_input_event(_camera: Camera3D, event: InputEvent, position: Vector3, _normal: Vector3, _shape_idx: int):
 	# Проверяем клик левой кнопкой мыши
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 		print("Клик по Play!")
@@ -95,7 +96,7 @@ func _on_exit_mouse_exited():
 	if label:
 		label.modulate = Color.WHITE
 
-func _on_exit_input_event(camera: Camera3D, event: InputEvent, position: Vector3, normal: Vector3, shape_idx: int):
+func _on_exit_input_event(_camera: Camera3D, event: InputEvent, position: Vector3, _normal: Vector3, _shape_idx: int):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 		print("Клик по Exit!")
 		

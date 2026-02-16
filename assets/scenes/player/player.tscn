@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://bxf5om6wkgh73" path="res://assets/scenes/player/Fall.png" id="5_hsamt"]
 [ext_resource type="Texture2D" uid="uid://dsd86esalwy8d" path="res://assets/scenes/player/Jump.png" id="7_b3dqe"]
 [ext_resource type="Texture2D" uid="uid://c1lkb227j8p47" path="res://assets/scenes/player/Take Hit.png" id="9_u84jc"]
+[ext_resource type="PackedScene" uid="uid://b6ee6rlhyqluf" path="res://ingame_button.tscn" id="10_hyvrl"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_oqktf"]
 size = Vector3(0.08, 0.1, 0.05)
@@ -438,8 +439,9 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="player" type="CharacterBody3D" unique_id=2121593867]
+[node name="player" type="CharacterBody3D" unique_id=2121593867 node_paths=PackedStringArray("menu_button")]
 script = ExtResource("1_oqktf")
+menu_button = NodePath("ingame_button")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=276907861]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.019559145)
@@ -468,6 +470,9 @@ wait_time = 0.2
 transform = Transform3D(-0.29999784, 0, 0.0011414477, 0, 0.3, 0, -0.0011414477, 0, -0.29999784, 0, 0, 0)
 sprite_frames = SubResource("SpriteFrames_u84jc")
 animation = &"take_hit"
+
+[node name="ingame_button" parent="." unique_id=1396741686 instance=ExtResource("10_hyvrl")]
+transform = Transform3D(-0.8641343, 0, -0.50326127, 0, 1, 0, 0.50326127, 0, -0.8641343, 0.18122414, 0, -0.2574647)
 
 [connection signal="timeout" from="CoyoteTimer" to="." method="_on_coyote_timer_timeout"]
 [connection signal="timeout" from="JumpBufferTimer" to="." method="_on_jump_buffer_timer_timeout"]

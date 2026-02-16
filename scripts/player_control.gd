@@ -1,7 +1,6 @@
 extends CharacterBody3D
 
-
-#const SPEED = 5.0
+@export var menu_button: Node3D
 
 
 var type = "player"
@@ -24,6 +23,7 @@ var jump_buffer_active := false
 
 func _ready() -> void:
 	anim.play("idle")
+	
 
 func _physics_process(delta: float) -> void:
 	
@@ -51,8 +51,18 @@ func _physics_process(delta: float) -> void:
 			%JumpBufferTimer.start()
 			coyote_time_active = false
 			
-	if Input.is_action_just_pressed("leave") :
-		get_tree().change_scene_to_file("res://assets/scenes/ingamemenu.tscn")
+	if Input.is_action_just_pressed("ui_cancel"):
+		print("ESC нажата!")
+		print("menu_button = ", menu_button)
+
+		if menu_button:
+			menu_button.show_button()
+			can_move = false
+			#get_tree().paused = true  # Опционально: ставим игру на паузу
+			print("show_button() вызван")
+		else:
+			print("ОШИБКА: menu_button = null")
+	
 	
 	if health <= 0:
 		_on_death()

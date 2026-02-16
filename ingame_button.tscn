@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://b6ee6rlhyqluf"]
+
+[ext_resource type="Script" uid="uid://dctd0umdiplpg" path="res://ingame_button.gd" id="1_y8gur"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_qride"]
+size = Vector3(0.1, 0.03, 0.01)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dm3el"]
+size = Vector3(0.098508835, 0.0447402, 0.040649414)
+
+[node name="ingame_button" type="Node3D" unique_id=1396741686 node_paths=PackedStringArray("menu_button")]
+script = ExtResource("1_y8gur")
+menu_button = NodePath(".")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=720418468]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0017515793)
+mesh = SubResource("BoxMesh_qride")
+
+[node name="Label3D" type="Label3D" parent="MeshInstance3D" unique_id=347513136]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0039383173, 0.0060598627)
+pixel_size = 0.001
+text = "menu"
+
+[node name="Area3D" type="Area3D" parent="." unique_id=105496716]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1036413978]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0006303787, 0.004276514, -0.00079345703)
+shape = SubResource("BoxShape3D_dm3el")
