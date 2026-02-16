@@ -5,7 +5,7 @@ var type = "enemy"
 const SPEED = 2
 const JUMP_VELOCITY = -400.0
 var playerNode: CharacterBody3D
-var hp = 10
+var hp = 100
 var dmg = 25
 
 var target_point = CharacterBody3D
@@ -41,3 +41,8 @@ func _on_dmg_timer_timeout() -> void:
 func _on_area_3d_body_exited(body: Node3D) -> void:
 	if body.has_method("take_dmg") and body.type == "player":
 		dmg_timer.stop()
+		
+func take_dmg(dmg):
+	hp -= dmg
+	if hp <=0:
+		queue_free()

@@ -2,6 +2,13 @@ extends CharacterBody3D
 
 @export var menu_button: Node3D
 
+@onready var area_dmg: Area3D = $Area_dmg
+@onready var attack_cool_down_timer: Timer = $Attack_CoolDown_Timer
+
+
+var can_attack = true
+var attack = false
+var attack_animations = ["attack1", "attack2"]
 
 var type = "player"
 
@@ -10,7 +17,7 @@ var speed_mult = 1
 var jump_velocity = 6
 
 var health = 100
-var dmg = 100
+var dmg = 50
 
 var death = false
 var can_move = true
@@ -58,10 +65,29 @@ func _physics_process(delta: float) -> void:
 		if menu_button:
 			menu_button.show_button()
 			can_move = false
-			#get_tree().paused = true  # Опционально: ставим игру на паузу
+			#get_tree().paused = true  # Опционально: игра на паузу
 			print("show_button() вызван")
 		else:
 			print("ОШИБКА: menu_button = null")
+	
+	#if attack:
+		#if not anim.is_playing():
+			#attack = false
+		#else:
+			#return
+	var random_attack = attack_animations.pick_random()
+	if Input.is_action_just_pressed("attack") and is_on_floor() and can_attack == true:
+		can_attack = false
+		attack = true
+		anim.play(random_attack)
+		await anim.animation_finished
+		attack_action()
+		attack_cool_down_timer.start(1)
+		attack = false
+		
+				#if anim.is_playing() and anim.animation == random_attack:
+			#return
+		#else:
 	
 	
 	if health <= 0:
@@ -85,6 +111,9 @@ func update_animation():
 		return
 	if taking_dmg == true:
 		return
+	if attack == true:
+		return
+
 	
 	if velocity.x < 0:
 		anim.flip_h = true
@@ -159,3 +188,12 @@ func jump():
 func _on_jump_buffer_timer_timeout() -> void:
 	jump_buffer_active=false
 	
+func attack_action():
+	var overlapping_bodies = area_dmg.get_overlapping_bodies()
+	for body in overlapping_bodies:
+		if body.has_method("take_dmg") and body.type == "enemy":
+			body.take_dmg(dmg)
+	
+
+func _on_attack_cool_down_timer_timeout() -> void:
+	can_attack = true
