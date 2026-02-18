@@ -1,5 +1,8 @@
 extends CharacterBody3D
 
+
+@onready var attack_healthbar_timer: Timer = $attack_healthbar_timer
+@onready var progress_bar = get_tree().get_nodes_in_group("healthbar")
 @onready var dmg_timer: Timer = $dmg_timer
 var type = "enemy"
 const SPEED = 2
@@ -26,11 +29,13 @@ func _physics_process(delta: float) -> void:
 
 
 
-func _on_area_3d_body_entered(body: Node3D) -> void:
-	if body.has_method("take_dmg") and body.type == "player":
+func _on_area_3d_body_entered(body) -> void:
+	if body.has_method("take_dmg") and body.is_in_group("player"):
 		dmg_timer.start()
 		body.take_dmg(dmg)
 		playerNode = body
+		attack_healthbar_timer.start()
+		
 
 
 func _on_dmg_timer_timeout() -> void:
@@ -44,5 +49,13 @@ func _on_area_3d_body_exited(body: Node3D) -> void:
 		
 func take_dmg(dmg):
 	hp -= dmg
+	var mesh = $MeshInstance3D
+	#if mesh:
+		#
 	if hp <=0:
 		queue_free()
+
+
+#func _on_attack_healthbar_timer_timeout() -> void:
+	#if progress_bar.size() > 0:
+		#progress_bar[0].value -= 25

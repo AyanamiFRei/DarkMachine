@@ -5,9 +5,13 @@ extends Node3D
 @export var exit_button: Node3D
 @export var verify_button: Node3D
 @export var verify_button2: Node3D
+@onready var happy: Sprite3D = $Sprite3D2
+@onready var unhappy: Sprite3D = $Sprite3D
+
+
 
 func _ready():
-	
+	happy.visible = false
 	# Подключаем сигналы для кнопки Play
 	if continue_button:
 		var continue_area = continue_button.get_node("Area3D")
@@ -157,6 +161,9 @@ func _on_verify_mouse_entered():
 	var label = $verify_button/verify_button_mesh/Label3D
 	if label:
 		label.modulate = Color.YELLOW
+	if happy:
+		happy.visible = true
+		
 
 func _on_verify_mouse_exited():
 	# Убрали курсор с verify
@@ -171,6 +178,9 @@ func _on_verify_mouse_exited():
 	var label = $verify_button/verify_button_mesh/Label3D
 	if label:
 		label.modulate = Color.WHITE
+		
+	if happy:
+		happy.visible = false
 
 func _on_verify_input_event(_camera: Camera3D, event: InputEvent, position: Vector3, _normal: Vector3, _shape_idx: int):
 	# Проверяем клик левой кнопкой мыши
@@ -207,6 +217,9 @@ func _on_verify2_mouse_entered():
 	var label = $verify_button2/verify2_button_mesh/Label3D
 	if label:
 		label.modulate = Color.YELLOW
+	
+	if unhappy:
+		unhappy.visible = true
 
 func _on_verify2_mouse_exited():
 	# Убрали курсор с verify
@@ -221,6 +234,9 @@ func _on_verify2_mouse_exited():
 	var label = $verify_button2/verify2_button_mesh/Label3D
 	if label:
 		label.modulate = Color.WHITE
+		
+	if unhappy:
+		unhappy.visible = false
 
 func _on_verify2_input_event(_camera: Camera3D, event: InputEvent, position: Vector3, _normal: Vector3, _shape_idx: int):
 	# Проверяем клик левой кнопкой мыши

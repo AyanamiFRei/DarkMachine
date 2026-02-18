@@ -1,4 +1,7 @@
+Sprite3D
 Timer
+ProgressBar
+CanvasLayer
 CollisionShape3D
 Area3D
 Label3D

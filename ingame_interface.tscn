@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://gsw5yds152bb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ix7hr"]
+bg_color = Color(0.3372549, 0, 0.09411765, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.16862746, 0, 1, 1)
+expand_margin_left = 3.0
+expand_margin_top = 3.0
+expand_margin_right = 3.0
+expand_margin_bottom = 3.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ssxr1"]
+bg_color = Color(0, 0.34117648, 0, 1)
+
+[node name="Ingame_interface" type="Node3D" unique_id=1683432532]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=539702754]
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer" unique_id=1679677202 groups=["healthbar"]]
+offset_left = 71.0
+offset_top = 63.0
+offset_right = 458.0
+offset_bottom = 106.0
+theme_override_styles/background = SubResource("StyleBoxFlat_ix7hr")
+theme_override_styles/fill = SubResource("StyleBoxFlat_ssxr1")
+value = 100.0
+
+[node name="Timer" type="Timer" parent="." unique_id=2045708477]
+wait_time = 0.1
+one_shot = true

@@ -8,9 +8,9 @@ size = Vector3(0.1, 0.03, 0.01)
 [sub_resource type="BoxShape3D" id="BoxShape3D_dm3el"]
 size = Vector3(0.098508835, 0.0447402, 0.040649414)
 
-[node name="ingame_button" type="Node3D" unique_id=1396741686 node_paths=PackedStringArray("menu_button")]
+[node name="ingame_button" type="Node3D" unique_id=1396741686]
+visible = false
 script = ExtResource("1_y8gur")
-menu_button = NodePath(".")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=720418468]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0017515793)

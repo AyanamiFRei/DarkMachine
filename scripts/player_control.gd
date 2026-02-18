@@ -1,9 +1,10 @@
 extends CharacterBody3D
 
 @export var menu_button: Node3D
-
+@onready var progress_bar = get_tree().get_nodes_in_group("healthbar")
 @onready var area_dmg: Area3D = $Area_dmg
 @onready var attack_cool_down_timer: Timer = $Attack_CoolDown_Timer
+@onready var heal_timer: Timer = $heal_timer
 
 
 var can_attack = true
@@ -60,15 +61,15 @@ func _physics_process(delta: float) -> void:
 			
 	if Input.is_action_just_pressed("ui_cancel"):
 		print("ESC нажата!")
-		print("menu_button = ", menu_button)
-
-		if menu_button:
-			menu_button.show_button()
-			can_move = false
-			#get_tree().paused = true  # Опционально: игра на паузу
-			print("show_button() вызван")
-		else:
-			print("ОШИБКА: menu_button = null")
+		#print("menu_button = ", menu_button)
+		get_tree().change_scene_to_file("res://assets/scenes/ingamemenu.tscn")
+		#if menu_button:
+			#menu_button.show_button()
+			#can_move = false
+			##get_tree().paused = true  # Опционально: игра на паузу
+			#print("show_button() вызван")
+		#else:
+			#print("ОШИБКА: menu_button = null")
 	
 	#if attack:
 		#if not anim.is_playing():
@@ -88,6 +89,10 @@ func _physics_process(delta: float) -> void:
 				#if anim.is_playing() and anim.animation == random_attack:
 			#return
 		#else:
+	
+	if Input.is_action_just_pressed("heal"):
+		heal_timer.start()
+	
 	
 	
 	if health <= 0:
@@ -159,11 +164,14 @@ func _on_death():
 
 
 func take_dmg(dmg):
+	heal_timer.stop()
 	if death or taking_dmg:  # Не получаем урон если мертвы или уже получаем
 		return
-	
+	if progress_bar.size() > 0:
+		progress_bar[0].value -= dmg
 	taking_dmg = true
 	health -= dmg
+	
 	print("Получен урон: ", dmg, " Осталось здоровья: ", health)
 	
 	# Проигрываем анимацию получения урона
@@ -197,3 +205,9 @@ func attack_action():
 
 func _on_attack_cool_down_timer_timeout() -> void:
 	can_attack = true
+
+
+func _on_heal_timer_timeout() -> void:
+	if progress_bar.size() > 0:
+		progress_bar[0].value += 30
+	health += 30
