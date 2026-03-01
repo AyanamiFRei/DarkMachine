@@ -260,7 +260,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"attack1",
-"speed": 10.0
+"speed": 15.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -286,7 +286,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"attack2",
-"speed": 10.0
+"speed": 15.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -473,7 +473,7 @@ wait_time = 0.2
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="." unique_id=902764751]
 transform = Transform3D(-0.29999784, 0, 0.0011414477, 0, 0.3, 0, -0.0011414477, 0, -0.29999784, 0, 0, 0)
 sprite_frames = SubResource("SpriteFrames_u84jc")
-animation = &"attack1"
+animation = &"attack2"
 
 [node name="ingame_button" parent="." unique_id=1396741686 instance=ExtResource("10_hyvrl")]
 transform = Transform3D(-0.8641343, 0, -0.50326127, 0, 1, 0, 0.50326127, 0, -0.8641343, 0.18122414, 0, -0.2574647)
@@ -485,7 +485,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.18319032, -0.017944336, 0)
 shape = SubResource("CapsuleShape3D_hyvrl")
 
 [node name="Attack_CoolDown_Timer" type="Timer" parent="." unique_id=83591606]
-wait_time = 0.25
+wait_time = 0.1
 
 [node name="heal_timer" type="Timer" parent="." unique_id=514206984]
 wait_time = 3.0
