@@ -65,6 +65,13 @@ heal={
 ]
 }
 
+[layer_names]
+
+3d_physics/layer_1="ТвердыйОбъект"
+3d_physics/layer_2="Персонаж"
+3d_physics/layer_3="Противник"
+3d_physics/layer_4="Атака"
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0

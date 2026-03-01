@@ -444,6 +444,8 @@ radius = 0.14367676
 height = 0.28735352
 
 [node name="player" type="CharacterBody3D" unique_id=2121593867 node_paths=PackedStringArray("menu_button") groups=["player"]]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("1_oqktf")
 menu_button = NodePath("ingame_button")
 
@@ -479,6 +481,8 @@ animation = &"attack2"
 transform = Transform3D(-0.8641343, 0, -0.50326127, 0, 1, 0, 0.50326127, 0, -0.8641343, 0.18122414, 0, -0.2574647)
 
 [node name="Area_dmg" type="Area3D" parent="." unique_id=1873010940]
+collision_layer = 8
+collision_mask = 4
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area_dmg" unique_id=1949355892]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.18319032, -0.017944336, 0)
@@ -488,7 +492,6 @@ shape = SubResource("CapsuleShape3D_hyvrl")
 wait_time = 0.1
 
 [node name="heal_timer" type="Timer" parent="." unique_id=514206984]
-wait_time = 3.0
 
 [connection signal="timeout" from="CoyoteTimer" to="." method="_on_coyote_timer_timeout"]
 [connection signal="timeout" from="JumpBufferTimer" to="." method="_on_jump_buffer_timer_timeout"]

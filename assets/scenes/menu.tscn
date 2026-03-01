@@ -69,3 +69,6 @@ transform = Transform3D(0.045432735, 0, 0.9989674, 0, 1, 0, -0.9989674, 0, 0.045
 [node name="Sprite3D" type="Sprite3D" parent="Node3D" unique_id=542470831]
 transform = Transform3D(0.80643433, 0, 0.5913237, 0, 1, 0, -0.5913237, 0, 0.80643433, -3.5169764, 0, 0.15995097)
 texture = ExtResource("2_8aat6")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=500156854]
+transform = Transform3D(0.1410454, 0.0011043238, 0.9900025, 0.09502278, 0.9953673, -0.014648172, -0.9854323, 0.09613884, 0.14028701, 1.667755, -3.6937828, -2.4359446)
