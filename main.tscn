@@ -70,8 +70,6 @@ skeleton = NodePath("../..")
 
 [node name="wood_platform_1" parent="platform" instance=ExtResource("5_lquwl")]
 transform = Transform3D(-4.371139e-09, 0, -0.1, 0, 0.1, 0, 0.1, 0, -4.371139e-09, 0.89838195, -0.1470275, -1.0013837)
-collision_layer = 3
-collision_mask = 3
 
 [node name="wood_platform_2" parent="platform" instance=ExtResource("6_kek77")]
 transform = Transform3D(-4.371138e-09, 0, 0.10000002, 0, 0.10000002, 0, -0.10000002, 0, -4.37114e-09, 0.6977771, -0.14753434, -1.0013053)
@@ -494,9 +492,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6394885, 0.23614003, -1.010
 
 [node name="enemy1" parent="." instance=ExtResource("14_w48qg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1219458, 0.6632902, -0.9933436)
+collision_layer = 4
+collision_mask = 3
 
 [node name="enemy2" parent="." instance=ExtResource("14_w48qg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7210939, 0.6632902, -0.99334365)
+collision_layer = 4
+collision_mask = 3
 
 [node name="Ingame_interface" parent="." instance=ExtResource("15_vivmo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.55089474, 0, -0.94541055)

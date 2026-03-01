@@ -18,6 +18,8 @@ height = 0.30680847
 size = Vector3(0.4492035, 0.45108795, 0.46900177)
 
 [node name="enemy1" type="CharacterBody3D" unique_id=761590198]
+collision_layer = 4
+collision_mask = 11
 script = ExtResource("1_aiiog")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=313859641]
@@ -28,7 +30,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0002656877, 0)
 shape = SubResource("CapsuleShape3D_aiiog")
 
 [node name="Area3D" type="Area3D" parent="." unique_id=1771754929]
-collision_layer = 0
+collision_layer = 4
+collision_mask = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1479054806]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.025505066, 0.04517746, 0.0024604797)
