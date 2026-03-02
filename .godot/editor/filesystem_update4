@@ -1,3 +1,4 @@
 res://Levels/room_1.tscn
 res://Levels/room_2.tscn
 res://scripts/player_control.gd
+res://main.tscn

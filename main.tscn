@@ -17,10 +17,10 @@
 [ext_resource type="PackedScene" uid="uid://gsw5yds152bb" path="res://ingame_interface.tscn" id="15_vivmo"]
 
 [node name="Main" type="Node3D" unique_id=576962341]
-transform = Transform3D(-6.6977963, 0, -5.6460914e-07, 0, 6.6977963, 0, 5.8554e-07, 0, -6.4583764, 0, 0, 0)
+transform = Transform3D(-6.6977963, 0, -5.6460914e-07, 0, 6.6977963, 0, 5.8554e-07, 0, -6.4583764, 0, 0, -1.011)
 
 [node name="background" type="Node3D" parent="." unique_id=2088577500]
-transform = Transform3D(2, 0, 0, 0, -8.742278e-08, -2, 0, 2, -8.742278e-08, 0, 0, -0.18474102)
+transform = Transform3D(2, 0, 0, 0, -8.742278e-08, -2, 0, 2, -8.742278e-08, 0, 0, 1.011)
 
 [node name="Bg0001" type="MeshInstance3D" parent="background" unique_id=881166787]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.18474102, -8.075286e-09)
@@ -67,6 +67,7 @@ mesh = ExtResource("2_h2yge")
 skeleton = NodePath("../..")
 
 [node name="platform" type="Node3D" parent="." unique_id=81445388]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.011)
 
 [node name="wood_platform_1" parent="platform" unique_id=1180927976 instance=ExtResource("5_lquwl")]
 transform = Transform3D(-4.371139e-09, 0, -0.1, 0, 0.1, 0, 0.1, 0, -4.371139e-09, 0.89838195, -0.1470275, -1.0013837)
@@ -291,7 +292,7 @@ transform = Transform3D(-4.371139e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, -4.371139e-09
 transform = Transform3D(1.3113417e-08, 0, -0.1, 0, 0.1, 0, 0.1, 0, 1.3113417e-08, -2.11899, 0.06561223, -1.0232978)
 
 [node name="environment" type="Node3D" parent="." unique_id=1950802617]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6201626, 0, -0.9949889)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.62, 0, 0)
 
 [node name="WoodenPlate" type="MeshInstance3D" parent="environment" unique_id=592412521]
 transform = Transform3D(0.065, 0, 0, 0, -2.8412401e-09, -0.065, 0, 0.065, -2.8412401e-09, -0.005143404, -0.06833441, -0.008082628)
@@ -432,7 +433,7 @@ skeleton = NodePath("../..")
 transform = Transform3D(-0.9999559, 0, 0.009389652, 0, 1, 0, -0.009389652, 0, -0.9999559, -1.6136545, 0.13872325, -2.4359446)
 
 [node name="front" type="Node3D" parent="." unique_id=912469854]
-transform = Transform3D(1.3745799, 0, 0, 0, -4.371139e-08, -1.276119, 0, 1, -5.5780934e-08, -0.21796298, 0.3806594, -1.3536925)
+transform = Transform3D(1.3745799, 0, 0, 0, -4.371139e-08, -1.276119, 0, 1, -5.5780934e-08, -0.218, 0.381, -0.354)
 
 [node name="Fg0002" type="MeshInstance3D" parent="front" unique_id=219831192]
 mesh = ExtResource("3_1bvp3")
@@ -484,18 +485,18 @@ mesh = ExtResource("4_lquwl")
 skeleton = NodePath("../../background")
 
 [node name="Label3D" type="Label3D" parent="." unique_id=318141576]
-transform = Transform3D(-0.9271708, 0, 0.37463892, 0, 1, 0, -0.37463892, 0, -0.9271708, -8.024103, 0.15881228, -1.0843436)
+transform = Transform3D(-0.9271708, 0, 0.37463892, 0, 1, 0, -0.37463892, 0, -0.9271708, -8.024103, 0.15881228, 0)
 text = "ALT+F4"
 
 [node name="player" parent="." unique_id=2119380125 instance=ExtResource("13_ycdy4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6394885, 0.23614003, -1.0105687)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6394885, 0.23614003, 0)
 
 [node name="enemy1" parent="." unique_id=1494080055 instance=ExtResource("14_w48qg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1219458, 0.6632902, -0.9933436)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1219458, 0.6632902, 0)
 collision_mask = 3
 
 [node name="enemy2" parent="." unique_id=368898725 instance=ExtResource("14_w48qg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7210939, 0.6632902, -0.99334365)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7210939, 0.6632902, 0)
 collision_mask = 3
 
 [node name="Ingame_interface" parent="." unique_id=754092608 instance=ExtResource("15_vivmo")]
