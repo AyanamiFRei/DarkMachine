@@ -37,7 +37,7 @@ func _physics_process(delta: float) -> void:
 	
 	if death or not can_move:
 		return
-	
+	position.z = clamp(position.y, 0, 0)
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
