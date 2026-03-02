@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://1w4j06345h57" path="res://Door.tscn" id="4_wj57p"]
 
 [node name="room_1" type="Node3D" unique_id=526299891]
-transform = Transform3D(-5, 0, -7.54979e-07, 0, 5, 0, 7.54979e-07, 0, -5, 0, 0, 0)
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
 
 [node name="platform" type="Node3D" parent="." unique_id=1643923397]
 
@@ -111,19 +111,19 @@ transform = Transform3D(1.3113417e-08, 0, 0.1, 0, 0.1, 0, -0.1, 0, 1.3113417e-08
 transform = Transform3D(1.3113417e-08, 0, 0.1, 0, 0.1, 0, -0.1, 0, 1.3113417e-08, 1.3835902, 0, 0.02284008)
 
 [node name="pipe" type="CSGBox3D" parent="." unique_id=1861294031]
-transform = Transform3D(0.13461526, 0, 0, 0, 0.11356157, 0, 0, 0, 1, 1.9102783, 0.15964991, -0.015477814)
+transform = Transform3D(-0.13461526, 0, -8.742279e-08, 0, 0.11356157, 0, 1.176844e-08, 0, -1, 1.8232521, 0.15964991, -0.023321334)
 size = Vector3(1, 1.8554688, 0.01586914)
 
 [node name="trash2" type="CSGBox3D" parent="." unique_id=1172375638]
-transform = Transform3D(0.13461526, 0, 0, 0, 0.11356157, 0, 0, 0, 1, 2.4622955, 0.117093205, -0.015477814)
+transform = Transform3D(-0.13461526, 0, -8.742279e-08, 0, 0.11356157, 0, 1.176844e-08, 0, -1, 2.3752692, 0.117093205, -0.023321334)
 size = Vector3(1, 1.079834, 0.01586914)
 
 [node name="Door" parent="." unique_id=1730044608 instance=ExtResource("4_wj57p")]
-transform = Transform3D(0.510738, 0, -0.8597364, 0, 1, 0, 0.8597364, 0, 0.510738, 2.6484222, 0.15473835, 0)
+transform = Transform3D(-0.4159794, 0, 0.90937436, 0, 1, 0, -0.90937436, 0, -0.4159794, 2.6360402, 0.15473835, -0.0092946105)
 
 [node name="tresh" type="CSGBox3D" parent="." unique_id=1019277749]
-transform = Transform3D(0.13461526, 0, 0, 0, 0.11356157, 0, 0, 0, 1, 2.3235235, 0.117093205, -0.015477814)
+transform = Transform3D(-0.13461526, 0, -8.742279e-08, 0, 0.11356157, 0, 1.176844e-08, 0, -1, 2.2364976, 0.117093205, -0.023321336)
 size = Vector3(1, 1.079834, 0.01586914)
 
 [node name="player" parent="." unique_id=2121593867 instance=ExtResource("4_qgwng")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1374978, 0.3479296, 0.028010964)
+transform = Transform3D(1, 0, 1.4210855e-14, 0, 1, 0, -1.4210855e-14, 0, 1, -1.4801635, 0.3479296, 0.011578331)

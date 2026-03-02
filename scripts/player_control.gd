@@ -120,9 +120,9 @@ func update_animation():
 		return
 
 	
-	if velocity.x < 0:
+	if velocity.x > 0:
 		anim.flip_h = true
-	elif velocity.x > 0:
+	elif velocity.x < 0:
 		anim.flip_h = false
 		
 	# Проверяем состояние в воздухе в первую очередь
