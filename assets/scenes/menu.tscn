@@ -15,9 +15,10 @@ size = Vector3(0.5, 0.5, 3)
 [sub_resource type="BoxShape3D" id="BoxShape3D_ugn2o"]
 size = Vector3(0.5830078, 0.46398926, 3.0736694)
 
-[node name="Menu" type="Node3D" unique_id=2031328553 node_paths=PackedStringArray("play_button", "exit_button")]
+[node name="Menu" type="Node3D" unique_id=2031328553 node_paths=PackedStringArray("play_button", "play_button_sbox", "exit_button")]
 script = ExtResource("1_8omcj")
 play_button = NodePath("Play_button")
+play_button_sbox = NodePath("Play_button_sbox")
 exit_button = NodePath("Exit_button")
 
 [node name="Play_button" type="Node3D" parent="." unique_id=152715757]
@@ -36,6 +37,25 @@ font_size = 100
 [node name="Area3D" type="Area3D" parent="Play_button" unique_id=782831239]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Play_button/Area3D" unique_id=1749740415]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0087890625, 1.862242, 0.081207275)
+shape = SubResource("BoxShape3D_8omcj")
+
+[node name="Play_button_sbox" type="Node3D" parent="." unique_id=792337189]
+transform = Transform3D(0.8777429, 0.35436368, 0.3224811, -0.29662922, 0.93045974, -0.21507283, -0.37626958, 0.09312134, 0.92181885, -0.096132874, 0, 1.3515563)
+
+[node name="sbox_button_mesh" type="MeshInstance3D" parent="Play_button_sbox" unique_id=259116629]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8696003, 0)
+mesh = SubResource("BoxMesh_s7dtb")
+
+[node name="Label3D" type="Label3D" parent="Play_button_sbox/sbox_button_mesh" unique_id=1340485946]
+transform = Transform3D(-0.013246669, 0, 0.99991226, 0, 1, 0, -0.99991226, 0, -0.013246669, 0.52829075, 0.06834149, 0)
+text = "Play (sbox)
+"
+font_size = 100
+
+[node name="Area3D" type="Area3D" parent="Play_button_sbox" unique_id=1365124306]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Play_button_sbox/Area3D" unique_id=919811041]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0087890625, 1.862242, 0.081207275)
 shape = SubResource("BoxShape3D_8omcj")
 
