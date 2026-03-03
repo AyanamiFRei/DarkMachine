@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 res://assets/gltf_file/texture/arrow_plate_left.tres::2ecb552d38f9fb24eac1a3ba448c1127::1771261829::res://.godot/exported/133200997/export-4addfcd4b60a05eec7aef4f41fe1aba0-arrow_plate_left.res
 res://assets/gltf_file/texture/arrow_plate_right.tres::898449d3b7e5bb2953cf1db2938f9b10::1771261829::res://.godot/exported/133200997/export-bb70b7f8f7940d7d24bd54a64caa9873-arrow_plate_right.res
 res://assets/gltf_file/texture/bg_0.tres::b54bf473def274d57ac120371aa75f31::1771261829::res://.godot/exported/133200997/export-a53205fcf445181e699198ba5f223379-bg_0.res
@@ -26,3 +27,36 @@ res://dmg_area.tscn::34b7b4cd94dd4543bfc00ae2c5db7f1a::1771261829::res://.godot/
 res://ingame_button.tscn::155e89c644e15752b5082d7ede816dbf::1771444790::res://.godot/exported/133200997/export-a01c61e77328dd90fa3716e17add5c89-ingame_button.scn
 res://ingame_interface.tscn::85628e732a4f72a608193e884b1f8413::1771445268::res://.godot/exported/133200997/export-44476efe25a6b998b737bae31108d7b9-ingame_interface.scn
 res://main.tscn::c2ef55ebd178512acc5c5e08d4d30bcf::1771442396::res://.godot/exported/133200997/export-3070c538c03ee49b7677ff960a3f5195-main.scn
+=======
+res://assets/gltf_file/texture/arrow_plate_left.tres::d9ee8f46dd943bc1023fc37fe9ca85e3::1771255546::res://.godot/exported/133200997/export-4addfcd4b60a05eec7aef4f41fe1aba0-arrow_plate_left.res
+res://assets/gltf_file/texture/arrow_plate_right.tres::6c7d32ab046cba3584232cf6c3e3aff9::1771255546::res://.godot/exported/133200997/export-bb70b7f8f7940d7d24bd54a64caa9873-arrow_plate_right.res
+res://assets/gltf_file/texture/bg_0.tres::6d293444429a6ef17f08efcd6db3eb4e::1771255546::res://.godot/exported/133200997/export-a53205fcf445181e699198ba5f223379-bg_0.res
+res://assets/gltf_file/texture/bg_1.tres::dd58f5932ef52154b0229bc8bcc4d0e8::1771255546::res://.godot/exported/133200997/export-8027cf91ed924f8add810bb5dbee0adb-bg_1.res
+res://assets/gltf_file/texture/bigflowers_props.tres::b3afe0bf306e5f954efc6a6598385389::1771255546::res://.godot/exported/133200997/export-8a0ba4b898d236c9bef53a78f7b1e16c-bigflowers_props.res
+res://assets/gltf_file/texture/door.tres::259ef99b4ba13f0da793c2176264157f::1771255546::res://.godot/exported/133200997/export-eaf08a02b6c85919de659844572ff7a0-door.res
+res://assets/gltf_file/texture/drygrass_props.tres::1569cc6febfb6d8788a9936e6a9dc2af::1771255546::res://.godot/exported/133200997/export-96b7f09bf06ad64c017051d95a29c023-drygrass_props.res
+res://assets/gltf_file/texture/fg_0.tres::0fe8750fb91504583f3c1039c64dd0bb::1771255546::res://.godot/exported/133200997/export-c744b18e3aaeddd085a77e78aa622928-fg_0.res
+res://assets/gltf_file/texture/fg_1.tres::ef3fb9bb6127098a2cb13d7878cd9f59::1771255546::res://.godot/exported/133200997/export-896f5f4dd5df6fee6c330bd49b73f4fc-fg_1.res
+res://assets/gltf_file/texture/flowers_props.tres::23be68cc92a7dd67d92b67faaf161e6a::1771255546::res://.godot/exported/133200997/export-5e894782bbeb0082bdbf39e43c60f11e-flowers_props.res
+res://assets/gltf_file/texture/grass_props.tres::20bc5e4df697e250c665bead7c6997b2::1771255546::res://.godot/exported/133200997/export-0f7aab56239a8a68122bdb618a23191f-grass_props.res
+res://assets/gltf_file/texture/trap_suspended_anim.tres::16763e05c6d31b61d3abfa40fbab55b4::1771255546::res://.godot/exported/133200997/export-3a423078fff0475b98567cf6eb37b1b8-trap_suspended_anim.res
+res://assets/gltf_file/texture/wooden_plate.tres::fb54bfe20dc010d84605cf982696405f::1771255546::res://.godot/exported/133200997/export-ed01271c27a5227ed0f2ec6bfd308ad4-wooden_plate.res
+res://assets/gltf_file/texture/wood_slab_left.tres::5b39414c23010fb4a9ad9e28a7aa18b4::1771255546::res://.godot/exported/133200997/export-4e0aba33880e8586c751a9b3f2ef1362-wood_slab_left.res
+res://assets/gltf_file/texture/wood_slab_middle.tres::8b3392469da427ac5931b0c9f541b21f::1771255546::res://.godot/exported/133200997/export-20d368058f6321e6bfe82175f38d2a36-wood_slab_middle.res
+res://assets/gltf_file/texture/wood_slab_right.tres::e62204d8eb2956cfee14c228eddbccf6::1771255546::res://.godot/exported/133200997/export-4b7643039495735f767f9fe0b2c6e54c-wood_slab_right.res
+res://assets/scenes/enemies/enemy_1.tscn::741ccbdc60a0c3b0194836e6cd9373e2::1772364344::res://.godot/exported/133200997/export-649d12546079884b34385cd8a2df57df-enemy_1.scn
+res://assets/scenes/player/player.tscn::0e5a41ce7a94bd8edebcaeee2828739b::1772404390::res://.godot/exported/133200997/export-233e96870745d59214fc5fdddb4bde78-player.scn
+res://assets/scenes/ingamemenu.tscn::2fe2a7b8a4db172a052b68779d0d2342::1772364344::res://.godot/exported/133200997/export-1963e7b45c4126707204f9d7c05272e0-ingamemenu.scn
+res://assets/scenes/menu.tscn::dc44729f4a654009ef55dc045af22940::1772444006::res://.godot/exported/133200997/export-58f8b45734bc2eb3ca6ad87ae97ae25e-menu.scn
+res://assets/tsns_file/wood_platform_1.tscn::8ec676191d9ae18ec5e664c34869ba14::1771255546::res://.godot/exported/133200997/export-875f6bdf508ef5e30f158b5001114997-wood_platform_1.scn
+res://assets/tsns_file/wood_platform_2.tscn::2caa6d8111582b266cb8cfe1d08e87e1::1771255546::res://.godot/exported/133200997/export-7a4c610766acbc08894cc1308fb98cb3-wood_platform_2.scn
+res://assets/tsns_file/wood_platform_3.tscn::607f94657477a2ba83d642563099832c::1771255546::res://.godot/exported/133200997/export-fd091aa66a228e1bb35b2b36c92ffeb2-wood_platform_3.scn
+res://Levels/room_1.tscn::0d329b45e207e8f4082f77c4a2b5edbd::1772444006::res://.godot/exported/133200997/export-b642dadd5a8e9b69971f95a87a5925e0-room_1.scn
+res://Levels/room_2.tscn::3cb23bdba73adf1d1359be07e40b9cbe::1772444006::res://.godot/exported/133200997/export-a91ff39a2e82a6f97ccef9130b33beaf-room_2.scn
+res://scripts/player.tscn::01774599391fd751517e3bb0a8ec662f::1771255546::res://.godot/exported/133200997/export-69df11bdad92b63d6cbd2c6eebcbb9b9-player.scn
+res://dmg_area.tscn::77e3d117137862f4c7f5315bedf33df1::1771255546::res://.godot/exported/133200997/export-fae0af4e21d8483c41e99a54a278c67e-dmg_area.scn
+res://Door.tscn::d9fe41cfac4acc0384f6cf56db2a181d::1772444006::res://.godot/exported/133200997/export-86804dc7fc203b51fd0c97228b63fe29-Door.scn
+res://ingame_button.tscn::83e4f0f0307a0caddcaa4347a71da262::1771616818::res://.godot/exported/133200997/export-a01c61e77328dd90fa3716e17add5c89-ingame_button.scn
+res://ingame_interface.tscn::5e093e749861d00650f21ecd7c3812b8::1771616818::res://.godot/exported/133200997/export-44476efe25a6b998b737bae31108d7b9-ingame_interface.scn
+res://main.tscn::51b67ea24fd27f6f8b7cd02f2fb8a099::1772444006::res://.godot/exported/133200997/export-3070c538c03ee49b7677ff960a3f5195-main.scn
+>>>>>>> 6a58f138b7528888e9ca4d668b64f6f47677a71d

@@ -1,0 +1,124 @@
+[gd_scene format=3 uid="uid://csui1gphrhqir"]
+
+[ext_resource type="PackedScene" uid="uid://kn4wsb104i3e" path="res://assets/tsns_file/wood_platform_3.tscn" id="1_vo448"]
+[ext_resource type="PackedScene" uid="uid://bonymuv70rr7" path="res://assets/tsns_file/wood_platform_1.tscn" id="2_3xrr2"]
+[ext_resource type="PackedScene" uid="uid://cw86i1wgw62jl" path="res://assets/scenes/player/player.tscn" id="3_3xrr2"]
+
+[node name="room_2" type="Node3D" unique_id=1293553632]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
+
+[node name="Node3D" type="Node3D" parent="." unique_id=356294070]
+
+[node name="wood_platform_3" parent="Node3D" unique_id=2104709092 instance=ExtResource("1_vo448")]
+transform = Transform3D(-4.371139e-09, 0, -0.1, 0, 0.1, 0, 0.1, 0, -4.371139e-09, -0.4964222, 0, 0)
+
+[node name="wood_platform_9" parent="Node3D" unique_id=1759757434 instance=ExtResource("2_3xrr2")]
+transform = Transform3D(7.54979e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, 7.54979e-09, -1.0938143, 0, 0)
+
+[node name="wood_platform_11" parent="Node3D" unique_id=1583579083 instance=ExtResource("2_3xrr2")]
+transform = Transform3D(7.54979e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, 7.54979e-09, -1.0938143, 0.05614385, 0)
+
+[node name="wood_platform_12" parent="Node3D" unique_id=1136013843 instance=ExtResource("2_3xrr2")]
+transform = Transform3D(7.54979e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, 7.54979e-09, -1.0938143, 0.12298185, 0)
+
+[node name="wood_platform_14" parent="Node3D" unique_id=4926756 instance=ExtResource("2_3xrr2")]
+transform = Transform3D(7.54979e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, 7.54979e-09, -1.0938143, 0.18981981, 0)
+
+[node name="wood_platform_15" parent="Node3D" unique_id=1902228615 instance=ExtResource("2_3xrr2")]
+transform = Transform3D(7.54979e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, 7.54979e-09, -1.0938143, 0.24863723, 0)
+
+[node name="wood_platform_16" parent="Node3D" unique_id=1258534882 instance=ExtResource("2_3xrr2")]
+transform = Transform3D(7.54979e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, 7.54979e-09, -1.0938143, 0.31021526, 0)
+
+[node name="wood_platform_10" parent="Node3D" unique_id=426585977 instance=ExtResource("1_vo448")]
+transform = Transform3D(-4.371139e-09, 0, -0.1, 0, 0.1, 0, 0.1, 0, -4.371139e-09, -0.8943073, 0, 0)
+
+[node name="wood_platform_13" parent="Node3D" unique_id=365318085 instance=ExtResource("1_vo448")]
+transform = Transform3D(-4.371139e-09, 0, -0.1, 0, 0.1, 0, 0.1, 0, -4.371139e-09, -0.69556475, 0, 0)
+
+[node name="wood_platform_4" parent="Node3D" unique_id=532638286 instance=ExtResource("1_vo448")]
+transform = Transform3D(-4.371139e-09, 0, -0.1, 0, 0.1, 0, 0.1, 0, -4.371139e-09, -0.29685485, 0, 0)
+
+[node name="wood_platform_20" parent="Node3D" unique_id=357236075 instance=ExtResource("1_vo448")]
+transform = Transform3D(7.54979e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, 7.54979e-09, 0.09927583, 0, 0.0228401)
+
+[node name="wood_platform_21" parent="Node3D" unique_id=1203121903 instance=ExtResource("1_vo448")]
+transform = Transform3D(7.54979e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, 7.54979e-09, 0.29844415, 0, 0.0228401)
+
+[node name="wood_platform_38" parent="Node3D" unique_id=1070753680 instance=ExtResource("1_vo448")]
+transform = Transform3D(7.54979e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, 7.54979e-09, 0.09927583, -0.068779066, 0.0228401)
+
+[node name="wood_platform_39" parent="Node3D" unique_id=1722322574 instance=ExtResource("1_vo448")]
+transform = Transform3D(7.54979e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, 7.54979e-09, 0.29844415, -0.068779066, 0.0228401)
+
+[node name="wood_platform_27" parent="Node3D" unique_id=1690743157 instance=ExtResource("1_vo448")]
+transform = Transform3D(7.54979e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, 7.54979e-09, 0.09927583, 0.06416446, 0.0228401)
+
+[node name="wood_platform_28" parent="Node3D" unique_id=1306946103 instance=ExtResource("1_vo448")]
+transform = Transform3D(7.54979e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, 7.54979e-09, 0.29844415, 0.06416446, 0.0228401)
+
+[node name="wood_platform_29" parent="Node3D" unique_id=564902598 instance=ExtResource("1_vo448")]
+transform = Transform3D(7.54979e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, 7.54979e-09, 0.09927583, 0.13367599, 0.0228401)
+
+[node name="wood_platform_30" parent="Node3D" unique_id=935561146 instance=ExtResource("1_vo448")]
+transform = Transform3D(7.54979e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, 7.54979e-09, 0.29844415, 0.13367599, 0.0228401)
+
+[node name="wood_platform_22" parent="Node3D" unique_id=1004542450 instance=ExtResource("1_vo448")]
+transform = Transform3D(7.54979e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, 7.54979e-09, 0.49614564, -0.091625705, 0.0228401)
+
+[node name="wood_platform_35" parent="Node3D" unique_id=645757087 instance=ExtResource("1_vo448")]
+transform = Transform3D(7.54979e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, 7.54979e-09, 0.95064414, 0.11848574, 0.0228401)
+
+[node name="wood_platform_36" parent="Node3D" unique_id=665521164 instance=ExtResource("1_vo448")]
+transform = Transform3D(7.54979e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, 7.54979e-09, 0.69425404, 0.4226346, 0.0228401)
+
+[node name="wood_platform_37" parent="Node3D" unique_id=242703859 instance=ExtResource("1_vo448")]
+transform = Transform3D(7.54979e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, 7.54979e-09, 0.49636862, 0.4226346, 0.0228401)
+
+[node name="wood_platform_40" parent="Node3D" unique_id=1035298541 instance=ExtResource("1_vo448")]
+transform = Transform3D(7.54979e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, 7.54979e-09, -0.09572303, 0.46193695, 0.0228401)
+
+[node name="wood_platform_41" parent="Node3D" unique_id=2085133790 instance=ExtResource("1_vo448")]
+transform = Transform3D(7.54979e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, 7.54979e-09, -0.2936085, 0.46193695, 0.0228401)
+
+[node name="wood_platform_42" parent="Node3D" unique_id=896326394 instance=ExtResource("1_vo448")]
+transform = Transform3D(7.54979e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, 7.54979e-09, -0.69508374, 0.46193695, 0.0228401)
+
+[node name="wood_platform_23" parent="Node3D" unique_id=1702275541 instance=ExtResource("1_vo448")]
+transform = Transform3D(7.54979e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, 7.54979e-09, 0.6952698, -0.091625705, 0.0228401)
+
+[node name="wood_platform_31" parent="Node3D" unique_id=853818526 instance=ExtResource("1_vo448")]
+transform = Transform3D(7.54979e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, 7.54979e-09, 0.49614564, -0.16070129, 0.0228401)
+
+[node name="wood_platform_32" parent="Node3D" unique_id=1794655428 instance=ExtResource("1_vo448")]
+transform = Transform3D(7.54979e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, 7.54979e-09, 0.6952698, -0.16070129, 0.0228401)
+
+[node name="wood_platform_33" parent="Node3D" unique_id=683845834 instance=ExtResource("1_vo448")]
+transform = Transform3D(7.54979e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, 7.54979e-09, 0.49614564, -0.22809212, 0.0228401)
+
+[node name="wood_platform_34" parent="Node3D" unique_id=160179817 instance=ExtResource("1_vo448")]
+transform = Transform3D(7.54979e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, 7.54979e-09, 0.6952698, -0.22809212, 0.0228401)
+
+[node name="wood_platform_24" parent="Node3D" unique_id=1299673335 instance=ExtResource("2_3xrr2")]
+transform = Transform3D(-1.6292068e-08, 0, -0.1, 0, 0.1, 0, 0.1, 0, -1.6292068e-08, 1.0931749, -0.2306159, 0.022840116)
+
+[node name="wood_platform_25" parent="Node3D" unique_id=1589389324 instance=ExtResource("1_vo448")]
+transform = Transform3D(7.54979e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, 7.54979e-09, 0.893668, -0.2306159, 0.0228401)
+
+[node name="wood_platform_26" parent="Node3D" unique_id=2071534504 instance=ExtResource("1_vo448")]
+transform = Transform3D(7.54979e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, 7.54979e-09, -0.10029149, 0, 0.02284008)
+
+[node name="door3" type="CSGBox3D" parent="Node3D" unique_id=1024578082]
+transform = Transform3D(-0.070324264, 0, -0.85269463, 0, 0.11356157, 0, 0.11478569, 0, -0.5224094, -1.1616738, 0.47635204, -0.00913249)
+size = Vector3(1, 1.9921875, 0.01586914)
+
+[node name="door2" type="CSGBox3D" parent="Node3D" unique_id=596843561]
+transform = Transform3D(0.05151502, 0, -0.92387944, 0, 0.11356157, 0, 0.124368265, 0, 0.38268337, 1.1562674, -0.061718535, -0.00913249)
+size = Vector3(1, 1.9921875, 0.01586914)
+
+[node name="tresh" type="CSGBox3D" parent="Node3D" unique_id=1962497533]
+transform = Transform3D(-0.13461526, 0, -8.742278e-08, 0, 0.11356157, 0, 1.176844e-08, 0, -1, 0.14064789, 0.24806575, -0.015477814)
+size = Vector3(1, 1.079834, 0.01586914)
+
+[node name="player" parent="." unique_id=2121593867 instance=ExtResource("3_3xrr2")]
+transform = Transform3D(1, 0, 7.1054274e-15, 0, 1, 0, -7.1054274e-15, 0, 1, -1.0821995, 0.50358355, 0.012210465)

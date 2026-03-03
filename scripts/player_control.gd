@@ -37,7 +37,7 @@ func _physics_process(delta: float) -> void:
 	
 	if death or not can_move:
 		return
-	
+	position.z = clamp(position.y, 0, 0)
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
@@ -120,9 +120,9 @@ func update_animation():
 		return
 
 	
-	if velocity.x < 0:
+	if velocity.x > 0:
 		anim.flip_h = true
-	elif velocity.x > 0:
+	elif velocity.x < 0:
 		anim.flip_h = false
 		
 	# Проверяем состояние в воздухе в первую очередь

@@ -1,8 +1,10 @@
+Node3D
+CollisionShape3D
+Area3D
+CSGBox3D
 Sprite3D
 Timer
 ProgressBar
 CanvasLayer
-CollisionShape3D
-Area3D
 Label3D
 MeshInstance3D
