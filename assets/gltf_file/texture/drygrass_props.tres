@@ -1,4 +1,4 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://dv4028b7jilje"]
+[gd_resource type="StandardMaterial3D" load_steps=0 format=3 uid="uid://dv4028b7jilje"]
 
 [ext_resource type="Texture2D" uid="uid://b3kxqns1qyuqj" path="res://assets/png/assets_for_test_drygrass_props.png" id="1_a4wer"]
 

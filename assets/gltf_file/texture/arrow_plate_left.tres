@@ -1,4 +1,4 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://bqn3nrea8abt"]
+[gd_resource type="StandardMaterial3D" load_steps=0 format=3 uid="uid://bqn3nrea8abt"]
 
 [ext_resource type="Texture2D" uid="uid://bs37hv80c3fth" path="res://assets/png/assets_for_test_arrow_plate_left.png" id="1_jkv7v"]
 

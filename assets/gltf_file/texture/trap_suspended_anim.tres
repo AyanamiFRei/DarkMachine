@@ -1,4 +1,4 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://dk44t5baxpyqi"]
+[gd_resource type="StandardMaterial3D" load_steps=0 format=3 uid="uid://dk44t5baxpyqi"]
 
 [resource]
 resource_name = "trap_suspended_anim"

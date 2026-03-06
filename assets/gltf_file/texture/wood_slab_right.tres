@@ -1,4 +1,4 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://c77dnn2bl42sg"]
+[gd_resource type="StandardMaterial3D" load_steps=0 format=3 uid="uid://c77dnn2bl42sg"]
 
 [ext_resource type="Texture2D" uid="uid://c237p7us8vkhn" path="res://assets/png/assets_for_test_wood_slab_right.png" id="1_gb5yq"]
 
