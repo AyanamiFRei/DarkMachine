@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cl7gxtr2p6bdh"]
+
+[ext_resource type="Texture2D" uid="uid://uxqjqh3wnskf" path="res://assets/png/assets_for_test_grass_props.png" id="1_ab81h"]
+
+[resource]
+resource_name = "grass_props"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_ab81h")
+roughness = 0.5
+texture_filter = 0
+texture_repeat = false

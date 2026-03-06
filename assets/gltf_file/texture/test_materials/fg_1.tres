@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://swlgkndasvyn"]
+
+[ext_resource type="Texture2D" uid="uid://ddi3d7skn1u6b" path="res://assets/png/assets_for_test_fg_1.png" id="1_mwthp"]
+
+[resource]
+resource_name = "fg_1"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_mwthp")
+roughness = 0.5
+texture_filter = 0
+texture_repeat = false

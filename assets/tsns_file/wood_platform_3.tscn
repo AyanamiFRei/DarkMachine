@@ -1,6 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://kn4wsb104i3e"]
 
-[ext_resource type="ArrayMesh" uid="uid://bkixwijgjoaib" path="res://assets/gltf_file/mesh/wood_slab_middle.res" id="1_vgnsv"]
+[ext_resource type="ArrayMesh" uid="uid://bkixwijgjoaib" path="res://assets/gltf_file/mesh/test_mesh/wood_slab_middle.res" id="1_vgnsv"]
+
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6k8rg"]
 size = Vector3(2, 0.23773193, 1)
