@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://cw86i1wgw62jl"]
+[gd_scene load_steps=69 format=3 uid="uid://cw86i1wgw62jl"]
 
 [ext_resource type="Script" uid="uid://b7y6cjna1i5q8" path="res://scripts/player_control.gd" id="1_oqktf"]
 [ext_resource type="Texture2D" uid="uid://5slt4qlevx7i" path="res://assets/scenes/player/Attack1.png" id="2_0g25m"]
@@ -443,55 +443,55 @@ animations = [{
 radius = 0.14367676
 height = 0.28735352
 
-[node name="player" type="CharacterBody3D" unique_id=2121593867 node_paths=PackedStringArray("menu_button") groups=["player"]]
+[node name="player" type="CharacterBody3D" node_paths=PackedStringArray("menu_button") groups=["player"]]
 collision_layer = 2
 collision_mask = 5
 script = ExtResource("1_oqktf")
 menu_button = NodePath("ingame_button")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=276907861]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.019559145)
 visible = false
 mesh = SubResource("BoxMesh_oqktf")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=753475068]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.01625998, -0.007027136, 0.0020158812)
 shape = SubResource("CapsuleShape3D_ratu8")
 
-[node name="Camera3D" type="Camera3D" parent="." unique_id=2104661788]
-transform = Transform3D(-0.9999891, -0.0039179977, -0.0025417628, -0.003940619, 0.99995226, 0.008956817, 0.0025065495, 0.008966737, -0.99995685, 0.0014789775, 0.05142823, -0.7165011)
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-0.9999891, -0.0039179977, -0.0025417642, -0.003940619, 0.99995214, 0.008956819, 0.0025065495, 0.0089667365, -0.9999567, 0.0014789775, 0.05142823, -0.7165011)
 current = true
 fov = 71.6
 near = 0.002
 
-[node name="CoyoteTimer" type="Timer" parent="." unique_id=2074633047]
+[node name="CoyoteTimer" type="Timer" parent="."]
 unique_name_in_owner = true
 wait_time = 0.1
 
-[node name="JumpBufferTimer" type="Timer" parent="." unique_id=1368774789]
+[node name="JumpBufferTimer" type="Timer" parent="."]
 unique_name_in_owner = true
 wait_time = 0.2
 
-[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="." unique_id=902764751]
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
 transform = Transform3D(-0.29999784, 0, 0.0011414477, 0, 0.3, 0, -0.0011414477, 0, -0.29999784, 0, 0, 0)
 sprite_frames = SubResource("SpriteFrames_u84jc")
 animation = &"attack1"
 
-[node name="ingame_button" parent="." unique_id=1396741686 instance=ExtResource("10_hyvrl")]
+[node name="ingame_button" parent="." instance=ExtResource("10_hyvrl")]
 transform = Transform3D(-0.8641343, 0, -0.50326127, 0, 1, 0, 0.50326127, 0, -0.8641343, 0.18122414, 0, -0.2574647)
 
-[node name="Area_dmg" type="Area3D" parent="." unique_id=1873010940]
+[node name="Area_dmg" type="Area3D" parent="."]
 collision_layer = 8
 collision_mask = 4
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Area_dmg" unique_id=1949355892]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area_dmg"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.18319032, -0.017944336, 0)
 shape = SubResource("CapsuleShape3D_hyvrl")
 
-[node name="Attack_CoolDown_Timer" type="Timer" parent="." unique_id=83591606]
+[node name="Attack_CoolDown_Timer" type="Timer" parent="."]
 wait_time = 0.1
 
-[node name="heal_timer" type="Timer" parent="." unique_id=514206984]
+[node name="heal_timer" type="Timer" parent="."]
 
 [connection signal="timeout" from="CoyoteTimer" to="." method="_on_coyote_timer_timeout"]
 [connection signal="timeout" from="JumpBufferTimer" to="." method="_on_jump_buffer_timer_timeout"]
