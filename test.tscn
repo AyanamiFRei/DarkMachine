@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://c7n3wsxv12m6e"]
+
+[ext_resource type="Texture2D" uid="uid://bil2qbnxowli3" path="res://assets/tsns_file/колба1.png" id="1_37kl0"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+texture = ExtResource("1_37kl0")

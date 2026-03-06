@@ -492,12 +492,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6394885, 0.23614003, -1.010
 
 [node name="enemy1" parent="." instance=ExtResource("14_w48qg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1219458, 0.6632902, -0.9933436)
-collision_layer = 4
 collision_mask = 3
 
 [node name="enemy2" parent="." instance=ExtResource("14_w48qg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7210939, 0.6632902, -0.99334365)
-collision_layer = 4
 collision_mask = 3
 
 [node name="Ingame_interface" parent="." instance=ExtResource("15_vivmo")]
