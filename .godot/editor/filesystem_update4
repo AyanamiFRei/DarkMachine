@@ -32,3 +32,11 @@ res://assets/gltf_file/mesh/AP1_шестерни темные2.res
 res://test.tscn
 res://assets/tsns_file/wood_platform_1.tscn
 res://assets/scenes/player/player.tscn
+res://Door.tscn
+res://assets/tsns_file/wood_platform_2.tscn
+res://assets/tsns_file/wood_platform_3.tscn
+res://scripts/player_control.gd
+res://assets/tsns_file/преп2.tscn
+res://assets/tsns_file/преп1.tscn
+res://assets/tsns_file/вода2.tscn
+res://Levels/room_2.tscn
