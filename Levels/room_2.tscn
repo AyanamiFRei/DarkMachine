@@ -1,10 +1,21 @@
-[gd_scene load_steps=6 format=3 uid="uid://csui1gphrhqir"]
+[gd_scene load_steps=10 format=3 uid="uid://csui1gphrhqir"]
 
 [ext_resource type="PackedScene" uid="uid://kn4wsb104i3e" path="res://assets/tsns_file/wood_platform_3.tscn" id="1_vo448"]
 [ext_resource type="PackedScene" uid="uid://bonymuv70rr7" path="res://assets/tsns_file/wood_platform_1.tscn" id="2_3xrr2"]
 [ext_resource type="PackedScene" uid="uid://cw86i1wgw62jl" path="res://assets/scenes/player/player.tscn" id="3_3xrr2"]
-[ext_resource type="ArrayMesh" uid="uid://0ry524khoiee" path="res://assets/gltf_file/mesh/AP1_poor стена.res" id="4_us7r2"]
-[ext_resource type="ArrayMesh" uid="uid://b5spf4kxiplt2" path="res://assets/gltf_file/mesh/AP1_трубы1.res" id="5_axfqd"]
+[ext_resource type="ArrayMesh" uid="uid://d0q2sc0rwpal8" path="res://assets/gltf_file/mesh/AP1_poor стена.res" id="4_us7r2"]
+[ext_resource type="ArrayMesh" uid="uid://c6j5bnlc57soq" path="res://assets/gltf_file/mesh/AP1_трубы1.res" id="5_axfqd"]
+[ext_resource type="Texture2D" uid="uid://geq2ujq6hi1s" path="res://assets/gltf_file/texture/NightEnvironmentHDRI007_4K_HDR.exr" id="6_n7yqm"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_xholh"]
+panorama = ExtResource("6_n7yqm")
+
+[sub_resource type="Sky" id="Sky_mkyqi"]
+sky_material = SubResource("PanoramaSkyMaterial_xholh")
+
+[sub_resource type="Environment" id="Environment_ucims"]
+background_mode = 2
+sky = SubResource("Sky_mkyqi")
 
 [node name="room_2" type="Node3D"]
 transform = Transform3D(-5, 0, -4.371139e-07, 0, 5, 0, 4.371139e-07, 0, -5, 0, 0, 0)
@@ -130,3 +141,6 @@ mesh = ExtResource("4_us7r2")
 [node name="Ap1Трубы1" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1.92, 0, 2.899119e-07, 0, 5, 0, -2.899119e-07, 0, -1.92, 0.3999999, 0.2, 1.2)
 mesh = ExtResource("5_axfqd")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_ucims")

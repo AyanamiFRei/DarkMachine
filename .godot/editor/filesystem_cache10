@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1772829904
+::res://::1772895279
 dmg_area.gd::GDScript::6578189888322195910::1772362162::0::1::::<>Node3D<><>0<>0<><>::
 dmg_area.tscn::PackedScene::6335852568548762408::1772829899::0::1::::<><><>0<>0<><>::uid://c0yr3dj314n3s::::res://dmg_area.gd<>uid://b8a5w5jcm1u2v::::res://icon.svg
 door.gd::GDScript::1315212056365553597::1772826756::0::1::::<>Node3D<><>0<>0<><>::
@@ -13,9 +13,9 @@ ingame_button.tscn::PackedScene::4570831485311025017::1772362162::0::1::::<><><>
 ingame_interface.tscn::PackedScene::459682475107888799::1772362162::0::1::::<><><>0<>0<><>::
 main.tscn::PackedScene::8129266725489336368::1772829899::0::1::::<><><>0<>0<><>::uid://sg1kjjxbj1w4::::res://assets/gltf_file/mesh/test_mesh/bg_0_001.res<>uid://b60xkkhk2ukd5::::res://assets/gltf_file/mesh/test_mesh/bg_1_001.res<>uid://ci64sxpv07a5k::::res://assets/gltf_file/mesh/test_mesh/fg_0_001.res<>uid://cvq2xyiyktkpo::::res://assets/gltf_file/mesh/test_mesh/fg_1_001.res<>uid://bonymuv70rr7::::res://assets/tsns_file/wood_platform_1.tscn<>uid://c72ahr3prbx8e::::res://assets/tsns_file/wood_platform_2.tscn<>uid://bsfsv7ijpye3a::::res://assets/gltf_file/mesh/test_mesh/wooden_plate.res<>uid://dstmwufd2ptu1::::res://assets/gltf_file/mesh/test_mesh/plate_right.res<>uid://cwokke2wcvplh::::res://assets/gltf_file/mesh/test_mesh/flowers_props.res<>uid://chcgb104khnn0::::res://assets/gltf_file/mesh/test_mesh/grass_props.res<>uid://cagkvohp3hw0w::::res://assets/gltf_file/mesh/test_mesh/late_left.res<>uid://hn5n3oiafckr::::res://assets/gltf_file/mesh/test_mesh/bigflowers_props.res<>uid://cw86i1wgw62jl::::res://assets/scenes/player/player.tscn<>uid://dnqjrn6h3xs1a::::res://assets/scenes/enemies/enemy_1.tscn<>uid://gsw5yds152bb::::res://ingame_interface.tscn
 README.md::TextFile::-1::1772362162::0::1::::<><><>0<>0<><>::
-test.tscn::PackedScene::-1::1772829904::0::1::::<><><>0<>0<><>::
+test.tscn::PackedScene::7047461619810153130::1772829904::0::1::::<><><>0<>0<><>::
 ::res://assets/::1772362162
-::res://assets/gltf_file/::1772829916
+::res://assets/gltf_file/::1772832456
 AP1.glb::PackedScene::3433846359586496142::1772832449::1772832456::1::::<><><>0<>0<>5cb21e49c0fa25c21841cd0ffed52698<>res://.godot/imported/AP1.glb-227c3579c30d2d9b846dd2994474fb75.scn::uid://0ry524khoiee::::res://assets/gltf_file/mesh/AP1_poor стена.res<>uid://bom6u8dhrsja7::::res://assets/gltf_file/mesh/AP1_затемнение1.res<>uid://bm2cp4m81klvk::::res://assets/gltf_file/mesh/AP1_линия1.res<>uid://b5spf4kxiplt2::::res://assets/gltf_file/mesh/AP1_трубы1.res<>uid://xlhvohuo1x07::::res://assets/gltf_file/mesh/AP1_шестерни на стене.res<>uid://r50qay1vykm2::::res://assets/gltf_file/mesh/AP1_шестерни светлые1.res<>uid://mjcu2pviqawl::::res://assets/gltf_file/mesh/AP1_шестерни темные1.res<>uid://c37jwyjw0ddib::::res://assets/gltf_file/mesh/AP1_колба1.res<>uid://dr2lgn7v76o3o::::res://assets/gltf_file/mesh/AP1_колба2.res<>uid://bue8k47l0vqc5::::res://assets/gltf_file/mesh/AP1_колба3.res<>uid://djdlt4mjqqmli::::res://assets/gltf_file/mesh/AP1_колба4.res<>uid://cpnj651tivjw5::::res://assets/gltf_file/mesh/AP1_колба5.res<>uid://d30uclwgpamyv::::res://assets/gltf_file/mesh/AP1_колба6.res<>uid://d2h7hn4me7dh7::::res://assets/gltf_file/mesh/AP1_колба7.res<>uid://brf5hcb6r2fmt::::res://assets/gltf_file/mesh/AP1_мини колба1.res<>uid://7gdfh33cywul::::res://assets/gltf_file/mesh/AP1_мини колба2.res<>uid://ceswmodumyvbn::::res://assets/gltf_file/mesh/AP1_мини колба3.res<>uid://cm8xsxr1tb1d::::res://assets/gltf_file/mesh/AP1_мини колба4.res<>uid://bt1mlkcqnxjxb::::res://assets/gltf_file/mesh/AP1_мини колба5.res<>uid://3uq8akp15tof::::res://assets/gltf_file/mesh/AP1_мини колба6.res<>uid://cftvxpo611ttv::::res://assets/gltf_file/mesh/AP1_мини колба7.res<>uid://bmtvprhog8fky::::res://assets/gltf_file/mesh/AP1_преп1.res<>uid://b6qbc0jmqq3oo::::res://assets/gltf_file/mesh/AP1_преп2.res<>uid://bjh42m661htnm::::res://assets/gltf_file/mesh/AP1_вода2.res<>uid://cmvwpeinbfmfi::::res://assets/gltf_file/mesh/AP1_затемнение2.res<>uid://bwd23ohl80whc::::res://assets/gltf_file/mesh/AP1_линия2.res<>uid://vvojj5ql62iq::::res://assets/gltf_file/mesh/AP1_стена2.res<>uid://58a8gpvj621a::::res://assets/gltf_file/mesh/AP1_трубы2.res<>uid://vcegp1vw3im2::::res://assets/gltf_file/mesh/AP1_шестерни светлые2.res<>uid://duh351v3n3srg::::res://assets/gltf_file/mesh/AP1_шестерни темные2.res
 AP1_poor стена.png::CompressedTexture2D::2803254989495517269::1772829899::1772829909::1::::<><><>0<>0<>be74da21c1a193ac9efac42c1eb79e63<>res://.godot/imported/AP1_poor стена.png-2842f89a7ba7c58978f7bc2b1b6aed6b.s3tc.ctex::
 AP1_вода2.png::CompressedTexture2D::6100561415168212012::1772829899::1772829909::1::::<><><>0<>0<>cd2d5571a44c9364e65070f6c4631fca<>res://.godot/imported/AP1_вода2.png-02300c6b34f489cff56057782b24db67.s3tc.ctex::
@@ -48,37 +48,37 @@ AP1_шестерни светлые2.png::CompressedTexture2D::61677125443513288
 AP1_шестерни темные1.png::CompressedTexture2D::263804556097724613::1772829899::1772829911::1::::<><><>0<>0<>e43e4992b8cdf754a7a93f6aadf05363<>res://.godot/imported/AP1_шестерни темные1.png-b92b8dbceb49bf9979f7aa2eb76b4ade.s3tc.ctex::
 AP1_шестерни темные2.png::CompressedTexture2D::8512294556263583325::1772829899::1772829907::1::::<><><>0<>0<>445a66b879d4d6429de8541dcf89c17e<>res://.godot/imported/AP1_шестерни темные2.png-2a718ad7967efc32953cf98ab99354e7.s3tc.ctex::
 assets_for_test.glb::PackedScene::1469958735690054223::1772362162::1772363018::1::::<><><>0<>0<>cea0aa03773e539a115277b59e678a25<>res://.godot/imported/assets_for_test.glb-29d0cb20bee3f9d84390537dfc473750.scn::
-::res://assets/gltf_file/mesh/::1772829915
-AP1_poor стена.res::ArrayMesh::1791327757807417996::1772832455::0::1::::<><><>0<>0<><>::uid://bf66g2lmvp2c4::::res://assets/gltf_file/AP1_poor стена.png
-AP1_вода2.res::ArrayMesh::3034380609552149642::1772832455::0::1::::<><><>0<>0<><>::uid://cs6fmcu70te1a::::res://assets/gltf_file/AP1_вода2.png
-AP1_затемнение1.res::ArrayMesh::3395756708574581636::1772832455::0::1::::<><><>0<>0<><>::uid://d2ysfu53pvgup::::res://assets/gltf_file/AP1_затемнение1.png
-AP1_затемнение2.res::ArrayMesh::5659822207671324986::1772832455::0::1::::<><><>0<>0<><>::uid://ugxp4iy20kad::::res://assets/gltf_file/AP1_затемнение2.png
-AP1_колба1.res::ArrayMesh::6804776093278580165::1772832455::0::1::::<><><>0<>0<><>::uid://hyft366huf7q::::res://assets/gltf_file/AP1_колба1.png
-AP1_колба2.res::ArrayMesh::8408889927204763542::1772832455::0::1::::<><><>0<>0<><>::uid://cwkck8vytk27g::::res://assets/gltf_file/AP1_колба2.png
-AP1_колба3.res::ArrayMesh::3800478159315267642::1772832455::0::1::::<><><>0<>0<><>::uid://blww3415uw4kt::::res://assets/gltf_file/AP1_колба3.png
-AP1_колба4.res::ArrayMesh::7797858136234148558::1772832455::0::1::::<><><>0<>0<><>::uid://bfxm6uf51qgin::::res://assets/gltf_file/AP1_колба4.png
-AP1_колба5.res::ArrayMesh::5853114362045634358::1772832455::0::1::::<><><>0<>0<><>::uid://bs6p34hngup22::::res://assets/gltf_file/AP1_колба5.png
-AP1_колба6.res::ArrayMesh::9177377640274064421::1772832455::0::1::::<><><>0<>0<><>::uid://bkinxouxte2hd::::res://assets/gltf_file/AP1_колба6.png
-AP1_колба7.res::ArrayMesh::9070767646065168922::1772832455::0::1::::<><><>0<>0<><>::uid://cf42l3ckh10sr::::res://assets/gltf_file/AP1_колба7.png
-AP1_линия1.res::ArrayMesh::3284574770852537360::1772832455::0::1::::<><><>0<>0<><>::uid://b8lv5t1bc7xjk::::res://assets/gltf_file/AP1_линия1.png
-AP1_линия2.res::ArrayMesh::3938458484711454400::1772832455::0::1::::<><><>0<>0<><>::uid://btsh0sjk1atan::::res://assets/gltf_file/AP1_линия2.png
-AP1_мини колба1.res::ArrayMesh::3591787032674066631::1772832455::0::1::::<><><>0<>0<><>::uid://c5dts15gcepv7::::res://assets/gltf_file/AP1_мини колба1.png
-AP1_мини колба2.res::ArrayMesh::2258620755083027435::1772832455::0::1::::<><><>0<>0<><>::uid://b2ep55s78y2g2::::res://assets/gltf_file/AP1_мини колба2.png
-AP1_мини колба3.res::ArrayMesh::5092113485766155971::1772832455::0::1::::<><><>0<>0<><>::uid://oanfgkoukj8y::::res://assets/gltf_file/AP1_мини колба3.png
-AP1_мини колба4.res::ArrayMesh::167195936104587923::1772832455::0::1::::<><><>0<>0<><>::uid://bbsbf8qcd7n6u::::res://assets/gltf_file/AP1_мини колба4.png
-AP1_мини колба5.res::ArrayMesh::3774431311135786555::1772832455::0::1::::<><><>0<>0<><>::uid://qadaked4cvc7::::res://assets/gltf_file/AP1_мини колба5.png
-AP1_мини колба6.res::ArrayMesh::2007605596194749085::1772832455::0::1::::<><><>0<>0<><>::uid://bcm3lys3y1kmj::::res://assets/gltf_file/AP1_мини колба6.png
-AP1_мини колба7.res::ArrayMesh::5164325703933209527::1772832455::0::1::::<><><>0<>0<><>::uid://cqsflirmwf32::::res://assets/gltf_file/AP1_мини колба7.png
-AP1_преп1.res::ArrayMesh::3269212732789295080::1772832455::0::1::::<><><>0<>0<><>::uid://dqeh4365vh17c::::res://assets/gltf_file/AP1_преп1.png
-AP1_преп2.res::ArrayMesh::4595370496671899162::1772832455::0::1::::<><><>0<>0<><>::uid://diioslaq6410k::::res://assets/gltf_file/AP1_преп2.png
-AP1_стена2.res::ArrayMesh::1518184279075010100::1772832455::0::1::::<><><>0<>0<><>::uid://dnytgxlbi65er::::res://assets/gltf_file/AP1_стена2.png
-AP1_трубы1.res::ArrayMesh::4530166015949676709::1772832455::0::1::::<><><>0<>0<><>::uid://cdssk1blbls6n::::res://assets/gltf_file/AP1_трубы1.png
-AP1_трубы2.res::ArrayMesh::2173849045503394248::1772832455::0::1::::<><><>0<>0<><>::uid://bshoptr4xppq6::::res://assets/gltf_file/AP1_трубы2.png
-AP1_шестерни на стене.res::ArrayMesh::1637514826659769918::1772832455::0::1::::<><><>0<>0<><>::uid://b4cnv4rvcn3gi::::res://assets/gltf_file/AP1_шестерни на стене.png
-AP1_шестерни светлые1.res::ArrayMesh::1256688210275629099::1772832455::0::1::::<><><>0<>0<><>::uid://dlyu5ld51h8b5::::res://assets/gltf_file/AP1_шестерни светлые1.png
-AP1_шестерни светлые2.res::ArrayMesh::1478348883641115315::1772832455::0::1::::<><><>0<>0<><>::uid://ct4xlbd2rymu7::::res://assets/gltf_file/AP1_шестерни светлые2.png
-AP1_шестерни темные1.res::ArrayMesh::861004115574541783::1772832455::0::1::::<><><>0<>0<><>::uid://d01272n23f7b::::res://assets/gltf_file/AP1_шестерни темные1.png
-AP1_шестерни темные2.res::ArrayMesh::8579244617071659776::1772832455::0::1::::<><><>0<>0<><>::uid://dtjoiok2rs0o4::::res://assets/gltf_file/AP1_шестерни темные2.png
+::res://assets/gltf_file/mesh/::1772832455
+AP1_poor стена.res::ArrayMesh::8948684833659254095::1772832455::0::1::::<><><>0<>0<><>::uid://bf66g2lmvp2c4::::res://assets/gltf_file/AP1_poor стена.png
+AP1_вода2.res::ArrayMesh::7356493770762226816::1772832455::0::1::::<><><>0<>0<><>::uid://cs6fmcu70te1a::::res://assets/gltf_file/AP1_вода2.png
+AP1_затемнение1.res::ArrayMesh::4511896064144215835::1772832455::0::1::::<><><>0<>0<><>::uid://d2ysfu53pvgup::::res://assets/gltf_file/AP1_затемнение1.png
+AP1_затемнение2.res::ArrayMesh::5949011336312334582::1772832455::0::1::::<><><>0<>0<><>::uid://ugxp4iy20kad::::res://assets/gltf_file/AP1_затемнение2.png
+AP1_колба1.res::ArrayMesh::2414797858231322297::1772832455::0::1::::<><><>0<>0<><>::uid://hyft366huf7q::::res://assets/gltf_file/AP1_колба1.png
+AP1_колба2.res::ArrayMesh::8151471057201153026::1772832455::0::1::::<><><>0<>0<><>::uid://cwkck8vytk27g::::res://assets/gltf_file/AP1_колба2.png
+AP1_колба3.res::ArrayMesh::5617032413816454905::1772832455::0::1::::<><><>0<>0<><>::uid://blww3415uw4kt::::res://assets/gltf_file/AP1_колба3.png
+AP1_колба4.res::ArrayMesh::6255709730307057622::1772832455::0::1::::<><><>0<>0<><>::uid://bfxm6uf51qgin::::res://assets/gltf_file/AP1_колба4.png
+AP1_колба5.res::ArrayMesh::3996052326716455008::1772832455::0::1::::<><><>0<>0<><>::uid://bs6p34hngup22::::res://assets/gltf_file/AP1_колба5.png
+AP1_колба6.res::ArrayMesh::4198580755033246190::1772832455::0::1::::<><><>0<>0<><>::uid://bkinxouxte2hd::::res://assets/gltf_file/AP1_колба6.png
+AP1_колба7.res::ArrayMesh::3793725420639151550::1772832455::0::1::::<><><>0<>0<><>::uid://cf42l3ckh10sr::::res://assets/gltf_file/AP1_колба7.png
+AP1_линия1.res::ArrayMesh::5772107416147295829::1772832455::0::1::::<><><>0<>0<><>::uid://b8lv5t1bc7xjk::::res://assets/gltf_file/AP1_линия1.png
+AP1_линия2.res::ArrayMesh::4927511803836836613::1772832455::0::1::::<><><>0<>0<><>::uid://btsh0sjk1atan::::res://assets/gltf_file/AP1_линия2.png
+AP1_мини колба1.res::ArrayMesh::680219045659439112::1772832455::0::1::::<><><>0<>0<><>::uid://c5dts15gcepv7::::res://assets/gltf_file/AP1_мини колба1.png
+AP1_мини колба2.res::ArrayMesh::2041335965860963594::1772832455::0::1::::<><><>0<>0<><>::uid://b2ep55s78y2g2::::res://assets/gltf_file/AP1_мини колба2.png
+AP1_мини колба3.res::ArrayMesh::4367430611598066115::1772832455::0::1::::<><><>0<>0<><>::uid://oanfgkoukj8y::::res://assets/gltf_file/AP1_мини колба3.png
+AP1_мини колба4.res::ArrayMesh::7297486795847973268::1772832455::0::1::::<><><>0<>0<><>::uid://bbsbf8qcd7n6u::::res://assets/gltf_file/AP1_мини колба4.png
+AP1_мини колба5.res::ArrayMesh::1503691268556248849::1772832455::0::1::::<><><>0<>0<><>::uid://qadaked4cvc7::::res://assets/gltf_file/AP1_мини колба5.png
+AP1_мини колба6.res::ArrayMesh::8191485305900689806::1772832455::0::1::::<><><>0<>0<><>::uid://bcm3lys3y1kmj::::res://assets/gltf_file/AP1_мини колба6.png
+AP1_мини колба7.res::ArrayMesh::392019377343982357::1772832455::0::1::::<><><>0<>0<><>::uid://cqsflirmwf32::::res://assets/gltf_file/AP1_мини колба7.png
+AP1_преп1.res::ArrayMesh::2983366005956946311::1772832455::0::1::::<><><>0<>0<><>::uid://dqeh4365vh17c::::res://assets/gltf_file/AP1_преп1.png
+AP1_преп2.res::ArrayMesh::233033197497435246::1772832455::0::1::::<><><>0<>0<><>::uid://diioslaq6410k::::res://assets/gltf_file/AP1_преп2.png
+AP1_стена2.res::ArrayMesh::5015160502390204372::1772832455::0::1::::<><><>0<>0<><>::uid://dnytgxlbi65er::::res://assets/gltf_file/AP1_стена2.png
+AP1_трубы1.res::ArrayMesh::6969098915457283220::1772832455::0::1::::<><><>0<>0<><>::uid://cdssk1blbls6n::::res://assets/gltf_file/AP1_трубы1.png
+AP1_трубы2.res::ArrayMesh::2036441397828898261::1772832455::0::1::::<><><>0<>0<><>::uid://bshoptr4xppq6::::res://assets/gltf_file/AP1_трубы2.png
+AP1_шестерни на стене.res::ArrayMesh::4992409448619318417::1772832455::0::1::::<><><>0<>0<><>::uid://b4cnv4rvcn3gi::::res://assets/gltf_file/AP1_шестерни на стене.png
+AP1_шестерни светлые1.res::ArrayMesh::2526101336404491581::1772832455::0::1::::<><><>0<>0<><>::uid://dlyu5ld51h8b5::::res://assets/gltf_file/AP1_шестерни светлые1.png
+AP1_шестерни светлые2.res::ArrayMesh::1325778705619752293::1772832455::0::1::::<><><>0<>0<><>::uid://ct4xlbd2rymu7::::res://assets/gltf_file/AP1_шестерни светлые2.png
+AP1_шестерни темные1.res::ArrayMesh::6165749742627420934::1772832455::0::1::::<><><>0<>0<><>::uid://d01272n23f7b::::res://assets/gltf_file/AP1_шестерни темные1.png
+AP1_шестерни темные2.res::ArrayMesh::2063143434592572896::1772832455::0::1::::<><><>0<>0<><>::uid://dtjoiok2rs0o4::::res://assets/gltf_file/AP1_шестерни темные2.png
 ::res://assets/gltf_file/mesh/test_mesh/::1772829899
 bg_0_001.res::ArrayMesh::1277382439420045289::1772829899::0::1::::<><><>0<>0<><>::uid://bcofbcaioqvrx::::res://assets/gltf_file/texture/bg_0.tres
 bg_1_001.res::ArrayMesh::4615299165634642428::1772829899::0::1::::<><><>0<>0<><>::uid://b8u8wwecm3alk::::res://assets/gltf_file/texture/bg_1.tres
@@ -96,7 +96,8 @@ wooden_plate.res::ArrayMesh::3661273859025334680::1772829899::0::1::::<><><>0<>0
 wood_slab_left.res::ArrayMesh::5119479314389769162::1772829899::0::1::::<><><>0<>0<><>::uid://sp7nmbvkudc1::::res://assets/gltf_file/texture/wood_slab_left.tres
 wood_slab_middle.res::ArrayMesh::3106260354780670481::1772829899::0::1::::<><><>0<>0<><>::uid://bkeajrl7l83nf::::res://assets/gltf_file/texture/wood_slab_middle.tres
 wood_slab_right.res::ArrayMesh::4893395507093268526::1772829899::0::1::::<><><>0<>0<><>::uid://c77dnn2bl42sg::::res://assets/gltf_file/texture/wood_slab_right.tres
-::res://assets/gltf_file/texture/::1772829899
+::res://assets/gltf_file/texture/::1772896386
+NightEnvironmentHDRI007_4K_HDR.exr::CompressedTexture2D::430411326303050126::1772896385::1772896410::1::::<><><>0<>0<>2ec7f036013736e02d31c56ab1d5ce63<>res://.godot/imported/NightEnvironmentHDRI007_4K_HDR.exr-975a38ce97c96d817375d7f85bcf385e.bptc.ctex::
 ::res://assets/gltf_file/texture/test_materials/::1772829899
 arrow_plate_left.tres::StandardMaterial3D::104058920086555645::1772829899::0::1::::<><><>0<>0<><>::uid://bs37hv80c3fth::::res://assets/png/assets_for_test_arrow_plate_left.png
 arrow_plate_right.tres::StandardMaterial3D::2886083889770528126::1772829899::0::1::::<><><>0<>0<><>::uid://rcdv26mp5a0x::::res://assets/png/assets_for_test_arrow_plate_right.png
@@ -153,14 +154,14 @@ player.tscn::PackedScene::6387018306329949505::1772831754::0::1::::<><><>0<>0<><
 Run.png::CompressedTexture2D::2426581049205665065::1772362162::1772363017::1::::<><><>0<>0<>b23aa3c863faa6c3c82b438ff3a85510<>res://.godot/imported/Run.png-3c8220a3753c1596db689f6b39f3590d.s3tc.ctex::
 Take Hit.png::CompressedTexture2D::6621069874298720270::1772362162::1772363017::1::::<><><>0<>0<>7178921d1706f137d5e6ac22a1081c03<>res://.godot/imported/Take Hit.png-816a5c8309c72482b9db15ab603b1ff6.s3tc.ctex::
 ::res://assets/tsns_file/::1772830540
-вода2.tscn::PackedScene::5713329765386602538::1772830540::0::1::::<><><>0<>0<><>::uid://bjh42m661htnm::::res://assets/gltf_file/mesh/AP1_вода2.res
-преп1.tscn::PackedScene::8946753614709849660::1772830491::0::1::::<><><>0<>0<><>::uid://bmtvprhog8fky::::res://assets/gltf_file/mesh/AP1_преп1.res
-преп2.tscn::PackedScene::5957870481719722373::1772830070::0::1::::<><><>0<>0<><>::uid://b6qbc0jmqq3oo::::res://assets/gltf_file/mesh/AP1_преп2.res
 wood_platform_1.tscn::PackedScene::99922974328750350::1772829899::0::1::::<><><>0<>0<><>::uid://cbynrkqnvd8mk::::res://assets/gltf_file/mesh/test_mesh/wood_slab_right.res
 wood_platform_2.tscn::PackedScene::7074636000575978810::1772829899::0::1::::<><><>0<>0<><>::uid://bkixwijgjoaib::::res://assets/gltf_file/mesh/test_mesh/wood_slab_middle.res
 wood_platform_3.tscn::PackedScene::730526375620222548::1772829899::0::1::::<><><>0<>0<><>::uid://bkixwijgjoaib::::res://assets/gltf_file/mesh/test_mesh/wood_slab_middle.res
-::res://Levels/::1772832246
-room_1.tscn::PackedScene::8665623644659084112::1772832246::0::1::::<><><>0<>0<><>::uid://bonymuv70rr7::::res://assets/tsns_file/wood_platform_1.tscn<>uid://c72ahr3prbx8e::::res://assets/tsns_file/wood_platform_2.tscn<>uid://kn4wsb104i3e::::res://assets/tsns_file/wood_platform_3.tscn<>uid://cw86i1wgw62jl::::res://assets/scenes/player/player.tscn<>uid://1w4j06345h57::::res://Door.tscn<>uid://d0p4yv8micb4o::::res://assets/tsns_file/преп1.tscn<>uid://cq5biymxmcpa0::::res://assets/tsns_file/преп2.tscn<>uid://cnntyayucf8gs::::res://assets/tsns_file/вода2.tscn<>uid://vvojj5ql62iq::::res://assets/gltf_file/mesh/AP1_стена2.res<>uid://58a8gpvj621a::::res://assets/gltf_file/mesh/AP1_трубы2.res
+вода2.tscn::PackedScene::5713329765386602538::1772830540::0::1::::<><><>0<>0<><>::uid://bjh42m661htnm::::res://assets/gltf_file/mesh/AP1_вода2.res
+преп1.tscn::PackedScene::8946753614709849660::1772830491::0::1::::<><><>0<>0<><>::uid://bmtvprhog8fky::::res://assets/gltf_file/mesh/AP1_преп1.res
+преп2.tscn::PackedScene::5957870481719722373::1772830070::0::1::::<><><>0<>0<><>::uid://b6qbc0jmqq3oo::::res://assets/gltf_file/mesh/AP1_преп2.res
+::res://Levels/::1772895956
+room_1.tscn::PackedScene::8665623644659084112::1772895956::0::1::::<><><>0<>0<><>::uid://bonymuv70rr7::::res://assets/tsns_file/wood_platform_1.tscn<>uid://c72ahr3prbx8e::::res://assets/tsns_file/wood_platform_2.tscn<>uid://kn4wsb104i3e::::res://assets/tsns_file/wood_platform_3.tscn<>uid://cw86i1wgw62jl::::res://assets/scenes/player/player.tscn<>uid://1w4j06345h57::::res://Door.tscn<>uid://d0p4yv8micb4o::::res://assets/tsns_file/преп1.tscn<>uid://cq5biymxmcpa0::::res://assets/tsns_file/преп2.tscn<>uid://cnntyayucf8gs::::res://assets/tsns_file/вода2.tscn<>uid://cdpm7wvle3tyy::::res://assets/gltf_file/mesh/AP1_стена2.res<>uid://4ap5lq0f1dlt::::res://assets/gltf_file/mesh/AP1_трубы2.res<>uid://coib1bkegsf7r::::res://assets/gltf_file/mesh/AP1_линия1.res<>uid://ban0mrkw8tby4::::res://assets/gltf_file/mesh/AP1_колба1.res<>uid://doevsjgxickde::::res://assets/gltf_file/mesh/AP1_колба2.res<>uid://cma6x55pjcpb2::::res://assets/gltf_file/mesh/AP1_колба3.res<>uid://cvekvi3kh6o1c::::res://assets/gltf_file/mesh/AP1_колба4.res<>uid://bw6ynscu8xf1q::::res://assets/gltf_file/mesh/AP1_колба5.res<>uid://b023anorvy8fq::::res://assets/gltf_file/mesh/AP1_колба6.res<>uid://bubydrslo8fc5::::res://assets/gltf_file/mesh/AP1_колба7.res
 room_2.tscn::PackedScene::6078060613188866249::1772832100::0::1::::<><><>0<>0<><>::uid://kn4wsb104i3e::::res://assets/tsns_file/wood_platform_3.tscn<>uid://bonymuv70rr7::::res://assets/tsns_file/wood_platform_1.tscn<>uid://cw86i1wgw62jl::::res://assets/scenes/player/player.tscn<>uid://0ry524khoiee::::res://assets/gltf_file/mesh/AP1_poor стена.res<>uid://b5spf4kxiplt2::::res://assets/gltf_file/mesh/AP1_трубы1.res
 ::res://scripts/::1772829899
 player.tscn::PackedScene::752431938083217681::1772362162::0::1::::<><><>0<>0<><>::uid://dbkgfsduk8sn4::::res://scripts/player.gd<>uid://b8a5w5jcm1u2v::::res://icon.svg

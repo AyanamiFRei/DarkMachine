@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://dvpxs5abai31m"]
+[gd_scene load_steps=23 format=3 uid="uid://dvpxs5abai31m"]
 
 [ext_resource type="PackedScene" uid="uid://bonymuv70rr7" path="res://assets/tsns_file/wood_platform_1.tscn" id="1_ifc7k"]
 [ext_resource type="PackedScene" uid="uid://c72ahr3prbx8e" path="res://assets/tsns_file/wood_platform_2.tscn" id="2_qgwng"]
@@ -8,16 +8,27 @@
 [ext_resource type="PackedScene" uid="uid://d0p4yv8micb4o" path="res://assets/tsns_file/преп1.tscn" id="6_xrg4l"]
 [ext_resource type="PackedScene" uid="uid://cq5biymxmcpa0" path="res://assets/tsns_file/преп2.tscn" id="7_6dw1e"]
 [ext_resource type="PackedScene" uid="uid://cnntyayucf8gs" path="res://assets/tsns_file/вода2.tscn" id="8_6dw1e"]
-[ext_resource type="ArrayMesh" uid="uid://vvojj5ql62iq" path="res://assets/gltf_file/mesh/AP1_стена2.res" id="9_8wjio"]
-[ext_resource type="ArrayMesh" uid="uid://58a8gpvj621a" path="res://assets/gltf_file/mesh/AP1_трубы2.res" id="10_yspgk"]
-[ext_resource type="ArrayMesh" uid="uid://bm2cp4m81klvk" path="res://assets/gltf_file/mesh/AP1_линия1.res" id="11_x3kjx"]
-[ext_resource type="ArrayMesh" uid="uid://c37jwyjw0ddib" path="res://assets/gltf_file/mesh/AP1_колба1.res" id="12_30q35"]
-[ext_resource type="ArrayMesh" uid="uid://dr2lgn7v76o3o" path="res://assets/gltf_file/mesh/AP1_колба2.res" id="13_edy3v"]
-[ext_resource type="ArrayMesh" uid="uid://bue8k47l0vqc5" path="res://assets/gltf_file/mesh/AP1_колба3.res" id="14_mkyqi"]
-[ext_resource type="ArrayMesh" uid="uid://djdlt4mjqqmli" path="res://assets/gltf_file/mesh/AP1_колба4.res" id="15_3yjcg"]
-[ext_resource type="ArrayMesh" uid="uid://cpnj651tivjw5" path="res://assets/gltf_file/mesh/AP1_колба5.res" id="16_so5h4"]
-[ext_resource type="ArrayMesh" uid="uid://d30uclwgpamyv" path="res://assets/gltf_file/mesh/AP1_колба6.res" id="17_t268c"]
-[ext_resource type="ArrayMesh" uid="uid://d2h7hn4me7dh7" path="res://assets/gltf_file/mesh/AP1_колба7.res" id="18_824h2"]
+[ext_resource type="ArrayMesh" uid="uid://cdpm7wvle3tyy" path="res://assets/gltf_file/mesh/AP1_стена2.res" id="9_8wjio"]
+[ext_resource type="Texture2D" uid="uid://geq2ujq6hi1s" path="res://assets/gltf_file/texture/NightEnvironmentHDRI007_4K_HDR.exr" id="9_30q35"]
+[ext_resource type="ArrayMesh" uid="uid://4ap5lq0f1dlt" path="res://assets/gltf_file/mesh/AP1_трубы2.res" id="10_yspgk"]
+[ext_resource type="ArrayMesh" uid="uid://coib1bkegsf7r" path="res://assets/gltf_file/mesh/AP1_линия1.res" id="11_x3kjx"]
+[ext_resource type="ArrayMesh" uid="uid://ban0mrkw8tby4" path="res://assets/gltf_file/mesh/AP1_колба1.res" id="12_30q35"]
+[ext_resource type="ArrayMesh" uid="uid://doevsjgxickde" path="res://assets/gltf_file/mesh/AP1_колба2.res" id="13_edy3v"]
+[ext_resource type="ArrayMesh" uid="uid://cma6x55pjcpb2" path="res://assets/gltf_file/mesh/AP1_колба3.res" id="14_mkyqi"]
+[ext_resource type="ArrayMesh" uid="uid://cvekvi3kh6o1c" path="res://assets/gltf_file/mesh/AP1_колба4.res" id="15_3yjcg"]
+[ext_resource type="ArrayMesh" uid="uid://bw6ynscu8xf1q" path="res://assets/gltf_file/mesh/AP1_колба5.res" id="16_so5h4"]
+[ext_resource type="ArrayMesh" uid="uid://b023anorvy8fq" path="res://assets/gltf_file/mesh/AP1_колба6.res" id="17_t268c"]
+[ext_resource type="ArrayMesh" uid="uid://bubydrslo8fc5" path="res://assets/gltf_file/mesh/AP1_колба7.res" id="18_824h2"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_edy3v"]
+panorama = ExtResource("9_30q35")
+
+[sub_resource type="Sky" id="Sky_30q35"]
+sky_material = SubResource("PanoramaSkyMaterial_edy3v")
+
+[sub_resource type="Environment" id="Environment_3yjcg"]
+background_mode = 2
+sky = SubResource("Sky_30q35")
 
 [node name="room_1" type="Node3D"]
 transform = Transform3D(-5, 0, -7.54979e-07, 0, 5, 0, 7.54979e-07, 0, -5, 0, 0, 0)
@@ -96,6 +107,27 @@ transform = Transform3D(1.3113417e-08, 0, 0.1, 0, 0.1, 0, -0.1, 0, 1.3113417e-08
 [node name="wood_platform_26" parent="platform" instance=ExtResource("3_wj57p")]
 transform = Transform3D(1.3113417e-08, 0, 0.1, 0, 0.1, 0, -0.1, 0, 1.3113417e-08, 1.3835902, 0, 0.02284008)
 
+[node name="StaticBody3D" parent="platform" instance=ExtResource("6_xrg4l")]
+transform = Transform3D(-0.2, 0, 3.019916e-08, 0, 0.2, 0, -3.019916e-08, 0, -0.2, -5.138681e-09, 0.10675051, 0.03403194)
+
+[node name="преп2" parent="platform" instance=ExtResource("7_6dw1e")]
+transform = Transform3D(-0.2, 0, 3.019916e-08, 0, 0.2, 0, -3.019916e-08, 0, -0.2, 0.38833687, 0.12884605, 0.023931576)
+
+[node name="преп3" parent="platform" instance=ExtResource("7_6dw1e")]
+transform = Transform3D(-0.2, 0, 3.019916e-08, 0, 0.2, 0, -3.019916e-08, 0, -0.2, 0.7904768, 0.3201029, 0.023931582)
+
+[node name="преп4" parent="platform" instance=ExtResource("7_6dw1e")]
+transform = Transform3D(-0.2, 0, 3.019916e-08, 0, 0.2, 0, -3.019916e-08, 0, -0.2, 0.98779297, 0.3201029, 0.023931611)
+
+[node name="преп5" parent="platform" instance=ExtResource("7_6dw1e")]
+transform = Transform3D(-0.2, 0, 3.019916e-08, 0, 0.2, 0, -3.019916e-08, 0, -0.2, 0.7904768, 0.48635188, 0.023931582)
+
+[node name="преп6" parent="platform" instance=ExtResource("7_6dw1e")]
+transform = Transform3D(-0.2, 0, 3.019916e-08, 0, 0.2, 0, -3.019916e-08, 0, -0.2, 0.98779297, 0.48635188, 0.023931611)
+
+[node name="вода2" parent="platform" instance=ExtResource("8_6dw1e")]
+transform = Transform3D(-0.4, 0, 6.039832e-08, 0, 0.4, 0, -6.039832e-08, 0, -0.4, 1.9396464, 0.055752516, -0.08056089)
+
 [node name="trash2" type="CSGBox3D" parent="."]
 transform = Transform3D(0.13461526, 0, 0, 0, 0.11356157, 0, 0, 0, 1, 2.4622955, 0.117093205, -0.015477814)
 size = Vector3(1, 1.079834, 0.01586914)
@@ -110,26 +142,8 @@ size = Vector3(1, 1.079834, 0.01586914)
 [node name="player" parent="." instance=ExtResource("4_qgwng")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1374978, 0.3479296, 0.028010966)
 
-[node name="StaticBody3D" parent="." instance=ExtResource("6_xrg4l")]
-transform = Transform3D(-0.2, 0, 3.019916e-08, 0, 0.2, 0, -3.019916e-08, 0, -0.2, -5.1386806e-09, 0.10675051, 0.03403194)
-
-[node name="преп2" parent="." instance=ExtResource("7_6dw1e")]
-transform = Transform3D(-0.2, 0, 3.019916e-08, 0, 0.2, 0, -3.019916e-08, 0, -0.2, 0.38833684, 0.12884605, 0.023931576)
-
-[node name="преп3" parent="." instance=ExtResource("7_6dw1e")]
-transform = Transform3D(-0.2, 0, 3.019916e-08, 0, 0.2, 0, -3.019916e-08, 0, -0.2, 0.7904768, 0.32010287, 0.023931582)
-
-[node name="преп4" parent="." instance=ExtResource("7_6dw1e")]
-transform = Transform3D(-0.2, 0, 3.019916e-08, 0, 0.2, 0, -3.019916e-08, 0, -0.2, 0.98779297, 0.32010287, 0.023931611)
-
-[node name="преп5" parent="." instance=ExtResource("7_6dw1e")]
-transform = Transform3D(-0.2, 0, 3.019916e-08, 0, 0.2, 0, -3.019916e-08, 0, -0.2, 0.7904768, 0.48635188, 0.023931582)
-
-[node name="преп6" parent="." instance=ExtResource("7_6dw1e")]
-transform = Transform3D(-0.2, 0, 3.019916e-08, 0, 0.2, 0, -3.019916e-08, 0, -0.2, 0.98779297, 0.48635188, 0.023931611)
-
-[node name="вода2" parent="." instance=ExtResource("8_6dw1e")]
-transform = Transform3D(-0.4, 0, 6.039832e-08, 0, 0.4, 0, -6.039832e-08, 0, -0.4, 1.9396464, 0.055752516, -0.08056089)
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_3yjcg")
 
 [node name="envirement" type="Node3D" parent="."]
 transform = Transform3D(9.82, 0, -2.3412704e-06, 0, 9.82, 0, 2.3412704e-06, 0, 9.82, 0.36842975, 0.16644956, 4.9530764)
@@ -143,140 +157,514 @@ transform = Transform3D(1, 0, -2.1316282e-14, 0, 1, 0, 2.1316282e-14, 0, 1, -0.0
 mesh = ExtResource("10_yspgk")
 skeleton = NodePath("../..")
 
+[node name="Ap1Линия1" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.17566192, 0, -5.723792e-08, 0, 0.17566192, 0, 5.723792e-08, 0, -0.17566192, 0.061846003, -0.00084319524, -0.38200668)
+mesh = ExtResource("11_x3kjx")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба1" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.2559458, 0.034410983, -0.40328732)
+mesh = ExtResource("12_30q35")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба2" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.29091346, 0.0359499, -0.3936459)
+mesh = ExtResource("12_30q35")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба3" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.2258593, 0.033965074, -0.39038885)
+mesh = ExtResource("13_edy3v")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба4" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.18577759, 0.031465843, -0.38604122)
+mesh = ExtResource("14_mkyqi")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба5" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.13281249, 0.034351185, -0.40012258)
+mesh = ExtResource("15_3yjcg")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба6" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.07978519, 0.0343913, -0.38982126)
+mesh = ExtResource("16_so5h4")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба7" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.017487898, 0.033876874, -0.3950419)
+mesh = ExtResource("17_t268c")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба8" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.036894374, 0.03841959, -0.38982123)
+mesh = ExtResource("18_824h2")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба9" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.10982509, 0.03198432, -0.3893423)
+mesh = ExtResource("12_30q35")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба10" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.07485739, 0.0359499, -0.393545)
+mesh = ExtResource("12_30q35")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба11" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.13991159, 0.029163046, -0.3903888)
+mesh = ExtResource("13_edy3v")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба12" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.17999332, 0.03469821, -0.39038882)
+mesh = ExtResource("14_mkyqi")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба13" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.23295844, 0.03413503, -0.39384243)
+mesh = ExtResource("15_3yjcg")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба14" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.2859857, 0.0343913, -0.38982123)
+mesh = ExtResource("16_so5h4")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба15" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.34828305, 0.033876874, -0.3927823)
+mesh = ExtResource("17_t268c")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба16" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.40266532, 0.0348, -0.3898212)
+mesh = ExtResource("18_824h2")
+skeleton = NodePath("../..")
+
+[node name="Ap1Линия3" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.17566192, 0, -5.723792e-08, 0, 0.17566192, 0, 5.723792e-08, 0, -0.17566192, 0.06184601, 0.042199463, -0.30309516)
+mesh = ExtResource("11_x3kjx")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба33" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.2559458, 0.07745364, -0.32437578)
+mesh = ExtResource("12_30q35")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба34" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.29091352, 0.07899255, -0.3147344)
+mesh = ExtResource("12_30q35")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба35" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.22585933, 0.077007726, -0.3114773)
+mesh = ExtResource("13_edy3v")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба36" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.1857776, 0.0745085, -0.30712974)
+mesh = ExtResource("14_mkyqi")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба37" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.13281249, 0.077393845, -0.3212111)
+mesh = ExtResource("15_3yjcg")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба38" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.0797852, 0.07743396, -0.31090975)
+mesh = ExtResource("16_so5h4")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба39" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.017487902, 0.076919526, -0.31613037)
+mesh = ExtResource("17_t268c")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба40" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.036894366, 0.08146225, -0.31090972)
+mesh = ExtResource("18_824h2")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба41" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.10982508, 0.07502698, -0.31043077)
+mesh = ExtResource("12_30q35")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба42" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.074857384, 0.07899255, -0.3146335)
+mesh = ExtResource("12_30q35")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба43" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.13991159, 0.07220571, -0.31147724)
+mesh = ExtResource("13_edy3v")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба44" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.1799933, 0.07774087, -0.31147727)
+mesh = ExtResource("14_mkyqi")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба45" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.23295844, 0.07717769, -0.31493092)
+mesh = ExtResource("15_3yjcg")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба46" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.2859857, 0.07743396, -0.31090975)
+mesh = ExtResource("16_so5h4")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба47" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.348283, 0.076919526, -0.3138708)
+mesh = ExtResource("17_t268c")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба48" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.40266532, 0.07784266, -0.3109097)
+mesh = ExtResource("18_824h2")
+skeleton = NodePath("../..")
+
+[node name="Ap1Линия4" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.17566192, 0, -5.723792e-08, 0, 0.17566192, 0, 5.723792e-08, 0, -0.17566192, 0.061846025, -0.052255273, -0.19249946)
+mesh = ExtResource("11_x3kjx")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба49" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.2559458, -0.017001092, -0.21378008)
+mesh = ExtResource("12_30q35")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба50" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.29091352, -0.015462181, -0.2041387)
+mesh = ExtResource("12_30q35")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба51" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.22585936, -0.017447008, -0.2008816)
+mesh = ExtResource("13_edy3v")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба52" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.18577762, -0.019946227, -0.19653404)
+mesh = ExtResource("14_mkyqi")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба53" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.1328125, -0.017060885, -0.21061537)
+mesh = ExtResource("15_3yjcg")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба54" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.07978521, -0.017020777, -0.20031402)
+mesh = ExtResource("16_so5h4")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба55" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.017487913, -0.017535208, -0.20553464)
+mesh = ExtResource("17_t268c")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба56" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.03689436, -0.0129924845, -0.20031402)
+mesh = ExtResource("18_824h2")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба57" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.10982507, -0.019427747, -0.19983503)
+mesh = ExtResource("12_30q35")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба58" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.07485738, -0.015462181, -0.20403776)
+mesh = ExtResource("12_30q35")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба59" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.13991158, -0.02224903, -0.20088154)
+mesh = ExtResource("13_edy3v")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба60" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.1799933, -0.016713863, -0.20088157)
+mesh = ExtResource("14_mkyqi")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба61" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.23295844, -0.017277045, -0.20433518)
+mesh = ExtResource("15_3yjcg")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба62" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.2859857, -0.017020777, -0.20031402)
+mesh = ExtResource("16_so5h4")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба63" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.348283, -0.017535208, -0.20327508)
+mesh = ExtResource("17_t268c")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба64" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.40266532, -0.016612077, -0.20031399)
+mesh = ExtResource("18_824h2")
+skeleton = NodePath("../..")
+
+[node name="Ap1Линия5" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.17566192, 0, -5.723792e-08, 0, 0.17566192, 0, 5.723792e-08, 0, -0.17566192, 0.061846025, 0.051764496, -0.19369507)
+mesh = ExtResource("11_x3kjx")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба65" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.2559458, 0.087018676, -0.21497568)
+mesh = ExtResource("12_30q35")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба66" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.29091352, 0.08855759, -0.2053343)
+mesh = ExtResource("12_30q35")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба67" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.22585936, 0.08657277, -0.20207721)
+mesh = ExtResource("13_edy3v")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба68" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.18577763, 0.08407354, -0.19772968)
+mesh = ExtResource("14_mkyqi")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба69" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.1328125, 0.086958885, -0.21181098)
+mesh = ExtResource("15_3yjcg")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба70" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.07978522, 0.08699899, -0.20150962)
+mesh = ExtResource("16_so5h4")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба71" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.017487913, 0.08648456, -0.20673025)
+mesh = ExtResource("17_t268c")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба72" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.03689436, 0.09102729, -0.20150962)
+mesh = ExtResource("18_824h2")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба73" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.10982507, 0.08459202, -0.20103064)
+mesh = ExtResource("12_30q35")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба74" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.07485738, 0.08855759, -0.20523337)
+mesh = ExtResource("12_30q35")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба75" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.13991156, 0.08177074, -0.20207718)
+mesh = ExtResource("13_edy3v")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба76" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.1799933, 0.0873059, -0.20207721)
+mesh = ExtResource("14_mkyqi")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба77" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.23295844, 0.08674272, -0.20553079)
+mesh = ExtResource("15_3yjcg")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба78" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.2859857, 0.08699899, -0.20150962)
+mesh = ExtResource("16_so5h4")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба79" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.348283, 0.08648456, -0.20447072)
+mesh = ExtResource("17_t268c")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба80" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.40266538, 0.08740769, -0.20150962)
+mesh = ExtResource("18_824h2")
+skeleton = NodePath("../..")
+
+[node name="Ap1Линия6" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.17566192, 0, -5.723792e-08, 0, 0.17566192, 0, 5.723792e-08, 0, -0.17566192, 0.081573896, -0.05046183, -0.34434444)
+mesh = ExtResource("11_x3kjx")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба81" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.2756737, -0.015207642, -0.36562502)
+mesh = ExtResource("12_30q35")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба82" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.3106414, -0.013668719, -0.35598367)
+mesh = ExtResource("12_30q35")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба83" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.24558721, -0.015653547, -0.35272658)
+mesh = ExtResource("13_edy3v")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба84" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.20550554, -0.018152775, -0.34837905)
+mesh = ExtResource("14_mkyqi")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба85" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.15254039, -0.0152674345, -0.36246032)
+mesh = ExtResource("15_3yjcg")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба86" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.0995131, -0.015227325, -0.35215896)
+mesh = ExtResource("16_so5h4")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба87" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.03721579, -0.015741756, -0.3573796)
+mesh = ExtResource("17_t268c")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба88" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.017166484, -0.011199023, -0.35215896)
+mesh = ExtResource("18_824h2")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба89" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.09009719, -0.017634295, -0.35167998)
+mesh = ExtResource("12_30q35")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба90" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.055129506, -0.013668719, -0.3558827)
+mesh = ExtResource("12_30q35")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба91" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.12018368, -0.02045558, -0.35272655)
+mesh = ExtResource("13_edy3v")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба92" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.16026542, -0.014920412, -0.35272652)
+mesh = ExtResource("14_mkyqi")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба93" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.21323055, -0.015483595, -0.35618016)
+mesh = ExtResource("15_3yjcg")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба94" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.26625782, -0.015227325, -0.352159)
+mesh = ExtResource("16_so5h4")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба95" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.32855517, -0.015741756, -0.35512006)
+mesh = ExtResource("17_t268c")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба96" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.38293755, -0.014818625, -0.35215896)
+mesh = ExtResource("18_824h2")
+skeleton = NodePath("../..")
+
+[node name="Ap1Линия2" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.17566192, 0, -6.8405285e-08, 0, 0.17566192, 0, 6.8405285e-08, 0, -0.17566192, 0.0830285, -0.025380861, -0.25012487)
+mesh = ExtResource("11_x3kjx")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба17" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.27712834, 0.009873321, -0.27140555)
+mesh = ExtResource("12_30q35")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба18" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.312096, 0.011412237, -0.26176414)
+mesh = ExtResource("12_30q35")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба19" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.24704187, 0.009427415, -0.25850707)
+mesh = ExtResource("13_edy3v")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба20" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.20696013, 0.0069281813, -0.2541594)
+mesh = ExtResource("14_mkyqi")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба21" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.15399493, 0.009813521, -0.26824075)
+mesh = ExtResource("15_3yjcg")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба22" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.100967675, 0.009853641, -0.2579394)
+mesh = ExtResource("16_so5h4")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба23" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, 0.03867039, 0.00933921, -0.26316017)
+mesh = ExtResource("17_t268c")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба24" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.015711894, 0.013881924, -0.25793946)
+mesh = ExtResource("18_824h2")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба25" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.08864261, 0.007446656, -0.25746053)
+mesh = ExtResource("12_30q35")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба26" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.053674918, 0.011412237, -0.2616632)
+mesh = ExtResource("12_30q35")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба27" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.11872913, 0.004625382, -0.258507)
+mesh = ExtResource("13_edy3v")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба28" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.15881087, 0.010160549, -0.258507)
+mesh = ExtResource("14_mkyqi")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба29" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.21177599, 0.009597367, -0.26196063)
+mesh = ExtResource("15_3yjcg")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба30" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.2648033, 0.009853641, -0.2579394)
+mesh = ExtResource("16_so5h4")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба31" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.32710052, 0.00933921, -0.26090053)
+mesh = ExtResource("17_t268c")
+skeleton = NodePath("../..")
+
+[node name="Ap1Колба32" type="MeshInstance3D" parent="envirement"]
+transform = Transform3D(-0.0509165, 0, -4.451262e-09, 0, 0.0509165, 0, 4.451262e-09, 0, -0.0509165, -0.38148284, 0.01026234, -0.25793937)
+mesh = ExtResource("18_824h2")
+skeleton = NodePath("../..")
+
 [node name="light" type="Node3D" parent="."]
-
-[node name="Ap1Линия1" type="MeshInstance3D" parent="."]
-transform = Transform3D(-1.725, 0, -1.5080428e-07, 0, 1.725, 0, 1.5080428e-07, 0, -1.725, 0.9757584, 0.15816937, 1.2017711)
-mesh = ExtResource("11_x3kjx")
-
-[node name="Ap1Колба1" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.5, 0, 7.54979e-08, 0, 0.5, 0, -7.54979e-08, 0, -0.5, 2.8818185, 0.5043654, 0.9927956)
-mesh = ExtResource("12_30q35")
-
-[node name="Ap1Колба2" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.5, 0, 7.54979e-08, 0, 0.5, 0, -7.54979e-08, 0, -0.5, 3.225201, 0.51947755, 1.0874742)
-mesh = ExtResource("12_30q35")
-
-[node name="Ap1Колба3" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.5, 0, 7.54979e-08, 0, 0.5, 0, -7.54979e-08, 0, -0.5, 2.586369, 0.49998662, 1.1194584)
-mesh = ExtResource("13_edy3v")
-
-[node name="Ap1Колба4" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.5, 0, 7.54979e-08, 0, 0.5, 0, -7.54979e-08, 0, -0.5, 2.1927664, 0.47544414, 1.162152)
-mesh = ExtResource("14_mkyqi")
-
-[node name="Ap1Колба5" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.5, 0, 7.54979e-08, 0, 0.5, 0, -7.54979e-08, 0, -0.5, 1.6726493, 0.50377816, 1.0238732)
-mesh = ExtResource("15_3yjcg")
-
-[node name="Ap1Колба6" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.5, 0, 7.54979e-08, 0, 0.5, 0, -7.54979e-08, 0, -0.5, 1.1519212, 0.5041721, 1.125032)
-mesh = ExtResource("16_so5h4")
-
-[node name="Ap1Колба7" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.5, 0, 7.54979e-08, 0, 0.5, 0, -7.54979e-08, 0, -0.5, 0.54016185, 0.49912044, 1.0737649)
-mesh = ExtResource("17_t268c")
-
-[node name="Ap1Колба8" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.5, 0, 7.54979e-08, 0, 0.5, 0, -7.54979e-08, 0, -0.5, 0.0061279507, 0.5437299, 1.1250318)
-mesh = ExtResource("18_824h2")
-
-[node name="Ap1Колба9" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.5, 0, 7.54979e-08, 0, 0.5, 0, -7.54979e-08, 0, -0.5, -0.71005166, 0.48053557, 1.1297346)
-mesh = ExtResource("12_30q35")
-
-[node name="Ap1Колба10" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.5, 0, 7.54979e-08, 0, 0.5, 0, -7.54979e-08, 0, -0.5, -0.36666888, 0.51947755, 1.0884644)
-mesh = ExtResource("12_30q35")
-
-[node name="Ap1Колба11" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.5, 0, 7.54979e-08, 0, 0.5, 0, -7.54979e-08, 0, -0.5, -1.0055012, 0.45283064, 1.1194582)
-mesh = ExtResource("13_edy3v")
-
-[node name="Ap1Колба12" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.5, 0, 7.54979e-08, 0, 0.5, 0, -7.54979e-08, 0, -0.5, -1.3991036, 0.50718594, 1.1194578)
-mesh = ExtResource("14_mkyqi")
-
-[node name="Ap1Колба13" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.5, 0, 7.54979e-08, 0, 0.5, 0, -7.54979e-08, 0, -0.5, -1.919221, 0.5016555, 1.0855433)
-mesh = ExtResource("15_3yjcg")
-
-[node name="Ap1Колба14" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.5, 0, 7.54979e-08, 0, 0.5, 0, -7.54979e-08, 0, -0.5, -2.439949, 0.5041721, 1.1250315)
-mesh = ExtResource("16_so5h4")
-
-[node name="Ap1Колба15" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.5, 0, 7.54979e-08, 0, 0.5, 0, -7.54979e-08, 0, -0.5, -3.0517085, 0.49912044, 1.0959535)
-mesh = ExtResource("17_t268c")
-
-[node name="Ap1Колба16" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.5, 0, 7.54979e-08, 0, 0.5, 0, -7.54979e-08, 0, -0.5, -3.5857425, 0.50818557, 1.1250312)
-mesh = ExtResource("18_824h2")
-
-[node name="Ap1Линия2" type="MeshInstance3D" parent="."]
-transform = Transform3D(-1.725, 0, -2.6046777e-07, 0, 1.725, 0, 2.6046777e-07, 0, -1.725, 1.1837702, -0.08279047, 2.4968503)
-mesh = ExtResource("11_x3kjx")
-
-[node name="Ap1Колба17" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.5, 0, 7.54979e-08, 0, 0.5, 0, -7.54979e-08, 0, -0.5, 3.0898306, 0.26340556, 2.2878747)
-mesh = ExtResource("12_30q35")
-
-[node name="Ap1Колба18" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.5, 0, 7.54979e-08, 0, 0.5, 0, -7.54979e-08, 0, -0.5, 3.4332125, 0.27851772, 2.3825533)
-mesh = ExtResource("12_30q35")
-
-[node name="Ap1Колба19" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.5, 0, 7.54979e-08, 0, 0.5, 0, -7.54979e-08, 0, -0.5, 2.7943814, 0.25902677, 2.4145377)
-mesh = ExtResource("13_edy3v")
-
-[node name="Ap1Колба20" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.5, 0, 7.54979e-08, 0, 0.5, 0, -7.54979e-08, 0, -0.5, 2.4007788, 0.2344843, 2.4572318)
-mesh = ExtResource("14_mkyqi")
-
-[node name="Ap1Колба21" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.5, 0, 7.54979e-08, 0, 0.5, 0, -7.54979e-08, 0, -0.5, 1.8806607, 0.26281834, 2.3189526)
-mesh = ExtResource("15_3yjcg")
-
-[node name="Ap1Колба22" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.5, 0, 7.54979e-08, 0, 0.5, 0, -7.54979e-08, 0, -0.5, 1.3599329, 0.2632123, 2.4201117)
-mesh = ExtResource("16_so5h4")
-
-[node name="Ap1Колба23" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.5, 0, 7.54979e-08, 0, 0.5, 0, -7.54979e-08, 0, -0.5, 0.74817353, 0.2581606, 2.3688438)
-mesh = ExtResource("17_t268c")
-
-[node name="Ap1Колба24" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.5, 0, 7.54979e-08, 0, 0.5, 0, -7.54979e-08, 0, -0.5, 0.21413955, 0.30277005, 2.420111)
-mesh = ExtResource("18_824h2")
-
-[node name="Ap1Колба25" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.5, 0, 7.54979e-08, 0, 0.5, 0, -7.54979e-08, 0, -0.5, -0.5020401, 0.23957573, 2.424814)
-mesh = ExtResource("12_30q35")
-
-[node name="Ap1Колба26" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.5, 0, 7.54979e-08, 0, 0.5, 0, -7.54979e-08, 0, -0.5, -0.1586573, 0.27851772, 2.3835437)
-mesh = ExtResource("12_30q35")
-
-[node name="Ap1Колба27" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.5, 0, 7.54979e-08, 0, 0.5, 0, -7.54979e-08, 0, -0.5, -0.7974897, 0.21187082, 2.4145372)
-mesh = ExtResource("13_edy3v")
-
-[node name="Ap1Колба28" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.5, 0, 7.54979e-08, 0, 0.5, 0, -7.54979e-08, 0, -0.5, -1.1910923, 0.26622614, 2.414537)
-mesh = ExtResource("14_mkyqi")
-
-[node name="Ap1Колба29" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.5, 0, 7.54979e-08, 0, 0.5, 0, -7.54979e-08, 0, -0.5, -1.7112097, 0.2606957, 2.3806224)
-mesh = ExtResource("15_3yjcg")
-
-[node name="Ap1Колба30" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.5, 0, 7.54979e-08, 0, 0.5, 0, -7.54979e-08, 0, -0.5, -2.2319376, 0.2632123, 2.420111)
-mesh = ExtResource("16_so5h4")
-
-[node name="Ap1Колба31" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.5, 0, 7.54979e-08, 0, 0.5, 0, -7.54979e-08, 0, -0.5, -2.8436968, 0.2581606, 2.3910325)
-mesh = ExtResource("17_t268c")
-
-[node name="Ap1Колба32" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.5, 0, 7.54979e-08, 0, 0.5, 0, -7.54979e-08, 0, -0.5, -3.377731, 0.26722574, 2.420111)
-mesh = ExtResource("18_824h2")
