@@ -459,7 +459,7 @@ transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.01625998, -0.0070271
 shape = SubResource("CapsuleShape3D_ratu8")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(-0.9999891, -0.0039179977, -0.0025417642, -0.003940619, 0.99995214, 0.008956819, 0.0025065495, 0.0089667365, -0.9999567, 0.0014789775, 0.05142823, -0.7165011)
+transform = Transform3D(-0.9999891, -0.0039179977, -0.0025417642, -0.003940619, 0.99995214, 0.008956818, 0.0025065495, 0.0089667365, -0.9999567, 0.0014789775, 0.05142823, -0.5752596)
 current = true
 fov = 71.6
 near = 0.002
@@ -473,7 +473,7 @@ unique_name_in_owner = true
 wait_time = 0.2
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
-transform = Transform3D(-0.29999784, 0, 0.0011414477, 0, 0.3, 0, -0.0011414477, 0, -0.29999784, 0, 0, 0)
+transform = Transform3D(0.29999784, 0, -0.0011414739, 0, 0.29999998, 0, 0.0011414739, 0, 0.29999784, 0, 0, 0)
 sprite_frames = SubResource("SpriteFrames_u84jc")
 animation = &"attack1"
 

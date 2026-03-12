@@ -1,15 +1,15 @@
+DirectionalLight3D
+DirectionalLight3D      - Matches the "sun" keyword.
+Node3D
+CSGBox3D
 WorldEnvironment
 SpotLight3D
-Node3D
 CollisionShape3D
 StaticBody3D
 Sprite3D
-CSGBox3D
 Area3D
-CSGBox3D
 Sprite3D
 Timer
 ProgressBar
 CanvasLayer
 Label3D
-MeshInstance3D
