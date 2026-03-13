@@ -10,6 +10,10 @@
 [ext_resource type="Texture2D" uid="uid://dsd86esalwy8d" path="res://assets/scenes/player/Jump.png" id="7_b3dqe"]
 [ext_resource type="Texture2D" uid="uid://c1lkb227j8p47" path="res://assets/scenes/player/Take Hit.png" id="9_u84jc"]
 [ext_resource type="PackedScene" uid="uid://b6ee6rlhyqluf" path="res://ingame_button.tscn" id="10_hyvrl"]
+[ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="11_b3dqe"]
+[ext_resource type="Script" uid="uid://cs31oorh2t2pc" path="res://assets/scenes/player/camera_3d.gd" id="11_u84jc"]
+[ext_resource type="Script" uid="uid://csjccrhj5wnx7" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd" id="12_u84jc"]
+[ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="13_q3ml6"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_oqktf"]
 size = Vector3(0.08, 0.1, 0.05)
@@ -443,7 +447,11 @@ animations = [{
 radius = 0.14367676
 height = 0.28735352
 
+[sub_resource type="Resource" id="Resource_oet4l"]
+script = ExtResource("13_q3ml6")
+
 [node name="player" type="CharacterBody3D" unique_id=2121593867 node_paths=PackedStringArray("menu_button") groups=["player"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.013298154)
 collision_layer = 2
 collision_mask = 5
 script = ExtResource("1_oqktf")
@@ -457,12 +465,6 @@ mesh = SubResource("BoxMesh_oqktf")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=753475068]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.01625998, -0.007027136, 0.0020158812)
 shape = SubResource("CapsuleShape3D_ratu8")
-
-[node name="Camera3D" type="Camera3D" parent="." unique_id=2104661788]
-transform = Transform3D(0.9999939, 0.0034906515, 0, -0.0034905185, 0.99995583, 0.008726535, 3.0461293e-05, -0.008726482, 0.9999619, 0.0014789775, 0.05142823, 1.0043745)
-current = true
-fov = 71.6
-near = 0.002
 
 [node name="CoyoteTimer" type="Timer" parent="." unique_id=2074633047]
 unique_name_in_owner = true
@@ -481,17 +483,47 @@ animation = &"attack1"
 transform = Transform3D(-0.8641343, 0, -0.50326127, 0, 1, 0, 0.50326127, 0, -0.8641343, 0.18122414, 0, -0.2574647)
 
 [node name="Area_dmg" type="Area3D" parent="." unique_id=1873010940]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.009414464, 0, 0)
 collision_layer = 8
 collision_mask = 4
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area_dmg" unique_id=1949355892]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.18319032, -0.017944336, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17971781, -0.017944336, 0)
+shape = SubResource("CapsuleShape3D_hyvrl")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Area_dmg" unique_id=122487528]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19801676, -0.035888672, 0)
 shape = SubResource("CapsuleShape3D_hyvrl")
 
 [node name="Attack_CoolDown_Timer" type="Timer" parent="." unique_id=83591606]
 wait_time = 0.1
 
 [node name="heal_timer" type="Timer" parent="." unique_id=514206984]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=885788540]
+physics_interpolation_mode = 1
+transform = Transform3D(1, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, 0, 0, 4.848298)
+top_level = true
+script = ExtResource("11_u84jc")
+
+[node name="PhantomCameraHost" type="Node" parent="Camera3D" unique_id=1514317733]
+process_priority = 300
+process_physics_priority = 300
+script = ExtResource("11_b3dqe")
+
+[node name="PhantomCamera3D" type="Node3D" parent="." unique_id=958345925 node_paths=PackedStringArray("follow_target")]
+transform = Transform3D(1, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, 0, 0, 4.848298)
+top_level = true
+script = ExtResource("12_u84jc")
+follow_mode = 2
+follow_target = NodePath("..")
+tween_resource = SubResource("Resource_oet4l")
+tween_on_load = false
+follow_offset = Vector3(0, 0, 4.835)
+follow_damping = true
+follow_damping_value = Vector3(0.5, 0.5, 0.5)
+align_transform_with_view = Callable()
+align_position_with_view = Callable()
 
 [connection signal="timeout" from="CoyoteTimer" to="." method="_on_coyote_timer_timeout"]
 [connection signal="timeout" from="JumpBufferTimer" to="." method="_on_jump_buffer_timer_timeout"]

@@ -15,7 +15,7 @@ radius = 0.099609375
 height = 0.30680847
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_aiiog"]
-size = Vector3(0.4492035, 0.45108795, 0.46900177)
+size = Vector3(0.27721786, 0.45108795, 0.46900177)
 
 [node name="enemy1" type="CharacterBody3D" unique_id=761590198]
 collision_layer = 4
@@ -34,7 +34,7 @@ collision_layer = 4
 collision_mask = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1479054806]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.025505066, 0.04517746, 0.0024604797)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.009454727, 0.04517746, 0.0024604797)
 shape = SubResource("BoxShape3D_aiiog")
 
 [node name="dmg_timer" type="Timer" parent="." unique_id=442051754]

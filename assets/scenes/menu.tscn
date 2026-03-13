@@ -80,7 +80,7 @@ transform = Transform3D(0.8705175, -0.48335785, 0.092543095, 0.48335785, 0.80437
 shape = SubResource("BoxShape3D_ugn2o")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=258690795]
-transform = Transform3D(-0.023489945, 0, 0.9997241, 0, 1, 0, -0.9997241, 0, -0.023489945, 2.4625406, 1.0574675, 0)
+transform = Transform3D(-0.023489945, 0, 0.9997241, 0, 1, 0, -0.9997241, 0, -0.023489945, 2.8247523, 1.0574675, 0)
 fov = 100.0
 
 [node name="Node3D" type="Node3D" parent="." unique_id=224457207]

@@ -175,7 +175,7 @@ func start_game():
 	get_tree().change_scene_to_file("res://Levels/room_1.tscn")
 func start_sbox():
 	print("ЗАПУСК ИГРЫ!")
-	get_tree().change_scene_to_file("res://main.tscn")
+	get_tree().change_scene_to_file("res://sandbox.tscn")
 func quit_game():
 	print("ВЫХОД ИЗ ИГРЫ!")
 	get_tree().quit()

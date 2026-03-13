@@ -49,7 +49,7 @@ func _on_area_3d_body_exited(body: Node3D) -> void:
 		
 func take_dmg(dmg):
 	hp -= dmg
-	var mesh = $MeshInstance3D
+	#var mesh = $MeshInstance3D
 	#if mesh:
 		#
 	if hp <=0:

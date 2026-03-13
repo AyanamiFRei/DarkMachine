@@ -31,13 +31,15 @@ var jump_buffer_active := false
 
 func _ready() -> void:
 	anim.play("idle")
+	$Area_dmg/CollisionShape3D.disabled = false
+	$Area_dmg/CollisionShape3D2.disabled = false
 	
 
 func _physics_process(delta: float) -> void:
 	
 	if death or not can_move:
 		return
-	position.z = clamp(position.y, 0, 0)
+	#position.z = clamp(position.y, 0, 0) ЭТА ХУЙНЯ НЕПРАВИЛЬНО РАБОТАЕТ
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
@@ -122,8 +124,22 @@ func update_animation():
 	
 	if velocity.x > 0:
 		anim.flip_h = true
+		$Area_dmg/CollisionShape3D.disabled = false
+		$Area_dmg/CollisionShape3D2.disabled = true
+		
 	elif velocity.x < 0:
 		anim.flip_h = false
+		$Area_dmg/CollisionShape3D.disabled = true
+		$Area_dmg/CollisionShape3D2.disabled = false
+		
+		
+	#if anim.flip_h == true:
+		#$Area_dmg/CollisionShape3D2.visible = false
+		#$Area_dmg/CollisionShape3D.visible = true
+	#
+	#if anim.flip_h == false:
+		#$Area_dmg/CollisionShape3D2.visible = true
+		#$Area_dmg/CollisionShape3D.visible = false
 		
 	# Проверяем состояние в воздухе в первую очередь
 	if not is_on_floor():
