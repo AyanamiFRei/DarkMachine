@@ -451,7 +451,7 @@ height = 0.28735352
 script = ExtResource("13_q3ml6")
 
 [node name="player" type="CharacterBody3D" unique_id=2121593867 node_paths=PackedStringArray("menu_button") groups=["player"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.013298154)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0.013298154)
 collision_layer = 2
 collision_mask = 5
 script = ExtResource("1_oqktf")
@@ -502,7 +502,7 @@ wait_time = 0.1
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=885788540]
 physics_interpolation_mode = 1
-transform = Transform3D(1, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, 0, 0, 4.848298)
+transform = Transform3D(-1, 0, -8.7422755e-08, 0, 0.99999976, 0, 8.742278e-08, 0, -0.99999976, 0, 0, 4.848298)
 top_level = true
 script = ExtResource("11_u84jc")
 
@@ -512,7 +512,7 @@ process_physics_priority = 300
 script = ExtResource("11_b3dqe")
 
 [node name="PhantomCamera3D" type="Node3D" parent="." unique_id=958345925 node_paths=PackedStringArray("follow_target")]
-transform = Transform3D(1, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, 0, 0, 4.848298)
+transform = Transform3D(-1, 0, -8.7422755e-08, 0, 0.99999976, 0, 8.742278e-08, 0, -0.99999976, 0, 0, 4.848298)
 top_level = true
 script = ExtResource("12_u84jc")
 follow_mode = 2
