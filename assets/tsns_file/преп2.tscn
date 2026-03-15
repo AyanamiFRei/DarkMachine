@@ -1,7 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://cq5biymxmcpa0"]
+[gd_scene load_steps=3 format=3 uid="uid://cq5biymxmcpa0"]
 
 [ext_resource type="ArrayMesh" uid="uid://dk5a1i3qqer3" path="res://assets/gltf_file/mesh/AP1_преп2.res" id="1_ww3cs"]
-[ext_resource type="ArrayMesh" uid="uid://birfuqgs3yk6b" path="res://assets/gltf_file/mesh/AP1_преп1.res" id="2_05s1s"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ww3cs"]
 size = Vector3(0.9345703, 1.690094, 0.3310547)
@@ -15,7 +14,3 @@ shape = SubResource("BoxShape3D_ww3cs")
 [node name="Ap1Преп2" type="MeshInstance3D" parent="."]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 mesh = ExtResource("1_ww3cs")
-
-[node name="Ap1Преп1" type="MeshInstance3D" parent="."]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, -0.067418635)
-mesh = ExtResource("2_05s1s")
