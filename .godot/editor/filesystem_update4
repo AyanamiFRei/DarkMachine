@@ -1,7 +1,3 @@
 res://assets/scenes/player/player.tscn
 res://addons/phantom_camera/themes/theme.tres
-res://Levels/room_1.tscn
 res://assets/scenes/player/camera_3d.gd
-res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd
-res://main.tscn
-res://assets/scenes/menu.tscn

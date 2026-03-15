@@ -1,0 +1,64 @@
+[gd_scene load_steps=11 format=3 uid="uid://blhupxhdf8pg1"]
+
+[ext_resource type="ArrayMesh" uid="uid://coib1bkegsf7r" path="res://assets/gltf_file/mesh/AP1_линия1.res" id="1_rob77"]
+[ext_resource type="ArrayMesh" uid="uid://ban0mrkw8tby4" path="res://assets/gltf_file/mesh/AP1_колба1.res" id="2_c2eyu"]
+[ext_resource type="ArrayMesh" uid="uid://doevsjgxickde" path="res://assets/gltf_file/mesh/AP1_колба2.res" id="3_7ylu2"]
+[ext_resource type="ArrayMesh" uid="uid://cma6x55pjcpb2" path="res://assets/gltf_file/mesh/AP1_колба3.res" id="4_3b6xh"]
+[ext_resource type="ArrayMesh" uid="uid://cvekvi3kh6o1c" path="res://assets/gltf_file/mesh/AP1_колба4.res" id="5_7t3c3"]
+[ext_resource type="ArrayMesh" uid="uid://bw6ynscu8xf1q" path="res://assets/gltf_file/mesh/AP1_колба5.res" id="6_6ulaq"]
+[ext_resource type="ArrayMesh" uid="uid://b023anorvy8fq" path="res://assets/gltf_file/mesh/AP1_колба6.res" id="7_8qodo"]
+[ext_resource type="ArrayMesh" uid="uid://bubydrslo8fc5" path="res://assets/gltf_file/mesh/AP1_колба7.res" id="8_put4x"]
+[ext_resource type="ArrayMesh" uid="uid://ct3y86bev51io" path="res://assets/gltf_file/mesh/AP1_шестерни темные1.res" id="9_7ylu2"]
+[ext_resource type="ArrayMesh" uid="uid://bb8wrxb27togb" path="res://assets/gltf_file/mesh/AP1_шестерни светлые1.res" id="10_3b6xh"]
+
+[node name="capsula_big" type="Node3D"]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, 0, 0, 0)
+
+[node name="Ap1Линия1" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.7192204, 0, 0, 0, 2.3671353, 0, 0, 0, 2.3671353, 0, 1.0968975, 0.040763438)
+mesh = ExtResource("1_rob77")
+skeleton = NodePath("../Ap1ШестерниСветлые1")
+
+[node name="Ap1Колба1" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0114274, 1.3832068, 0.0003824234)
+mesh = ExtResource("2_c2eyu")
+
+[node name="Ap1Колба2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0277243, 1.3832068, 0.0003824234)
+mesh = ExtResource("3_7ylu2")
+
+[node name="Ap1Колба3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9872687, 1.3832068, 0.0003824234)
+mesh = ExtResource("4_3b6xh")
+
+[node name="Ap1Колба4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.027964115, 1.3832068, 0.0003824234)
+mesh = ExtResource("5_7t3c3")
+
+[node name="Ap1Колба5" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0211043, 1.3832068, 0.0003824234)
+mesh = ExtResource("6_6ulaq")
+
+[node name="Ap1Колба6" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0078554, 1.3832068, 0.0003824234)
+mesh = ExtResource("7_8qodo")
+
+[node name="Ap1Колба7" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.005094, 1.3832068, 0.0003824234)
+mesh = ExtResource("8_put4x")
+
+[node name="Ap1ШестерниТемные1" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8571429, 1.4285719, 5.1089714e-08)
+mesh = ExtResource("9_7ylu2")
+
+[node name="Ap1ШестерниСветлые1" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8571429, 1.428572, -0.03843982)
+mesh = ExtResource("10_3b6xh")
+
+[node name="Ap1ШестерниТемные2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8571429, 1.4285722, 5.1089714e-08)
+mesh = ExtResource("9_7ylu2")
+
+[node name="Ap1ШестерниСветлые2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8571429, 1.4285723, -0.03843982)
+mesh = ExtResource("10_3b6xh")
