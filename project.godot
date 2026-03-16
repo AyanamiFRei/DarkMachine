@@ -78,6 +78,7 @@ heal={
 3d_physics/layer_3="Противник"
 3d_physics/layer_4="Атака"
 3d_physics/layer_5="Дверь"
+3d_physics/layer_6="Чекпоинт"
 
 [rendering]
 

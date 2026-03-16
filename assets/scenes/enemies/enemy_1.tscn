@@ -18,6 +18,7 @@ height = 0.30680847
 size = Vector3(0.27721786, 0.45108795, 0.46900177)
 
 [node name="enemy1" type="CharacterBody3D" unique_id=761590198]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 collision_layer = 4
 collision_mask = 11
 script = ExtResource("1_aiiog")

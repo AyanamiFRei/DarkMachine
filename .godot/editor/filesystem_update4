@@ -1,3 +1,7 @@
-res://assets/scenes/player/player.tscn
+res://assets/scenes/enemies/enemy_1.tscn
 res://addons/phantom_camera/themes/theme.tres
-res://assets/scenes/player/camera_3d.gd
+res://Levels/room_2.tscn
+res://scripts/player_control.gd
+res://door.gd
+res://door1.gd
+res://Levels/room_1.tscn

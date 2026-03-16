@@ -12,10 +12,10 @@ var attack = false
 var attack_animations = ["attack1", "attack2"]
 
 var type = "player"
-
-var speed = 4
+var spawn_point=Vector3.ZERO
+var speed = 3
 var speed_mult = 1
-var jump_velocity = 6
+var jump_velocity = 5
 
 var health = 100
 var dmg = 50
@@ -111,6 +111,9 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, speed * speed_mult)
 		# wsvelocity.z = move_toward(velocity.z, 0, SPEED)
 	update_animation()
+	if death== true:
+		spawn_player(spawn_point)
+	
 	move_and_slide()
 	
 func update_animation():
@@ -174,9 +177,9 @@ func _on_death():
 	await anim.animation_finished
 	
 	# Исчезаем
-	self.queue_free()
+	#self.queue_free()
 	
-	get_tree().change_scene_to_file("res://assets/scenes/menu.tscn")
+	#get_tree().change_scene_to_file("res://assets/scenes/menu.tscn")
 
 
 func take_dmg(dmg):
@@ -223,7 +226,25 @@ func _on_attack_cool_down_timer_timeout() -> void:
 	can_attack = true
 
 
+	
 func _on_heal_timer_timeout() -> void:
 	if progress_bar.size() > 0:
 		progress_bar[0].value += 30
 	health += 30
+	
+func set_checkpoint(pos):
+	spawn_point=pos
+func spawn_player(spawn_point):
+	await anim.animation_finished
+	if spawn_point== Vector3.ZERO:
+		get_tree().reload_current_scene()
+		return
+	global_position=spawn_point
+	death=false
+	can_move=true
+	health=100
+	
+func _on_checkpoint_body_entered(body: Node3D) -> void:
+	
+	set_checkpoint(global_position)
+	print("chechkpoint_entered")
