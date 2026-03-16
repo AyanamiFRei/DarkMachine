@@ -1,8 +1,9 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1773650549
+::res://::1773661982
 dmg_area.gd::GDScript::6578189888322195910::1773619011::0::1::::<>Node3D<><>0<>0<><>::
 dmg_area.tscn::PackedScene::6335852568548762408::1773619011::0::1::::<><><>0<>0<><>::uid://c0yr3dj314n3s::::res://dmg_area.gd<>uid://b8a5w5jcm1u2v::::res://icon.svg
-door.gd::GDScript::1315212056365553597::1773619011::0::1::::<>Node3D<><>0<>0<><>::
+door1.gd::GDScript::4906388535648835642::1773652742::0::1::::<>Node3D<><>0<>0<><>::
+door.gd::GDScript::1315212056365553597::1773651253::0::1::::<>Node3D<><>0<>0<><>::
 Door.tscn::PackedScene::1872104472398352952::1773619010::0::1::::<><><>0<>0<><>::uid://s0dl6cwd42ld::::res://door.gd
 export_presets.cfg::TextFile::-1::1773619011::0::1::::<><><>0<>0<><>::
 funding.yml::TextFile::-1::1773619011::0::1::::<><><>0<>0<><>::
@@ -157,11 +158,11 @@ phantom_camera_noise_2d.gd::GDScript::7746826514819894941::1773619011::0::1::::P
 phantom_camera_noise_3d.gd::GDScript::6187281538235516492::1773619011::0::1::::PhantomCameraNoise3D<>Resource<>res://addons/phantom_camera/icons/phantom_camera_noise_resource.svg<>0<>1<><>::
 tween_director_resource.gd::GDScript::1896363988711138719::1773619011::0::1::::TweenDirectorResource<>Resource<>res://addons/phantom_camera/icons/phantom_camera_tween_director_resource.svg<>0<>1<><>::
 tween_resource.gd::GDScript::2358266811638875852::1773619011::0::1::::PhantomCameraTween<>Resource<>res://addons/phantom_camera/icons/phantom_camera_tween.svg<>0<>0<><>::
-::res://addons/phantom_camera/themes/::1773647886
+::res://addons/phantom_camera/themes/::1773650714
 button_focus.tres::StyleBoxFlat::1106322926052085743::1773619011::0::1::::<><><>0<>0<><>::
 button_hover.tres::StyleBoxFlat::2151354179275418664::1773619011::0::1::::<><><>0<>0<><>::
 button_normal.tres::StyleBoxFlat::2549607310371774247::1773619011::0::1::::<><><>0<>0<><>::
-theme.tres::Theme::2909626652912860453::1773647886::0::1::::<><><>0<>0<><>::uid://dve7mgsjik4dg::::res://addons/phantom_camera/fonts/Nunito-Regular.ttf<>uid://5weqvkjsfso3::::res://addons/phantom_camera/themes/button_hover.tres<>uid://bclbwo3xrdat0::::res://addons/phantom_camera/themes/button_normal.tres
+theme.tres::Theme::2909626652912860453::1773650714::0::1::::<><><>0<>0<><>::uid://dve7mgsjik4dg::::res://addons/phantom_camera/fonts/Nunito-Regular.ttf<>uid://5weqvkjsfso3::::res://addons/phantom_camera/themes/button_hover.tres<>uid://bclbwo3xrdat0::::res://addons/phantom_camera/themes/button_normal.tres
 ::res://assets/::1773619011
 ::res://assets/gltf_file/::1773619107
 AP1.glb::PackedScene::3433846359586496142::1773619011::1773619107::1::::<><><>0<>0<>26bd12a12cb77aa4d548f4472381bef0<>res://.godot/imported/AP1.glb-227c3579c30d2d9b846dd2994474fb75.scn::uid://d0q2sc0rwpal8::::res://assets/gltf_file/mesh/AP1_poor ╤Б╤В╨╡╨╜╨░.res<>uid://b5juje68588gd::::res://assets/gltf_file/mesh/AP1_╨╖╨░╤В╨╡╨╝╨╜╨╡╨╜╨╕╨╡1.res<>uid://coib1bkegsf7r::::res://assets/gltf_file/mesh/AP1_╨╗╨╕╨╜╨╕╤П1.res<>uid://c6j5bnlc57soq::::res://assets/gltf_file/mesh/AP1_╤В╤А╤Г╨▒╤Л1.res<>uid://cdemiv42qnlvt::::res://assets/gltf_file/mesh/AP1_╤И╨╡╤Б╤В╨╡╤А╨╜╨╕ ╨╜╨░ ╤Б╤В╨╡╨╜╨╡.res<>uid://bb8wrxb27togb::::res://assets/gltf_file/mesh/AP1_╤И╨╡╤Б╤В╨╡╤А╨╜╨╕ ╤Б╨▓╨╡╤В╨╗╤Л╨╡1.res<>uid://ct3y86bev51io::::res://assets/gltf_file/mesh/AP1_╤И╨╡╤Б╤В╨╡╤А╨╜╨╕ ╤В╨╡╨╝╨╜╤Л╨╡1.res<>uid://ban0mrkw8tby4::::res://assets/gltf_file/mesh/AP1_╨║╨╛╨╗╨▒╨░1.res<>uid://doevsjgxickde::::res://assets/gltf_file/mesh/AP1_╨║╨╛╨╗╨▒╨░2.res<>uid://cma6x55pjcpb2::::res://assets/gltf_file/mesh/AP1_╨║╨╛╨╗╨▒╨░3.res<>uid://cvekvi3kh6o1c::::res://assets/gltf_file/mesh/AP1_╨║╨╛╨╗╨▒╨░4.res<>uid://bw6ynscu8xf1q::::res://assets/gltf_file/mesh/AP1_╨║╨╛╨╗╨▒╨░5.res<>uid://b023anorvy8fq::::res://assets/gltf_file/mesh/AP1_╨║╨╛╨╗╨▒╨░6.res<>uid://bubydrslo8fc5::::res://assets/gltf_file/mesh/AP1_╨║╨╛╨╗╨▒╨░7.res<>uid://jxrdxgwhfp1a::::res://assets/gltf_file/mesh/AP1_╨╝╨╕╨╜╨╕ ╨║╨╛╨╗╨▒╨░1.res<>uid://4c3rf6bdxvk1::::res://assets/gltf_file/mesh/AP1_╨╝╨╕╨╜╨╕ ╨║╨╛╨╗╨▒╨░2.res<>uid://b3hu7dmiwtsd4::::res://assets/gltf_file/mesh/AP1_╨╝╨╕╨╜╨╕ ╨║╨╛╨╗╨▒╨░3.res<>uid://db77sn2jo0y2w::::res://assets/gltf_file/mesh/AP1_╨╝╨╕╨╜╨╕ ╨║╨╛╨╗╨▒╨░4.res<>uid://vonttjq2qe5v::::res://assets/gltf_file/mesh/AP1_╨╝╨╕╨╜╨╕ ╨║╨╛╨╗╨▒╨░5.res<>uid://doyatir2yaa03::::res://assets/gltf_file/mesh/AP1_╨╝╨╕╨╜╨╕ ╨║╨╛╨╗╨▒╨░6.res<>uid://ft5rcfrdeoqn::::res://assets/gltf_file/mesh/AP1_╨╝╨╕╨╜╨╕ ╨║╨╛╨╗╨▒╨░7.res<>uid://birfuqgs3yk6b::::res://assets/gltf_file/mesh/AP1_╨┐╤А╨╡╨┐1.res<>uid://dk5a1i3qqer3::::res://assets/gltf_file/mesh/AP1_╨┐╤А╨╡╨┐2.res<>uid://dc2sm3rqgdg6s::::res://assets/gltf_file/mesh/AP1_╨▓╨╛╨┤╨░2.res<>uid://cq00l21an7e51::::res://assets/gltf_file/mesh/AP1_╨╖╨░╤В╨╡╨╝╨╜╨╡╨╜╨╕╨╡2.res<>uid://ccg6nt2t2ypjh::::res://assets/gltf_file/mesh/AP1_╨╗╨╕╨╜╨╕╤П2.res<>uid://cdpm7wvle3tyy::::res://assets/gltf_file/mesh/AP1_╤Б╤В╨╡╨╜╨░2.res<>uid://4ap5lq0f1dlt::::res://assets/gltf_file/mesh/AP1_╤В╤А╤Г╨▒╤Л2.res<>uid://s5hm8dy6h3an::::res://assets/gltf_file/mesh/AP1_╤И╨╡╤Б╤В╨╡╤А╨╜╨╕ ╤Б╨▓╨╡╤В╨╗╤Л╨╡2.res<>uid://4nnw2uts3nci::::res://assets/gltf_file/mesh/AP1_╤И╨╡╤Б╤В╨╡╤А╨╜╨╕ ╤В╨╡╨╝╨╜╤Л╨╡2.res
@@ -365,9 +366,9 @@ photo_2026-02-14_14-25-24.jpg::CompressedTexture2D::4465253627215473773::1773619
 photo_2026-02-16_14-47-03.jpg::CompressedTexture2D::2780071878257665975::1773619011::1773619097::1::::<><><>0<>0<>1e51b715d8672b9190633a5be31293bb<>res://.godot/imported/photo_2026-02-16_14-47-03.jpg-69232a44fb471ede3c7f93780efbc940.s3tc.ctex::
 photo_2026-02-18_23-50-51.jpg::CompressedTexture2D::4982541594840199557::1773619011::1773619097::1::::<><><>0<>0<>219f838e3d454016e3742d5a5197c0a1<>res://.godot/imported/photo_2026-02-18_23-50-51.jpg-b46c85031aecb04c6d7c7b78f6ff1f40.s3tc.ctex::
 photo_2026-02-18_23-51-22.jpg::CompressedTexture2D::2801979977944729064::1773619011::1773619097::1::::<><><>0<>0<>ab65ab184250deb66e24fce1f43eb332<>res://.godot/imported/photo_2026-02-18_23-51-22.jpg-b7f0791c8fd1c9d4d77a65ecb7f62448.s3tc.ctex::
-::res://assets/scenes/enemies/::1773619011
+::res://assets/scenes/enemies/::1773650714
 enemy_1.gd::GDScript::7444852494362370091::1773619011::0::1::::<>CharacterBody3D<><>0<>0<><>::
-enemy_1.tscn::PackedScene::8105324604918841812::1773619011::0::1::::<><><>0<>0<><>::uid://declvrusoujjv::::res://assets/scenes/enemies/enemy_1.gd
+enemy_1.tscn::PackedScene::8105324604918841812::1773650714::0::1::::<><><>0<>0<><>::uid://declvrusoujjv::::res://assets/scenes/enemies/enemy_1.gd
 ::res://assets/scenes/player/::1773649642
 Attack1.png::CompressedTexture2D::2143527474118684524::1773619011::1773619097::1::::<><><>0<>0<>963d9222f12a726910448bd0f4364fc0<>res://.godot/imported/Attack1.png-934e5fe2ea43d5ff527b646ab77d1731.s3tc.ctex::
 Attack2.png::CompressedTexture2D::5712118911932946896::1773619011::1773619097::1::::<><><>0<>0<>bc1621101347e13a27bf734392994108<>res://.godot/imported/Attack2.png-0ead13a0263836232bdda3658a8080c6.s3tc.ctex::
@@ -388,11 +389,11 @@ wood_platform_3.tscn::PackedScene::730526375620222548::1773619011::0::1::::<><><
 ╨┐╤А╨╡╨┐1.tscn::PackedScene::8946753614709849660::1773619011::0::1::::<><><>0<>0<><>::uid://birfuqgs3yk6b::::res://assets/gltf_file/mesh/AP1_преп1.res
 ╨┐╤А╨╡╨┐2.tscn::PackedScene::5957870481719722373::1773619011::0::1::::<><><>0<>0<><>::uid://dk5a1i3qqer3::::res://assets/gltf_file/mesh/AP1_преп2.res
 ╨▓╨╛╨┤╨░2.tscn::PackedScene::5713329765386602538::1773619011::0::1::::<><><>0<>0<><>::uid://bjh42m661htnm::::res://assets/gltf_file/mesh/AP1_вода2.res
-::res://Levels/::1773650169
+::res://Levels/::1773652884
 checkpoint.gd::GDScript::4829053793429921448::1773647886::0::1::::<>Area3D<><>0<>0<><>::
-room_1.tscn::PackedScene::8665623644659084112::1773650169::0::1::::<><><>0<>0<><>::uid://cw86i1wgw62jl::::res://assets/scenes/player/player.tscn<>uid://1w4j06345h57::::res://Door.tscn<>uid://c6j5bnlc57soq::::res://assets/gltf_file/mesh/AP1_╤В╤А╤Г╨▒╤Л1.res<>uid://d0p4yv8micb4o::::res://assets/tsns_file/╨┐╤А╨╡╨┐1.tscn<>uid://cq5biymxmcpa0::::res://assets/tsns_file/╨┐╤А╨╡╨┐2.tscn<>uid://d0q2sc0rwpal8::::res://assets/gltf_file/mesh/AP1_poor ╤Б╤В╨╡╨╜╨░.res<>uid://cnntyayucf8gs::::res://assets/tsns_file/╨▓╨╛╨┤╨░2.tscn<>uid://blhupxhdf8pg1::::res://assets/tsns_file/capsule.tscn<>uid://bvekdtu8dpq5l::::res://assets/tsns_file/capsule_smoll.tscn
-room_2.tscn::PackedScene::6078060613188866249::1773650121::0::1::::<><><>0<>0<><>::uid://cw86i1wgw62jl::::res://assets/scenes/player/player.tscn<>uid://blhupxhdf8pg1::::res://assets/tsns_file/capsule.tscn<>uid://cdpm7wvle3tyy::::res://assets/gltf_file/mesh/AP1_╤Б╤В╨╡╨╜╨░2.res<>uid://bvekdtu8dpq5l::::res://assets/tsns_file/capsule_smoll.tscn<>uid://dnqjrn6h3xs1a::::res://assets/scenes/enemies/enemy_1.tscn<>uid://4ap5lq0f1dlt::::res://assets/gltf_file/mesh/AP1_╤В╤А╤Г╨▒╤Л2.res
+room_1.tscn::PackedScene::8665623644659084112::1773651744::0::1::::<><><>0<>0<><>::uid://cw86i1wgw62jl::::res://assets/scenes/player/player.tscn<>uid://1w4j06345h57::::res://Door.tscn<>uid://c6j5bnlc57soq::::res://assets/gltf_file/mesh/AP1_╤В╤А╤Г╨▒╤Л1.res<>uid://d0p4yv8micb4o::::res://assets/tsns_file/╨┐╤А╨╡╨┐1.tscn<>uid://cq5biymxmcpa0::::res://assets/tsns_file/╨┐╤А╨╡╨┐2.tscn<>uid://d0q2sc0rwpal8::::res://assets/gltf_file/mesh/AP1_poor ╤Б╤В╨╡╨╜╨░.res<>uid://cnntyayucf8gs::::res://assets/tsns_file/╨▓╨╛╨┤╨░2.tscn<>uid://blhupxhdf8pg1::::res://assets/tsns_file/capsule.tscn<>uid://bvekdtu8dpq5l::::res://assets/tsns_file/capsule_smoll.tscn
+room_2.tscn::PackedScene::6078060613188866249::1773652884::0::1::::<><><>0<>0<><>::uid://1w4j06345h57::::res://Door.tscn<>uid://cb5xrcymeftw1::::res://door1.gd<>uid://cw86i1wgw62jl::::res://assets/scenes/player/player.tscn<>uid://blhupxhdf8pg1::::res://assets/tsns_file/capsule.tscn<>uid://cdpm7wvle3tyy::::res://assets/gltf_file/mesh/AP1_╤Б╤В╨╡╨╜╨░2.res<>uid://bvekdtu8dpq5l::::res://assets/tsns_file/capsule_smoll.tscn<>uid://dnqjrn6h3xs1a::::res://assets/scenes/enemies/enemy_1.tscn<>uid://4ap5lq0f1dlt::::res://assets/gltf_file/mesh/AP1_╤В╤А╤Г╨▒╤Л2.res
 room_3.tscn::PackedScene::3389816266410827437::1773619010::0::1::::<><><>0<>0<><>::uid://blhupxhdf8pg1::::res://assets/tsns_file/capsule.tscn<>uid://bvekdtu8dpq5l::::res://assets/tsns_file/capsule_smoll.tscn
-::res://scripts/::1773649589
+::res://scripts/::1773650852
 player.tscn::PackedScene::752431938083217681::1773619011::0::1::::<><><>0<>0<><>::uid://dbkgfsduk8sn4::::res://scripts/player.gd<>uid://b8a5w5jcm1u2v::::res://icon.svg
-player_control.gd::GDScript::4683895037398845273::1773649589::0::1::::<>CharacterBody3D<><>0<>0<><>::
+player_control.gd::GDScript::4683895037398845273::1773650852::0::1::::<>CharacterBody3D<><>0<>0<><>::

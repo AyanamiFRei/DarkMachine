@@ -5,7 +5,7 @@ extends CharacterBody3D
 @onready var area_dmg: Area3D = $Area_dmg
 @onready var attack_cool_down_timer: Timer = $Attack_CoolDown_Timer
 @onready var heal_timer: Timer = $heal_timer
-
+@onready var player: CharacterBody3D=$"."
 
 var can_attack = true
 var attack = false
@@ -96,7 +96,14 @@ func _physics_process(delta: float) -> void:
 		heal_timer.start()
 	
 	
-	
+	if Input.is_action_pressed("Crouch"):
+		player.scale.y = 0.2
+		speed=1
+		
+	if Input.is_action_just_released("Crouch") or Input.is_action_just_pressed("ui_up"):
+		player.scale.y=1
+		speed=3
+			
 	if health <= 0:
 		_on_death()
 
