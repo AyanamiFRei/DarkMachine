@@ -13,12 +13,12 @@ var attack_animations = ["attack1", "attack2"]
 
 var type = "player"
 var spawn_point=Vector3.ZERO
-var speed = 3
-var speed_mult = 1
-var jump_velocity = 5
+@export var speed: int = 3
+@export var speed_mult: int = 1
+@export var jump_velocity: int = 5
 
-var health = 100
-var dmg = 50
+@export var health = 100
+@export var dmg: int = 50
 
 var death = false
 var can_move = true
