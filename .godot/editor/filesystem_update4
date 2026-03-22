@@ -1,13 +1,4 @@
-res://assets/scenes/player/player.tscn
-res://addons/phantom_camera/themes/theme.tres
-res://scripts/player_control.gd
-res://assets/scenes/menu.tscn
-res://assets/menus/ingamemenu.gd
-res://assets/menus/menu.tscn
-res://main.tscn
-res://sandbox.tscn
-res://Levels/room_2.tscn
-res://assets/Levels/sandbox.tscn
-res://assets/Levels/room_2.tscn
 res://assets/enteties/player/player.tscn
+res://addons/phantom_camera/themes/theme.tres
 res://assets/menus/menu.gd
+res://assets/Levels/sandbox.tscn

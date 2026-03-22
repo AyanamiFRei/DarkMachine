@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dk44t5baxpyqi"]
+
+[resource]
+resource_name = "trap_suspended_anim"
+transparency = 4
+cull_mode = 2
+roughness = 0.5
+texture_filter = 0

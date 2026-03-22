@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bcofbcaioqvrx"]
+
+[ext_resource type="Texture2D" uid="uid://cb25bxr12oi61" path="res://assets/png/assets_for_test_bg_0.png" id="1_8hym0"]
+
+[resource]
+resource_name = "bg_0"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_8hym0")
+roughness = 0.5
+texture_filter = 0
+texture_repeat = false

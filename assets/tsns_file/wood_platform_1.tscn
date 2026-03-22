@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bonymuv70rr7"]
+
+[ext_resource type="ArrayMesh" uid="uid://cbynrkqnvd8mk" path="res://assets/gltf_file/mesh/wood_slab_right.res" id="1_4q7ad"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4q7ad"]
+size = Vector3(0.23217773, 1, 2)
+
+[node name="wood_platform_1" type="StaticBody3D"]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+
+[node name="AssetsForTestWoodSlabRight" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.371139e-08, 1, -4.371139e-08, 0, -4.371139e-08, -1, -1, -4.371139e-08, 1.9106855e-15, 0, 0, 0)
+mesh = ExtResource("1_4q7ad")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1126709, 0, 0)
+shape = SubResource("BoxShape3D_4q7ad")

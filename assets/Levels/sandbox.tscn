@@ -2,8 +2,8 @@
 
 [ext_resource type="ArrayMesh" uid="uid://sg1kjjxbj1w4" path="res://assets/gltf_file/mesh/bg_0_001.res" id="1_lc5sx"]
 [ext_resource type="ArrayMesh" uid="uid://b60xkkhk2ukd5" path="res://assets/gltf_file/mesh/bg_1_001.res" id="2_kimh7"]
-[ext_resource type="PackedScene" uid="uid://bonymuv70rr7" path="res://assets/tscn_assets/wood_platform_1.tscn" id="3_mauu5"]
-[ext_resource type="PackedScene" uid="uid://c72ahr3prbx8e" path="res://assets/tscn_assets/wood_platform_2.tscn" id="4_swrhl"]
+[ext_resource type="PackedScene" uid="uid://bonymuv70rr7" path="res://assets/tsns_file/wood_platform_1.tscn" id="3_mauu5"]
+[ext_resource type="PackedScene" uid="uid://c72ahr3prbx8e" path="res://assets/tsns_file/wood_platform_2.tscn" id="4_swrhl"]
 [ext_resource type="ArrayMesh" uid="uid://bsfsv7ijpye3a" path="res://assets/gltf_file/mesh/wooden_plate.res" id="5_6a08l"]
 [ext_resource type="ArrayMesh" uid="uid://dstmwufd2ptu1" path="res://assets/gltf_file/mesh/plate_right.res" id="6_ddsdk"]
 [ext_resource type="ArrayMesh" uid="uid://cwokke2wcvplh" path="res://assets/gltf_file/mesh/flowers_props.res" id="7_2nsle"]
@@ -17,7 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://cw86i1wgw62jl" path="res://assets/enteties/player/player.tscn" id="15_yuyf5"]
 
 [node name="sandbox" type="Node3D" unique_id=576962341]
-transform = Transform3D(6.6977963, 0, 0, 0, 6.6977963, 0, 0, 0, 6.4583764, 0, 0, -1.011)
+transform = Transform3D(-6.6977963, 0, -5.646092e-07, 0, 6.6977963, 0, 5.8553996e-07, 0, -6.4583764, 0, 0, -1.011)
 
 [node name="Node3D" type="Node3D" parent="." unique_id=880623870]
 transform = Transform3D(-2, -1.7484555e-07, 7.642742e-15, 0, -8.742278e-08, -2, 1.7484555e-07, -2, 8.742278e-08, 0, 0, -2.3879654)
@@ -503,4 +503,4 @@ collision_mask = 3
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.55089474, 0, -4.344376)
 
 [node name="player" parent="." unique_id=2119380125 instance=ExtResource("15_yuyf5")]
-transform = Transform3D(0.9994663, 0, -0.032666657, 0, 1, 0, 0.03266666, 0, 0.9994666, -1.1307031, 0.16869834, -1.3761235)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.742278e-08, 0, -1.0000002, -1.1307031, 0.16869834, -1.3761235)

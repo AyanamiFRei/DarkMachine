@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://sp7nmbvkudc1"]
+
+[ext_resource type="Texture2D" uid="uid://dny7adgtp7c4g" path="res://assets/png/assets_for_test_wood_slab_left.png" id="1_m0niu"]
+
+[resource]
+resource_name = "wood_slab_left"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_m0niu")
+roughness = 0.5
+texture_filter = 0
+texture_repeat = false
