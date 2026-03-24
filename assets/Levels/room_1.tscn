@@ -1,21 +1,24 @@
 [gd_scene format=3 uid="uid://dvpxs5abai31m"]
 
+[ext_resource type="PackedScene" uid="uid://chdo85q6n5mnm" path="res://assets/enteties/enemies/enemy2/enemy_2.tscn" id="1_a0ryf"]
 [ext_resource type="PackedScene" uid="uid://cw86i1wgw62jl" path="res://assets/enteties/player/player.tscn" id="4_qgwng"]
 [ext_resource type="PackedScene" uid="uid://1w4j06345h57" path="res://assets/objects/Door.tscn" id="4_wj57p"]
 [ext_resource type="ArrayMesh" uid="uid://c6j5bnlc57soq" path="res://assets/gltf_file/mesh/AP1_╤В╤А╤Г╨▒╤Л1.res" id="6_6dw1e"]
-[ext_resource type="PackedScene" uid="uid://d0p4yv8micb4o" path="res://assets/tscn_assets/╨┐╤А╨╡╨┐1.tscn" id="6_xrg4l"]
-[ext_resource type="PackedScene" uid="uid://cq5biymxmcpa0" path="res://assets/tscn_assets/╨┐╤А╨╡╨┐2.tscn" id="7_6dw1e"]
+[ext_resource type="PackedScene" uid="uid://d0p4yv8micb4o" path="res://assets/tsns_file/╨┐╤А╨╡╨┐1.tscn" id="6_xrg4l"]
+[ext_resource type="PackedScene" uid="uid://cq5biymxmcpa0" path="res://assets/tsns_file/╨┐╤А╨╡╨┐2.tscn" id="7_6dw1e"]
 [ext_resource type="ArrayMesh" uid="uid://d0q2sc0rwpal8" path="res://assets/gltf_file/mesh/AP1_poor ╤Б╤В╨╡╨╜╨░.res" id="7_8wjio"]
-[ext_resource type="PackedScene" uid="uid://cnntyayucf8gs" path="res://assets/tscn_assets/╨▓╨╛╨┤╨░2.tscn" id="8_6dw1e"]
-[ext_resource type="PackedScene" uid="uid://blhupxhdf8pg1" path="res://assets/tscn_assets/capsule.tscn" id="8_8wjio"]
-[ext_resource type="PackedScene" uid="uid://bvekdtu8dpq5l" path="res://assets/tscn_assets/capsule_smoll.tscn" id="9_8wjio"]
-
+[ext_resource type="PackedScene" uid="uid://cnntyayucf8gs" path="res://assets/tsns_file/╨▓╨╛╨┤╨░2.tscn" id="8_6dw1e"]
+[ext_resource type="PackedScene" uid="uid://blhupxhdf8pg1" path="res://assets/tsns_file/capsule.tscn" id="8_8wjio"]
+[ext_resource type="PackedScene" uid="uid://bvekdtu8dpq5l" path="res://assets/tsns_file/capsule_smoll.tscn" id="9_8wjio"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_tlxyd"]
 size = Vector3(0.23687744, 0.27172852, 0.15917969)
 
 [node name="room_1" type="Node3D" unique_id=308117271]
 transform = Transform3D(-5, 0, -7.54979e-07, 0, 5, 0, 7.54979e-07, 0, -5, 0, 0, 0)
+
+[node name="enemy2" parent="." unique_id=761590198 instance=ExtResource("1_a0ryf")]
+transform = Transform3D(0.5, 0, 0, 0, 0.21995519, 0, 0, 0, 0.5, -3.0682335, 0.079170704, 0.042742398)
 
 [node name="platform" type="Node3D" parent="." unique_id=1565724027]
 
@@ -58,7 +61,7 @@ use_collision = true
 size = Vector3(1.7001953, 1.6289673, 0.16577148)
 
 [node name="player" parent="." unique_id=1478576267 instance=ExtResource("4_qgwng")]
-transform = Transform3D(-1, 0, 8.7422784e-08, 0, 1, 0, -8.7422784e-08, 0, -1, -1.1210995, 0.15270141, 0.02801078)
+transform = Transform3D(-1, 0, 8.7422784e-08, 0, 1, 0, -8.7422784e-08, 0, -1, -1.257309, 0.15270141, 0.028010758)
 
 [node name="envirement" type="Node3D" parent="." unique_id=1867239222]
 transform = Transform3D(9.82, 0, -2.3412704e-06, 0, 9.82, 0, 2.3412704e-06, 0, 9.82, 0.36842975, 0.16644956, 4.9530764)

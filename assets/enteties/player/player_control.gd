@@ -100,7 +100,7 @@ func _physics_process(delta: float) -> void:
 		player.scale.y = 0.2
 		speed=1
 		
-	if Input.is_action_just_released("Crouch") or Input.is_action_just_pressed("ui_up"):
+	if Input.is_action_just_released("Crouch") or velocity.y>0:
 		player.scale.y=1
 		speed=3
 			

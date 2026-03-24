@@ -1,4 +1,3 @@
-res://assets/enteties/player/player.tscn
+res://assets/Levels/room_1.tscn
 res://addons/phantom_camera/themes/theme.tres
-res://assets/menus/menu.gd
-res://assets/Levels/sandbox.tscn
+res://assets/enteties/enemies/enemy2/enemy_2.gd
