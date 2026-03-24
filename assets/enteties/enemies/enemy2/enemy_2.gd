@@ -33,12 +33,12 @@ func _physics_process(delta: float) -> void:
 		# direction = Vector3.RIGHT
 		SPEED = SPEED*(-1)
 			
-		print(SPEED)
+		#print(SPEED)
 			
 	if (not ray_cast_right.is_colliding()) and (SPEED < 0):
 		SPEED = SPEED*(-1)
 			
-		print(SPEED)
+		#print(SPEED)
 		
 			
 	

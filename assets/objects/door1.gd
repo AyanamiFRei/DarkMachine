@@ -5,6 +5,6 @@ func _on_area_3d_body_entered(body: Node3D) -> void:
 		call_deferred("change_lvl")
 		body.set_checkpoint(Vector3(0.222,-0.01,-0.5))
 func change_lvl():
-	get_tree().change_scene_to_file("res://Levels/room_1.tscn")
+	get_tree().change_scene_to_file("res://assets/Levels/room_1.tscn")
 	
 	#player.global_position = Vector3(0.222,-0.01,-0.5)
