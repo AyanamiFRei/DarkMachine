@@ -467,7 +467,7 @@ shape = SubResource("CapsuleShape3D_ratu8")
 
 [node name="CoyoteTimer" type="Timer" parent="." unique_id=2074633047]
 unique_name_in_owner = true
-wait_time = 0.1
+wait_time = 0.009999999999999998
 
 [node name="JumpBufferTimer" type="Timer" parent="." unique_id=1368774789]
 unique_name_in_owner = true

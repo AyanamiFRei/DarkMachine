@@ -61,7 +61,7 @@ use_collision = true
 size = Vector3(1.7001953, 1.6289673, 0.16577148)
 
 [node name="player" parent="." unique_id=1478576267 instance=ExtResource("4_qgwng")]
-transform = Transform3D(-1, 0, 8.7422784e-08, 0, 1, 0, -8.7422784e-08, 0, -1, -1.257309, 0.15270141, 0.028010758)
+transform = Transform3D(-1, 0, 8.7422784e-08, 0, 1, 0, -8.7422784e-08, 0, -1, -1.3012642, 0.15270141, 0.028010752)
 
 [node name="envirement" type="Node3D" parent="." unique_id=1867239222]
 transform = Transform3D(9.82, 0, -2.3412704e-06, 0, 9.82, 0, 2.3412704e-06, 0, 9.82, 0.36842975, 0.16644956, 4.9530764)

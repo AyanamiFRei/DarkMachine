@@ -18,6 +18,7 @@ func set_target_point(target):
 	target_point = target
 
 func _physics_process(delta: float) -> void:
+	position.z = clamp(position.z, 0, 0)
 	#if ray_cast_right.is_colliding():
 		#print("право")
 	#if ray_cast_left.is_colliding():

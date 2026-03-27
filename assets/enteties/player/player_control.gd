@@ -7,6 +7,7 @@ extends CharacterBody3D
 @onready var heal_timer: Timer = $heal_timer
 @onready var player: CharacterBody3D=$"."
 
+var jump_hold_time = 0.0
 var can_attack = true
 var attack = false
 var attack_animations = ["attack1", "attack2"]
@@ -36,7 +37,7 @@ func _ready() -> void:
 	
 
 func _physics_process(delta: float) -> void:
-	
+	position.z = clamp(position.z, 0, 0)
 	if death or not can_move:
 		return
 	#position.z = clamp(position.y, 0, 0) ЭТА ХУЙНЯ НЕПРАВИЛЬНО РАБОТАЕТ
@@ -53,14 +54,24 @@ func _physics_process(delta: float) -> void:
 		%CoyoteTimer.stop()
 
 	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") :
+	if Input.is_action_pressed("ui_accept") :
+		jump_hold_time += delta
+		#print("Время удержания: ", jump_hold_time)
 		if coyote_time_active	:
 			jump()
 		else:
 			jump_buffer_active=true
 			%JumpBufferTimer.start()
 			coyote_time_active = false
-			
+	if Input.is_action_just_released("ui_accept") :
+		if jump_hold_time <1.0 and velocity.y>1:
+			velocity.y=jump_velocity*jump_hold_time
+			jump_hold_time=0.0
+		elif jump_hold_time >=1.0 and velocity.y>1:
+			velocity.y=jump_velocity*1.0
+			jump_hold_time=0.0
+		else:
+			jump_hold_time=0.0
 	if Input.is_action_just_pressed("ui_cancel"):
 		print("ESC нажата!")
 		#print("menu_button = ", menu_button)

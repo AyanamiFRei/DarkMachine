@@ -1,3 +1,6 @@
-res://assets/objects/door1.gd
-res://assets/objects/door.gd
+res://assets/enteties/player/player_control.gd
+res://assets/enteties/player/player.tscn
+res://addons/phantom_camera/themes/theme.tres
+res://assets/Levels/room_1.tscn
 res://assets/enteties/enemies/enemy2/enemy_2.gd
+res://assets/Levels/sandbox.tscn
