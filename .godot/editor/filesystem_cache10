@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1774732871
+::res://::1774735575
 export_presets.cfg::TextFile::-1::1774732617::0::1::::<><><>0<>0<><>::
 funding.yml::TextFile::-1::1772362162::0::1::::<><><>0<>0<><>::
 icon.png::CompressedTexture2D::5245515387834764666::1772362162::1772363017::1::::<><><>0<>0<>8900df54047314379416b2a3d07973b0<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
@@ -44,11 +44,11 @@ playable_character_third_person_3d.tscn::PackedScene::2885533411361394128::17747
 3d_cube_dark.tscn::PackedScene::5382540856779240661::1774732615::0::1::::<><><>0<>0<><>::uid://bj7h2fc5jx4ax::::res://addons/phantom_camera/examples/textures/3D/checker_pattern_dark.png
 ::res://addons/phantom_camera/examples/resources/::1774732615
 ::res://addons/phantom_camera/examples/resources/tween/::1774732615
-fixed_camera_tween.tres::Resource/PhantomCameraTween::6643106748633668090::1774732615::0::1::::<><><>0<>0<><>::uid://8umksf8e80fw::::res://addons/phantom_camera/scripts/resources/tween_resource.gd
-inventory_phantom_camera_2d_tween.tres::Resource/PhantomCameraTween::5568910264892302066::1774732615::0::1::::<><><>0<>0<><>::uid://8umksf8e80fw::::res://addons/phantom_camera/scripts/resources/tween_resource.gd
-item_focus_phantom_camera_2d_tween.tres::Resource/PhantomCameraTween::5058781781655307589::1774732615::0::1::::<><><>0<>0<><>::uid://8umksf8e80fw::::res://addons/phantom_camera/scripts/resources/tween_resource.gd
-player_phantom_camera_2d_tween.tres::Resource/PhantomCameraTween::9514768340188899::1774732615::0::1::::<><><>0<>0<><>::uid://8umksf8e80fw::::res://addons/phantom_camera/scripts/resources/tween_resource.gd
-player_phantom_camera_3d_tween.tres::Resource/PhantomCameraTween::5865226110262250054::1774732615::0::1::::<><><>0<>0<><>::uid://8umksf8e80fw::::res://addons/phantom_camera/scripts/resources/tween_resource.gd
+fixed_camera_tween.tres::Resource/PhantomCameraTween::6643106748633668090::1774732615::0::1::::<><>res://addons/phantom_camera/icons/phantom_camera_tween.svg<>0<>0<><>::uid://8umksf8e80fw::::res://addons/phantom_camera/scripts/resources/tween_resource.gd
+inventory_phantom_camera_2d_tween.tres::Resource/PhantomCameraTween::5568910264892302066::1774732615::0::1::::<><>res://addons/phantom_camera/icons/phantom_camera_tween.svg<>0<>0<><>::uid://8umksf8e80fw::::res://addons/phantom_camera/scripts/resources/tween_resource.gd
+item_focus_phantom_camera_2d_tween.tres::Resource/PhantomCameraTween::5058781781655307589::1774732615::0::1::::<><>res://addons/phantom_camera/icons/phantom_camera_tween.svg<>0<>0<><>::uid://8umksf8e80fw::::res://addons/phantom_camera/scripts/resources/tween_resource.gd
+player_phantom_camera_2d_tween.tres::Resource/PhantomCameraTween::9514768340188899::1774732615::0::1::::<><>res://addons/phantom_camera/icons/phantom_camera_tween.svg<>0<>0<><>::uid://8umksf8e80fw::::res://addons/phantom_camera/scripts/resources/tween_resource.gd
+player_phantom_camera_3d_tween.tres::Resource/PhantomCameraTween::5865226110262250054::1774732615::0::1::::<><>res://addons/phantom_camera/icons/phantom_camera_tween.svg<>0<>0<><>::uid://8umksf8e80fw::::res://addons/phantom_camera/scripts/resources/tween_resource.gd
 ::res://addons/phantom_camera/examples/scripts/::1774732615
 ::res://addons/phantom_camera/examples/scripts/2D/::1774732615
 2d_room_limit_tween.gd::GDScript::6928334148644179433::1774732615::0::1::::<>Node2D<><>0<>0<><>::
@@ -147,21 +147,21 @@ phantom_camera_noise_2d.gd::GDScript::7746826514819894941::1774732615::0::1::::P
 phantom_camera_noise_3d.gd::GDScript::6187281538235516492::1774732615::0::1::::PhantomCameraNoise3D<>Resource<>res://addons/phantom_camera/icons/phantom_camera_noise_resource.svg<>0<>1<><>::
 tween_director_resource.gd::GDScript::1896363988711138719::1774732615::0::1::::TweenDirectorResource<>Resource<>res://addons/phantom_camera/icons/phantom_camera_tween_director_resource.svg<>0<>1<><>::
 tween_resource.gd::GDScript::2358266811638875852::1774732615::0::1::::PhantomCameraTween<>Resource<>res://addons/phantom_camera/icons/phantom_camera_tween.svg<>0<>0<><>::
-::res://addons/phantom_camera/themes/::1774732615
+::res://addons/phantom_camera/themes/::1774733235
 button_focus.tres::StyleBoxFlat::1106322926052085743::1774732615::0::1::::<><><>0<>0<><>::
 button_hover.tres::StyleBoxFlat::2151354179275418664::1774732615::0::1::::<><><>0<>0<><>::
 button_normal.tres::StyleBoxFlat::2549607310371774247::1774732615::0::1::::<><><>0<>0<><>::
-theme.tres::Theme::2909626652912860453::1774732615::0::1::::<><><>0<>0<><>::uid://dve7mgsjik4dg::::res://addons/phantom_camera/fonts/Nunito-Regular.ttf<>uid://5weqvkjsfso3::::res://addons/phantom_camera/themes/button_hover.tres<>uid://bclbwo3xrdat0::::res://addons/phantom_camera/themes/button_normal.tres
-::res://assets/::1774732616
+theme.tres::Theme::2909626652912860453::1774733235::0::1::::<><><>0<>0<><>::uid://dve7mgsjik4dg::::res://addons/phantom_camera/fonts/Nunito-Regular.ttf<>uid://5weqvkjsfso3::::res://addons/phantom_camera/themes/button_hover.tres<>uid://bclbwo3xrdat0::::res://addons/phantom_camera/themes/button_normal.tres
+::res://assets/::1774734300
 ::res://assets/enteties/::1774732615
 ::res://assets/enteties/enemies/::1774732615
-::res://assets/enteties/enemies/enemy1/::1774732615
+::res://assets/enteties/enemies/enemy1/::1774735353
 enemy_1.gd::GDScript::7444852494362370091::1774732615::0::1::::<>CharacterBody3D<><>0<>0<><>::
-enemy_1.tscn::PackedScene::8105324604918841812::1774732615::0::1::::<><><>0<>0<><>::uid://declvrusoujjv::::res://assets/enteties/enemies/enemy1/enemy_1.gd
-::res://assets/enteties/enemies/enemy2/::1774732615
+enemy_1.tscn::PackedScene::8105324604918841812::1774735353::0::1::::<><><>0<>0<><>::uid://declvrusoujjv::::res://assets/enteties/enemies/enemy1/enemy_1.gd<>uid://dpmpaqqhqgjes::::res://assets/sprite/enemy2_eye.tres
+::res://assets/enteties/enemies/enemy2/::1774735362
 enemy_2.gd::GDScript::3031515983561006556::1774732615::0::1::::<>CharacterBody3D<><>0<>0<><>::
-enemy_2.tscn::PackedScene::5271266977056639126::1774732615::0::1::::<><><>0<>0<><>::uid://bjgqvi5lkw7x5::::res://assets/enteties/enemies/enemy2/enemy_2.gd
-::res://assets/enteties/player/::1774732806
+enemy_2.tscn::PackedScene::5271266977056639126::1774735362::0::1::::<><><>0<>0<><>::uid://bjgqvi5lkw7x5::::res://assets/enteties/enemies/enemy2/enemy_2.gd
+::res://assets/enteties/player/::1774735413
 Attack1.png::CompressedTexture2D::2143527474118684524::1774732615::1774732806::1::::<><><>0<>0<>1f0f7f3feb9c742c543ae71870700270<>res://.godot/imported/Attack1.png-38cd73b9aa90fb4a26e9572c78ec8344.s3tc.ctex::
 Attack2.png::CompressedTexture2D::5712118911932946896::1774732615::1774732806::1::::<><><>0<>0<>d875cef0184f782db0dd52b50db9efa6<>res://.godot/imported/Attack2.png-556841ca023b55b2ba2a147795a81f42.s3tc.ctex::
 camera_3d.gd::GDScript::6095647534854539988::1774732615::0::1::::<>Camera3D<><>0<>0<><>::
@@ -169,7 +169,7 @@ Death.png::CompressedTexture2D::1173517937657443937::1774732615::1774732806::1::
 Fall.png::CompressedTexture2D::4012933166218133576::1774732615::1774732806::1::::<><><>0<>0<>51f594014c92947fed50ac59d490c985<>res://.godot/imported/Fall.png-f8ad1ebab4b1367cce7a2bc842c93fee.s3tc.ctex::
 Idle.png::CompressedTexture2D::731587042858516996::1774732615::1774732806::1::::<><><>0<>0<>ff9b4a4f9b275c18e2965c8a40746362<>res://.godot/imported/Idle.png-674f65ca2456c234e16d04f7721b3e1e.s3tc.ctex::
 Jump.png::CompressedTexture2D::8430913628113883813::1774732615::1774732805::1::::<><><>0<>0<>1bc319c8ebc46795f472379ff8c033e4<>res://.godot/imported/Jump.png-03d8a4125ab48b1129a4639855a93910.s3tc.ctex::
-player.tscn::PackedScene::6387018306329949505::1774732615::0::1::::<><><>0<>0<><>::uid://b7y6cjna1i5q8::::res://assets/enteties/player/player_control.gd<>uid://5slt4qlevx7i::::res://assets/enteties/player/Attack1.png<>uid://koneqiym61kq::::res://assets/enteties/player/Idle.png<>uid://cnm808dpgen81::::res://assets/enteties/player/Attack2.png<>uid://batpo2jdg6w38::::res://assets/enteties/player/Run.png<>uid://qypw0lugtjs8::::res://assets/enteties/player/Death.png<>uid://bxf5om6wkgh73::::res://assets/enteties/player/Fall.png<>uid://dsd86esalwy8d::::res://assets/enteties/player/Jump.png<>uid://c1lkb227j8p47::::res://assets/enteties/player/Take Hit.png<>uid://b6ee6rlhyqluf::::res://assets/menus/ingame_button.tscn<>uid://bd046eokvcnu2::::res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>uid://cs31oorh2t2pc::::res://assets/enteties/player/camera_3d.gd<>uid://csjccrhj5wnx7::::res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd<>uid://8umksf8e80fw::::res://addons/phantom_camera/scripts/resources/tween_resource.gd
+player.tscn::PackedScene::6387018306329949505::1774735413::0::1::::<><><>0<>0<><>::uid://b7y6cjna1i5q8::::res://assets/enteties/player/player_control.gd<>uid://5slt4qlevx7i::::res://assets/enteties/player/Attack1.png<>uid://dpmpaqqhqgjes::::res://assets/sprite/enemy2_eye.tres<>uid://koneqiym61kq::::res://assets/enteties/player/Idle.png<>uid://cnm808dpgen81::::res://assets/enteties/player/Attack2.png<>uid://batpo2jdg6w38::::res://assets/enteties/player/Run.png<>uid://qypw0lugtjs8::::res://assets/enteties/player/Death.png<>uid://bxf5om6wkgh73::::res://assets/enteties/player/Fall.png<>uid://dsd86esalwy8d::::res://assets/enteties/player/Jump.png<>uid://c1lkb227j8p47::::res://assets/enteties/player/Take Hit.png<>uid://b6ee6rlhyqluf::::res://assets/menus/ingame_button.tscn<>uid://bd046eokvcnu2::::res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>uid://cs31oorh2t2pc::::res://assets/enteties/player/camera_3d.gd<>uid://csjccrhj5wnx7::::res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd<>uid://8umksf8e80fw::::res://addons/phantom_camera/scripts/resources/tween_resource.gd
 player_control.gd::GDScript::4683895037398845273::1774732615::0::1::::<>CharacterBody3D<><>0<>0<><>::
 Run.png::CompressedTexture2D::2426581049205665065::1774732615::1774732805::1::::<><><>0<>0<>cd4f99f2a4f8a2eb04d9c1b7944aa224<>res://.godot/imported/Run.png-c772bfad19f3e93827d47d02655e5493.s3tc.ctex::
 Take Hit.png::CompressedTexture2D::6621069874298720270::1774732615::1774732805::1::::<><><>0<>0<>95ee9d044facca8d67ab957fa957828d<>res://.godot/imported/Take Hit.png-2badfd7f4ed7ad5c156fb1204e49e87f.s3tc.ctex::
@@ -350,11 +350,11 @@ wooden_plate.tres::StandardMaterial3D::5613170656018401520::1774732616::0::1::::
 wood_slab_left.tres::StandardMaterial3D::1296331643678073098::1774732616::0::1::::<><><>0<>0<><>::uid://dny7adgtp7c4g::::res://assets/png/assets_for_test_wood_slab_left.png
 wood_slab_middle.tres::StandardMaterial3D::3096583614594572199::1774732616::0::1::::<><><>0<>0<><>::uid://bkve7wi3og34k::::res://assets/png/assets_for_test_wood_slab_middle.png
 wood_slab_right.tres::StandardMaterial3D::7085150542806792142::1774732616::0::1::::<><><>0<>0<><>::uid://c237p7us8vkhn::::res://assets/png/assets_for_test_wood_slab_right.png
-::res://assets/Levels/::1774732615
+::res://assets/Levels/::1774734182
 checkpoint.gd::GDScript::4829053793429921448::1774732615::0::1::::<>Area3D<><>0<>0<><>::
-room_1.tscn::PackedScene::8665623644659084112::1774732615::0::1::::<><><>0<>0<><>::uid://chdo85q6n5mnm::::res://assets/enteties/enemies/enemy2/enemy_2.tscn<>uid://cw86i1wgw62jl::::res://assets/enteties/player/player.tscn<>uid://1w4j06345h57::::res://assets/objects/Door.tscn<>uid://c6j5bnlc57soq::::res://assets/gltf_file/mesh/AP1_╤В╤А╤Г╨▒╤Л1.res<>uid://d0p4yv8micb4o::::res://assets/tsns_file/╨┐╤А╨╡╨┐1.tscn<>uid://cq5biymxmcpa0::::res://assets/tsns_file/╨┐╤А╨╡╨┐2.tscn<>uid://d0q2sc0rwpal8::::res://assets/gltf_file/mesh/AP1_poor ╤Б╤В╨╡╨╜╨░.res<>uid://cnntyayucf8gs::::res://assets/tsns_file/╨▓╨╛╨┤╨░2.tscn<>uid://blhupxhdf8pg1::::res://assets/tsns_file/capsule.tscn<>uid://bvekdtu8dpq5l::::res://assets/tsns_file/capsule_smoll.tscn
+room_1.tscn::PackedScene::8665623644659084112::1774733688::0::1::::<><><>0<>0<><>::uid://chdo85q6n5mnm::::res://assets/enteties/enemies/enemy2/enemy_2.tscn<>uid://cw86i1wgw62jl::::res://assets/enteties/player/player.tscn<>uid://1w4j06345h57::::res://assets/objects/Door.tscn<>uid://c6j5bnlc57soq::::res://assets/gltf_file/mesh/AP1_╤В╤А╤Г╨▒╤Л1.res<>uid://d0p4yv8micb4o::::res://assets/tsns_file/1platform.tscn<>uid://cq5biymxmcpa0::::res://assets/tsns_file/2platform.tscn<>uid://d0q2sc0rwpal8::::res://assets/gltf_file/mesh/AP1_poor ╤Б╤В╨╡╨╜╨░.res<>uid://cnntyayucf8gs::::res://assets/tsns_file/pipe.tscn<>uid://blhupxhdf8pg1::::res://assets/tsns_file/capsule.tscn<>uid://bvekdtu8dpq5l::::res://assets/tsns_file/capsule_smoll.tscn
 room_2.tscn::PackedScene::6078060613188866249::1774732615::0::1::::<><><>0<>0<><>::uid://chdo85q6n5mnm::::res://assets/enteties/enemies/enemy2/enemy_2.tscn<>uid://1w4j06345h57::::res://assets/objects/Door.tscn<>uid://cb5xrcymeftw1::::res://assets/objects/door1.gd<>uid://dnqjrn6h3xs1a::::res://assets/enteties/enemies/enemy1/enemy_1.tscn<>uid://cw86i1wgw62jl::::res://assets/enteties/player/player.tscn<>uid://cdpm7wvle3tyy::::res://assets/gltf_file/mesh/AP1_╤Б╤В╨╡╨╜╨░2.res<>uid://4ap5lq0f1dlt::::res://assets/gltf_file/mesh/AP1_╤В╤А╤Г╨▒╤Л2.res<>uid://blhupxhdf8pg1::::res://assets/tsns_file/capsule.tscn<>uid://bvekdtu8dpq5l::::res://assets/tsns_file/capsule_smoll.tscn
-room_3.tscn::PackedScene::3389816266410827437::1774732615::0::1::::<><><>0<>0<><>::uid://blhupxhdf8pg1::::res://assets/tsns_file/capsule.tscn<>uid://bvekdtu8dpq5l::::res://assets/tsns_file/capsule_smoll.tscn
+room_3.tscn::PackedScene::3389816266410827437::1774734182::0::1::::<><><>0<>0<><>::uid://blhupxhdf8pg1::::res://assets/tsns_file/capsule.tscn<>uid://bvekdtu8dpq5l::::res://assets/tsns_file/capsule_smoll.tscn
 sandbox.tscn::PackedScene::1331664072567662655::1774732615::0::1::::<><><>0<>0<><>::uid://sg1kjjxbj1w4::::res://assets/gltf_file/mesh/bg_0_001.res<>uid://b60xkkhk2ukd5::::res://assets/gltf_file/mesh/bg_1_001.res<>uid://bonymuv70rr7::::res://assets/tsns_file/wood_platform_1.tscn<>uid://c72ahr3prbx8e::::res://assets/tsns_file/wood_platform_2.tscn<>uid://bsfsv7ijpye3a::::res://assets/gltf_file/mesh/wooden_plate.res<>uid://dstmwufd2ptu1::::res://assets/gltf_file/mesh/plate_right.res<>uid://cwokke2wcvplh::::res://assets/gltf_file/mesh/flowers_props.res<>uid://chcgb104khnn0::::res://assets/gltf_file/mesh/grass_props.res<>uid://cagkvohp3hw0w::::res://assets/gltf_file/mesh/late_left.res<>uid://hn5n3oiafckr::::res://assets/gltf_file/mesh/bigflowers_props.res<>uid://ci64sxpv07a5k::::res://assets/gltf_file/mesh/fg_0_001.res<>uid://cvq2xyiyktkpo::::res://assets/gltf_file/mesh/fg_1_001.res<>uid://dnqjrn6h3xs1a::::res://assets/enteties/enemies/enemy1/enemy_1.tscn<>uid://gsw5yds152bb::::res://assets/menus/ingame_interface.tscn<>uid://cw86i1wgw62jl::::res://assets/enteties/player/player.tscn
 ::res://assets/menus/::1774732616
 ingamemenu.gd::GDScript::7093074352814694481::1774732616::0::1::::<>Node3D<><>0<>0<><>::
@@ -370,7 +370,7 @@ dmg_area.tscn::PackedScene::6335852568548762408::1774732616::0::1::::<><><>0<>0<
 door1.gd::GDScript::4906388535648835642::1774732616::0::1::::<>Node3D<><>0<>0<><>::
 door.gd::GDScript::1315212056365553597::1774732616::0::1::::<>Node3D<><>0<>0<><>::
 Door.tscn::PackedScene::1872104472398352952::1774732616::0::1::::<><><>0<>0<><>::uid://s0dl6cwd42ld::::res://assets/objects/door.gd
-::res://assets/png/::1774732804
+::res://assets/png/::1774734300
 assets_for_test_arrow_plate_left.png::CompressedTexture2D::3709579045725782785::1772362162::1772363017::1::::<><><>0<>0<>f0473bb0a1173e0423b1038d43cef878<>res://.godot/imported/assets_for_test_arrow_plate_left.png-34663e2f815945bd6dfb1187af427196.s3tc.ctex::
 assets_for_test_arrow_plate_right.png::CompressedTexture2D::1197560216590813193::1772362162::1772363017::1::::<><><>0<>0<>7fbdb66c88df835a18e8c672d32f1580<>res://.godot/imported/assets_for_test_arrow_plate_right.png-1001152165b5bf1d1f239204f3806c07.s3tc.ctex::
 assets_for_test_bg_0.png::CompressedTexture2D::4900592941477438328::1772362162::1772363017::1::::<><><>0<>0<>941faf1479151bca604d8b7d5e8ad7c3<>res://.godot/imported/assets_for_test_bg_0.png-3cbb9e3a2a0cdd3efe3528d63b704a27.s3tc.ctex::
@@ -390,21 +390,32 @@ photo_2026-02-14_14-25-24.jpg::CompressedTexture2D::4465253627215473773::1774732
 photo_2026-02-16_14-47-03.jpg::CompressedTexture2D::2780071878257665975::1774732616::1774732804::1::::<><><>0<>0<>706e5f01205bc16a550c6b8a99a6f3d0<>res://.godot/imported/photo_2026-02-16_14-47-03.jpg-32c51b474c22edfd967ec195f2a5b451.s3tc.ctex::
 photo_2026-02-18_23-50-51.jpg::CompressedTexture2D::4982541594840199557::1774732616::1774732804::1::::<><><>0<>0<>a98bbc69fd7c04381a1f1f782574f5e5<>res://.godot/imported/photo_2026-02-18_23-50-51.jpg-4ed13719fb0e96ac51257da4deaaf9df.s3tc.ctex::
 photo_2026-02-18_23-51-22.jpg::CompressedTexture2D::2801979977944729064::1774732616::1774732803::1::::<><><>0<>0<>9a8b1e6ca35a4bbf9999381da50d6e68<>res://.godot/imported/photo_2026-02-18_23-51-22.jpg-c9738c005e9032fec0370b7ce4ee7451.s3tc.ctex::
-::res://assets/tscn_assets/::1774732617
+::res://assets/sprite/::1774735539
+enemy2_eye2.png::CompressedTexture2D::8460150966999660703::1774734293::1774735400::1::::<><><>0<>0<>1536d8dddb3e51ed14fcabbbc0385aed<>res://.godot/imported/enemy2_eye2.png-2d98afe69c40f7fd3ad3bd6ec643428b.s3tc.ctex::
+enemy2_eye.png::CompressedTexture2D::5484672046684947050::1774734293::1774735275::1::::<><><>0<>0<>da16ea0bb203d6a9ccb1bbfca6af7ad1<>res://.godot/imported/enemy2_eye.png-740594a7ea9ea467f133c2e6fdab5018.s3tc.ctex::
+enemy2_eye.tres::SpriteFrames::8237778859020151886::1774735413::0::1::::<><><>0<>0<><>::uid://vitqqg4jk706::::res://assets/sprite/прыжок-Sheet.png
+enemy2_litle_smoke_wheels.png::CompressedTexture2D::3599936804584820581::1774734293::1774735273::1::::<><><>0<>0<>eeea8e5015178681521ac2b480cd79c7<>res://.godot/imported/enemy2_litle_smoke_wheels.png-10dc03e125877f3f3f209a3c2a7230d5.s3tc.ctex::
+enemy2_more_smoke_and_wheels.png::CompressedTexture2D::3541682249556148917::1774734293::1774735285::1::::<><><>0<>0<>237d340032f5dba40ebd06d7fd9d5147<>res://.godot/imported/enemy2_more_smoke_and_wheels.png-0ce1b7b0af900cf8d0102f4cecedd77a.s3tc.ctex::
+enemy2_upper_smoke.png::CompressedTexture2D::5926142542294474555::1774734293::1774735272::1::::<><><>0<>0<>cd02f94ebbd24c08f72e25ff61602a8c<>res://.godot/imported/enemy2_upper_smoke.png-6b5397fae04e92d39f6f2e669ea8b82a.s3tc.ctex::
+enemy_1.tres::SpriteFrames::3745813208175514758::1774735539::0::1::::<><><>0<>0<><>::uid://cke20n4oifbyo::::res://assets/sprite/enemy2_eye.png<>uid://dssfpkv37yaxr::::res://assets/sprite/enemy2_eye2.png<>uid://brj3oy2bxfju8::::res://assets/sprite/enemy2_litle_smoke_wheels.png<>uid://bqpu8vrw3kvcn::::res://assets/sprite/enemy2_more_smoke_and_wheels.png<>uid://cqowx4ltgye00::::res://assets/sprite/enemy2_upper_smoke.png<>uid://vitqqg4jk706::::res://assets/sprite/прыжок-Sheet.png
+jump_player.tres::SpriteFrames::8117393925518369684::1774735527::0::1::::<><><>0<>0<><>::uid://vitqqg4jk706::::res://assets/sprite/прыжок-Sheet.png
+save_sprite_from_png.tscn::PackedScene::7230830007833153015::1774735372::0::1::::<><><>0<>0<><>::uid://dpmpaqqhqgjes::::res://assets/sprite/enemy2_eye.tres
+прыжок-Sheet.png::CompressedTexture2D::1491663784968713457::1774734293::1774734832::1::::<><><>0<>0<>a1883f376ab292662be10bff887b1262<>res://.godot/imported/прыжок-Sheet.png-a33a42c2edba9406080f53a98e57c1a1.s3tc.ctex::
+::res://assets/tscn_assets/::1774733840
+1platform.tscn::PackedScene::8946753614709849660::1774732616::0::1::::<><><>0<>0<><>::uid://birfuqgs3yk6b::::res://assets/gltf_file/mesh/AP1_преп1.res
+2platform.tscn::PackedScene::5957870481719722373::1774732617::0::1::::<><><>0<>0<><>::uid://dk5a1i3qqer3::::res://assets/gltf_file/mesh/AP1_преп2.res
 capsule.tscn::PackedScene::3174190953748765210::1774732616::0::1::::<><><>0<>0<><>::uid://coib1bkegsf7r::::res://assets/gltf_file/mesh/AP1_линия1.res<>uid://ban0mrkw8tby4::::res://assets/gltf_file/mesh/AP1_колба1.res<>uid://doevsjgxickde::::res://assets/gltf_file/mesh/AP1_колба2.res<>uid://cma6x55pjcpb2::::res://assets/gltf_file/mesh/AP1_колба3.res<>uid://cvekvi3kh6o1c::::res://assets/gltf_file/mesh/AP1_колба4.res<>uid://bw6ynscu8xf1q::::res://assets/gltf_file/mesh/AP1_колба5.res<>uid://b023anorvy8fq::::res://assets/gltf_file/mesh/AP1_колба6.res<>uid://bubydrslo8fc5::::res://assets/gltf_file/mesh/AP1_колба7.res<>uid://ct3y86bev51io::::res://assets/gltf_file/mesh/AP1_шестерни темные1.res<>uid://bb8wrxb27togb::::res://assets/gltf_file/mesh/AP1_шестерни светлые1.res
 capsule_smoll.tscn::PackedScene::3869257468761127695::1774732616::0::1::::<><><>0<>0<><>::uid://coib1bkegsf7r::::res://assets/gltf_file/mesh/AP1_линия1.res<>uid://ct3y86bev51io::::res://assets/gltf_file/mesh/AP1_шестерни темные1.res<>uid://jxrdxgwhfp1a::::res://assets/gltf_file/mesh/AP1_мини колба1.res<>uid://bb8wrxb27togb::::res://assets/gltf_file/mesh/AP1_шестерни светлые1.res<>uid://4c3rf6bdxvk1::::res://assets/gltf_file/mesh/AP1_мини колба2.res<>uid://b3hu7dmiwtsd4::::res://assets/gltf_file/mesh/AP1_мини колба3.res<>uid://db77sn2jo0y2w::::res://assets/gltf_file/mesh/AP1_мини колба4.res<>uid://vonttjq2qe5v::::res://assets/gltf_file/mesh/AP1_мини колба5.res<>uid://doyatir2yaa03::::res://assets/gltf_file/mesh/AP1_мини колба6.res<>uid://ft5rcfrdeoqn::::res://assets/gltf_file/mesh/AP1_мини колба7.res
+pipe.tscn::PackedScene::5713329765386602538::1774733840::0::1::::<><><>0<>0<><>::
 wood_platform_1.tscn::PackedScene::99922974328750350::1774732616::0::1::::<><><>0<>0<><>::uid://cbynrkqnvd8mk::::res://assets/gltf_file/mesh/wood_slab_right.res
 wood_platform_2.tscn::PackedScene::7074636000575978810::1774732616::0::1::::<><><>0<>0<><>::uid://bkixwijgjoaib::::res://assets/gltf_file/mesh/wood_slab_middle.res
 wood_platform_3.tscn::PackedScene::730526375620222548::1774732616::0::1::::<><><>0<>0<><>::uid://bkixwijgjoaib::::res://assets/gltf_file/mesh/wood_slab_middle.res
-╨┐╤А╨╡╨┐1.tscn::PackedScene::8946753614709849660::1774732616::0::1::::<><><>0<>0<><>::uid://birfuqgs3yk6b::::res://assets/gltf_file/mesh/AP1_преп1.res
-╨┐╤А╨╡╨┐2.tscn::PackedScene::5957870481719722373::1774732617::0::1::::<><><>0<>0<><>::uid://dk5a1i3qqer3::::res://assets/gltf_file/mesh/AP1_преп2.res
-╨▓╨╛╨┤╨░2.tscn::PackedScene::5713329765386602538::1774732617::0::1::::<><><>0<>0<><>::uid://bjh42m661htnm::::res://assets/gltf_file/mesh/AP1_вода2.res
-::res://assets/tsns_file/::1774732617
+::res://assets/tsns_file/::1774733686
+1platform.tscn::PackedScene::8946753614709849660::1774733625::0::1::::<><><>0<>0<><>::uid://birfuqgs3yk6b::::res://assets/gltf_file/mesh/AP1_╨┐╤А╨╡╨┐1.res
+2platform.tscn::PackedScene::5957870481719722373::1774732617::0::1::::<><><>0<>0<><>::uid://dk5a1i3qqer3::::res://assets/gltf_file/mesh/AP1_преп2.res
 capsule.tscn::PackedScene::3174190953748765210::1774732617::0::1::::<><><>0<>0<><>::uid://coib1bkegsf7r::::res://assets/gltf_file/mesh/AP1_линия1.res<>uid://ban0mrkw8tby4::::res://assets/gltf_file/mesh/AP1_колба1.res<>uid://doevsjgxickde::::res://assets/gltf_file/mesh/AP1_колба2.res<>uid://cma6x55pjcpb2::::res://assets/gltf_file/mesh/AP1_колба3.res<>uid://cvekvi3kh6o1c::::res://assets/gltf_file/mesh/AP1_колба4.res<>uid://bw6ynscu8xf1q::::res://assets/gltf_file/mesh/AP1_колба5.res<>uid://b023anorvy8fq::::res://assets/gltf_file/mesh/AP1_колба6.res<>uid://bubydrslo8fc5::::res://assets/gltf_file/mesh/AP1_колба7.res<>uid://ct3y86bev51io::::res://assets/gltf_file/mesh/AP1_шестерни темные1.res<>uid://bb8wrxb27togb::::res://assets/gltf_file/mesh/AP1_шестерни светлые1.res
 capsule_smoll.tscn::PackedScene::3869257468761127695::1774732617::0::1::::<><><>0<>0<><>::uid://coib1bkegsf7r::::res://assets/gltf_file/mesh/AP1_линия1.res<>uid://ct3y86bev51io::::res://assets/gltf_file/mesh/AP1_шестерни темные1.res<>uid://jxrdxgwhfp1a::::res://assets/gltf_file/mesh/AP1_мини колба1.res<>uid://bb8wrxb27togb::::res://assets/gltf_file/mesh/AP1_шестерни светлые1.res<>uid://4c3rf6bdxvk1::::res://assets/gltf_file/mesh/AP1_мини колба2.res<>uid://b3hu7dmiwtsd4::::res://assets/gltf_file/mesh/AP1_мини колба3.res<>uid://db77sn2jo0y2w::::res://assets/gltf_file/mesh/AP1_мини колба4.res<>uid://vonttjq2qe5v::::res://assets/gltf_file/mesh/AP1_мини колба5.res<>uid://doyatir2yaa03::::res://assets/gltf_file/mesh/AP1_мини колба6.res<>uid://ft5rcfrdeoqn::::res://assets/gltf_file/mesh/AP1_мини колба7.res
+pipe.tscn::PackedScene::5713329765386602538::1774732617::0::1::::<><><>0<>0<><>::uid://bjh42m661htnm::::res://assets/gltf_file/mesh/AP1_вода2.res
 wood_platform_1.tscn::PackedScene::99922974328750350::1774724242::0::1::::<><><>0<>0<><>::uid://cbynrkqnvd8mk::::res://assets/gltf_file/mesh/wood_slab_right.res
 wood_platform_2.tscn::PackedScene::7074636000575978810::1774724242::0::1::::<><><>0<>0<><>::uid://bkixwijgjoaib::::res://assets/gltf_file/mesh/wood_slab_middle.res
 wood_platform_3.tscn::PackedScene::730526375620222548::1774724242::0::1::::<><><>0<>0<><>::uid://bkixwijgjoaib::::res://assets/gltf_file/mesh/wood_slab_middle.res
-╨┐╤А╨╡╨┐1.tscn::PackedScene::8946753614709849660::1774732617::0::1::::<><><>0<>0<><>::uid://birfuqgs3yk6b::::res://assets/gltf_file/mesh/AP1_преп1.res
-╨┐╤А╨╡╨┐2.tscn::PackedScene::5957870481719722373::1774732617::0::1::::<><><>0<>0<><>::uid://dk5a1i3qqer3::::res://assets/gltf_file/mesh/AP1_преп2.res
-╨▓╨╛╨┤╨░2.tscn::PackedScene::5713329765386602538::1774732617::0::1::::<><><>0<>0<><>::uid://bjh42m661htnm::::res://assets/gltf_file/mesh/AP1_вода2.res

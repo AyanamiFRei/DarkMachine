@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbawyje4kwlvr"]
+
+[ext_resource type="SpriteFrames" uid="uid://cru7s217453nj" path="res://assets/sprite/player.tres" id="1_eolbm"]
+[ext_resource type="SpriteFrames" uid="uid://btmq84xlpl32y" path="res://assets/sprite/enemy_1.tres" id="2_6brce"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+visible = false
+texture_filter = 1
+sprite_frames = ExtResource("1_eolbm")
+animation = &"jump_player"
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("2_6brce")
+animation = &"enemy2_upper_smoke"

@@ -1,6 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://cnntyayucf8gs"]
-
-[ext_resource type="ArrayMesh" uid="uid://bjh42m661htnm" path="res://assets/gltf_file/mesh/AP1_вода2.res" id="1_vn8rb"]
+[gd_scene load_steps=2 format=3 uid="uid://cnntyayucf8gs"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_4ux4s"]
 radius = 0.045898438
@@ -11,7 +9,6 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 
 [node name="Ap1Вода2" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.34059024, 0.50277627, -0.007915735)
-mesh = ExtResource("1_vn8rb")
 skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]

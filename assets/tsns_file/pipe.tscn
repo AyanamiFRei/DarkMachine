@@ -1,6 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cnntyayucf8gs"]
 
-[ext_resource type="ArrayMesh" uid="uid://bjh42m661htnm" path="res://assets/gltf_file/mesh/AP1_вода2.res" id="1_vn8rb"]
+[ext_resource type="ArrayMesh" uid="uid://dc2sm3rqgdg6s" path="res://assets/gltf_file/mesh/AP1_╨▓╨╛╨┤╨░2.res" id="1_vn8rb"]
+
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_4ux4s"]
 radius = 0.045898438
