@@ -1,3 +1,4 @@
+
 res://Levels/room_1.tscn
 res://assets/gltf_file/mesh/AP1_poor стена.res
 res://assets/gltf_file/mesh/AP1_затемнение1.res
@@ -36,3 +37,9 @@ res://Door.tscn
 res://assets/tsns_file/wood_platform_2.tscn
 res://assets/tsns_file/wood_platform_3.tscn
 res://scripts/player_control.gd
+res://assets/enteties/player/player_control.gd
+res://assets/enteties/player/player.tscn
+res://addons/phantom_camera/themes/theme.tres
+res://assets/Levels/room_1.tscn
+res://assets/enteties/enemies/enemy2/enemy_2.gd
+res://assets/Levels/sandbox.tscn

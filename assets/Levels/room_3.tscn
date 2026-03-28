@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://bokb1qebjcrx2"]
+
+[ext_resource type="PackedScene" uid="uid://blhupxhdf8pg1" path="res://assets/tsns_file/capsule.tscn" id="4_4dc8s"]
+[ext_resource type="PackedScene" uid="uid://bvekdtu8dpq5l" path="res://assets/tsns_file/capsule_smoll.tscn" id="5_rqk6o"]
+
+[node name="room_3" type="Node3D" unique_id=997954346]
+
+[node name="environment" type="Node3D" parent="." unique_id=1686331354]
+transform = Transform3D(0.07032423, 0, 0.8526946, 0, 0.11356157, 0, -0.11478572, 0, 0.522409, 0.90580446, 0.47635204, 0.0066092964)
+visible = false
+
+[node name="door2" type="CSGBox3D" parent="environment" unique_id=1210045651]
+transform = Transform3D(0.58787024, 0, 6.009391, 0, 1.0000002, 0, -0.10889776, 0, 0.5878702, -0.5302961, -4.738141, -2.5495987)
+size = Vector3(1, 1.9921875, 0.01586914)
+
+[node name="door3" type="CSGBox3D" parent="environment" unique_id=1202533139]
+transform = Transform3D(1.0000006, 0, 0, 0, 1.0000002, 0, 1.4901161e-08, 0, 1.0000002, 8.465081, 0, -0.5731007)
+size = Vector3(1, 1.9921875, 0.01586914)
+
+[node name="tresh" type="CSGBox3D" parent="environment" unique_id=1613546314]
+transform = Transform3D(-0.52240956, 0, 6.3343163, 0, 1.0000002, 0, -0.114785805, 0, -0.52240944, 3.370888, -2.0102427, -1.6802698)
+size = Vector3(1, 1.079834, 0.01586914)
+
+[node name="background" type="Node3D" parent="." unique_id=1340959378]
+transform = Transform3D(-9.48, 0, 8.2876755e-07, 0, 9.48, 0, -8.2876755e-07, 0, -9.48, 4.712677e-07, 0.75562096, -5.390674)
+
+[node name="platform" type="Node3D" parent="." unique_id=947643230]
+transform = Transform3D(-1, 0, -8.742279e-08, 0, 1, 0, 8.742279e-08, 0, -1, 0.43832627, 0.47211763, -0.009132331)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="platform" unique_id=676355511]
+transform = Transform3D(1, 0, -1.4210855e-14, 0, 1, 0, 1.4210855e-14, 0, 1, 0.17587313, -0.9427588, 1.2644545)
+use_collision = true
+size = Vector3(0.82470703, 1, 0.091796875)
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="platform" unique_id=1398755953]
+transform = Transform3D(1, 0, -1.4210855e-14, 0, 1, 0, 1.4210855e-14, 0, 1, 1.5807042, -0.053165823, 1.2710637)
+use_collision = true
+size = Vector3(0.38134766, 0.07910156, 0.068359375)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="platform" unique_id=1456785332]
+transform = Transform3D(1, 0, -1.4210855e-14, 0, 1, 0, 1.4210855e-14, 0, 1, 0.78180826, -0.86780757, 1.2644542)
+use_collision = true
+size = Vector3(0.38928223, 1.1499023, 0.09277344)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="platform" unique_id=425214063]
+transform = Transform3D(1, 0, -1.4210855e-14, 0, 1, 0, 1.4210855e-14, 0, 1, 1.1735883, -1.0578406, 1.2644546)
+use_collision = true
+size = Vector3(0.3984375, 0.7698364, 0.09277344)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="platform" unique_id=1060001609]
+transform = Transform3D(1, 0, -1.9184654e-13, 0, 1, 0, 1.9184654e-13, 0, 1, 1.5920544, -0.9634955, 1.2644546)
+use_collision = true
+size = Vector3(0.44104004, 0.9585266, 0.09277344)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="platform" unique_id=508572497]
+transform = Transform3D(1, 0, -7.81597e-14, 0, 1, 0, 7.81597e-14, 0, 1, -0.4237145, -0.7835181, 1.264454)
+use_collision = true
+size = Vector3(0.39035034, 1.3184814, 0.08984375)
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="platform" unique_id=917167423]
+transform = Transform3D(1, 0, -2.195577e-12, 0, 1, 0, 2.195577e-12, 0, 1, -1.7684506, 0.48953035, 1.264454)
+use_collision = true
+size = Vector3(2.3231812, 3.8645782, 0.08984375)
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="platform" unique_id=249069746]
+transform = Transform3D(1, 0, -3.4319214e-12, 0, 1, 0, 3.4319214e-12, 0, 1, 4.960381, -1.0530493, 1.2644553)
+use_collision = true
+size = Vector3(10.404625, 0.77941895, 0.08984375)
+
+[node name="CSGBox3D13" type="CSGBox3D" parent="platform" unique_id=686149224]
+transform = Transform3D(1, 0, -3.4319214e-12, 0, 1, 0, 3.4319214e-12, 0, 1, 10.920561, 2.5417535, 1.2644576)
+use_collision = true
+size = Vector3(1.4280758, 7.9690247, 0.08984375)
+
+[node name="CSGBox3D14" type="CSGBox3D" parent="platform" unique_id=655993102]
+transform = Transform3D(-4.371138e-08, 1, -8.742279e-08, -1, -4.371139e-08, -8.741936e-08, -8.741936e-08, 8.742279e-08, 1, 1.2168616, 3.8986843, 1.264458)
+use_collision = true
+size = Vector3(5.1511593, 8.237801, 0.08984375)
+
+[node name="capsules" type="Node3D" parent="." unique_id=1937699942]
+transform = Transform3D(-1, 0, 8.742276e-08, 0, 1, 0, -8.742276e-08, 0, -1, 0.56033117, 0, -0.32000083)
+visible = false
+
+[node name="capsula" parent="capsules" unique_id=781848689 instance=ExtResource("4_4dc8s")]
+transform = Transform3D(1.1999999, 0, -7.62876e-08, 0, 1.1999999, 0, 7.62876e-08, 0, 1.1999999, 0.539219, -0.8905797, 0.22707844)
+
+[node name="capsula4" parent="capsules" unique_id=1580697252 instance=ExtResource("4_4dc8s")]
+transform = Transform3D(-1.1999999, 0, 1.8119493e-07, 0, 1.1999999, 0, -1.8119493e-07, 0, -1.1999999, -0.06078106, -0.8905797, -0.17292202)
+
+[node name="capsule_smoll" parent="capsules" unique_id=625457035 instance=ExtResource("5_rqk6o")]
+transform = Transform3D(0.8, 0, -5.0858418e-08, 0, 0.8, 0, 5.0858418e-08, 0, 0.8, -0.78127986, -0.2, -0.56164837)
+
+[node name="capsule_smoll2" parent="capsules" unique_id=1970825906 instance=ExtResource("5_rqk6o")]
+transform = Transform3D(0.8, 0, -5.0858418e-08, 0, 0.8, 0, 5.0858418e-08, 0, 0.8, 4.818721, -0.2, -0.56164813)
+
+[node name="capsule_smoll5" parent="capsules" unique_id=1605603544 instance=ExtResource("5_rqk6o")]
+transform = Transform3D(-0.8, 0, -1.9079799e-08, 0, 0.8, 0, 1.9079799e-08, 0, -0.8, 2.818721, -0.2, -0.36164823)
+
+[node name="capsule_smoll6" parent="capsules" unique_id=745504830 instance=ExtResource("5_rqk6o")]
+transform = Transform3D(-0.8, 0, -1.9079799e-08, 0, 0.8, 0, 1.9079799e-08, 0, -0.8, -2.78128, -0.2, -0.3616482)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=210903025]
+transform = Transform3D(-1, 0, -8.742277e-08, 4.3711385e-08, 0.8660254, -0.5, 7.571034e-08, -0.5, -0.8660254, -0.2980581, 1.2, -3.6783538)
+light_energy = 0.52
+light_specular = 0.0

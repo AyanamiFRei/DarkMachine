@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cwjetio7map6o"]
+
+[ext_resource type="Script" uid="uid://c0yr3dj314n3s" path="res://assets/objects/dmg_area.gd" id="1_mujde"]
+[ext_resource type="Texture2D" uid="uid://b8a5w5jcm1u2v" path="res://icon.svg" id="2_503fu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_503fu"]
+size = Vector3(20, 3.9053955, 20)
+
+[node name="dmg_area" type="Node3D" unique_id=41407317]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2592773, -2.4012375, -2.123825)
+script = ExtResource("1_mujde")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=688554490]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.21365, -3.9664063, 4.061816)
+texture = ExtResource("2_503fu")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1376596165]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=315369536]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.920727, 0.21846008, -8.854202)
+shape = SubResource("BoxShape3D_503fu")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_amg_area_3d_body_entered"]
