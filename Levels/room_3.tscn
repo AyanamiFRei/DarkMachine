@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://bokb1qebjcrx2"]
+[gd_scene load_steps=4 format=3 uid="uid://bokb1qebjcrx2"]
 
+[ext_resource type="PackedScene" uid="uid://cw86i1wgw62jl" path="res://assets/scenes/player/player.tscn" id="3_17ikg"]
 [ext_resource type="PackedScene" uid="uid://blhupxhdf8pg1" path="res://assets/tsns_file/capsule.tscn" id="4_4dc8s"]
 [ext_resource type="PackedScene" uid="uid://bvekdtu8dpq5l" path="res://assets/tsns_file/capsule_smoll.tscn" id="5_rqk6o"]
 
@@ -103,3 +104,6 @@ transform = Transform3D(-0.8, 0, -1.9079799e-08, 0, 0.8, 0, 1.9079799e-08, 0, -0
 transform = Transform3D(-1, 0, -8.742277e-08, 4.3711385e-08, 0.8660254, -0.5, 7.571034e-08, -0.5, -0.8660254, -0.2980581, 1.2, -3.6783538)
 light_energy = 0.52
 light_specular = 0.0
+
+[node name="player" parent="." instance=ExtResource("3_17ikg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8078296, 0.51537573, -1.2925241)

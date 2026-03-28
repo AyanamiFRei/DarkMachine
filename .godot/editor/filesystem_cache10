@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1773563185
+::res://::1774718482
 dmg_area.gd::GDScript::6578189888322195910::1772362162::0::1::::<>Node3D<><>0<>0<><>::
 dmg_area.tscn::PackedScene::6335852568548762408::1772829899::0::1::::<><><>0<>0<><>::uid://c0yr3dj314n3s::::res://dmg_area.gd<>uid://b8a5w5jcm1u2v::::res://icon.svg
 door.gd::GDScript::1315212056365553597::1772826756::0::1::::<>Node3D<><>0<>0<><>::
@@ -162,8 +162,8 @@ wood_platform_3.tscn::PackedScene::730526375620222548::1772829899::0::1::::<><><
 вода2.tscn::PackedScene::5713329765386602538::1772830540::0::1::::<><><>0<>0<><>::uid://bjh42m661htnm::::res://assets/gltf_file/mesh/AP1_вода2.res
 преп1.tscn::PackedScene::8946753614709849660::1773253849::0::1::::<><><>0<>0<><>::uid://birfuqgs3yk6b::::res://assets/gltf_file/mesh/AP1_преп1.res
 преп2.tscn::PackedScene::5957870481719722373::1773417919::0::1::::<><><>0<>0<><>::uid://dk5a1i3qqer3::::res://assets/gltf_file/mesh/AP1_преп2.res
-::res://Levels/::1773474078
-room_1.tscn::PackedScene::8665623644659084112::1773474078::0::1::::<><><>0<>0<><>::uid://cw86i1wgw62jl::::res://assets/scenes/player/player.tscn<>uid://1w4j06345h57::::res://Door.tscn<>uid://c6j5bnlc57soq::::res://assets/gltf_file/mesh/AP1_трубы1.res<>uid://d0p4yv8micb4o::::res://assets/tsns_file/преп1.tscn<>uid://cq5biymxmcpa0::::res://assets/tsns_file/преп2.tscn<>uid://d0q2sc0rwpal8::::res://assets/gltf_file/mesh/AP1_poor стена.res<>uid://cnntyayucf8gs::::res://assets/tsns_file/вода2.tscn<>uid://blhupxhdf8pg1::::res://assets/tsns_file/capsule.tscn<>uid://bvekdtu8dpq5l::::res://assets/tsns_file/capsule_smoll.tscn
+::res://Levels/::1773563243
+room_1.tscn::PackedScene::8665623644659084112::1773563243::0::1::::<><><>0<>0<><>::uid://cw86i1wgw62jl::::res://assets/scenes/player/player.tscn<>uid://1w4j06345h57::::res://Door.tscn<>uid://c6j5bnlc57soq::::res://assets/gltf_file/mesh/AP1_трубы1.res<>uid://d0p4yv8micb4o::::res://assets/tsns_file/преп1.tscn<>uid://cq5biymxmcpa0::::res://assets/tsns_file/преп2.tscn<>uid://d0q2sc0rwpal8::::res://assets/gltf_file/mesh/AP1_poor стена.res<>uid://cnntyayucf8gs::::res://assets/tsns_file/вода2.tscn<>uid://blhupxhdf8pg1::::res://assets/tsns_file/capsule.tscn<>uid://bvekdtu8dpq5l::::res://assets/tsns_file/capsule_smoll.tscn
 room_2.tscn::PackedScene::6078060613188866249::1773417511::0::1::::<><><>0<>0<><>::uid://cw86i1wgw62jl::::res://assets/scenes/player/player.tscn<>uid://blhupxhdf8pg1::::res://assets/tsns_file/capsule.tscn<>uid://cdpm7wvle3tyy::::res://assets/gltf_file/mesh/AP1_стена2.res<>uid://bvekdtu8dpq5l::::res://assets/tsns_file/capsule_smoll.tscn<>uid://4ap5lq0f1dlt::::res://assets/gltf_file/mesh/AP1_трубы2.res
 room_3.tscn::PackedScene::3389816266410827437::1773312789::0::1::::<><><>0<>0<><>::uid://blhupxhdf8pg1::::res://assets/tsns_file/capsule.tscn<>uid://bvekdtu8dpq5l::::res://assets/tsns_file/capsule_smoll.tscn
 ::res://scripts/::1772829899
