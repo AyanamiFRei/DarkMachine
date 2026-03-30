@@ -1,3 +1,5 @@
+AnimatedSprite3D
+AnimatedSprite2D
 RayCast3D
 CollisionShape3D
 Area3D
@@ -10,6 +12,3 @@ SpringArm3D
 Node3D
 CSGBox3D
 Sprite3D
-Timer
-ProgressBar
-CanvasLayer
