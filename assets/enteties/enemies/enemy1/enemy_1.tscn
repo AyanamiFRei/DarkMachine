@@ -1,7 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://dnqjrn6h3xs1a"]
 
 [ext_resource type="Script" uid="uid://declvrusoujjv" path="res://assets/enteties/enemies/enemy1/enemy_1.gd" id="1_aiiog"]
-[ext_resource type="SpriteFrames" uid="uid://btmq84xlpl32y" path="res://assets/sprite/enemy_1.tres" id="2_bj487"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aiiog"]
 backlight_enabled = true
