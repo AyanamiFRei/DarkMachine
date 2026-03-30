@@ -17,7 +17,7 @@ size = Vector3(0.23687744, 0.27172852, 0.15917969)
 [node name="room_1" type="Node3D" unique_id=308117271]
 transform = Transform3D(-5, 0, -7.54979e-07, 0, 5, 0, 7.54979e-07, 0, -5, 0, 0, 0)
 
-[node name="enemy2" parent="." unique_id=761590198 instance=ExtResource("1_a0ryf")]
+[node name="enemy2" parent="." unique_id=341095035 instance=ExtResource("1_a0ryf")]
 transform = Transform3D(0.5, 0, 0, 0, 0.21995519, 0, 0, 0, 0.5, -3.0682335, 0.079170704, 0.042742398)
 
 [node name="platform" type="Node3D" parent="." unique_id=1565724027]
@@ -61,7 +61,7 @@ use_collision = true
 size = Vector3(1.7001953, 1.6289673, 0.16577148)
 
 [node name="player" parent="." unique_id=1478576267 instance=ExtResource("4_qgwng")]
-transform = Transform3D(-1, 0, 8.7422784e-08, 0, 1, 0, -8.7422784e-08, 0, -1, -1.3012642, 0.15270141, 0.028010752)
+transform = Transform3D(-1, 0, 8.7422784e-08, 0, 1, 0, -8.7422784e-08, 0, -1, -0.64686316, 0.15270141, 0.028010853)
 
 [node name="envirement" type="Node3D" parent="." unique_id=1867239222]
 transform = Transform3D(9.82, 0, -2.3412704e-06, 0, 9.82, 0, 2.3412704e-06, 0, 9.82, 0.36842975, 0.16644956, 4.9530764)

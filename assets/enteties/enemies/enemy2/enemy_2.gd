@@ -5,19 +5,21 @@ extends CharacterBody3D
 @onready var attack_healthbar_timer: Timer = $attack_healthbar_timer
 @onready var progress_bar = get_tree().get_nodes_in_group("healthbar")
 @onready var dmg_timer: Timer = $dmg_timer
+@onready var gg: CharacterBody3D = $"../player"
 var type = "enemy"
 var SPEED = 2
 const JUMP_VELOCITY = -400.0
 var playerNode: CharacterBody3D
 var hp = 100
 var dmg = 25
-
+var just_hit_player = false
 var target_point = CharacterBody3D
 
 func set_target_point(target):
 	target_point = target
 
 func _physics_process(delta: float) -> void:
+	var direction_to_player = gg.global_position.x - global_position.x
 	position.z = clamp(position.z, 0, 0)
 	#if ray_cast_right.is_colliding():
 		#print("право")
@@ -29,13 +31,24 @@ func _physics_process(delta: float) -> void:
 		
 	var direction = Vector3.LEFT
 	velocity.x = direction.x * SPEED*(-1)
-	if (not ray_cast_left.is_colliding()) and (SPEED > 0) :
-			
-		# direction = Vector3.RIGHT
-		SPEED = SPEED*(-1)
+	
+		
 			
 		#print(SPEED)
-			
+	if just_hit_player:
+		SPEED=0
+		await get_tree().create_timer(1.0).timeout
+		just_hit_player=false
+		if direction_to_player>0:
+			SPEED=-2
+		if direction_to_player<0:
+			SPEED=2
+	
+	if (not ray_cast_left.is_colliding()) and (SPEED > 0) :
+		
+	
+		SPEED = SPEED*(-1)
+		
 	if (not ray_cast_right.is_colliding()) and (SPEED < 0):
 		SPEED = SPEED*(-1)
 			
@@ -57,19 +70,27 @@ func _on_area_3d_body_entered(body) -> void:
 		dmg_timer.start()
 		body.take_dmg(dmg)
 		playerNode = body
+		just_hit_player = true
 		attack_healthbar_timer.start()
+	
 		
 
 
 func _on_dmg_timer_timeout() -> void:
 	if playerNode:
 		playerNode.take_dmg(dmg)
+		
 
 
 func _on_area_3d_body_exited(body: Node3D) -> void:
 	if body.has_method("take_dmg") and body.type == "player":
 		dmg_timer.stop()
+	
 		
+	#if direction_to_player > 0:
+		#print("лево")
+	#if direction_to_player > 0:
+		#print("право")
 func take_dmg(dmg):
 	hp -= dmg
 	#var mesh = $MeshInstance3D

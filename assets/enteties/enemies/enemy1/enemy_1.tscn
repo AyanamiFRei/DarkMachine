@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://declvrusoujjv" path="res://assets/enteties/enemies/enemy1/enemy_1.gd" id="1_aiiog"]
 
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aiiog"]
 backlight_enabled = true
 
