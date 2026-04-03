@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bf6p4vjyeg2mv"]
+
+[ext_resource type="Texture2D" uid="uid://yqbooimagq41" path="res://assets/png/stove_плита6.png" id="1_7fo7w"]
+
+[resource]
+resource_name = "плита6"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_7fo7w")
+roughness = 0.5
+texture_repeat = false

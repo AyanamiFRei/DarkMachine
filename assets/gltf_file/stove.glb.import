@@ -1,0 +1,187 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://xfqdpxi8llst"
+path="res://.godot/imported/stove.glb-e16e1976d660e79c708a27fb9df8139b.scn"
+
+[deps]
+
+source_file="res://assets/gltf_file/stove.glb"
+dest_files=["res://.godot/imported/stove.glb-e16e1976d660e79c708a27fb9df8139b.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/root_script=null
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"materials": {
+"блок": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://assets/gltf_file/texture/блок.tres",
+"use_external/path": "uid://c56vvgfhgnieu"
+},
+"плита10": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://assets/gltf_file/texture/плита10.tres",
+"use_external/path": "uid://d0j1xjd7nb8er"
+},
+"плита2": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://assets/gltf_file/texture/плита2.tres",
+"use_external/path": "uid://q5k762adxj5w"
+},
+"плита3": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://assets/gltf_file/texture/плита3.tres",
+"use_external/path": "uid://cwrojnq1eiks2"
+},
+"плита4": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://assets/gltf_file/texture/плита4.tres",
+"use_external/path": "uid://ccfd8d7i5koh2"
+},
+"плита5": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://assets/gltf_file/texture/плита5.tres",
+"use_external/path": "uid://ccuqact401tnx"
+},
+"плита6": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://assets/gltf_file/texture/плита6.tres",
+"use_external/path": "uid://bf6p4vjyeg2mv"
+},
+"плита7": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://assets/gltf_file/texture/плита7.tres",
+"use_external/path": "uid://hctvrfrp6fa8"
+},
+"плита8": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://assets/gltf_file/texture/плита8.tres",
+"use_external/path": "uid://beknhjek2f63b"
+},
+"плита9": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://assets/gltf_file/texture/плита9.tres",
+"use_external/path": "uid://3vry1srmsuoq"
+}
+},
+"meshes": {
+"stove_stove1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/stove_stove1.res",
+"save_to_file/path": "uid://dty1duyewjflp"
+},
+"stove_stove10": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/stove_stove10.res",
+"save_to_file/path": "uid://caextb1w03pgn"
+},
+"stove_stove2": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/stove_stove2.res",
+"save_to_file/path": "uid://yuhp8xjmixxx"
+},
+"stove_stove3": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/stove_stove3.res",
+"save_to_file/path": "uid://b7nx5iy4rfby4"
+},
+"stove_stove4": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/stove_stove4.res",
+"save_to_file/path": "uid://2prxrv2rnuit"
+},
+"stove_stove5": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/stove_stove5.res",
+"save_to_file/path": "uid://berp54buywwr3"
+},
+"stove_stove6": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/stove_stove6.res",
+"save_to_file/path": "uid://bgmrbfn447t4h"
+},
+"stove_stove7": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/stove_stove7.res",
+"save_to_file/path": "uid://bsekhalwxmdlt"
+},
+"stove_stove8": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/stove_stove8.res",
+"save_to_file/path": "uid://synott6ql3sf"
+},
+"stove_stove9": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/stove_stove9.res",
+"save_to_file/path": "uid://bkylotmoqcjc4"
+}
+}
+}
+gltf/naming_version=2
+gltf/embedded_image_handling=1
