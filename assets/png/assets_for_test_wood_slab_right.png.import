@@ -2,10 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bbc32rc80qgon"
-path="res://.godot/imported/assets_for_test_wood_slab_right.png-d819086f147e696f77b539636ce93d56.ctex"
+uid="uid://c237p7us8vkhn"
+path.s3tc="res://.godot/imported/assets_for_test_wood_slab_right.png-d819086f147e696f77b539636ce93d56.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "0587c19611a5664b6adb6918a0d67579"
@@ -14,11 +15,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/png/assets_for_test_wood_slab_right.png"
-dest_files=["res://.godot/imported/assets_for_test_wood_slab_right.png-d819086f147e696f77b539636ce93d56.ctex"]
+dest_files=["res://.godot/imported/assets_for_test_wood_slab_right.png-d819086f147e696f77b539636ce93d56.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
@@ -40,4 +41,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0

@@ -2,10 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c12mbnu56n4ri"
-path="res://.godot/imported/assets_for_test_wooden_plate.png-e597f291edae6744f75e0cc57bd01695.ctex"
+uid="uid://b2xbvr5av6jqa"
+path.s3tc="res://.godot/imported/assets_for_test_wooden_plate.png-e597f291edae6744f75e0cc57bd01695.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "f61ce338bf06121f0eda5b87d96015f4"
@@ -14,11 +15,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/png/assets_for_test_wooden_plate.png"
-dest_files=["res://.godot/imported/assets_for_test_wooden_plate.png-e597f291edae6744f75e0cc57bd01695.ctex"]
+dest_files=["res://.godot/imported/assets_for_test_wooden_plate.png-e597f291edae6744f75e0cc57bd01695.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
@@ -40,4 +41,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0

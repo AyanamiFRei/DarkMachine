@@ -1,15 +1,14 @@
-[gd_scene load_steps=0 format=3 uid="uid://csui1gphrhqir"]
+[gd_scene format=3 uid="uid://csui1gphrhqir"]
 
 [ext_resource type="PackedScene" uid="uid://chdo85q6n5mnm" path="res://assets/enteties/enemies/enemy2/enemy_2.tscn" id="1_edu5m"]
 [ext_resource type="PackedScene" uid="uid://1w4j06345h57" path="res://assets/objects/Door.tscn" id="1_yqu6b"]
 [ext_resource type="Script" uid="uid://cb5xrcymeftw1" path="res://assets/objects/door1.gd" id="2_edu5m"]
 [ext_resource type="PackedScene" uid="uid://dnqjrn6h3xs1a" path="res://assets/enteties/enemies/enemy1/enemy_1.tscn" id="3_w1lfr"]
 [ext_resource type="PackedScene" uid="uid://cw86i1wgw62jl" path="res://assets/enteties/player/player.tscn" id="4_8g1g7"]
-[ext_resource type="ArrayMesh" uid="uid://doyatir2yaa03" path="res://assets/gltf_file/mesh/AP1_╨╝╨╕╨╜╨╕ ╨║╨╛╨╗╨▒╨░6.res" id="5_qhxw8"]
-[ext_resource type="ArrayMesh" uid="uid://ft5rcfrdeoqn" path="res://assets/gltf_file/mesh/AP1_╨╝╨╕╨╜╨╕ ╨║╨╛╨╗╨▒╨░7.res" id="6_tb6r3"]
+[ext_resource type="ArrayMesh" uid="uid://cdpm7wvle3tyy" path="res://assets/gltf_file/mesh/AP1_╤Б╤В╨╡╨╜╨░2.res" id="5_qhxw8"]
+[ext_resource type="ArrayMesh" uid="uid://4ap5lq0f1dlt" path="res://assets/gltf_file/mesh/AP1_╤В╤А╤Г╨▒╤Л2.res" id="6_tb6r3"]
 [ext_resource type="PackedScene" uid="uid://blhupxhdf8pg1" path="res://assets/tsns_file/capsule.tscn" id="7_tlyya"]
 [ext_resource type="PackedScene" uid="uid://bvekdtu8dpq5l" path="res://assets/tsns_file/capsule_smoll.tscn" id="8_p4ip1"]
-
 
 [node name="room_2" type="Node3D" unique_id=805790135]
 transform = Transform3D(-5, 0, -4.371139e-07, 0, 5, 0, 4.371139e-07, 0, -5, 0, 0, 0)

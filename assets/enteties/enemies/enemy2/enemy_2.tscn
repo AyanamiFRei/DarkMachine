@@ -35,7 +35,7 @@ collision_layer = 4
 collision_mask = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.009454727, 0.045177463, 0.0024604797)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.009454727, 0.04517746, 0.0024604797)
 shape = SubResource("BoxShape3D_aiiog")
 
 [node name="dmg_timer" type="Timer" parent="."]

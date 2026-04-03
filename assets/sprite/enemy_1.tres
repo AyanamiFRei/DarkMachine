@@ -1,10 +1,10 @@
 [gd_resource type="SpriteFrames" load_steps=70 format=3 uid="uid://btmq84xlpl32y"]
 
-[ext_resource type="Texture2D" uid="uid://cke20n4oifbyo" path="res://assets/png/enemy2_eye.png" id="1_vsfbx"]
-[ext_resource type="Texture2D" uid="uid://dssfpkv37yaxr" path="res://assets/png/enemy2_eye2.png" id="2_ft1wa"]
-[ext_resource type="Texture2D" uid="uid://brj3oy2bxfju8" path="res://assets/png/enemy2_litle_smoke_wheels.png" id="3_1mm4d"]
-[ext_resource type="Texture2D" uid="uid://bqpu8vrw3kvcn" path="res://assets/png/enemy2_more_smoke_and_wheels.png" id="4_jn7ey"]
-[ext_resource type="Texture2D" uid="uid://cqowx4ltgye00" path="res://assets/png/enemy2_upper_smoke.png" id="5_3l6i1"]
+[ext_resource type="Texture2D" uid="uid://cke20n4oifbyo" path="res://assets/sprite/enemy2_eye.png" id="1_vsfbx"]
+[ext_resource type="Texture2D" uid="uid://dssfpkv37yaxr" path="res://assets/sprite/enemy2_eye2.png" id="2_ft1wa"]
+[ext_resource type="Texture2D" uid="uid://brj3oy2bxfju8" path="res://assets/sprite/enemy2_litle_smoke_wheels.png" id="3_1mm4d"]
+[ext_resource type="Texture2D" uid="uid://bqpu8vrw3kvcn" path="res://assets/sprite/enemy2_more_smoke_and_wheels.png" id="4_jn7ey"]
+[ext_resource type="Texture2D" uid="uid://cqowx4ltgye00" path="res://assets/sprite/enemy2_upper_smoke.png" id="5_3l6i1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4xe14"]
 atlas = ExtResource("1_vsfbx")

@@ -12,6 +12,5 @@ sprite_frames = ExtResource("1_eolbm")
 animation = &"jump_player"
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
-texture_filter = 2
 sprite_frames = ExtResource("2_6brce")
 animation = &"enemy2_upper_smoke"
