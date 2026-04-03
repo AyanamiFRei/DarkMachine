@@ -15,7 +15,7 @@
 size = Vector3(0.23687744, 0.27172852, 0.15917969)
 
 [node name="room_1" type="Node3D"]
-transform = Transform3D(-5, 0, -7.54979e-07, 0, 5, 0, 7.54979e-07, 0, -5, 0, 0, 0)
+transform = Transform3D(-5, 0, -7.54979e-07, 0, 5, 0, 7.54979e-07, 0, -5, 0, 1.9073486e-06, 0)
 
 [node name="enemy2" parent="." instance=ExtResource("1_a0ryf")]
 transform = Transform3D(0.5, 0, 0, 0, 0.21995519, 0, 0, 0, 0.5, -3.0682335, 0.079170704, 0.042742398)

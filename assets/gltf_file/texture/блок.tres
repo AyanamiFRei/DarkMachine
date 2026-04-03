@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://c56vvgfhgnieu"]
+
+[ext_resource type="Texture2D" uid="uid://yokrybsu8no3" path="res://assets/gltf_file/AP1_блок.png" id="1_gqj10"]
+
+[resource]
+resource_name = "блок"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_gqj10")
+roughness = 0.5
+texture_repeat = false

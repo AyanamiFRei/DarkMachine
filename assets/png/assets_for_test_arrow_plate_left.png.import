@@ -2,11 +2,10 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bs37hv80c3fth"
-path.s3tc="res://.godot/imported/assets_for_test_arrow_plate_left.png-34663e2f815945bd6dfb1187af427196.s3tc.ctex"
+uid="uid://dinuwdegd33xd"
+path="res://.godot/imported/assets_for_test_arrow_plate_left.png-34663e2f815945bd6dfb1187af427196.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 generator_parameters={
 "md5": "7081605c7deaa60dd2c293c723a3c394"
@@ -15,11 +14,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/png/assets_for_test_arrow_plate_left.png"
-dest_files=["res://.godot/imported/assets_for_test_arrow_plate_left.png-34663e2f815945bd6dfb1187af427196.s3tc.ctex"]
+dest_files=["res://.godot/imported/assets_for_test_arrow_plate_left.png-34663e2f815945bd6dfb1187af427196.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
@@ -41,4 +40,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1
