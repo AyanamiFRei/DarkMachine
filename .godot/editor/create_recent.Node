@@ -1,8 +1,8 @@
+CollisionShape3D
+Area3D
 Sprite3D
 Timer
 AnimatedSprite3D
-CollisionShape3D
-Area3D
 MeshInstance3D
 CharacterBody3D
 Node
@@ -12,4 +12,3 @@ Camera3D
 PhantomCamera3D
 PhantomCameraHost
 PathFollow3D
-Path3D

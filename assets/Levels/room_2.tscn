@@ -8,6 +8,7 @@
 [ext_resource type="ArrayMesh" uid="uid://4ap5lq0f1dlt" path="res://assets/gltf_file/mesh/AP1_╤В╤А╤Г╨▒╤Л2.res" id="6_tb6r3"]
 [ext_resource type="PackedScene" uid="uid://blhupxhdf8pg1" path="res://assets/tsns_file/capsule.tscn" id="7_tlyya"]
 [ext_resource type="PackedScene" uid="uid://bvekdtu8dpq5l" path="res://assets/tsns_file/capsule_smoll.tscn" id="8_p4ip1"]
+[ext_resource type="PackedScene" uid="uid://clkyrfe3ub4tj" path="res://assets/enteties/enemies/enemy1/enemy_1.tscn" id="9_edu5m"]
 
 [node name="room_2" type="Node3D" unique_id=805790135]
 transform = Transform3D(-5, 0, -4.371139e-07, 0, 5, 0, 4.371139e-07, 0, -5, 0, 0, 0)
@@ -18,7 +19,6 @@ transform = Transform3D(0.5, 0, 3.5527137e-15, 0, 0.21995519, 0, -3.5527137e-15,
 [node name="Door2" parent="." unique_id=1730044608 instance=ExtResource("1_yqu6b")]
 transform = Transform3D(0.5609136, 0, 0.8278744, 0, 1, 0, -0.8278744, 0, 0.5609136, -1.7947693, 0.46303082, -1.5690375e-07)
 script = ExtResource("2_edu5m")
-target_scene = "res://assets/Levels/room_1.tscn"
 
 [node name="environment" type="Node3D" parent="." unique_id=92140399]
 transform = Transform3D(0.07032423, 0, 0.8526946, 0, 0.11356157, 0, -0.11478572, 0, 0.522409, 0.90580446, 0.47635204, 0.0066092964)
@@ -135,3 +135,6 @@ transform = Transform3D(0.8, 0, -5.0858418e-08, 0, 0.8, 0, 5.0858418e-08, 0, 0.8
 transform = Transform3D(0.2, -8.742278e-09, 2.342487e-09, 8.742278e-09, 0.17320508, -0.1, 2.342487e-09, 0.1, 0.17320508, -2.0981467e-07, 1.2, 2.4)
 light_energy = 0.52
 light_specular = 0.0
+
+[node name="enemy1" parent="." unique_id=1785802915 instance=ExtResource("9_edu5m")]
+transform = Transform3D(1, 0, 7.1054274e-15, 0, 1, 0, -7.1054274e-15, 0, 1, -0.55885077, 0.16882913, -4.8856286e-08)

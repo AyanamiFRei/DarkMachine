@@ -12,13 +12,20 @@ var playerNode: CharacterBody3D
 var hp = 100
 var dmg = 25
 
-var target_point = CharacterBody3D
+var target_point = CharacterBody3D 
 
 func _ready() -> void:
 	anim.play("idle")
 
 func set_target_point(target):
 	target_point = target
+	
+func _on_area_3d_2_body_entered(body) -> void:
+	print(",kzzz")
+	if body.is_in_group("player"):
+		playerNode = body
+		var direction = (playerNode.global_position - global_position).normalized()
+		velocity.x = direction.x * SPEED
 
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():

@@ -1,4 +1,4 @@
-[gd_scene load_steps=75 format=3 uid="uid://cw86i1wgw62jl"]
+[gd_scene format=3 uid="uid://cw86i1wgw62jl"]
 
 [ext_resource type="Script" uid="uid://b7y6cjna1i5q8" path="res://assets/enteties/player/player_control.gd" id="1_oqktf"]
 [ext_resource type="Texture2D" uid="uid://5slt4qlevx7i" path="res://assets/enteties/player/Attack1.png" id="2_0g25m"]
@@ -451,69 +451,68 @@ height = 0.28735352
 [sub_resource type="Resource" id="Resource_oet4l"]
 script = ExtResource("13_q3ml6")
 
-[node name="player" type="CharacterBody3D" groups=["player"]]
+[node name="player" type="CharacterBody3D" unique_id=1722918080 groups=["player"]]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0.013298154)
 collision_layer = 2
 collision_mask = 37
 script = ExtResource("1_oqktf")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=394563763]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.019559145)
 visible = false
 mesh = SubResource("BoxMesh_oqktf")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1765101482]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.01625998, -0.007027136, 0.0020158812)
 shape = SubResource("CapsuleShape3D_ratu8")
 
-[node name="CoyoteTimer" type="Timer" parent="."]
+[node name="CoyoteTimer" type="Timer" parent="." unique_id=877866970]
 unique_name_in_owner = true
 wait_time = 0.00999999999999999
 
-[node name="JumpBufferTimer" type="Timer" parent="."]
+[node name="JumpBufferTimer" type="Timer" parent="." unique_id=466794369]
 unique_name_in_owner = true
 wait_time = 0.2
 
-[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="." unique_id=372622234]
 transform = Transform3D(-0.29999784, 0, 0.0011414477, 0, 0.3, 0, -0.0011414477, 0, -0.29999784, 0, 0, 0)
-visible = false
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_u84jc")
 animation = &"attack1"
 
-[node name="ingame_button" parent="." instance=ExtResource("10_hyvrl")]
+[node name="ingame_button" parent="." unique_id=26358718 instance=ExtResource("10_hyvrl")]
 transform = Transform3D(-0.8641343, 0, -0.50326127, 0, 1, 0, 0.50326127, 0, -0.8641343, 0.18122414, 0, -0.2574647)
 
-[node name="Area_dmg" type="Area3D" parent="."]
+[node name="Area_dmg" type="Area3D" parent="." unique_id=1224247187]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.009414464, 0, 0)
 collision_layer = 8
 collision_mask = 4
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Area_dmg"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area_dmg" unique_id=1759434148]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17971781, -0.017944336, 0)
 shape = SubResource("CapsuleShape3D_hyvrl")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="Area_dmg"]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Area_dmg" unique_id=1494354783]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19801676, -0.035888672, 0)
 shape = SubResource("CapsuleShape3D_hyvrl")
 
-[node name="Attack_CoolDown_Timer" type="Timer" parent="."]
+[node name="Attack_CoolDown_Timer" type="Timer" parent="." unique_id=2073264899]
 wait_time = 0.1
 
-[node name="heal_timer" type="Timer" parent="."]
+[node name="heal_timer" type="Timer" parent="." unique_id=1278202475]
 
-[node name="Camera3D" type="Camera3D" parent="."]
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1840779735]
 physics_interpolation_mode = 1
 transform = Transform3D(-1, 0, -8.7422755e-08, 0, 0.99999976, 0, 8.742278e-08, 0, -0.99999976, 0, 0, 4.848298)
 top_level = true
 script = ExtResource("11_u84jc")
 
-[node name="PhantomCameraHost" type="Node" parent="Camera3D"]
+[node name="PhantomCameraHost" type="Node" parent="Camera3D" unique_id=1585758701]
 process_priority = 300
 process_physics_priority = 300
 script = ExtResource("11_b3dqe")
 
-[node name="PhantomCamera3D" type="Node3D" parent="." node_paths=PackedStringArray("follow_target")]
+[node name="PhantomCamera3D" type="Node3D" parent="." unique_id=2033430312 node_paths=PackedStringArray("follow_target")]
 transform = Transform3D(-1, 0, -8.7422755e-08, 0, 0.99999976, 0, 8.742278e-08, 0, -0.99999976, 0, 0, 4.848298)
 top_level = true
 script = ExtResource("12_u84jc")
@@ -527,8 +526,9 @@ follow_damping_value = Vector3(0.5, 0.5, 0.5)
 align_transform_with_view = Callable()
 align_position_with_view = Callable()
 
-[node name="AnimatedSprite3D2" type="AnimatedSprite3D" parent="."]
+[node name="AnimatedSprite3D2" type="AnimatedSprite3D" parent="." unique_id=938910673]
 transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, 0, 0, 0)
+visible = false
 texture_filter = 0
 sprite_frames = ExtResource("2_fq0sb")
 animation = &"jump_player"

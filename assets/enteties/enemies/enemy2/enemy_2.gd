@@ -7,8 +7,8 @@ extends CharacterBody3D
 @onready var dmg_timer: Timer = $dmg_timer
 @onready var gg: CharacterBody3D = $"../player"
 var type = "enemy"
-var SPEED = 2
-const JUMP_VELOCITY = -400.0
+var SPEED = 1
+const JUMP_VELOCITY = -400.0 
 var playerNode: CharacterBody3D
 var hp = 100
 var dmg = 25
@@ -47,7 +47,7 @@ func _physics_process(delta: float) -> void:
 	if (not ray_cast_left.is_colliding()) and (SPEED > 0) :
 		
 	
-		SPEED = SPEED*(-1)
+		SPEED = SPEED*(-1) 
 		
 	if (not ray_cast_right.is_colliding()) and (SPEED < 0):
 		SPEED = SPEED*(-1)

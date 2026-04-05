@@ -59,7 +59,6 @@ func _physics_process(delta: float) -> void:
 	# Handle jump.
 	if Input.is_action_pressed("ui_accept") :
 		jump_hold_time += delta
-		print(global_position)
 		#print("Время удержания: ", jump_hold_time)
 		if coyote_time_active	:
 			jump()
