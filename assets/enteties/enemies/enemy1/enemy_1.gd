@@ -4,14 +4,18 @@ extends CharacterBody3D
 @onready var attack_healthbar_timer: Timer = $attack_healthbar_timer
 @onready var progress_bar = get_tree().get_nodes_in_group("healthbar")
 @onready var dmg_timer: Timer = $dmg_timer
+@onready var anim: AnimatedSprite3D = $AnimatedSprite3D
 var type = "enemy"
-const SPEED = 2
+const SPEED = 0.5
 const JUMP_VELOCITY = -400.0
 var playerNode: CharacterBody3D
 var hp = 100
 var dmg = 25
 
 var target_point = CharacterBody3D
+
+func _ready() -> void:
+	anim.play("idle")
 
 func set_target_point(target):
 	target_point = target
@@ -23,6 +27,11 @@ func _physics_process(delta: float) -> void:
 	if playerNode != null:
 		var direction = (playerNode.global_position - global_position).normalized()
 		velocity.x = direction.x * SPEED
+		
+	if velocity.x > 0:
+		anim.flip_h = false
+	elif velocity.x < 0:
+		anim.flip_h = true
 	
 	move_and_slide()
 	
@@ -59,3 +68,7 @@ func take_dmg(dmg):
 #func _on_attack_healthbar_timer_timeout() -> void:
 	#if progress_bar.size() > 0:
 		#progress_bar[0].value -= 25
+
+
+func _on_attack_healthbar_timer_timeout() -> void:
+	pass # Replace with function body.
