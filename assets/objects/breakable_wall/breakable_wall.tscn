@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://c62ray5n8eeir"]
+
+[ext_resource type="Script" uid="uid://bt4eb17w3e612" path="res://assets/objects/breakable_wall/breakable_wall.gd" id="1_f338g"]
+[ext_resource type="Texture2D" uid="uid://bcd5itm8pvib2" path="res://assets/objects/breakable_wall/ea79fb43b836ff7a.png" id="2_xi0s1"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_xi0s1"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_f338g"]
+size = Vector3(0.49453986, 0.3727417, 0.6298828)
+
+[node name="breakable_wall" type="CharacterBody3D" unique_id=1833233406]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)
+collision_layer = 4
+collision_mask = 11
+script = ExtResource("1_f338g")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1100634776]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+visible = false
+mesh = SubResource("BoxMesh_xi0s1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=842525253]
+transform = Transform3D(0.9999943, 0, 0, 0, 1.3520002, 0, 0, 0, 0.9999912, -0.0003734976, -0.0017044507, 0.0034179224)
+shape = SubResource("BoxShape3D_f338g")
+
+[node name="dmg_timer" type="Timer" parent="." unique_id=421393958]
+
+[node name="attack_healthbar_timer" type="Timer" parent="." unique_id=577462323]
+wait_time = 0.1
+one_shot = true
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1216743204]
+transform = Transform3D(0.07, 0, 0, 0, 0.07, 0, 0, 0, 0.07, 0, 0.04732576, 0)
+texture = ExtResource("2_xi0s1")
+
+[connection signal="timeout" from="dmg_timer" to="." method="_on_dmg_timer_timeout"]
+[connection signal="timeout" from="attack_healthbar_timer" to="." method="_on_attack_healthbar_timer_timeout"]

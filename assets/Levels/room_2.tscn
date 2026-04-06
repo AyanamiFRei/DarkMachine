@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://csui1gphrhqir"]
 
-[ext_resource type="PackedScene" uid="uid://chdo85q6n5mnm" path="res://assets/enteties/enemies/enemy2/enemy_2.tscn" id="1_edu5m"]
+[ext_resource type="PackedScene" uid="uid://chdo85q6n5mnm" path="res://assets/enteties/enemies/enemy_ezh/enemy_ezh.tscn" id="1_edu5m"]
+[ext_resource type="PackedScene" uid="uid://c62ray5n8eeir" path="res://assets/objects/breakable_wall/breakable_wall.tscn" id="1_w1lfr"]
 [ext_resource type="PackedScene" uid="uid://1w4j06345h57" path="res://assets/objects/Door.tscn" id="1_yqu6b"]
 [ext_resource type="Script" uid="uid://cb5xrcymeftw1" path="res://assets/objects/door1.gd" id="2_edu5m"]
 [ext_resource type="PackedScene" uid="uid://cw86i1wgw62jl" path="res://assets/enteties/player/player.tscn" id="4_8g1g7"]
@@ -8,13 +9,19 @@
 [ext_resource type="ArrayMesh" uid="uid://4ap5lq0f1dlt" path="res://assets/gltf_file/mesh/AP1_╤В╤А╤Г╨▒╤Л2.res" id="6_tb6r3"]
 [ext_resource type="PackedScene" uid="uid://blhupxhdf8pg1" path="res://assets/tsns_file/capsule.tscn" id="7_tlyya"]
 [ext_resource type="PackedScene" uid="uid://bvekdtu8dpq5l" path="res://assets/tsns_file/capsule_smoll.tscn" id="8_p4ip1"]
-[ext_resource type="PackedScene" uid="uid://clkyrfe3ub4tj" path="res://assets/enteties/enemies/enemy1/enemy_1.tscn" id="9_edu5m"]
+[ext_resource type="PackedScene" uid="uid://clkyrfe3ub4tj" path="res://assets/enteties/enemies/enemy_taran/enemy_taran.tscn" id="9_edu5m"]
 
 [node name="room_2" type="Node3D" unique_id=805790135]
 transform = Transform3D(-5, 0, -4.371139e-07, 0, 5, 0, 4.371139e-07, 0, -5, 0, 0, 0)
 
+[node name="breakable_wall2" parent="." unique_id=1833233406 instance=ExtResource("1_w1lfr")]
+transform = Transform3D(0.25, 0, 1.7763568e-15, 0, 0.25, 0, -1.7763568e-15, 0, 0.25, 0.041846264, 0.23227243, 3.658316e-09)
+
+[node name="breakable_wall" parent="." unique_id=155639816 instance=ExtResource("1_w1lfr")]
+transform = Transform3D(0.25, 0, 1.7763568e-15, 0, 0.25, 0, -1.7763568e-15, 0, 0.25, -0.08319145, 0.23868583, -7.2728277e-09)
+
 [node name="enemy2" parent="." unique_id=761590198 instance=ExtResource("1_edu5m")]
-transform = Transform3D(0.5, 0, 3.5527137e-15, 0, 0.21995519, 0, -3.5527137e-15, 0, 0.5, -0.3707608, 0.59322923, -3.2412938e-08)
+transform = Transform3D(0.3, 0, 2.1316283e-15, 0, 0.3, 0, -2.1316283e-15, 0, 0.3, -0.3707608, 0.59322923, -3.2412938e-08)
 
 [node name="Door2" parent="." unique_id=1730044608 instance=ExtResource("1_yqu6b")]
 transform = Transform3D(0.5609136, 0, 0.8278744, 0, 1, 0, -0.8278744, 0, 0.5609136, -1.7947693, 0.46303082, -1.5690375e-07)
@@ -26,10 +33,6 @@ transform = Transform3D(0.07032423, 0, 0.8526946, 0, 0.11356157, 0, -0.11478572,
 [node name="door2" type="CSGBox3D" parent="environment" unique_id=1955269019]
 transform = Transform3D(-0.5878702, 0, -6.009391, 0, 1.0000002, 0, 0.10889771, 0, -0.5878707, 0.5244107, -4.738141, 0.075966)
 size = Vector3(1, 1.9921875, 0.01586914)
-
-[node name="tresh" type="CSGBox3D" parent="environment" unique_id=566113876]
-transform = Transform3D(0.52240944, 0, -6.334315, 0, 1.0000002, 0, 0.11478583, 0, 0.52240884, -3.3767724, -2.0102427, -0.79336286)
-size = Vector3(1, 1.079834, 0.01586914)
 
 [node name="player" parent="." unique_id=1222325266 instance=ExtResource("4_8g1g7")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -1.6874748, 0.44882312, -0.014163387)
