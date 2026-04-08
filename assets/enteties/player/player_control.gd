@@ -34,6 +34,9 @@ func _ready() -> void:
 	anim.play("idle")
 	$Area_dmg/CollisionShape3D.disabled = false
 	$Area_dmg/CollisionShape3D2.disabled = false
+	if GameManager.has_custom_spawn:
+		global_position = GameManager.spawn_position
+		GameManager.has_custom_spawn = false  # сбрасываем флаг
 	
 
 func _physics_process(delta: float) -> void:
