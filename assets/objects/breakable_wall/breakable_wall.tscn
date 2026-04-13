@@ -8,8 +8,8 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_f338g"]
 size = Vector3(0.49453986, 0.3727417, 0.6298828)
 
-[node name="breakable_wall" type="CharacterBody3D" unique_id=1833233406]
-transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)
+[node name="breakable_wall_1" type="CharacterBody3D" unique_id=1833233406]
+transform = Transform3D(0.04, 0, 0, 0, 0.04, 0, 0, 0, 0.04, 0, 0, 0)
 collision_layer = 4
 collision_mask = 11
 script = ExtResource("1_f338g")
@@ -20,7 +20,7 @@ visible = false
 mesh = SubResource("BoxMesh_xi0s1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=842525253]
-transform = Transform3D(0.9999943, 0, 0, 0, 1.3520002, 0, 0, 0, 0.9999912, -0.0003734976, -0.0017044507, 0.0034179224)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0003734976, -0.0017044507, 0.0034179224)
 shape = SubResource("BoxShape3D_f338g")
 
 [node name="dmg_timer" type="Timer" parent="." unique_id=421393958]

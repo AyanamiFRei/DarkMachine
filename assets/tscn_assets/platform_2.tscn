@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cq5biymxmcpa0"]
+
+[ext_resource type="ArrayMesh" uid="uid://dk5a1i3qqer3" path="res://assets/gltf_file/mesh/AP1_╨┐╤А╨╡╨┐2.res" id="1_kph71"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ww3cs"]
+size = Vector3(1.1674805, 1.6707649, 1)
+
+[node name="преп2" type="StaticBody3D" unique_id=1340094172]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.86837256, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1183971404]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107177734, -0.028722763, 0)
+shape = SubResource("BoxShape3D_ww3cs")
+
+[node name="Ap1Преп2" type="MeshInstance3D" parent="." unique_id=724033689]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 0.6, 0, 0, 0)
+mesh = ExtResource("1_kph71")

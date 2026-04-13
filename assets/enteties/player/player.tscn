@@ -7,8 +7,14 @@
 [ext_resource type="Texture2D" uid="uid://cnm808dpgen81" path="res://assets/enteties/player/Attack2.png" id="3_hyvrl"]
 [ext_resource type="Texture2D" uid="uid://batpo2jdg6w38" path="res://assets/enteties/player/Run.png" id="3_xo733"]
 [ext_resource type="Texture2D" uid="uid://qypw0lugtjs8" path="res://assets/enteties/player/Death.png" id="4_yfi7d"]
+[ext_resource type="Script" uid="uid://colfcocxeangg" path="res://assets/enteties/player/health_component.gd" id="5_3gcdb"]
 [ext_resource type="Texture2D" uid="uid://bxf5om6wkgh73" path="res://assets/enteties/player/Fall.png" id="5_hsamt"]
+[ext_resource type="Script" uid="uid://cn5wk0axrcps8" path="res://assets/enteties/player/interact_component.gd" id="6_033l5"]
 [ext_resource type="Texture2D" uid="uid://dsd86esalwy8d" path="res://assets/enteties/player/Jump.png" id="7_b3dqe"]
+[ext_resource type="Texture2D" uid="uid://c6srelgfe4os" path="res://assets/sprite/icons8-e-key-48.png" id="7_bwmay"]
+[ext_resource type="Script" uid="uid://bdiwihp8h52ri" path="res://assets/enteties/player/movement_component.gd" id="7_plybv"]
+[ext_resource type="Script" uid="uid://d2me3hncaoe8s" path="res://assets/enteties/player/combat_component.gd" id="8_3gcdb"]
+[ext_resource type="Script" uid="uid://cw8ndvc6aao1o" path="res://assets/enteties/player/animation_component.gd" id="9_033l5"]
 [ext_resource type="Texture2D" uid="uid://c1lkb227j8p47" path="res://assets/enteties/player/Take Hit.png" id="9_u84jc"]
 [ext_resource type="PackedScene" uid="uid://b6ee6rlhyqluf" path="res://assets/menus/ingame_button.tscn" id="10_hyvrl"]
 [ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="11_b3dqe"]
@@ -16,12 +22,12 @@
 [ext_resource type="Script" uid="uid://csjccrhj5wnx7" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd" id="12_u84jc"]
 [ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="13_q3ml6"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_oqktf"]
-size = Vector3(0.08, 0.1, 0.05)
-subdivide_height = 1
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_hyvrl"]
+radius = 0.14367676
+height = 0.28735352
 
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ratu8"]
-height = 1.4160156
+[sub_resource type="BoxShape3D" id="BoxShape3D_bwmay"]
+size = Vector3(0.67285156, 0.7841797, 1)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_npq60"]
 atlas = ExtResource("2_0g25m")
@@ -444,9 +450,12 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_hyvrl"]
-radius = 0.14367676
-height = 0.28735352
+[sub_resource type="BoxMesh" id="BoxMesh_oqktf"]
+size = Vector3(0.08, 0.1, 0.05)
+subdivide_height = 1
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ratu8"]
+height = 1.4160156
 
 [sub_resource type="Resource" id="Resource_oet4l"]
 script = ExtResource("13_q3ml6")
@@ -457,6 +466,86 @@ collision_layer = 2
 collision_mask = 37
 script = ExtResource("1_oqktf")
 
+[node name="Components" type="Node3D" parent="." unique_id=442858119]
+
+[node name="AnimationComponent" type="Node3D" parent="Components" unique_id=1470608154]
+script = ExtResource("9_033l5")
+
+[node name="MovementComponent" type="Node3D" parent="Components" unique_id=1871850941]
+script = ExtResource("7_plybv")
+
+[node name="Timers" type="Timer" parent="Components/MovementComponent" unique_id=793934519]
+
+[node name="CoyoteTimer" type="Timer" parent="Components/MovementComponent/Timers" unique_id=877866970]
+unique_name_in_owner = true
+wait_time = 0.05
+
+[node name="JumpBufferTimer" type="Timer" parent="Components/MovementComponent/Timers" unique_id=466794369]
+unique_name_in_owner = true
+wait_time = 0.2
+
+[node name="CombatComponent" type="Node3D" parent="Components" unique_id=489150703]
+script = ExtResource("8_3gcdb")
+
+[node name="Area_dmg" type="Area3D" parent="Components/CombatComponent" unique_id=1224247187]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.009414464, 0, 0)
+collision_layer = 8
+collision_mask = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Components/CombatComponent/Area_dmg" unique_id=1759434148]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17971781, -0.017944336, 0)
+shape = SubResource("CapsuleShape3D_hyvrl")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Components/CombatComponent/Area_dmg" unique_id=1494354783]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19801676, -0.035888672, 0)
+shape = SubResource("CapsuleShape3D_hyvrl")
+
+[node name="Timers" type="Timer" parent="Components/CombatComponent" unique_id=302823536]
+
+[node name="Attack_CoolDown_Timer" type="Timer" parent="Components/CombatComponent/Timers" unique_id=2073264899]
+wait_time = 0.1
+
+[node name="HealthComponent" type="Node3D" parent="Components" unique_id=1930401922]
+script = ExtResource("5_3gcdb")
+
+[node name="Timers" type="Timer" parent="Components/HealthComponent" unique_id=1042271656]
+
+[node name="heal_timer" type="Timer" parent="Components/HealthComponent/Timers" unique_id=1278202475]
+
+[node name="InteractComponent" type="Node3D" parent="Components" unique_id=2126076054]
+script = ExtResource("6_033l5")
+
+[node name="InteractArea" type="Area3D" parent="Components/InteractComponent" unique_id=333519067]
+collision_layer = 0
+collision_mask = 64
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Components/InteractComponent/InteractArea" unique_id=557252193]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+shape = SubResource("BoxShape3D_bwmay")
+
+[node name="InteractionKey" type="Sprite3D" parent="Components/InteractComponent" unique_id=486969009]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0.14997303, 0)
+flip_h = true
+texture = ExtResource("7_bwmay")
+
+[node name="Visual" type="Node3D" parent="." unique_id=1570944933]
+
+[node name="AnimatedSprite3D" type="Node3D" parent="Visual" unique_id=575806736]
+
+[node name="StockModel" type="AnimatedSprite3D" parent="Visual/AnimatedSprite3D" unique_id=372622234]
+transform = Transform3D(-0.29999784, 0, 0.0011414477, 0, 0.3, 0, -0.0011414477, 0, -0.29999784, 0, 0, 0)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_u84jc")
+animation = &"attack1"
+
+[node name="NewModel" type="AnimatedSprite3D" parent="Visual/AnimatedSprite3D" unique_id=938910673]
+transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, 0, 0, 0)
+visible = false
+texture_filter = 0
+sprite_frames = ExtResource("2_fq0sb")
+animation = &"jump_player"
+frame_progress = 0.866075
+
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=394563763]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.019559145)
 visible = false
@@ -466,58 +555,18 @@ mesh = SubResource("BoxMesh_oqktf")
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.01625998, -0.007027136, 0.0020158812)
 shape = SubResource("CapsuleShape3D_ratu8")
 
-[node name="CoyoteTimer" type="Timer" parent="." unique_id=877866970]
-unique_name_in_owner = true
-wait_time = 0.00999999999999999
-
-[node name="JumpBufferTimer" type="Timer" parent="." unique_id=466794369]
-unique_name_in_owner = true
-wait_time = 0.2
-
-[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="." unique_id=372622234]
-transform = Transform3D(-0.29999784, 0, 0.0011414477, 0, 0.3, 0, -0.0011414477, 0, -0.29999784, 0, 0, 0)
-texture_filter = 0
-sprite_frames = SubResource("SpriteFrames_u84jc")
-animation = &"attack1"
-
-[node name="ingame_button" parent="." unique_id=26358718 instance=ExtResource("10_hyvrl")]
-transform = Transform3D(-0.8641343, 0, -0.50326127, 0, 1, 0, 0.50326127, 0, -0.8641343, 0.18122414, 0, -0.2574647)
-
-[node name="Area_dmg" type="Area3D" parent="." unique_id=1224247187]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.009414464, 0, 0)
-collision_layer = 8
-collision_mask = 4
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Area_dmg" unique_id=1759434148]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17971781, -0.017944336, 0)
-shape = SubResource("CapsuleShape3D_hyvrl")
-
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="Area_dmg" unique_id=1494354783]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19801676, -0.035888672, 0)
-shape = SubResource("CapsuleShape3D_hyvrl")
-
-[node name="Attack_CoolDown_Timer" type="Timer" parent="." unique_id=2073264899]
-wait_time = 0.1
-
-[node name="heal_timer" type="Timer" parent="." unique_id=1278202475]
-
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1840779735]
 physics_interpolation_mode = 1
 transform = Transform3D(-1, 0, -8.7422755e-08, 0, 0.99999976, 0, 8.742278e-08, 0, -0.99999976, 0, 0, 4.848298)
 top_level = true
 script = ExtResource("11_u84jc")
 
-[node name="PhantomCameraHost" type="Node" parent="Camera3D" unique_id=1585758701]
-process_priority = 300
-process_physics_priority = 300
-script = ExtResource("11_b3dqe")
-
-[node name="PhantomCamera3D" type="Node3D" parent="." unique_id=2033430312 node_paths=PackedStringArray("follow_target")]
+[node name="PhantomCamera3D" type="Node3D" parent="Camera3D" unique_id=2033430312 node_paths=PackedStringArray("follow_target")]
 transform = Transform3D(-1, 0, -8.7422755e-08, 0, 0.99999976, 0, 8.742278e-08, 0, -0.99999976, 0, 0, 4.848298)
 top_level = true
 script = ExtResource("12_u84jc")
 follow_mode = 2
-follow_target = NodePath("..")
+follow_target = NodePath("../..")
 tween_resource = SubResource("Resource_oet4l")
 tween_on_load = false
 follow_offset = Vector3(0, 0, 4.835)
@@ -526,15 +575,17 @@ follow_damping_value = Vector3(0.5, 0.5, 0.5)
 align_transform_with_view = Callable()
 align_position_with_view = Callable()
 
-[node name="AnimatedSprite3D2" type="AnimatedSprite3D" parent="." unique_id=938910673]
-transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, 0, 0, 0)
-visible = false
-texture_filter = 0
-sprite_frames = ExtResource("2_fq0sb")
-animation = &"jump_player"
-frame_progress = 0.866075
+[node name="PhantomCameraHost" type="Node" parent="Camera3D" unique_id=1585758701]
+process_priority = 300
+process_physics_priority = 300
+script = ExtResource("11_b3dqe")
 
-[connection signal="timeout" from="CoyoteTimer" to="." method="_on_coyote_timer_timeout"]
-[connection signal="timeout" from="JumpBufferTimer" to="." method="_on_jump_buffer_timer_timeout"]
-[connection signal="timeout" from="Attack_CoolDown_Timer" to="." method="_on_attack_cool_down_timer_timeout"]
-[connection signal="timeout" from="heal_timer" to="." method="_on_heal_timer_timeout"]
+[node name="ingame_button" parent="." unique_id=26358718 instance=ExtResource("10_hyvrl")]
+transform = Transform3D(-0.8641343, 0, -0.50326127, 0, 1, 0, 0.50326127, 0, -0.8641343, 0.18122414, 0, -0.2574647)
+
+[connection signal="timeout" from="Components/MovementComponent/Timers/CoyoteTimer" to="." method="_on_coyote_timer_timeout"]
+[connection signal="timeout" from="Components/MovementComponent/Timers/JumpBufferTimer" to="." method="_on_jump_buffer_timer_timeout"]
+[connection signal="timeout" from="Components/CombatComponent/Timers/Attack_CoolDown_Timer" to="." method="_on_attack_cool_down_timer_timeout"]
+[connection signal="timeout" from="Components/HealthComponent/Timers/heal_timer" to="." method="_on_heal_timer_timeout"]
+[connection signal="body_entered" from="Components/InteractComponent/InteractArea" to="Components/InteractComponent" method="_on_interact_area_body_entered"]
+[connection signal="body_exited" from="Components/InteractComponent/InteractArea" to="Components/InteractComponent" method="_on_interact_area_body_exited"]
