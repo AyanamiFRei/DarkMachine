@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://d0j1xjd7nb8er"]
+
+[ext_resource type="Texture2D" uid="uid://d00xx2qbgh6o1" path="res://assets/gltf_file/AP1_плита10.png" id="1_f1yfe"]
+
+[resource]
+resource_name = "плита10"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_f1yfe")
+roughness = 0.5
+texture_repeat = false
