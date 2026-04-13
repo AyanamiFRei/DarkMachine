@@ -1,5 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://bokb1qebjcrx2"]
+[gd_scene load_steps=5 format=3 uid="uid://bokb1qebjcrx2"]
 
+[ext_resource type="PackedScene" uid="uid://1w4j06345h57" path="res://assets/objects/Door.tscn" id="3_cuxx3"]
+[ext_resource type="Script" uid="uid://cb5xrcymeftw1" path="res://assets/objects/door1.gd" id="4_3n1ja"]
 [ext_resource type="PackedScene" uid="uid://blhupxhdf8pg1" path="res://assets/tsns_file/capsule.tscn" id="4_4dc8s"]
 [ext_resource type="PackedScene" uid="uid://bvekdtu8dpq5l" path="res://assets/tsns_file/capsule_smoll.tscn" id="5_rqk6o"]
 
@@ -9,23 +11,11 @@
 transform = Transform3D(0.07032423, 0, 0.8526946, 0, 0.11356157, 0, -0.11478572, 0, 0.522409, 0.90580446, 0.47635204, 0.0066092964)
 visible = false
 
-[node name="door2" type="CSGBox3D" parent="environment"]
-transform = Transform3D(0.58787024, 0, 6.009391, 0, 1.0000002, 0, -0.10889776, 0, 0.5878702, -0.5302961, -4.738141, -2.5495987)
-size = Vector3(1, 1.9921875, 0.01586914)
-
-[node name="door3" type="CSGBox3D" parent="environment"]
-transform = Transform3D(1.0000006, 0, 0, 0, 1.0000002, 0, 1.4901161e-08, 0, 1.0000002, 8.465081, 0, -0.5731007)
-size = Vector3(1, 1.9921875, 0.01586914)
-
-[node name="tresh" type="CSGBox3D" parent="environment"]
-transform = Transform3D(-0.52240956, 0, 6.3343163, 0, 1.0000002, 0, -0.114785805, 0, -0.52240944, 3.370888, -2.0102427, -1.6802698)
-size = Vector3(1, 1.079834, 0.01586914)
-
 [node name="background" type="Node3D" parent="."]
 transform = Transform3D(-9.48, 0, 8.2876755e-07, 0, 9.48, 0, -8.2876755e-07, 0, -9.48, 4.712677e-07, 0.75562096, -5.390674)
 
 [node name="platform" type="Node3D" parent="."]
-transform = Transform3D(-1, 0, -8.742279e-08, 0, 1, 0, 8.742279e-08, 0, -1, 0.43832627, 0.47211763, -0.009132331)
+transform = Transform3D(-4.015, 0, -6.0624814e-07, 0, 4.015, 0, 6.0624814e-07, 0, -4.015, 0.43832627, 0.47211763, -0.009132331)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="platform"]
 transform = Transform3D(1, 0, -1.4210855e-14, 0, 1, 0, 1.4210855e-14, 0, 1, 0.17587313, -0.9427588, 1.2644545)
@@ -128,12 +118,12 @@ use_collision = true
 size = Vector3(0.96739197, 1.0682526, 0.09277344)
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="platform"]
-transform = Transform3D(1, 0, -7.81597e-14, 0, 1, 0, 7.81597e-14, 0, 1, -0.4237145, -0.7835181, 1.264454)
+transform = Transform3D(1, 0, -8.526513e-14, 0, 1, 0, 8.526513e-14, 0, 1, -0.42371452, -0.7835181, 1.264454)
 use_collision = true
 size = Vector3(0.39035034, 1.3184814, 0.08984375)
 
 [node name="CSGBox3D11" type="CSGBox3D" parent="platform"]
-transform = Transform3D(1, 0, -2.195577e-12, 0, 1, 0, 2.195577e-12, 0, 1, -1.7684506, 0.48953035, 1.264454)
+transform = Transform3D(1, 0, -2.1884716e-12, 0, 1, 0, 2.1884716e-12, 0, 1, -1.7684506, 0.48953038, 1.264454)
 use_collision = true
 size = Vector3(2.3231812, 3.8645782, 0.08984375)
 
@@ -183,3 +173,7 @@ transform = Transform3D(-0.8, 0, -1.9079799e-08, 0, 0.8, 0, 1.9079799e-08, 0, -0
 transform = Transform3D(-1, 0, -8.742277e-08, 4.3711385e-08, 0.8660254, -0.5, 7.571034e-08, -0.5, -0.8660254, -0.2980581, 1.2, -3.6783538)
 light_energy = 0.52
 light_specular = 0.0
+
+[node name="Door2" parent="." instance=ExtResource("3_cuxx3")]
+transform = Transform3D(6.9137125, 0, 0.052512378, 0, 8.805796, 0, -2.696432, 0, 1.0539906, 2.3221097, 0.9967387, -4.9771805)
+script = ExtResource("4_3n1ja")
