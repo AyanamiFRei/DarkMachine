@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://dhbwlan3dnydm"]
+[gd_scene format=3 uid="uid://dhbwlan3dnydm"]
 
 [ext_resource type="PackedScene" uid="uid://blhupxhdf8pg1" path="res://assets/tsns_file/capsule.tscn" id="1_1ip5v"]
 [ext_resource type="PackedScene" uid="uid://bvekdtu8dpq5l" path="res://assets/tsns_file/capsule_smoll.tscn" id="2_25cub"]

@@ -1,4 +1,4 @@
-[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://ccuqact401tnx"]
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://ccuqact401tnx"]
 
 [ext_resource type="Texture2D" uid="uid://21pr6i0rqurh" path="res://assets/gltf_file/AP1_плита5.png" id="1_plm3v"]
 
