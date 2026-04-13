@@ -9,7 +9,9 @@
 [ext_resource type="Texture2D" uid="uid://qypw0lugtjs8" path="res://assets/enteties/player/Death.png" id="4_yfi7d"]
 [ext_resource type="Script" uid="uid://colfcocxeangg" path="res://assets/enteties/player/health_component.gd" id="5_3gcdb"]
 [ext_resource type="Texture2D" uid="uid://bxf5om6wkgh73" path="res://assets/enteties/player/Fall.png" id="5_hsamt"]
+[ext_resource type="Script" uid="uid://cn5wk0axrcps8" path="res://assets/enteties/player/interact_component.gd" id="6_033l5"]
 [ext_resource type="Texture2D" uid="uid://dsd86esalwy8d" path="res://assets/enteties/player/Jump.png" id="7_b3dqe"]
+[ext_resource type="Texture2D" uid="uid://c6srelgfe4os" path="res://assets/sprite/icons8-e-key-48.png" id="7_bwmay"]
 [ext_resource type="Script" uid="uid://bdiwihp8h52ri" path="res://assets/enteties/player/movement_component.gd" id="7_plybv"]
 [ext_resource type="Script" uid="uid://d2me3hncaoe8s" path="res://assets/enteties/player/combat_component.gd" id="8_3gcdb"]
 [ext_resource type="Script" uid="uid://cw8ndvc6aao1o" path="res://assets/enteties/player/animation_component.gd" id="9_033l5"]
@@ -23,6 +25,9 @@
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_hyvrl"]
 radius = 0.14367676
 height = 0.28735352
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bwmay"]
+size = Vector3(0.67285156, 0.7841797, 1)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_npq60"]
 atlas = ExtResource("2_0g25m")
@@ -507,6 +512,22 @@ script = ExtResource("5_3gcdb")
 
 [node name="heal_timer" type="Timer" parent="Components/HealthComponent/Timers" unique_id=1278202475]
 
+[node name="InteractComponent" type="Node3D" parent="Components" unique_id=2126076054]
+script = ExtResource("6_033l5")
+
+[node name="InteractArea" type="Area3D" parent="Components/InteractComponent" unique_id=333519067]
+collision_layer = 0
+collision_mask = 64
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Components/InteractComponent/InteractArea" unique_id=557252193]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+shape = SubResource("BoxShape3D_bwmay")
+
+[node name="InteractionKey" type="Sprite3D" parent="Components/InteractComponent" unique_id=486969009]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0.14997303, 0)
+flip_h = true
+texture = ExtResource("7_bwmay")
+
 [node name="Visual" type="Node3D" parent="." unique_id=1570944933]
 
 [node name="AnimatedSprite3D" type="Node3D" parent="Visual" unique_id=575806736]
@@ -566,3 +587,5 @@ transform = Transform3D(-0.8641343, 0, -0.50326127, 0, 1, 0, 0.50326127, 0, -0.8
 [connection signal="timeout" from="Components/MovementComponent/Timers/JumpBufferTimer" to="." method="_on_jump_buffer_timer_timeout"]
 [connection signal="timeout" from="Components/CombatComponent/Timers/Attack_CoolDown_Timer" to="." method="_on_attack_cool_down_timer_timeout"]
 [connection signal="timeout" from="Components/HealthComponent/Timers/heal_timer" to="." method="_on_heal_timer_timeout"]
+[connection signal="body_entered" from="Components/InteractComponent/InteractArea" to="Components/InteractComponent" method="_on_interact_area_body_entered"]
+[connection signal="body_exited" from="Components/InteractComponent/InteractArea" to="Components/InteractComponent" method="_on_interact_area_body_exited"]

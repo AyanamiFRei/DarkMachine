@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://blhupxhdf8pg1" path="res://assets/tsns_file/capsule.tscn" id="8_8wjio"]
 [ext_resource type="PackedScene" uid="uid://bvekdtu8dpq5l" path="res://assets/tsns_file/capsule_smoll.tscn" id="9_8wjio"]
 [ext_resource type="PackedScene" uid="uid://d0p4yv8micb4o" path="res://assets/tsns_file/1platform.tscn" id="10_a0ryf"]
+[ext_resource type="PackedScene" uid="uid://bru4wy863icpl" path="res://assets/objects/interections_objects/ItemToPickUp/ItemToPickup.tscn" id="11_2x6ot"]
 [ext_resource type="PackedScene" uid="uid://c62ray5n8eeir" path="res://assets/objects/breakable_wall/breakable_wall.tscn" id="11_4wd2b"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_tlxyd"]
@@ -143,5 +144,16 @@ shape = SubResource("BoxShape3D_tlxyd")
 
 [node name="Node3D" type="Node3D" parent="." unique_id=973234465]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9593636, -0.020511007, 2.9585567e-07)
+
+[node name="Node3D2" type="Node3D" parent="." unique_id=727193280]
+
+[node name="ItemToPickup" parent="Node3D2" unique_id=304441225 instance=ExtResource("11_2x6ot")]
+transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -1.2275156, 0, -1.853497e-07)
+
+[node name="ItemToPickup3" parent="Node3D2" unique_id=1730838396 instance=ExtResource("11_2x6ot")]
+transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -1.5275748, 0, -2.306574e-07)
+
+[node name="ItemToPickup2" parent="Node3D2" unique_id=1158278060 instance=ExtResource("11_2x6ot")]
+transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -0.94109535, 0, -1.4210144e-07)
 
 [connection signal="body_entered" from="Checkpoint" to="player" method="_on_checkpoint_body_entered"]

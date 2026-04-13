@@ -4,7 +4,6 @@ extends CharacterBody3D
 @onready var movement = $Components/MovementComponent
 @onready var animation_component = $Components/AnimationComponent
 @onready var heal_timer: Timer = $heal_timer
-
 @export var menu_button: Node3D
 @onready var progress_bar = get_tree().get_nodes_in_group("healthbar")
 
@@ -33,8 +32,9 @@ func _ready() -> void:
 	combat.attack_finished.connect(_on_attack_finished)
 	$Components/CombatComponent/Area_dmg/CollisionShape3D.disabled = false
 	$Components/CombatComponent/Area_dmg/CollisionShape3D2.disabled = false
-
-
+	
+	
+	
 # ############################################################
 # ЛОГИКА ДЛЯ ВЗАИМОДЕЙСТВИЯ С HealthComponent
 # ############################################################
