@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://bokb1qebjcrx2"]
 
 [ext_resource type="PackedScene" uid="uid://1w4j06345h57" path="res://assets/objects/Door.tscn" id="3_cuxx3"]
-[ext_resource type="Script" uid="uid://cb5xrcymeftw1" path="res://assets/objects/door1.gd" id="4_3n1ja"]
 [ext_resource type="PackedScene" uid="uid://blhupxhdf8pg1" path="res://assets/tsns_file/capsule.tscn" id="4_4dc8s"]
+[ext_resource type="Script" uid="uid://sc1ms4iycjya" path="res://assets/objects/door2.gd" id="4_cuxx3"]
+[ext_resource type="PackedScene" uid="uid://cw86i1wgw62jl" path="res://assets/enteties/player/player.tscn" id="5_3n1ja"]
 [ext_resource type="PackedScene" uid="uid://bvekdtu8dpq5l" path="res://assets/tsns_file/capsule_smoll.tscn" id="5_rqk6o"]
 
 [node name="room_3" type="Node3D" unique_id=601273248]
@@ -15,11 +16,12 @@ visible = false
 transform = Transform3D(-9.48, 0, 8.2876755e-07, 0, 9.48, 0, -8.2876755e-07, 0, -9.48, 4.712677e-07, 0.75562096, -5.390674)
 
 [node name="platform" type="Node3D" parent="." unique_id=963260723]
-transform = Transform3D(-4.015, 0, -6.0624814e-07, 0, 4.015, 0, 6.0624814e-07, 0, -4.015, 0.43832627, 0.47211763, -0.009132331)
+transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, 0.43832627, 0.47211763, -0.009132331)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="platform" unique_id=1188436605]
 transform = Transform3D(1, 0, -1.4210855e-14, 0, 1, 0, 1.4210855e-14, 0, 1, 0.17587313, -0.9427588, 1.2644545)
 use_collision = true
+collision_layer = 2
 size = Vector3(0.82470703, 1, 0.091796875)
 
 [node name="CSGBox3D9" type="CSGBox3D" parent="platform" unique_id=792789605]
@@ -174,6 +176,13 @@ transform = Transform3D(-1, 0, -8.742277e-08, 4.3711385e-08, 0.8660254, -0.5, 7.
 light_energy = 0.52
 light_specular = 0.0
 
-[node name="Door2" parent="." unique_id=1600568540 instance=ExtResource("3_cuxx3")]
-transform = Transform3D(6.9137125, 0, 0.052512378, 0, 8.805796, 0, -2.696432, 0, 1.0539906, 2.3221097, 0.9967387, -4.9771805)
-script = ExtResource("4_3n1ja")
+[node name="Door_3" parent="." unique_id=1730044608 instance=ExtResource("3_cuxx3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.97231627, 0.46491438, -1.2581848)
+script = ExtResource("4_cuxx3")
+
+[node name="player" parent="." unique_id=1722918080 instance=ExtResource("5_3n1ja")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7839254, 0.51092094, -1.2746754)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=298270811]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6819644, -0.16201371, -0.2913053)
+use_collision = true
