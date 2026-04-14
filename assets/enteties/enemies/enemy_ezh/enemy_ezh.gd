@@ -110,6 +110,6 @@ func take_dmg(dmg):
 		queue_free()
 
 
-#func _on_attack_healthbar_timer_timeout() -> void:
-	#if progress_bar.size() > 0:
-		#progress_bar[0].value -= 25
+func _on_attack_healthbar_timer_timeout() -> void:
+	if progress_bar.size() > 0:
+		progress_bar[0].value -= 25

@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://d0p4yv8micb4o" path="res://assets/tsns_file/1platform.tscn" id="10_a0ryf"]
 [ext_resource type="PackedScene" uid="uid://bru4wy863icpl" path="res://assets/objects/interections_objects/ItemToPickUp/ItemToPickup.tscn" id="11_2x6ot"]
 [ext_resource type="PackedScene" uid="uid://c62ray5n8eeir" path="res://assets/objects/breakable_wall/breakable_wall.tscn" id="11_4wd2b"]
+[ext_resource type="PackedScene" uid="uid://c0da202lvw8sg" path="res://bonfire.tscn" id="12_2x6ot"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_tlxyd"]
 size = Vector3(0.23687744, 0.27172852, 0.15917969)
@@ -69,16 +70,16 @@ transform = Transform3D(-0.0407332, 0, -3.5610097e-09, 0, 0.0407332, 0, 3.561009
 transform = Transform3D(0.052010003, 0, -0.087549515, 0, 0.101833, 0, 0.087549515, 0, 0.052010003, 0.232, -0.013, -0.504)
 
 [node name="breakable_wall_1" parent="envirement" unique_id=1833233406 instance=ExtResource("11_4wd2b")]
-transform = Transform3D(0.04, 0, 0, 0, 0.04, 0, 0, 0, 0.04, 0.19244538, -0.015774399, -0.5030401)
+transform = Transform3D(0.04, 0, 0, 0, 0.04, 0, 0, 0, 0.04, 0.16233486, -0.015774399, -0.5030401)
 
 [node name="breakable_wall_3" parent="envirement" unique_id=1910681947 instance=ExtResource("11_4wd2b")]
-transform = Transform3D(0.04, 0, 0, 0, 0.04, 0, 0, 0, 0.04, 0.19244538, 0.003286412, -0.5030401)
+transform = Transform3D(0.04, 0, 0, 0, 0.04, 0, 0, 0, 0.04, 0.16233486, 0.003286412, -0.5030401)
 
 [node name="breakable_wall_2" parent="envirement" unique_id=985033002 instance=ExtResource("11_4wd2b")]
-transform = Transform3D(0.04, 0, 0, 0, 0.04, 0, 0, 0, 0.04, 0.21133965, -0.015774399, -0.5030401)
+transform = Transform3D(0.04, 0, 0, 0, 0.04, 0, 0, 0, 0.04, 0.18103501, -0.015774399, -0.5030401)
 
 [node name="breakable_wall_4" parent="envirement" unique_id=979257200 instance=ExtResource("11_4wd2b")]
-transform = Transform3D(0.04, 0, 0, 0, 0.04, 0, 0, 0, 0.04, 0.21133965, 0.0036048498, -0.5030401)
+transform = Transform3D(0.04, 0, 0, 0, 0.04, 0, 0, 0, 0.04, 0.18122913, 0.0036048498, -0.5030401)
 
 [node name="light" type="Node3D" parent="." unique_id=899278441]
 
@@ -155,5 +156,8 @@ transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -1.5275748, 0, -2.30
 
 [node name="ItemToPickup2" parent="Node3D2" unique_id=1158278060 instance=ExtResource("11_2x6ot")]
 transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -0.94109535, 0, -1.4210144e-07)
+
+[node name="bonfire" parent="." unique_id=32593710 instance=ExtResource("12_2x6ot")]
+transform = Transform3D(0.54051757, 0, 0, 0, 0.54051757, 0, 0, 0, 0.54051757, 1.6707779, 0.043310095, 2.5228044e-07)
 
 [connection signal="body_entered" from="Checkpoint" to="player" method="_on_checkpoint_body_entered"]

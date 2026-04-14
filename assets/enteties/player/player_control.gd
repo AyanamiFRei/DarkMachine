@@ -3,7 +3,7 @@ extends CharacterBody3D
 @onready var combat = $Components/CombatComponent
 @onready var movement = $Components/MovementComponent
 @onready var animation_component = $Components/AnimationComponent
-@onready var heal_timer: Timer = $heal_timer
+@onready var heal_timer: Timer = $Components/HealthComponent/Timers/heal_timer
 @export var menu_button: Node3D
 @onready var progress_bar = get_tree().get_nodes_in_group("healthbar")
 
@@ -22,6 +22,7 @@ func _ready() -> void:
 	if GameManager.has_custom_spawn:
 		global_position = GameManager.spawn_position
 		GameManager.has_custom_spawn = false  # сбрасываем флаг
+		
 
 	# ПОДКЛЮЧЕНИЕ ЗДОРОВЬЯ
 	health_component.died.connect(_on_player_died)
@@ -42,10 +43,14 @@ func _on_player_died():
 	death = true
 	can_move = false
 	velocity = Vector3.ZERO
-
+	
+	GameManager.save_player(self)
 	animation_component.play_death()
 	await animation_component.wait_for_death_animation()
-	respawn()
+	get_tree().change_scene_to_file("res://assets/menus/death_screen.tscn")
+	#animation_component.play_death()
+	#await animation_component.wait_for_death_animation()
+	#respawn()
 
 func _on_heal_timer_timeout():
 	health_component.heal(30)
@@ -87,6 +92,9 @@ func _physics_process(delta: float) -> void:
 		combat.attack()
 	if Input.is_action_just_pressed("ui_cancel"):
 		print("ESC нажата!")
+		var player = get_tree().get_first_node_in_group("player")
+		if player:
+			GameManager.save_player(player)
 		get_tree().change_scene_to_file("res://assets/menus/ingamemenu.tscn")
 	if Input.is_action_just_pressed("heal"):
 		heal_timer.start()

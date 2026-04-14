@@ -4,7 +4,7 @@ extends Node3D
 
 @export var speed := 3.5
 @export var crouch_speed := 1.5
-@export var jump_velocity := 7.0
+@export var jump_velocity := 10.0
 @export var gravity := 20.0
 @export var coyote_time := 0.12
 @export var jump_buffer_time := 0.12
@@ -32,6 +32,7 @@ func tick(delta: float) -> void:
 		coyote_timer -= delta
 	if Input.is_action_just_pressed("ui_accept"):
 		jump_buffer_timer = jump_buffer_time
+		print(player.global_position)
 	
 	# Без реализации анимаций не работает
 	#is_crouching = Input.is_action_pressed("Crouch") and player.is_on_floor()
@@ -59,5 +60,6 @@ func tick(delta: float) -> void:
 
 	if Input.is_action_just_released("ui_accept") and player.velocity.y > 0:
 		player.velocity.y *= short_jump_multiplier
+		
 
 	was_on_floor = on_floor
