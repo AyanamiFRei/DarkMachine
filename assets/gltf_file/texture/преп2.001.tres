@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cdxmbvnl3mhi7"]
+
+[ext_resource type="Texture2D" uid="uid://e0vfwtmgew5y" path="res://assets/gltf_file/AP1_преп2.png" id="1_kl8na"]
+
+[resource]
+resource_name = "преп2.001"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_kl8na")
+roughness = 0.9290909
+texture_repeat = false

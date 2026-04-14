@@ -15,6 +15,12 @@ var hp = 100
 var dmg = 25
 var just_hit_player = false
 var target_point = CharacterBody3D
+#Для отбрасывания {
+var knockback_force = 30.0 
+var knockback_up = 1.0  
+var dir = 1
+var push_vector = Vector3(dir * knockback_force, knockback_up, 0)
+#}
 
 func set_target_point(target):
 	target_point = target
@@ -82,6 +88,16 @@ func _on_area_3d_body_entered(body) -> void:
 		playerNode = body
 		just_hit_player = true
 		attack_healthbar_timer.start()
+		if body.global_position.x > global_position.x:
+			dir=1
+		else:
+			dir=-1
+		if "velocity" in body:
+			if body is CharacterBody3D:
+				body.velocity = push_vector 
+				
+				
+				body.move_and_slide() 
 	
 		
 

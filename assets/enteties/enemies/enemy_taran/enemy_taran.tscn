@@ -353,7 +353,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"player_detect",
-"speed": 10.0
+"speed": 7.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -386,7 +386,10 @@ animations = [{
 }]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ip601"]
-size = Vector3(1.2109375, 0.099731445, 0.13122559)
+size = Vector3(1.4785156, 0.26792908, 0.13122559)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_a6mbk"]
+size = Vector3(1.2360954, 0.6484375, 1)
 
 [node name="enemy1" type="CharacterBody3D" unique_id=1785802915]
 collision_layer = 4
@@ -413,8 +416,7 @@ shape = SubResource("BoxShape3D_3sljv")
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="." unique_id=2075174788]
 transform = Transform3D(0.0357433, 0, 0, 0, 0.0357433, 0, 0, 0, 0.0357433, -0.0035616127, -0.0058748713, 0.0009599389)
 sprite_frames = SubResource("SpriteFrames_4duge")
-animation = &"smoke"
-frame_progress = 0.75356877
+animation = &"idle"
 
 [node name="dmg_timer" type="Timer" parent="." unique_id=645667814]
 
@@ -425,8 +427,15 @@ collision_layer = 4
 collision_mask = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D2" unique_id=420845754]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.014709473, -0.0017700195)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.060203552, -0.0017700195)
 shape = SubResource("BoxShape3D_ip601")
+
+[node name="Area3D3" type="Area3D" parent="." unique_id=1495902093]
+collision_layer = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D3" unique_id=597019026]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.003967094, 0.017578125, 0)
+shape = SubResource("BoxShape3D_a6mbk")
 
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="Area3D" to="." method="_on_area_3d_body_exited"]
@@ -434,3 +443,5 @@ shape = SubResource("BoxShape3D_ip601")
 [connection signal="timeout" from="attack_healthbar_timer" to="." method="_on_attack_healthbar_timer_timeout"]
 [connection signal="body_entered" from="Area3D2" to="." method="_on_area_3d_2_body_entered"]
 [connection signal="body_exited" from="Area3D2" to="." method="_on_area_3d_2_body_exited"]
+[connection signal="body_entered" from="Area3D3" to="." method="_on_area_3d_3_body_entered"]
+[connection signal="body_exited" from="Area3D3" to="." method="_on_area_3d_3_body_exited"]

@@ -39,10 +39,20 @@ materials/extract_format=0
 materials/extract_path=""
 _subresources={
 "materials": {
+"Enemy_Ezh": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://assets/gltf_file/texture/Enemy_Ezh.tres",
+"use_external/path": "uid://rlms6mn1lkua"
+},
 "poor стена": {
 "use_external/enabled": true,
 "use_external/fallback_path": "res://assets/gltf_file/texture/poor стена.tres",
 "use_external/path": "uid://b7vcgqpgwqogy"
+},
+"блок": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://assets/gltf_file/texture/блок.tres",
+"use_external/path": "uid://c56vvgfhgnieu"
 },
 "вода2": {
 "use_external/enabled": true,
@@ -139,15 +149,60 @@ _subresources={
 "use_external/fallback_path": "res://assets/gltf_file/texture/мини колба7.tres",
 "use_external/path": "uid://ds1pabe6shub4"
 },
+"плита10": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://assets/gltf_file/texture/плита10.tres",
+"use_external/path": "uid://d0j1xjd7nb8er"
+},
+"плита2": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://assets/gltf_file/texture/плита2.tres",
+"use_external/path": "uid://q5k762adxj5w"
+},
+"плита3": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://assets/gltf_file/texture/плита3.tres",
+"use_external/path": "uid://cwrojnq1eiks2"
+},
+"плита4": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://assets/gltf_file/texture/плита4.tres",
+"use_external/path": "uid://ccfd8d7i5koh2"
+},
+"плита5": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://assets/gltf_file/texture/плита5.tres",
+"use_external/path": "uid://ccuqact401tnx"
+},
+"плита6": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://assets/gltf_file/texture/плита6.tres",
+"use_external/path": "uid://bf6p4vjyeg2mv"
+},
+"плита7": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://assets/gltf_file/texture/плита7.tres",
+"use_external/path": "uid://hctvrfrp6fa8"
+},
+"плита8": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://assets/gltf_file/texture/плита8.tres",
+"use_external/path": "uid://beknhjek2f63b"
+},
+"плита9": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://assets/gltf_file/texture/плита9.tres",
+"use_external/path": "uid://3vry1srmsuoq"
+},
 "преп1": {
 "use_external/enabled": true,
 "use_external/fallback_path": "res://assets/gltf_file/texture/преп1.tres",
 "use_external/path": "uid://4hvf5fsih3do"
 },
-"преп2": {
+"преп2.001": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://assets/gltf_file/texture/преп2.tres",
-"use_external/path": "uid://d4itp751jb3mr"
+"use_external/fallback_path": "res://assets/gltf_file/texture/преп2.001.tres",
+"use_external/path": "uid://cdxmbvnl3mhi7"
 },
 "стена2": {
 "use_external/enabled": true,
@@ -191,275 +246,374 @@ _subresources={
 }
 },
 "meshes": {
-"AP1_poor стена": {
+"AP1_Enemy_Ezh": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_poor ╤Б╤В╨╡╨╜╨░.res",
-"save_to_file/path": "uid://d0q2sc0rwpal8"
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_Enemy_Ezh.res",
+"save_to_file/path": "uid://cptsrf5j0gb24"
 },
-"AP1_вода2": {
+"AP1_bottle1": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_╨▓╨╛╨┤╨░2.res",
-"save_to_file/path": "uid://dc2sm3rqgdg6s"
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_bottle1.res",
+"save_to_file/path": "uid://c8r7cjech245p"
 },
-"AP1_затемнение1": {
+"AP1_bottle2": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_╨╖╨░╤В╨╡╨╝╨╜╨╡╨╜╨╕╨╡1.res",
-"save_to_file/path": "uid://b5juje68588gd"
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_bottle2.res",
+"save_to_file/path": "uid://dsf44ia50qjhn"
 },
-"AP1_затемнение2": {
+"AP1_bottle3": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_╨╖╨░╤В╨╡╨╝╨╜╨╡╨╜╨╕╨╡2.res",
-"save_to_file/path": "uid://cq00l21an7e51"
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_bottle3.res",
+"save_to_file/path": "uid://dgfg21snp5fiu"
 },
-"AP1_колба1": {
+"AP1_bottle4": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_╨║╨╛╨╗╨▒╨░1.res",
-"save_to_file/path": "uid://ban0mrkw8tby4"
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_bottle4.res",
+"save_to_file/path": "uid://cli8bphruoqgu"
 },
-"AP1_колба2": {
+"AP1_bottle5": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_╨║╨╛╨╗╨▒╨░2.res",
-"save_to_file/path": "uid://doevsjgxickde"
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_bottle5.res",
+"save_to_file/path": "uid://duxbptd6pg7uv"
 },
-"AP1_колба3": {
+"AP1_bottle6": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_╨║╨╛╨╗╨▒╨░3.res",
-"save_to_file/path": "uid://cma6x55pjcpb2"
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_bottle6.res",
+"save_to_file/path": "uid://cr5wbnkbtwb6f"
 },
-"AP1_колба4": {
+"AP1_bottle8": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_╨║╨╛╨╗╨▒╨░4.res",
-"save_to_file/path": "uid://cvekvi3kh6o1c"
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_bottle8.res",
+"save_to_file/path": "uid://xieay44elqmv"
 },
-"AP1_колба5": {
+"AP1_dark1": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_╨║╨╛╨╗╨▒╨░5.res",
-"save_to_file/path": "uid://bw6ynscu8xf1q"
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_dark1.res",
+"save_to_file/path": "uid://137gel60rcwk"
 },
-"AP1_колба6": {
+"AP1_dark2": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_╨║╨╛╨╗╨▒╨░6.res",
-"save_to_file/path": "uid://b023anorvy8fq"
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_dark2.res",
+"save_to_file/path": "uid://c5h7ahktqawrm"
 },
-"AP1_колба7": {
+"AP1_gears are dark1": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_╨║╨╛╨╗╨▒╨░7.res",
-"save_to_file/path": "uid://bubydrslo8fc5"
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_gears are dark1.res",
+"save_to_file/path": "uid://bojcw148n2781"
 },
-"AP1_линия1": {
+"AP1_gears are dark2": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_╨╗╨╕╨╜╨╕╤П1.res",
-"save_to_file/path": "uid://coib1bkegsf7r"
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_gears are dark2.res",
+"save_to_file/path": "uid://cq6bjo4jdi26h"
 },
-"AP1_линия2": {
+"AP1_gears are light1": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_╨╗╨╕╨╜╨╕╤П2.res",
-"save_to_file/path": "uid://ccg6nt2t2ypjh"
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_gears are light1.res",
+"save_to_file/path": "uid://cyrrc1w0plofh"
 },
-"AP1_мини колба1": {
+"AP1_gears are light2": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_╨╝╨╕╨╜╨╕ ╨║╨╛╨╗╨▒╨░1.res",
-"save_to_file/path": "uid://jxrdxgwhfp1a"
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_gears are light2.res",
+"save_to_file/path": "uid://dw448lqif23wd"
 },
-"AP1_мини колба2": {
+"AP1_gears on the wall": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_╨╝╨╕╨╜╨╕ ╨║╨╛╨╗╨▒╨░2.res",
-"save_to_file/path": "uid://4c3rf6bdxvk1"
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_gears on the wall.res",
+"save_to_file/path": "uid://b4njvxy63uqnm"
 },
-"AP1_мини колба3": {
+"AP1_line1": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_╨╝╨╕╨╜╨╕ ╨║╨╛╨╗╨▒╨░3.res",
-"save_to_file/path": "uid://b3hu7dmiwtsd4"
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_line1.res",
+"save_to_file/path": "uid://ci1gq75sw2uyk"
 },
-"AP1_мини колба4": {
+"AP1_line2": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_╨╝╨╕╨╜╨╕ ╨║╨╛╨╗╨▒╨░4.res",
-"save_to_file/path": "uid://db77sn2jo0y2w"
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_line2.res",
+"save_to_file/path": "uid://02dm85bu7w78"
 },
-"AP1_мини колба5": {
+"AP1_minibottle1": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_╨╝╨╕╨╜╨╕ ╨║╨╛╨╗╨▒╨░5.res",
-"save_to_file/path": "uid://vonttjq2qe5v"
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_minibottle1.res",
+"save_to_file/path": "uid://biojkm8hidkb6"
 },
-"AP1_мини колба6": {
+"AP1_minibottle15": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_╨╝╨╕╨╜╨╕ ╨║╨╛╨╗╨▒╨░6.res",
-"save_to_file/path": "uid://doyatir2yaa03"
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_minibottle15.res",
+"save_to_file/path": "uid://d2ay2iypigeca"
 },
-"AP1_мини колба7": {
+"AP1_minibottle2": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_╨╝╨╕╨╜╨╕ ╨║╨╛╨╗╨▒╨░7.res",
-"save_to_file/path": "uid://ft5rcfrdeoqn"
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_minibottle2.res",
+"save_to_file/path": "uid://b8rnmk6fuixuc"
 },
-"AP1_преп1": {
+"AP1_minibottle3": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_╨┐╤А╨╡╨┐1.res",
-"save_to_file/path": "uid://birfuqgs3yk6b"
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_minibottle3.res",
+"save_to_file/path": "uid://c15q7h1isnws7"
 },
-"AP1_преп2": {
+"AP1_minibottle4": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_╨┐╤А╨╡╨┐2.res",
-"save_to_file/path": "uid://dk5a1i3qqer3"
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_minibottle4.res",
+"save_to_file/path": "uid://bn8pwwf700vbu"
 },
-"AP1_стена2": {
+"AP1_minibottle6": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_╤Б╤В╨╡╨╜╨░2.res",
-"save_to_file/path": "uid://cdpm7wvle3tyy"
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_minibottle6.res",
+"save_to_file/path": "uid://cnl302w7g5onh"
 },
-"AP1_трубы1": {
+"AP1_minibottle7": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_╤В╤А╤Г╨▒╤Л1.res",
-"save_to_file/path": "uid://c6j5bnlc57soq"
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_minibottle7.res",
+"save_to_file/path": "uid://wfhruwuysx18"
 },
-"AP1_трубы2": {
+"AP1_obstacle1": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_╤В╤А╤Г╨▒╤Л2.res",
-"save_to_file/path": "uid://4ap5lq0f1dlt"
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_obstacle1.res",
+"save_to_file/path": "uid://b6ae6ualtlri5"
 },
-"AP1_шестерни на стене": {
+"AP1_obstacle2": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_╤И╨╡╤Б╤В╨╡╤А╨╜╨╕ ╨╜╨░ ╤Б╤В╨╡╨╜╨╡.res",
-"save_to_file/path": "uid://cdemiv42qnlvt"
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_obstacle2.res",
+"save_to_file/path": "uid://dvd0pfceha54f"
 },
-"AP1_шестерни светлые1": {
+"AP1_pipes1": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_╤И╨╡╤Б╤В╨╡╤А╨╜╨╕ ╤Б╨▓╨╡╤В╨╗╤Л╨╡1.res",
-"save_to_file/path": "uid://bb8wrxb27togb"
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_pipes1.res",
+"save_to_file/path": "uid://c0v33p6x7c7d4"
 },
-"AP1_шестерни светлые2": {
+"AP1_pipes2": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_╤И╨╡╤Б╤В╨╡╤А╨╜╨╕ ╤Б╨▓╨╡╤В╨╗╤Л╨╡2.res",
-"save_to_file/path": "uid://s5hm8dy6h3an"
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_pipes2.res",
+"save_to_file/path": "uid://bbynptvrsdx5d"
 },
-"AP1_шестерни темные1": {
+"AP1_poor": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_╤И╨╡╤Б╤В╨╡╤А╨╜╨╕ ╤В╨╡╨╝╨╜╤Л╨╡1.res",
-"save_to_file/path": "uid://ct3y86bev51io"
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_poor.res",
+"save_to_file/path": "uid://g8yjiyijyna8"
 },
-"AP1_шестерни темные2": {
+"AP1_stove1": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_╤И╨╡╤Б╤В╨╡╤А╨╜╨╕ ╤В╨╡╨╝╨╜╤Л╨╡2.res",
-"save_to_file/path": "uid://4nnw2uts3nci"
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_stove1.res",
+"save_to_file/path": "uid://dx6bcivciy1mv"
+},
+"AP1_stove10": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_stove10.res",
+"save_to_file/path": "uid://daikb7v6wchhg"
+},
+"AP1_stove2": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_stove2.res",
+"save_to_file/path": "uid://twyp1yuodpsq"
+},
+"AP1_stove3": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_stove3.res",
+"save_to_file/path": "uid://dgmv6wul2swva"
+},
+"AP1_stove4": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_stove4.res",
+"save_to_file/path": "uid://cvwwx4prn5n1a"
+},
+"AP1_stove5": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_stove5.res",
+"save_to_file/path": "uid://cwkju153n6hos"
+},
+"AP1_stove6": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_stove6.res",
+"save_to_file/path": "uid://ck56yn7g5vwdw"
+},
+"AP1_stove7": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_stove7.res",
+"save_to_file/path": "uid://bp7yawrbbmm5n"
+},
+"AP1_stove8": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_stove8.res",
+"save_to_file/path": "uid://dh2afewjy5s3d"
+},
+"AP1_stove9": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_stove9.res",
+"save_to_file/path": "uid://d1uk6b3ytx5bd"
+},
+"AP1_wall1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_wall1.res",
+"save_to_file/path": "uid://bou42kol7x08s"
+},
+"AP1_water": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://assets/gltf_file/mesh/AP1_water.res",
+"save_to_file/path": "uid://bn12g8611jrds"
 }
 }
 }
