@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://bru4wy863icpl" path="res://assets/objects/interections_objects/ItemToPickUp/ItemToPickup.tscn" id="11_2x6ot"]
 [ext_resource type="PackedScene" uid="uid://c62ray5n8eeir" path="res://assets/objects/breakable_wall/breakable_wall.tscn" id="11_4wd2b"]
 [ext_resource type="PackedScene" uid="uid://c0da202lvw8sg" path="res://bonfire.tscn" id="12_2x6ot"]
+[ext_resource type="PackedScene" uid="uid://c4vgkihwh2bxu" path="res://assets/objects/steampipe/steampipe.tscn" id="13_h0mf3"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_tlxyd"]
 size = Vector3(0.23687744, 0.27172852, 0.15917969)
@@ -159,5 +160,8 @@ transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -0.94109535, 0, -1.4
 
 [node name="bonfire" parent="." unique_id=32593710 instance=ExtResource("12_2x6ot")]
 transform = Transform3D(0.54051757, 0, 0, 0, 0.54051757, 0, 0, 0, 0.54051757, 1.6707779, 0.043310095, 2.5228044e-07)
+
+[node name="Steampipe" parent="." unique_id=514883721 instance=ExtResource("13_h0mf3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3537978, 0.072642975, -2.0441779e-07)
 
 [connection signal="body_entered" from="Checkpoint" to="player" method="_on_checkpoint_body_entered"]
