@@ -5,7 +5,6 @@
 [ext_resource type="Texture2D" uid="uid://cc8ty5k2b1olx" path="res://assets/png/photo_2026-02-18_23-50-51.jpg" id="3_vmggn"]
 [ext_resource type="Texture2D" uid="uid://bf6kg3gxud0ga" path="res://assets/png/photo_2026-02-18_23-51-22.jpg" id="4_8gj4p"]
 
-
 [sub_resource type="BoxMesh" id="BoxMesh_s7dtb"]
 size = Vector3(0.5, 0.5, 3)
 

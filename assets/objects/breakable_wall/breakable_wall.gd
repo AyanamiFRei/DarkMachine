@@ -5,7 +5,7 @@ extends CharacterBody3D
 @onready var attack_healthbar_timer: Timer = $attack_healthbar_timer
 @onready var progress_bar = get_tree().get_nodes_in_group("healthbar")
 @onready var dmg_timer: Timer = $dmg_timer
-@onready var gg: CharacterBody3D = $"../player"
+
 var type = "enemy"
 
 

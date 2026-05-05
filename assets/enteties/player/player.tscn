@@ -454,6 +454,58 @@ subdivide_height = 1
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ratu8"]
 height = 1.4160156
 
+<<<<<<< HEAD
+=======
+[sub_resource type="Resource" id="Resource_oet4l"]
+script = ExtResource("13_q3ml6")
+
+[sub_resource type="FontFile" id="FontFile_bwmay"]
+cache/0/variation_coordinates = {}
+cache/0/face_index = 0
+cache/0/embolden = 0.0
+cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
+cache/0/spacing_top = 0
+cache/0/spacing_bottom = 0
+cache/0/spacing_space = 0
+cache/0/spacing_glyph = 0
+cache/0/baseline_offset = 0.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/40/0/ascent = 0.0
+cache/0/40/0/descent = 0.0
+cache/0/40/0/underline_position = 0.0
+cache/0/40/0/underline_thickness = 0.0
+cache/0/40/0/scale = 1.0
+cache/0/20/0/ascent = 0.0
+cache/0/20/0/descent = 0.0
+cache/0/20/0/underline_position = 0.0
+cache/0/20/0/underline_thickness = 0.0
+cache/0/20/0/scale = 1.0
+cache/0/30/0/ascent = 0.0
+cache/0/30/0/descent = 0.0
+cache/0/30/0/underline_position = 0.0
+cache/0/30/0/underline_thickness = 0.0
+cache/0/30/0/scale = 1.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bwmay"]
+bg_color = Color(0.5410782, 0.0067856116, 1.4439226e-07, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 0.89411765, 0.92941177, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ofn87"]
+bg_color = Color(0.007843138, 0.3137255, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 0.89411765, 0.92941177, 1)
+
 [node name="player" type="CharacterBody3D" unique_id=1722918080 groups=["player"]]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0.013298154)
 collision_layer = 2
@@ -477,6 +529,18 @@ wait_time = 0.05
 [node name="JumpBufferTimer" type="Timer" parent="Components/MovementComponent/Timers" unique_id=466794369]
 unique_name_in_owner = true
 wait_time = 0.2
+
+[node name="LedgeWallRay" type="RayCast3D" parent="Components/MovementComponent" unique_id=1844596339]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08, 0)
+target_position = Vector3(-0.15, 0, 0)
+
+[node name="LedgeClearRay" type="RayCast3D" parent="Components/MovementComponent" unique_id=412482662]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.11117322, 0)
+target_position = Vector3(-0.15, 0, 0)
+
+[node name="LedgeTopRay" type="RayCast3D" parent="Components/MovementComponent" unique_id=404347426]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17221408, 0.12, 2.7939677e-09)
+target_position = Vector3(0, -0.18, 0)
 
 [node name="CombatComponent" type="Node3D" parent="Components" unique_id=489150703]
 script = ExtResource("8_3gcdb")
@@ -505,6 +569,7 @@ script = ExtResource("5_3gcdb")
 [node name="Timers" type="Timer" parent="Components/HealthComponent" unique_id=1042271656]
 
 [node name="heal_timer" type="Timer" parent="Components/HealthComponent/Timers" unique_id=1278202475]
+one_shot = true
 
 [node name="InteractComponent" type="Node3D" parent="Components" unique_id=2126076054]
 script = ExtResource("6_033l5")
@@ -527,7 +592,7 @@ texture = ExtResource("7_bwmay")
 [node name="AnimatedSprite3D" type="Node3D" parent="Visual" unique_id=575806736]
 
 [node name="StockModel" type="AnimatedSprite3D" parent="Visual/AnimatedSprite3D" unique_id=372622234]
-transform = Transform3D(-0.29999784, 0, 0.0011414477, 0, 0.3, 0, -0.0011414477, 0, -0.29999784, 0, 0, 0)
+transform = Transform3D(-0.29999784, 0, 0.0011414477, 0, 0.3, 0, -0.0011414477, 0, -0.29999784, -0.0011253208, -0.0016019791, 0.00022524595)
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_u84jc")
 animation = &"attack1"
@@ -558,6 +623,19 @@ player_path = NodePath("..")
 
 [node name="ingame_button" parent="." unique_id=26358718 instance=ExtResource("10_hyvrl")]
 transform = Transform3D(-0.8641343, 0, -0.50326127, 0, 1, 0, 0.50326127, 0, -0.8641343, 0.18122414, 0, -0.2574647)
+
+[node name="healthbar" type="CanvasLayer" parent="." unique_id=171459036]
+
+[node name="ProgressBar" type="ProgressBar" parent="healthbar" unique_id=607991648 groups=["healthbar"]]
+offset_left = 61.0
+offset_top = 67.0
+offset_right = 715.0
+offset_bottom = 149.0
+theme_override_fonts/font = SubResource("FontFile_bwmay")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/background = SubResource("StyleBoxFlat_bwmay")
+theme_override_styles/fill = SubResource("StyleBoxFlat_ofn87")
+value = 100.0
 
 [connection signal="timeout" from="Components/MovementComponent/Timers/CoyoteTimer" to="." method="_on_coyote_timer_timeout"]
 [connection signal="timeout" from="Components/MovementComponent/Timers/JumpBufferTimer" to="." method="_on_jump_buffer_timer_timeout"]

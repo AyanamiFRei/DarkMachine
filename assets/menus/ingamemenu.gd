@@ -12,6 +12,12 @@ extends Node3D
 
 func _ready():
 	happy.visible = false
+	
+	var player = get_tree().get_first_node_in_group("player")
+	if player:
+		print("fffffffffffffffffffffffffffff")
+		GameManager.save_player(player)
+	
 	# Подключаем сигналы для кнопки Play
 	if continue_button:
 		var continue_area = continue_button.get_node("Area3D")
@@ -262,8 +268,10 @@ func _on_verify2_input_event(_camera: Camera3D, event: InputEvent, position: Vec
 
 # ---------- ДЕЙСТВИЯ ----------
 func _continue():
-	print("ЗАПУСК ИГРЫ!")
-	get_tree().change_scene_to_file("res://main.tscn")
+	if GameManager.has_save():
+		get_tree().change_scene_to_file(GameManager.saved_scene)
+	else:
+		get_tree().change_scene_to_file("res://assets/Levels/room_1.tscn")
 
 
 func return_to_menu():

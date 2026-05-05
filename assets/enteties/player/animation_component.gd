@@ -3,7 +3,7 @@ extends Node3D
 @onready var anim: AnimatedSprite3D = $"../../Visual/AnimatedSprite3D/StockModel"
 @onready var right_hitbox: CollisionShape3D = $"../CombatComponent/Area_dmg/CollisionShape3D"
 @onready var left_hitbox: CollisionShape3D = $"../CombatComponent/Area_dmg/CollisionShape3D2"
-
+@onready var movement = $"../MovementComponent"
 var is_attacking = false
 var is_dead := false
 
@@ -19,8 +19,14 @@ func update_animation() -> void:
 		return
 	if is_attacking:
 		return
+
 	
+	if movement.is_hanging:
+		anim.play("idle") # anim.play("hang")
+		return
+
 	var input_dir := Input.get_axis("ui_left", "ui_right")
+
 	if input_dir > 0:
 		anim.flip_h = false
 		right_hitbox.disabled = true
