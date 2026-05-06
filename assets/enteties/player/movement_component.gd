@@ -32,12 +32,20 @@ var is_hanging := false
 var ledge_climb_position := Vector3.ZERO
 var ledge_cooldown := 0.0
 
+var jump_sound: AudioStreamPlayer
+
 
 func _ready() -> void:
 	var shape := collision.shape as CapsuleShape3D
 	if shape:
 		stand_height = shape.height
-
+	
+	var sound_file = load("res://assets/enteties/player/audios/jump.wav")
+	if sound_file:
+		jump_sound = AudioStreamPlayer.new()
+		jump_sound.stream = sound_file
+		jump_sound.volume_db = -16.0
+		add_child(jump_sound)
 
 func tick(delta: float) -> void:
 	if ledge_cooldown > 0.0:
@@ -82,6 +90,7 @@ func tick(delta: float) -> void:
 
 	if jump_buffer_timer > 0.0 and (on_floor or coyote_timer > 0.0):
 		player.velocity.y = jump_velocity
+		jump_sound.play()
 		jump_buffer_timer = 0.0
 		coyote_timer = 0.0
 
