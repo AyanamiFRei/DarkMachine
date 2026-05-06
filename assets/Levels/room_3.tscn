@@ -16,7 +16,7 @@ visible = false
 transform = Transform3D(-9.48, 0, 8.2876755e-07, 0, 9.48, 0, -8.2876755e-07, 0, -9.48, 4.712677e-07, 0.75562096, -5.390674)
 
 [node name="platform" type="Node3D" parent="." unique_id=963260723]
-transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, 0.43832627, 0.47211763, -0.009132331)
+transform = Transform3D(-4, 0, -6.039832e-07, 0, 4, 0, 6.039832e-07, 0, -4, 0.43832627, 0.47211763, 5.0635967)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="platform" unique_id=1188436605]
 transform = Transform3D(1, 0, -1.4210855e-14, 0, 1, 0, 1.4210855e-14, 0, 1, 0.17587313, -0.9427588, 1.2644545)
@@ -177,8 +177,14 @@ light_energy = 0.52
 light_specular = 0.0
 
 [node name="Door_3" parent="." unique_id=1730044608 instance=ExtResource("3_cuxx3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.97231627, 0.46491438, -1.2581848)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0588665, 0.46491438, 0.021601766)
 script = ExtResource("4_cuxx3")
 
 [node name="player" parent="." unique_id=1722918080 instance=ExtResource("5_3n1ja")]
 transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, 0.5058198, 0.60958827, -0.96714026)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7592536, 0.6011127, 0.019619748)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=298270811]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6819644, -0.16201371, -0.2913053)
+use_collision = true
+

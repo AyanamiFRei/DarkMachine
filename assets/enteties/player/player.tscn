@@ -17,10 +17,7 @@
 [ext_resource type="Script" uid="uid://cw8ndvc6aao1o" path="res://assets/enteties/player/animation_component.gd" id="9_033l5"]
 [ext_resource type="Texture2D" uid="uid://c1lkb227j8p47" path="res://assets/enteties/player/Take Hit.png" id="9_u84jc"]
 [ext_resource type="PackedScene" uid="uid://b6ee6rlhyqluf" path="res://assets/menus/ingame_button.tscn" id="10_hyvrl"]
-[ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="11_b3dqe"]
 [ext_resource type="Script" uid="uid://cs31oorh2t2pc" path="res://assets/enteties/player/camera_3d.gd" id="11_u84jc"]
-[ext_resource type="Script" uid="uid://csjccrhj5wnx7" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd" id="12_u84jc"]
-[ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="13_q3ml6"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_hyvrl"]
 radius = 0.14367676
@@ -457,9 +454,6 @@ subdivide_height = 1
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ratu8"]
 height = 1.4160156
 
-[sub_resource type="Resource" id="Resource_oet4l"]
-script = ExtResource("13_q3ml6")
-
 [sub_resource type="FontFile" id="FontFile_bwmay"]
 cache/0/variation_coordinates = {}
 cache/0/face_index = 0
@@ -617,28 +611,10 @@ shape = SubResource("CapsuleShape3D_ratu8")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1840779735]
 physics_interpolation_mode = 1
-transform = Transform3D(-1, 0, -8.7422755e-08, 0, 0.99999976, 0, 8.742278e-08, 0, -0.99999976, 0, 0, 4.848298)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, -0.087646425, -0.1839199)
 top_level = true
 script = ExtResource("11_u84jc")
-
-[node name="PhantomCamera3D" type="Node3D" parent="Camera3D" unique_id=2033430312 node_paths=PackedStringArray("follow_target")]
-transform = Transform3D(-1, 0, -8.7422755e-08, 0, 0.99999976, 0, 8.742278e-08, 0, -0.99999976, 0, 0, 4.848298)
-top_level = true
-script = ExtResource("12_u84jc")
-follow_mode = 2
-follow_target = NodePath("../..")
-tween_resource = SubResource("Resource_oet4l")
-tween_on_load = false
-follow_offset = Vector3(0, 0, 4.835)
-follow_damping = true
-follow_damping_value = Vector3(0.5, 0.5, 0.5)
-align_transform_with_view = Callable()
-align_position_with_view = Callable()
-
-[node name="PhantomCameraHost" type="Node" parent="Camera3D" unique_id=1585758701]
-process_priority = 300
-process_physics_priority = 300
-script = ExtResource("11_b3dqe")
+player_path = NodePath("..")
 
 [node name="ingame_button" parent="." unique_id=26358718 instance=ExtResource("10_hyvrl")]
 transform = Transform3D(-0.8641343, 0, -0.50326127, 0, 1, 0, 0.50326127, 0, -0.8641343, 0.18122414, 0, -0.2574647)
