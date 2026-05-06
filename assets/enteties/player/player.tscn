@@ -9,11 +9,11 @@
 [ext_resource type="Texture2D" uid="uid://qypw0lugtjs8" path="res://assets/enteties/player/Death.png" id="4_yfi7d"]
 [ext_resource type="Script" uid="uid://colfcocxeangg" path="res://assets/enteties/player/health_component.gd" id="5_3gcdb"]
 [ext_resource type="Texture2D" uid="uid://bxf5om6wkgh73" path="res://assets/enteties/player/Fall.png" id="5_hsamt"]
-[ext_resource type="Script" uid="uid://cn5wk0axrcps8" path="res://assets/enteties/player/interact_component.gd" id="6_033l5"]
+[ext_resource type="Script" path="res://assets/enteties/player/interact_component.gd" id="6_033l5"]
 [ext_resource type="Texture2D" uid="uid://dsd86esalwy8d" path="res://assets/enteties/player/Jump.png" id="7_b3dqe"]
 [ext_resource type="Texture2D" uid="uid://c6srelgfe4os" path="res://assets/sprite/icons8-e-key-48.png" id="7_bwmay"]
 [ext_resource type="Script" uid="uid://bdiwihp8h52ri" path="res://assets/enteties/player/movement_component.gd" id="7_plybv"]
-[ext_resource type="Script" uid="uid://d2me3hncaoe8s" path="res://assets/enteties/player/combat_component.gd" id="8_3gcdb"]
+[ext_resource type="Script" path="res://assets/enteties/player/combat_component.gd" id="8_3gcdb"]
 [ext_resource type="Script" uid="uid://cw8ndvc6aao1o" path="res://assets/enteties/player/animation_component.gd" id="9_033l5"]
 [ext_resource type="Texture2D" uid="uid://c1lkb227j8p47" path="res://assets/enteties/player/Take Hit.png" id="9_u84jc"]
 [ext_resource type="PackedScene" uid="uid://b6ee6rlhyqluf" path="res://assets/menus/ingame_button.tscn" id="10_hyvrl"]
@@ -455,6 +455,9 @@ subdivide_height = 1
 height = 1.4160156
 
 [sub_resource type="FontFile" id="FontFile_bwmay"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/variation_coordinates = {}
 cache/0/face_index = 0
 cache/0/embolden = 0.0
@@ -469,6 +472,11 @@ cache/0/16/0/descent = 0.0
 cache/0/16/0/underline_position = 0.0
 cache/0/16/0/underline_thickness = 0.0
 cache/0/16/0/scale = 1.0
+cache/0/30/0/ascent = 0.0
+cache/0/30/0/descent = 0.0
+cache/0/30/0/underline_position = 0.0
+cache/0/30/0/underline_thickness = 0.0
+cache/0/30/0/scale = 1.0
 cache/0/40/0/ascent = 0.0
 cache/0/40/0/descent = 0.0
 cache/0/40/0/underline_position = 0.0
@@ -479,11 +487,6 @@ cache/0/20/0/descent = 0.0
 cache/0/20/0/underline_position = 0.0
 cache/0/20/0/underline_thickness = 0.0
 cache/0/20/0/scale = 1.0
-cache/0/30/0/ascent = 0.0
-cache/0/30/0/descent = 0.0
-cache/0/30/0/underline_position = 0.0
-cache/0/30/0/underline_thickness = 0.0
-cache/0/30/0/scale = 1.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bwmay"]
 bg_color = Color(0.5410782, 0.0067856116, 1.4439226e-07, 1)
@@ -587,7 +590,7 @@ texture = ExtResource("7_bwmay")
 [node name="AnimatedSprite3D" type="Node3D" parent="Visual" unique_id=575806736]
 
 [node name="StockModel" type="AnimatedSprite3D" parent="Visual/AnimatedSprite3D" unique_id=372622234]
-transform = Transform3D(-0.29999784, 0, 0.0011414477, 0, 0.3, 0, -0.0011414477, 0, -0.29999784, -0.0011253208, -0.0016019791, 0.00022524595)
+transform = Transform3D(-0.29999784, 0, 0.0011414477, 0, 0.3, 0, -0.0011414477, 0, -0.29999784, -0.0010425597, -0.0004287511, -0.00010418892)
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_u84jc")
 animation = &"attack1"
@@ -611,7 +614,7 @@ shape = SubResource("CapsuleShape3D_ratu8")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1840779735]
 physics_interpolation_mode = 1
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, -0.087646425, -0.1839199)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, -0.087646425, -0.26609683)
 top_level = true
 script = ExtResource("11_u84jc")
 player_path = NodePath("..")

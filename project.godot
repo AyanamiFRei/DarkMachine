@@ -21,6 +21,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
+PhantomCameraManager="*uid://duq6jhf6unyis"
 GameManager="*uid://b8uveee1a2tn3"
 
 [display]
@@ -29,6 +30,10 @@ window/size/viewport_width=2560
 window/size/viewport_height=1440
 window/size/mode=3
 window/stretch/mode="viewport"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/phantom_camera/plugin.cfg")
 
 [global_group]
 
