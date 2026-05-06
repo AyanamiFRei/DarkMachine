@@ -181,8 +181,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.97231627, 0.46491438, -1.25
 script = ExtResource("4_cuxx3")
 
 [node name="player" parent="." unique_id=1722918080 instance=ExtResource("5_3n1ja")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7839254, 0.51092094, -1.2746754)
-
-[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=298270811]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6819644, -0.16201371, -0.2913053)
-use_collision = true
+transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, 0.5058198, 0.60958827, -0.96714026)

@@ -1,6 +1,7 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://c56vvgfhgnieu"]
 
-[ext_resource type="Texture2D" uid="uid://yokrybsu8no3" path="res://assets/gltf_file/AP1_блок.png" id="1_gqj10"]
+[ext_resource type="Texture2D" uid="uid://yokrybsu8no3" path="res://assets/png/AP1_блок.png" id="1_gqj10"]
+
 
 [resource]
 resource_name = "блок"

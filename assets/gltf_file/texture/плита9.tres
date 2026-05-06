@@ -1,6 +1,7 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://3vry1srmsuoq"]
 
-[ext_resource type="Texture2D" uid="uid://tloiubl6up21" path="res://assets/gltf_file/AP1_плита9.png" id="1_3t20t"]
+[ext_resource type="Texture2D" uid="uid://tloiubl6up21" path="res://assets/png/AP1_плита9.png" id="1_3t20t"]
+
 
 [resource]
 resource_name = "плита9"
