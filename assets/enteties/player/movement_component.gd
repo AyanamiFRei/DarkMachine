@@ -32,12 +32,50 @@ var is_hanging := false
 var ledge_climb_position := Vector3.ZERO
 var ledge_cooldown := 0.0
 
+var jump_sound: AudioStreamPlayer
+var land_sound: AudioStreamPlayer
+var step_sounds: Array[AudioStreamPlayer] = []
+var step_timer: float = 0.0
+var step_interval: float = 0.4
 
 func _ready() -> void:
+	randomize()
 	var shape := collision.shape as CapsuleShape3D
 	if shape:
 		stand_height = shape.height
+	
+	var jump_file = load("res://assets/enteties/player/audios/jump.wav")
+	if jump_file:
+		jump_sound = AudioStreamPlayer.new()
+		jump_sound.stream = jump_file
+		jump_sound.volume_db = -16.0
+		add_child(jump_sound)
+	
+	var land_file = load("res://assets/enteties/player/audios/landing.wav")
+	if land_file:
+		land_sound = AudioStreamPlayer.new()
+		land_sound.stream = land_file
+		land_sound.volume_db = -16.0
+		add_child(land_sound)
+	
+	var step_files = [
+		"res://assets/enteties/player/audios/run1.wav",
+		"res://assets/enteties/player/audios/run5.wav",
+		"res://assets/enteties/player/audios/run6.wav",
+		"res://assets/enteties/player/audios/run7.wav",
+		"res://assets/enteties/player/audios/run2.wav",
+		"res://assets/enteties/player/audios/run3.wav",
+	    "res://assets/enteties/player/audios/run4.wav"
+]
 
+	for file_path in step_files:
+		var file = load(file_path)
+		if file:
+			var player = AudioStreamPlayer.new()
+			player.stream = file
+			player.volume_db = -16.0
+			add_child(player)
+			step_sounds.append(player)
 
 func tick(delta: float) -> void:
 	if ledge_cooldown > 0.0:
@@ -49,6 +87,10 @@ func tick(delta: float) -> void:
 
 	var on_floor := player.is_on_floor()
 
+	if not was_on_floor and on_floor:
+		if land_sound:
+			land_sound.play()
+	
 	if jump_buffer_timer > 0.0:
 		jump_buffer_timer -= delta
 
@@ -62,7 +104,20 @@ func tick(delta: float) -> void:
 	var input_dir := Input.get_axis("ui_left", "ui_right")
 
 	player.velocity.x = (input_dir * move_speed) * -1
-
+	
+	if on_floor and not is_hanging and abs(player.velocity.x)>0.05:
+		var step_freq: float = 0.65
+		if is_crouching:
+			step_freq= 0.65
+		step_timer-=delta
+		if step_timer<=0.0:
+			if step_sounds.size()>0:
+				var random_step=step_sounds[randi() %step_sounds.size()]
+				random_step.play()
+			step_timer=step_freq
+	else:
+		step_timer=0.0
+	
 	if abs(player.velocity.x) > 0.05:
 		facing_x = sign(player.velocity.x)
 		update_ledge_rays_direction()
@@ -82,6 +137,7 @@ func tick(delta: float) -> void:
 
 	if jump_buffer_timer > 0.0 and (on_floor or coyote_timer > 0.0):
 		player.velocity.y = jump_velocity
+		jump_sound.play()
 		jump_buffer_timer = 0.0
 		coyote_timer = 0.0
 
