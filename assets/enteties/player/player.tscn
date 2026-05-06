@@ -454,11 +454,6 @@ subdivide_height = 1
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ratu8"]
 height = 1.4160156
 
-<<<<<<< HEAD
-=======
-[sub_resource type="Resource" id="Resource_oet4l"]
-script = ExtResource("13_q3ml6")
-
 [sub_resource type="FontFile" id="FontFile_bwmay"]
 cache/0/variation_coordinates = {}
 cache/0/face_index = 0
@@ -616,7 +611,7 @@ shape = SubResource("CapsuleShape3D_ratu8")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1840779735]
 physics_interpolation_mode = 1
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 4.226891e-07, 0, -4.835)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, -0.087646425, -0.1839199)
 top_level = true
 script = ExtResource("11_u84jc")
 player_path = NodePath("..")
