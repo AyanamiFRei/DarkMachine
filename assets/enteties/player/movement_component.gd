@@ -33,6 +33,7 @@ var ledge_climb_position := Vector3.ZERO
 var ledge_cooldown := 0.0
 
 var jump_sound: AudioStreamPlayer
+var land_sound: AudioStreamPlayer
 
 
 func _ready() -> void:
@@ -40,12 +41,19 @@ func _ready() -> void:
 	if shape:
 		stand_height = shape.height
 	
-	var sound_file = load("res://assets/enteties/player/audios/jump.wav")
-	if sound_file:
+	var jump_file = load("res://assets/enteties/player/audios/jump.wav")
+	if jump_file:
 		jump_sound = AudioStreamPlayer.new()
-		jump_sound.stream = sound_file
+		jump_sound.stream = jump_file
 		jump_sound.volume_db = -16.0
 		add_child(jump_sound)
+	
+	var land_file = load("res://assets/enteties/player/audios/landing.wav")
+	if land_file:
+		land_sound = AudioStreamPlayer.new()
+		land_sound.stream = land_file
+		land_sound.volume_db = -16.0
+		add_child(land_sound)
 
 func tick(delta: float) -> void:
 	if ledge_cooldown > 0.0:
@@ -57,6 +65,10 @@ func tick(delta: float) -> void:
 
 	var on_floor := player.is_on_floor()
 
+	if not was_on_floor and on_floor:
+		if land_sound:
+			land_sound.play()
+	
 	if jump_buffer_timer > 0.0:
 		jump_buffer_timer -= delta
 
