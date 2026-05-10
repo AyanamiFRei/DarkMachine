@@ -18,6 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://c1lkb227j8p47" path="res://assets/enteties/player/Take Hit.png" id="9_u84jc"]
 [ext_resource type="PackedScene" uid="uid://b6ee6rlhyqluf" path="res://assets/menus/ingame_button.tscn" id="10_hyvrl"]
 [ext_resource type="Script" uid="uid://cs31oorh2t2pc" path="res://assets/enteties/player/camera_3d.gd" id="11_u84jc"]
+[ext_resource type="PackedScene" uid="uid://cmprbe0brauae" path="res://assets/enteties/player/inventory_ui.tscn" id="19_3gcdb"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_hyvrl"]
 radius = 0.14367676
@@ -526,15 +527,15 @@ unique_name_in_owner = true
 wait_time = 0.2
 
 [node name="LedgeWallRay" type="RayCast3D" parent="Components/MovementComponent" unique_id=1844596339]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08, 0)
+transform = Transform3D(0.8, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08, 0)
 target_position = Vector3(-0.15, 0, 0)
 
 [node name="LedgeClearRay" type="RayCast3D" parent="Components/MovementComponent" unique_id=412482662]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.11117322, 0)
+transform = Transform3D(0.8, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.11117322, 0)
 target_position = Vector3(-0.15, 0, 0)
 
 [node name="LedgeTopRay" type="RayCast3D" parent="Components/MovementComponent" unique_id=404347426]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17221408, 0.12, 2.7939677e-09)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.14026263, 0.12, 5.5879354e-09)
 target_position = Vector3(0, -0.18, 0)
 
 [node name="CombatComponent" type="Node3D" parent="Components" unique_id=489150703]
@@ -631,6 +632,8 @@ theme_override_font_sizes/font_size = 30
 theme_override_styles/background = SubResource("StyleBoxFlat_bwmay")
 theme_override_styles/fill = SubResource("StyleBoxFlat_ofn87")
 value = 100.0
+
+[node name="InventoryUI" parent="." unique_id=1579102092 instance=ExtResource("19_3gcdb")]
 
 [connection signal="timeout" from="Components/MovementComponent/Timers/CoyoteTimer" to="." method="_on_coyote_timer_timeout"]
 [connection signal="timeout" from="Components/MovementComponent/Timers/JumpBufferTimer" to="." method="_on_jump_buffer_timer_timeout"]

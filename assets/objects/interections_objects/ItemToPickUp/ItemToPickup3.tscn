@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://xex607ecgggx"]
+
+[ext_resource type="Script" uid="uid://b03lui8xqrgdj" path="res://assets/objects/interections_objects/ItemToPickUp/item_to_pickup.gd" id="1_bndsg"]
+[ext_resource type="Texture2D" uid="uid://ejeuk6xvfrx1" path="res://assets/icons_png/items_icons/balt 3.png" id="2_g5xxg"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_inft3"]
+size = Vector3(0.9920044, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mkl0f"]
+albedo_color = Color(0.1254902, 0.5882353, 0.043137256, 1)
+
+[sub_resource type="QuadMesh" id="QuadMesh_pc64s"]
+
+[node name="ItemToPickup3" type="StaticBody3D" unique_id=304441225]
+transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, 0, 0, 0)
+collision_layer = 64
+collision_mask = 0
+script = ExtResource("1_bndsg")
+item_id = "item_3"
+item_name = "Green"
+description = "амамамам"
+icon = ExtResource("2_g5xxg")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1484143177]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0039978027, 0, 0)
+shape = SubResource("BoxShape3D_inft3")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=484111757]
+layers = 64
+material_override = SubResource("StandardMaterial3D_mkl0f")
+mesh = SubResource("QuadMesh_pc64s")
