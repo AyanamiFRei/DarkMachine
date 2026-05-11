@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://bp5m0yaxuiu61"]
 
 [ext_resource type="PackedScene" uid="uid://cw86i1wgw62jl" path="res://assets/enteties/player/player.tscn" id="1_kla76"]
+[ext_resource type="PackedScene" uid="uid://clkyrfe3ub4tj" path="res://assets/enteties/enemies/enemy_taran/enemy_taran.tscn" id="2_1ip5v"]
+[ext_resource type="PackedScene" uid="uid://chdo85q6n5mnm" path="res://assets/enteties/enemies/enemy_ezh/enemy_ezh.tscn" id="3_25cub"]
 
 [node name="test" type="Node3D" unique_id=420087278]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
@@ -182,3 +184,33 @@ light_specular = 0.0
 
 [node name="player" parent="." unique_id=1722918080 instance=ExtResource("1_kla76")]
 transform = Transform3D(1, 0, 5.684342e-15, 0, 1, 0, -5.684342e-15, 0, 1, -1.2107127, 0.8526295, -0.20666276)
+
+[node name="enemy1" parent="." unique_id=1785802915 instance=ExtResource("2_1ip5v")]
+transform = Transform3D(-1, 0, -8.7422784e-08, 0, 1, 0, 8.7422784e-08, 0, -1, -0.7103401, 0.3187588, -0.016275788)
+
+[node name="enemy8" parent="." unique_id=1848699070 instance=ExtResource("2_1ip5v")]
+transform = Transform3D(-1, 0, -8.7422784e-08, 0, 1, 0, 8.7422784e-08, 0, -1, 0.6784188, 2.0085297, -0.016275788)
+
+[node name="enemy9" parent="." unique_id=602964123 instance=ExtResource("2_1ip5v")]
+transform = Transform3D(-1, 0, -8.7422784e-08, 0, 1, 0, 8.7422784e-08, 0, -1, -2.4137936, 4.095089, -0.016275788)
+
+[node name="enemy10" parent="." unique_id=428377021 instance=ExtResource("2_1ip5v")]
+transform = Transform3D(-1, 0, -8.7422784e-08, 0, 1, 0, 8.7422784e-08, 0, -1, 0.5210716, 4.0266776, -0.016275788)
+
+[node name="enemy2" parent="." unique_id=1964270170 instance=ExtResource("3_25cub")]
+transform = Transform3D(-0.2, 0, 1.7484558e-08, 0, 0.2, 0, -1.7484558e-08, 0, -0.2, 0.30965778, 1.0166726, -0.023512041)
+
+[node name="enemy3" parent="." unique_id=1328853826 instance=ExtResource("3_25cub")]
+transform = Transform3D(-0.2, 0, 1.7484558e-08, 0, 0.2, 0, -1.7484558e-08, 0, -0.2, -1.0874581, 1.7743677, -0.023512041)
+
+[node name="enemy4" parent="." unique_id=616636397 instance=ExtResource("3_25cub")]
+transform = Transform3D(-0.2, 0, 1.7484558e-08, 0, 0.2, 0, -1.7484558e-08, 0, -0.2, -1.2611737, 2.1402788, -0.023512041)
+
+[node name="enemy5" parent="." unique_id=763285238 instance=ExtResource("3_25cub")]
+transform = Transform3D(-0.2, 0, 1.7484558e-08, 0, 0.2, 0, -1.7484558e-08, 0, -0.2, -2.3626034, 3.228026, -0.023512041)
+
+[node name="enemy6" parent="." unique_id=690027752 instance=ExtResource("3_25cub")]
+transform = Transform3D(-0.2, 0, 1.7484558e-08, 0, 0.2, 0, -1.7484558e-08, 0, -0.2, -1.9042447, 4.733085, -0.011453569)
+
+[node name="enemy7" parent="." unique_id=394542135 instance=ExtResource("3_25cub")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -0.9738445, 5.068303, 0.15249024)

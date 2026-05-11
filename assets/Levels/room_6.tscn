@@ -3,6 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://blhupxhdf8pg1" path="res://assets/tsns_file/capsule.tscn" id="1_5s625"]
 [ext_resource type="PackedScene" uid="uid://bvekdtu8dpq5l" path="res://assets/tsns_file/capsule_smoll.tscn" id="2_1hykd"]
 [ext_resource type="PackedScene" uid="uid://cw86i1wgw62jl" path="res://assets/enteties/player/player.tscn" id="3_1hykd"]
+[ext_resource type="PackedScene" uid="uid://chdo85q6n5mnm" path="res://assets/enteties/enemies/enemy_ezh/enemy_ezh.tscn" id="4_lj6y5"]
+[ext_resource type="PackedScene" uid="uid://clkyrfe3ub4tj" path="res://assets/enteties/enemies/enemy_taran/enemy_taran.tscn" id="5_ee6w0"]
 
 [node name="room_5" type="Node3D" unique_id=548358717]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
@@ -184,3 +186,33 @@ light_specular = 0.0
 
 [node name="player" parent="." unique_id=1722918080 instance=ExtResource("3_1hykd")]
 transform = Transform3D(1, 0, 5.684342e-15, 0, 1, 0, -5.684342e-15, 0, 1, 2.0985668, 3.1016204, 0.25549003)
+
+[node name="enemy2" parent="." unique_id=1964270170 instance=ExtResource("4_lj6y5")]
+transform = Transform3D(-0.2, 0, 1.7484558e-08, 0, 0.2, 0, -1.7484558e-08, 0, -0.2, 0.46288893, 2.274425, -0.048197176)
+
+[node name="enemy3" parent="." unique_id=1445404260 instance=ExtResource("4_lj6y5")]
+transform = Transform3D(-0.2, 0, 1.7484558e-08, 0, 0.2, 0, -1.7484558e-08, 0, -0.2, 0.022628976, 1.252796, -0.048197176)
+
+[node name="enemy4" parent="." unique_id=595320880 instance=ExtResource("4_lj6y5")]
+transform = Transform3D(-0.2, 0, 1.7484558e-08, 0, 0.2, 0, -1.7484558e-08, 0, -0.2, -2.404446, 0.840758, -0.048197176)
+
+[node name="enemy5" parent="." unique_id=13642957 instance=ExtResource("4_lj6y5")]
+transform = Transform3D(-0.2, 0, 1.7484558e-08, 0, 0.2, 0, -1.7484558e-08, 0, -0.2, -3.47123, 2.031718, -0.048197176)
+
+[node name="enemy6" parent="." unique_id=2009157171 instance=ExtResource("4_lj6y5")]
+transform = Transform3D(-0.2, 0, 1.7484558e-08, 0, 0.2, 0, -1.7484558e-08, 0, -0.2, -2.67123, 2.031718, -0.048197176)
+
+[node name="enemy7" parent="." unique_id=1608995622 instance=ExtResource("4_lj6y5")]
+transform = Transform3D(-0.2, 0, 1.7484558e-08, 0, 0.2, 0, -1.7484558e-08, 0, -0.2, -5.634519, 0.82382506, -0.048197176)
+
+[node name="enemy1" parent="." unique_id=1785802915 instance=ExtResource("5_ee6w0")]
+transform = Transform3D(-1, 0, 8.7422784e-08, 0, 1, 0, -8.7422784e-08, 0, -1, 0.843855, 3.676899, -0.04021988)
+
+[node name="enemy8" parent="." unique_id=1501624016 instance=ExtResource("5_ee6w0")]
+transform = Transform3D(-1, 0, 8.7422784e-08, 0, 1, 0, -8.7422784e-08, 0, -1, 2.0686815, 0.5555674, -0.04021988)
+
+[node name="enemy9" parent="." unique_id=235180391 instance=ExtResource("5_ee6w0")]
+transform = Transform3D(-1, 0, 8.7422784e-08, 0, 1, 0, -8.7422784e-08, 0, -1, -1.3743781, 0.43703565, -0.04021988)
+
+[node name="enemy10" parent="." unique_id=1132327654 instance=ExtResource("5_ee6w0")]
+transform = Transform3D(-1, 0, 8.7422784e-08, 0, 1, 0, -8.7422784e-08, 0, -1, -5.037568, 1.7013725, -0.04021988)

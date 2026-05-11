@@ -157,8 +157,8 @@ light_energy = 0.52
 light_specular = 0.0
 
 [node name="player" parent="." unique_id=1722918080 instance=ExtResource("5_tw7do")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.843331, -0.18519501, 0.07903379)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0044487, -0.18519501, 0.07903379)
 
 [node name="Door" parent="." unique_id=1730044608 instance=ExtResource("3_qiwse")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2610939, -0.13149993, 0.017394185)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2610939, -0.13149993, 0.04446803)
 script = ExtResource("4_tw7do")
