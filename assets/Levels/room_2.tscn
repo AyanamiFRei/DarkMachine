@@ -3,9 +3,9 @@
 [ext_resource type="PackedScene" uid="uid://chdo85q6n5mnm" path="res://assets/enteties/enemies/enemy_ezh/enemy_ezh.tscn" id="1_edu5m"]
 [ext_resource type="PackedScene" uid="uid://c62ray5n8eeir" path="res://assets/objects/breakable_wall/breakable_wall.tscn" id="1_w1lfr"]
 [ext_resource type="PackedScene" uid="uid://1w4j06345h57" path="res://assets/objects/Door.tscn" id="1_yqu6b"]
-[ext_resource type="Script" uid="uid://cb5xrcymeftw1" path="res://assets/objects/door1.gd" id="2_edu5m"]
+[ext_resource type="Script" uid="uid://cb5xrcymeftw1" path="res://assets/objects/scripts doors/door_to_1.gd" id="2_edu5m"]
 [ext_resource type="PackedScene" uid="uid://cw86i1wgw62jl" path="res://assets/enteties/player/player.tscn" id="4_8g1g7"]
-[ext_resource type="Script" uid="uid://ee0vpnjhrjbj" path="res://assets/objects/door3.gd" id="5_8g1g7"]
+[ext_resource type="Script" uid="uid://ee0vpnjhrjbj" path="res://assets/objects/scripts doors/door_to_3.gd" id="5_8g1g7"]
 [ext_resource type="ArrayMesh" uid="uid://cdpm7wvle3tyy" path="res://assets/gltf_file/mesh/AP1_╤Б╤В╨╡╨╜╨░2.res" id="5_qhxw8"]
 [ext_resource type="ArrayMesh" uid="uid://4ap5lq0f1dlt" path="res://assets/gltf_file/mesh/AP1_╤В╤А╤Г╨▒╤Л2.res" id="6_tb6r3"]
 [ext_resource type="PackedScene" uid="uid://blhupxhdf8pg1" path="res://assets/tsns_file/capsule.tscn" id="7_tlyya"]
@@ -29,7 +29,7 @@ transform = Transform3D(0.5609136, 0, 0.8278744, 0, 1, 0, -0.8278744, 0, 0.56091
 script = ExtResource("2_edu5m")
 
 [node name="Door_to_lvl3" parent="." unique_id=1730044608 instance=ExtResource("1_yqu6b")]
-transform = Transform3D(0.56091356, 0, 0.8278744, 0, 1, 0, -0.8278744, 0, 0.56091356, 1.0158049, -0.07289813, 8.880445e-08)
+transform = Transform3D(-0.5538858, 0, 0.83259284, 0, 1, 0, -0.83259284, 0, -0.5538858, 0.9848625, -0.07289813, 8.6099384e-08)
 script = ExtResource("5_8g1g7")
 
 [node name="environment" type="Node3D" parent="." unique_id=1855846647]

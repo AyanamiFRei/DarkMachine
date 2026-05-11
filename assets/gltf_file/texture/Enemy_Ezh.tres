@@ -1,6 +1,7 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://rlms6mn1lkua"]
 
-[ext_resource type="Texture2D" uid="uid://l8xt3q80pdxc" path="res://assets/gltf_file/AP1_Enemy_Ezh.png" id="1_xxqqy"]
+[ext_resource type="Texture2D" uid="uid://l8xt3q80pdxc" path="res://assets/png/AP1_Enemy_Ezh.png" id="1_xxqqy"]
+
 
 [resource]
 resource_name = "Enemy_Ezh"
