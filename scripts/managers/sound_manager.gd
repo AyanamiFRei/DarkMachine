@@ -16,3 +16,7 @@ func play_level_music(music_path: String):
 		
 	bgm_player.stream = new_track
 	bgm_player.play()
+	
+	#закинуть в менеджер уровней в _ready(), ваще неибу где скрпиты этот
+	##if level_music:
+		##SoundManager.play_music(level_music)
