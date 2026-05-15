@@ -45,6 +45,7 @@ enabled=PackedStringArray("res://addons/phantom_camera/plugin.cfg")
 
 player=""
 healthbar=""
+enemy=""
 
 [input]
 
