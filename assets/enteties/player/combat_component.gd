@@ -5,6 +5,11 @@ extends Node
 var can_attack = true
 var dmg = 50
 
+var attack_sound =["res://assets/enteties/player/audios/attack1.wav",
+					"res://assets/enteties/player/audios/attack2.wav",
+					"res://assets/enteties/player/audios/attack3.wav",
+					"res://assets/enteties/player/audios/attack4.wav",
+]
 signal attack_started
 signal attack_finished
 
@@ -15,6 +20,7 @@ func attack():
 	attack_started.emit()
 	attack_action()
 	cooldown_timer.start()
+	SoundManager.play_sfx(attack_sound, -10)
 
 func attack_action():
 	var overlapping_bodies = area_dmg.get_overlapping_bodies()
