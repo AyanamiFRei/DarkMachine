@@ -62,29 +62,29 @@ func _on_delay_timer_timeout():
 func play_sfx(sound_input, volume_db: float = 0.0):
 	var final_path: String = ""
 
-	# Проверяем: нам дали массив или одну строку?
 	if typeof(sound_input) == TYPE_ARRAY:
 		final_path = sound_input[randi() % sound_input.size()]
 	elif typeof(sound_input) == TYPE_STRING:
 		final_path = sound_input
-		return
+	else:
+		return null
 
-	# Создаем плеер
+	var sound = load(final_path)
+	if not sound:
+		print("Ошибка загрузки звука:", final_path)
+		return null
+
 	var sfx_player = AudioStreamPlayer.new()
 	add_child(sfx_player)
-	
-	var sound = load(final_path)
-	if sound:
-		sfx_player.stream = sound
-		sfx_player.bus = "SFX"
-		sfx_player.volume_db = volume_db
-		sfx_player.play()
-		
-		# Удаляем плеер
-		sfx_player.finished.connect(sfx_player.queue_free)
-		return sfx_player
-	return null
-	
+
+	sfx_player.stream = sound
+	sfx_player.bus = "SFX"
+	sfx_player.volume_db = volume_db
+	sfx_player.play()
+
+	sfx_player.finished.connect(sfx_player.queue_free)
+
+	return sfx_player
 func stop_sfx(sound_path: String):
 	for child in get_children():
 		if child is AudioStreamPlayer and child.stream:
