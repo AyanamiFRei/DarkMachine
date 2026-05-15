@@ -13,6 +13,14 @@ var attack_sound =["res://assets/enteties/player/audios/attack1.wav",
 					"res://assets/enteties/player/audios/attack3.wav",
 					"res://assets/enteties/player/audios/attack4.wav",
 ]
+
+var attackMetall_sound =["res://assets/enteties/player/audios/metallhit1.wav",
+					"res://assets/enteties/player/audios/metallhit2.wav",
+					"res://assets/enteties/player/audios/metallhit3.wav",
+					"res://assets/enteties/player/audios/metallhit4.wav",
+]
+
+
 signal attack_started
 signal attack_finished
 
@@ -51,6 +59,8 @@ func spawn_hit_sparks(enemy: Node3D) -> void:
 	hit_pos.z = 0
 
 	sparks.global_position = hit_pos
+	
+	SoundManager.play_sfx(attackMetall_sound, -10)
 
 func _on_attack_cool_down_timer_timeout():
 	can_attack = true
