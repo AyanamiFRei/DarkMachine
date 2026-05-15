@@ -34,6 +34,9 @@ func _ready() -> void:
 	$Components/CombatComponent/Area_dmg/CollisionShape3D.disabled = false
 	$Components/CombatComponent/Area_dmg/CollisionShape3D2.disabled = false
 	
+	#Музон добавляем в игрока, тк он всегда есть на экране епт
+	SoundManager.play_level_music()
+	
 	
 	
 # ############################################################
