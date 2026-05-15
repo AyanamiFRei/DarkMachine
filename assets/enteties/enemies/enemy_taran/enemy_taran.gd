@@ -14,6 +14,9 @@ var dmg = 25
 var current_velocity_x = 0.0
 var type = "enemy"
 
+var detect_sound = "res://assets/enteties/enemies/enemy_taran/audio/omaewa.wav"
+var rides_sound = "res://assets/enteties/enemies/enemy_taran/audio/taranrides.wav"
+
 # Для отбрасывания
 var knockback_force = 50.0 
 var knockback_up = 2.0  
@@ -45,11 +48,13 @@ func start_attack_cycle():
 		if playerNode.global_position.x > global_position.x:
 			anim.flip_h = false
 			direction = 1 
+			
 		else:
 			anim.flip_h = true
 			direction = -1
 		
 		anim.play("attack_prep")
+		SoundManager.play_sfx(detect_sound)
 		await get_tree().create_timer(1.2).timeout
 		if not is_inside_tree() or not agr: break
 
@@ -58,6 +63,7 @@ func start_attack_cycle():
 		can_damage = true
 		is_dashing = true # ВКЛЮЧАЕМ рывок
 		anim.play("attack")
+		SoundManager.play_sfx(rides_sound)
 		
 		var dash_timer = get_tree().create_timer(2.0)
 		
@@ -67,6 +73,7 @@ func start_attack_cycle():
 		
 		# Конец фазы движения
 		is_dashing = false 
+		SoundManager.stop_sfx(rides_sound)
 		can_damage = false
 		current_velocity_x = 0
 		
@@ -109,6 +116,7 @@ func _on_area_3d_body_entered(body) -> void:
 			body.take_dmg(dmg)
 			can_damage = false # Не бьем дважды за рывок
 			is_dashing = false # Останавливаемся при попадании
+			SoundManager.stop_sfx(rides_sound)
 			
 		# Логика отбрасывания
 		dir = 1 if body.global_position.x > global_position.x else -1
@@ -122,6 +130,7 @@ func _on_area_3d_3_body_entered(body: Node3D) -> void:
 	if not body.is_in_group("player") and is_dashing:
 		print("Впился в стену!")
 		is_dashing = false # Это мгновенно прерывает цикл while в start_attack_cycle
+		SoundManager.stop_sfx(rides_sound)
 		current_velocity_x = 0
 
 func take_dmg(amount):
