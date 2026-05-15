@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://ds1ns3ktkibub"]
+
+[ext_resource type="ArrayMesh" uid="uid://dx6bcivciy1mv" path="res://assets/gltf_file/mesh/AP1_stove1.res" id="1_ih3rb"]
+[ext_resource type="ArrayMesh" uid="uid://twyp1yuodpsq" path="res://assets/gltf_file/mesh/AP1_stove2.res" id="2_wgudh"]
+[ext_resource type="ArrayMesh" uid="uid://dgmv6wul2swva" path="res://assets/gltf_file/mesh/AP1_stove3.res" id="3_671vv"]
+[ext_resource type="ArrayMesh" uid="uid://cvwwx4prn5n1a" path="res://assets/gltf_file/mesh/AP1_stove4.res" id="4_oq6w0"]
+[ext_resource type="ArrayMesh" uid="uid://cwkju153n6hos" path="res://assets/gltf_file/mesh/AP1_stove5.res" id="5_7ng00"]
+[ext_resource type="ArrayMesh" uid="uid://ck56yn7g5vwdw" path="res://assets/gltf_file/mesh/AP1_stove6.res" id="6_lpjbb"]
+[ext_resource type="ArrayMesh" uid="uid://bp7yawrbbmm5n" path="res://assets/gltf_file/mesh/AP1_stove7.res" id="7_ss5ya"]
+[ext_resource type="ArrayMesh" uid="uid://dh2afewjy5s3d" path="res://assets/gltf_file/mesh/AP1_stove8.res" id="8_vtsr8"]
+[ext_resource type="ArrayMesh" uid="uid://d1uk6b3ytx5bd" path="res://assets/gltf_file/mesh/AP1_stove9.res" id="9_j1662"]
+[ext_resource type="ArrayMesh" uid="uid://daikb7v6wchhg" path="res://assets/gltf_file/mesh/AP1_stove10.res" id="10_nhhyl"]
+
+[node name="stove" type="Node3D" unique_id=1360196446]
+
+[node name="Ap1Stove1" type="MeshInstance3D" parent="." unique_id=233181613]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0)
+mesh = ExtResource("1_ih3rb")
+
+[node name="Ap1Stove2" type="MeshInstance3D" parent="." unique_id=442078591]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0)
+mesh = ExtResource("2_wgudh")
+
+[node name="Ap1Stove3" type="MeshInstance3D" parent="." unique_id=44011196]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0)
+mesh = ExtResource("3_671vv")
+
+[node name="Ap1Stove4" type="MeshInstance3D" parent="." unique_id=460852695]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0)
+mesh = ExtResource("4_oq6w0")
+
+[node name="Ap1Stove5" type="MeshInstance3D" parent="." unique_id=500323646]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0)
+mesh = ExtResource("5_7ng00")
+
+[node name="Ap1Stove6" type="MeshInstance3D" parent="." unique_id=778191212]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0)
+mesh = ExtResource("6_lpjbb")
+
+[node name="Ap1Stove7" type="MeshInstance3D" parent="." unique_id=968658287]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0)
+mesh = ExtResource("7_ss5ya")
+
+[node name="Ap1Stove8" type="MeshInstance3D" parent="." unique_id=292340615]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0)
+mesh = ExtResource("8_vtsr8")
+
+[node name="Ap1Stove9" type="MeshInstance3D" parent="." unique_id=1693069541]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0)
+mesh = ExtResource("9_j1662")
+
+[node name="Ap1Stove10" type="MeshInstance3D" parent="." unique_id=491541986]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0)
+mesh = ExtResource("10_nhhyl")

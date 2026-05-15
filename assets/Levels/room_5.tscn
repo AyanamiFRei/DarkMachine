@@ -3,6 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://cw86i1wgw62jl" path="res://assets/enteties/player/player.tscn" id="1_kla76"]
 [ext_resource type="PackedScene" uid="uid://clkyrfe3ub4tj" path="res://assets/enteties/enemies/enemy_taran/enemy_taran.tscn" id="2_1ip5v"]
 [ext_resource type="PackedScene" uid="uid://chdo85q6n5mnm" path="res://assets/enteties/enemies/enemy_ezh/enemy_ezh.tscn" id="3_25cub"]
+[ext_resource type="PackedScene" uid="uid://1w4j06345h57" path="res://assets/objects/Door.tscn" id="4_vqnyr"]
+[ext_resource type="Script" uid="uid://47ov1jb64yuk" path="res://assets/objects/scripts doors/door_toto_4.gd" id="5_vqnyr"]
 
 [node name="test" type="Node3D" unique_id=420087278]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
@@ -214,3 +216,11 @@ transform = Transform3D(-0.2, 0, 1.7484558e-08, 0, 0.2, 0, -1.7484558e-08, 0, -0
 
 [node name="enemy7" parent="." unique_id=394542135 instance=ExtResource("3_25cub")]
 transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -0.9738445, 5.068303, 0.15249024)
+
+[node name="Door2" parent="." unique_id=1730044608 instance=ExtResource("4_vqnyr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3908176, 0.33369708, 0.044468027)
+script = ExtResource("5_vqnyr")
+
+[node name="Door3" parent="." unique_id=837208398 instance=ExtResource("4_vqnyr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9124322, 4.5441284, 0.044468027)
+script = ExtResource("5_vqnyr")

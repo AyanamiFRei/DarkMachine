@@ -1,6 +1,7 @@
 extends Node3D
-var target_scene: String = "res://assets/Levels/room_3.tscn"
-var spawn_point: Vector3 = Vector3(1.096,0.458,-0.013)
+
+var target_scene: String = "res://assets/Levels/room_4.tscn"
+var spawn_point: Vector3 = Vector3(-2.004, -0.185,0.025)
 
 var can_trigger: bool = false  # ← по умолчанию выключена!
 
