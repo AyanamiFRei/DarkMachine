@@ -8,6 +8,7 @@
 [ext_resource type="Script" uid="uid://cr8prb2418nuh" path="res://assets/objects/scripts doors/door_to_4.gd" id="5_x10y4"]
 [ext_resource type="PackedScene" uid="uid://clkyrfe3ub4tj" path="res://assets/enteties/enemies/enemy_taran/enemy_taran.tscn" id="7_hiqnp"]
 [ext_resource type="PackedScene" uid="uid://chdo85q6n5mnm" path="res://assets/enteties/enemies/enemy_ezh/enemy_ezh.tscn" id="8_n1ghn"]
+[ext_resource type="MeshLibrary" uid="uid://cir0fu0ba5c2k" path="res://assets/tscn_assets/Stove.meshlib" id="9_br6ea"]
 
 [node name="room_3" type="Node3D" unique_id=601273248]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
@@ -221,3 +222,11 @@ transform = Transform3D(-1, 0, -8.7422784e-08, 0, 1, 0, 8.7422784e-08, 0, -1, -4
 
 [node name="enemy5" parent="." unique_id=790571043 instance=ExtResource("8_n1ghn")]
 transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -4.466192, -0.08790298, -0.007045567)
+
+[node name="GridMap" type="GridMap" parent="." unique_id=1765101489]
+transform = Transform3D(9.553427e-16, 2.1855694e-08, 0.5, 0.5, -2.1855694e-08, 0, 2.1855694e-08, 0.5, -2.1855694e-08, 0.02, -0.005, -0.545)
+mesh_library = ExtResource("9_br6ea")
+cell_size = Vector3(0.805, 2, 0.69)
+data = {
+"cells": PackedInt32Array(0, 3, 1441793, 65535, 2, 1441793, 65535, 1, 1441793)
+}
