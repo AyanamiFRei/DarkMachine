@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cq5biymxmcpa0" path="res://assets/tsns_file/2platform.tscn" id="2_a0ryf"]
 [ext_resource type="PackedScene" uid="uid://cw86i1wgw62jl" path="res://assets/enteties/player/player.tscn" id="4_qgwng"]
 [ext_resource type="PackedScene" uid="uid://1w4j06345h57" path="res://assets/objects/Door.tscn" id="4_wj57p"]
+[ext_resource type="Script" uid="uid://ccopo4qkviydo" path="res://assets/objects/door_to_new_lvl.gd" id="6_0i1kf"]
 [ext_resource type="ArrayMesh" uid="uid://c6j5bnlc57soq" path="res://assets/gltf_file/mesh/AP1_╤В╤А╤Г╨▒╤Л1.res" id="6_6dw1e"]
 [ext_resource type="ArrayMesh" uid="uid://d0q2sc0rwpal8" path="res://assets/gltf_file/mesh/AP1_poor ╤Б╤В╨╡╨╜╨░.res" id="7_8wjio"]
 [ext_resource type="PackedScene" uid="uid://cnntyayucf8gs" path="res://assets/tsns_file/pipe.tscn" id="8_6dw1e"]
@@ -10,7 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://bvekdtu8dpq5l" path="res://assets/tsns_file/capsule_smoll.tscn" id="9_8wjio"]
 [ext_resource type="PackedScene" uid="uid://d0p4yv8micb4o" path="res://assets/tsns_file/1platform.tscn" id="10_a0ryf"]
 [ext_resource type="PackedScene" uid="uid://c62ray5n8eeir" path="res://assets/objects/breakable_wall/breakable_wall.tscn" id="11_4wd2b"]
-[ext_resource type="PackedScene" uid="uid://c0da202lvw8sg" path="res://bonfire.tscn" id="12_2x6ot"]
+[ext_resource type="PackedScene" uid="uid://c0da202lvw8sg" path="res://assets/objects/fire/bonfire.tscn" id="12_2x6ot"]
 [ext_resource type="PackedScene" uid="uid://c4vgkihwh2bxu" path="res://assets/objects/steampipe/steampipe.tscn" id="13_h0mf3"]
 [ext_resource type="PackedScene" uid="uid://cemji6ptfi277" path="res://assets/objects/interections_objects/ItemToPickUp/ItemToPickup1.tscn" id="14_mygdh"]
 [ext_resource type="PackedScene" uid="uid://xi0b4svcx636" path="res://assets/objects/interections_objects/ItemToPickUp/ItemToPickup2.tscn" id="15_0i1kf"]
@@ -71,6 +72,9 @@ transform = Transform3D(-0.0407332, 0, -3.5610097e-09, 0, 0.0407332, 0, 3.561009
 
 [node name="Door" parent="envirement" unique_id=1846143250 instance=ExtResource("4_wj57p")]
 transform = Transform3D(0.052010003, 0, -0.087549515, 0, 0.101833, 0, 0.087549515, 0, 0.052010003, 0.232, -0.013, -0.504)
+script = ExtResource("6_0i1kf")
+target_scene = "res://assets/Levels/room_2.tscn"
+spawn_point = Vector3(8, 2, 0)
 
 [node name="breakable_wall_1" parent="envirement" unique_id=1833233406 instance=ExtResource("11_4wd2b")]
 transform = Transform3D(0.04, 0, 0, 0, 0.04, 0, 0, 0, 0.04, 0.16233486, -0.015774399, -0.5030401)
@@ -106,6 +110,7 @@ skeleton = NodePath("../..")
 
 [node name="capsules" type="Node3D" parent="." unique_id=1043108948]
 transform = Transform3D(-0.93, 0, 7.86221e-08, 0, 0.93, 0, -1.404261e-07, 0, -0.5206906, 1.01005915e-08, -0.14667216, -0.0668932)
+visible = false
 
 [node name="capsula" parent="capsules" unique_id=869758886 instance=ExtResource("8_8wjio")]
 transform = Transform3D(-1.2, 0, 1.8119496e-07, 0, 1.2, 0, -1.81195e-07, 0, -1.2, 0.8786816, -0.97658706, 0.408921)

@@ -43,7 +43,7 @@ func _on_player_died():
 	GameManager.save_player(self)
 	animation_component.play_death()
 	await animation_component.wait_for_death_animation()
-	get_tree().change_scene_to_file("res://assets/menus/death_screen.tscn")
+	get_tree().change_scene_to_file("res://assets/menus/deathscene.tscn")
 
 
 func _on_heal_timer_timeout():
@@ -102,6 +102,9 @@ func _physics_process(delta: float) -> void:
 
 	animation_component.update_animation()
 	move_and_slide()
+	
+	if Input.is_action_just_pressed("position"):
+		print("позиция:", position)
 
 
 func set_checkpoint(pos):
