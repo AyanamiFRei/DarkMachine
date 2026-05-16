@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://cjdwwas0e5ivb"]
+
+[ext_resource type="ArrayMesh" uid="uid://bou42kol7x08s" path="res://assets/gltf_file/mesh/AP1_wall1.res" id="1_rm5f5"]
+[ext_resource type="ArrayMesh" uid="uid://dm57dxn60dyew" path="res://assets/gltf_file/mesh/AP1_wall2.res" id="2_wnqvf"]
+[ext_resource type="ArrayMesh" uid="uid://c563n5ue0ek4q" path="res://assets/gltf_file/mesh/AP1_wall3.res" id="3_7wy2v"]
+[ext_resource type="ArrayMesh" uid="uid://d0emuyn35hl31" path="res://assets/gltf_file/mesh/AP1_wall4.res" id="4_a6i56"]
+[ext_resource type="ArrayMesh" uid="uid://ug4hi1vg60jf" path="res://assets/gltf_file/mesh/AP1_wall5.res" id="5_66svx"]
+[ext_resource type="ArrayMesh" uid="uid://cjgy0j7cgvqq8" path="res://assets/gltf_file/mesh/AP1_wall6.res" id="6_nd2hp"]
+[ext_resource type="ArrayMesh" uid="uid://27prd0urab22" path="res://assets/gltf_file/mesh/AP1_wall7.res" id="7_ve63o"]
+[ext_resource type="ArrayMesh" uid="uid://cpxfkstan70pe" path="res://assets/gltf_file/mesh/AP1_wall8.res" id="8_ru5bs"]
+[ext_resource type="ArrayMesh" uid="uid://2cmxcom4fexb" path="res://assets/gltf_file/mesh/AP1_wall9.res" id="9_o2og1"]
+[ext_resource type="ArrayMesh" uid="uid://bfe07e65jtlh6" path="res://assets/gltf_file/mesh/AP1_wall10.res" id="10_ycb21"]
+[ext_resource type="ArrayMesh" uid="uid://clbv3lnvhx0hi" path="res://assets/gltf_file/mesh/AP1_wall11.res" id="11_2evmk"]
+[ext_resource type="ArrayMesh" uid="uid://opaijq7bg71g" path="res://assets/gltf_file/mesh/AP1_wall12.res" id="12_h2i26"]
+[ext_resource type="ArrayMesh" uid="uid://cl3dol5iudn6w" path="res://assets/gltf_file/mesh/AP1_wall13.res" id="13_hboq1"]
+[ext_resource type="ArrayMesh" uid="uid://d13n5yy74pfmq" path="res://assets/gltf_file/mesh/AP1_wall14.res" id="14_lsy6c"]
+
+[node name="wall" type="Node3D" unique_id=69692274]
+
+[node name="Ap1Wall1_down" type="MeshInstance3D" parent="." unique_id=817171919]
+mesh = ExtResource("1_rm5f5")
+
+[node name="Ap1Wall2_right" type="MeshInstance3D" parent="." unique_id=1675508992]
+mesh = ExtResource("2_wnqvf")
+
+[node name="Ap1Wall3_left" type="MeshInstance3D" parent="." unique_id=1649406645]
+mesh = ExtResource("3_7wy2v")
+
+[node name="Ap1Wall4_up" type="MeshInstance3D" parent="." unique_id=308635094]
+mesh = ExtResource("4_a6i56")
+
+[node name="Ap1Wall5_up" type="MeshInstance3D" parent="." unique_id=874330835]
+mesh = ExtResource("5_66svx")
+
+[node name="Ap1Wall6_up" type="MeshInstance3D" parent="." unique_id=1677325925]
+mesh = ExtResource("6_nd2hp")
+
+[node name="Ap1Wall7_up" type="MeshInstance3D" parent="." unique_id=131312050]
+mesh = ExtResource("7_ve63o")
+
+[node name="Ap1Wall8_right_down" type="MeshInstance3D" parent="." unique_id=1693472877]
+mesh = ExtResource("8_ru5bs")
+
+[node name="Ap1Wall9_left_down" type="MeshInstance3D" parent="." unique_id=2094837095]
+mesh = ExtResource("9_o2og1")
+
+[node name="Ap1Wall10" type="MeshInstance3D" parent="." unique_id=697864424]
+mesh = ExtResource("10_ycb21")
+
+[node name="Ap1Wall11" type="MeshInstance3D" parent="." unique_id=2088867219]
+mesh = ExtResource("11_2evmk")
+
+[node name="Ap1Wall12" type="MeshInstance3D" parent="." unique_id=2043554861]
+mesh = ExtResource("12_h2i26")
+
+[node name="Ap1Wall13" type="MeshInstance3D" parent="." unique_id=2079997245]
+mesh = ExtResource("13_hboq1")
+
+[node name="Ap1Wall14" type="MeshInstance3D" parent="." unique_id=1432514778]
+mesh = ExtResource("14_lsy6c")
