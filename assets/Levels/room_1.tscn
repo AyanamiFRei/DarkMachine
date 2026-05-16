@@ -9,12 +9,16 @@
 [ext_resource type="PackedScene" uid="uid://blhupxhdf8pg1" path="res://assets/tsns_file/capsule.tscn" id="8_8wjio"]
 [ext_resource type="PackedScene" uid="uid://bvekdtu8dpq5l" path="res://assets/tsns_file/capsule_smoll.tscn" id="9_8wjio"]
 [ext_resource type="PackedScene" uid="uid://d0p4yv8micb4o" path="res://assets/tsns_file/1platform.tscn" id="10_a0ryf"]
-[ext_resource type="PackedScene" uid="uid://bru4wy863icpl" path="res://assets/objects/interections_objects/ItemToPickUp/ItemToPickup.tscn" id="11_2x6ot"]
 [ext_resource type="PackedScene" uid="uid://c62ray5n8eeir" path="res://assets/objects/breakable_wall/breakable_wall.tscn" id="11_4wd2b"]
 [ext_resource type="PackedScene" uid="uid://c0da202lvw8sg" path="res://bonfire.tscn" id="12_2x6ot"]
 [ext_resource type="PackedScene" uid="uid://c4vgkihwh2bxu" path="res://assets/objects/steampipe/steampipe.tscn" id="13_h0mf3"]
+
 [ext_resource type="MeshLibrary" uid="uid://cgd6m63eer5cl" path="res://assets/tscn_assets/wall.meshlib" id="14_mygdh"]
 [ext_resource type="MeshLibrary" uid="uid://cir0fu0ba5c2k" path="res://assets/tscn_assets/Stove.meshlib" id="14_njja3"]
+
+[ext_resource type="PackedScene" uid="uid://cemji6ptfi277" path="res://assets/objects/interections_objects/ItemToPickUp/ItemToPickup1.tscn" id="14_mygdh"]
+[ext_resource type="PackedScene" uid="uid://xi0b4svcx636" path="res://assets/objects/interections_objects/ItemToPickUp/ItemToPickup2.tscn" id="15_0i1kf"]
+[ext_resource type="PackedScene" uid="uid://xex607ecgggx" path="res://assets/objects/interections_objects/ItemToPickUp/ItemToPickup3.tscn" id="16_0i1kf"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_tlxyd"]
 size = Vector3(0.23687744, 0.27172852, 0.15917969)
@@ -150,15 +154,22 @@ shape = SubResource("BoxShape3D_tlxyd")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9593636, -0.020511007, 2.9585567e-07)
 
 [node name="Node3D2" type="Node3D" parent="." unique_id=727193280]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.30427366, 0, -4.5944045e-08)
 
-[node name="ItemToPickup" parent="Node3D2" unique_id=304441225 instance=ExtResource("11_2x6ot")]
-transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -1.2275156, 0, -1.853497e-07)
+[node name="ItemToPickup1" parent="Node3D2" unique_id=1630323016 instance=ExtResource("14_mygdh")]
+transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -0.72620577, 0.021092976, -1.09654025e-07)
 
-[node name="ItemToPickup3" parent="Node3D2" unique_id=1730838396 instance=ExtResource("11_2x6ot")]
-transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -1.5275748, 0, -2.306574e-07)
+[node name="ItemToPickup2" parent="Node3D2" unique_id=889442345 instance=ExtResource("15_0i1kf")]
+transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -0.49930978, 0.020105267, -7.539367e-08)
 
-[node name="ItemToPickup2" parent="Node3D2" unique_id=1158278060 instance=ExtResource("11_2x6ot")]
-transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -0.94109535, 0, -1.4210144e-07)
+[node name="ItemToPickup3" parent="Node3D2" unique_id=357716211 instance=ExtResource("15_0i1kf")]
+transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -0.5611394, 0.02047429, -8.472969e-08)
+
+[node name="ItemToPickup4" parent="Node3D2" unique_id=1827365161 instance=ExtResource("14_mygdh")]
+transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -0.42364368, 0.021013975, -6.39684e-08)
+
+[node name="ItemToPickup5" parent="Node3D2" unique_id=1952762453 instance=ExtResource("16_0i1kf")]
+transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -0.63871676, 0.02357372, -9.644357e-08)
 
 [node name="bonfire" parent="." unique_id=32593710 instance=ExtResource("12_2x6ot")]
 transform = Transform3D(0.54051757, 0, 0, 0, 0.54051757, 0, 0, 0, 0.54051757, 1.6707779, -0.290374, 2.5228044e-07)

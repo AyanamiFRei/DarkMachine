@@ -12,34 +12,35 @@ radius = 0.1
 height = 0.3
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_l38k5"]
-size = Vector3(0.4505005, 0.20085526, 1)
+size = Vector3(0.4505005, 0.1757021, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_aiiog"]
-size = Vector3(0.31487846, 0.48323536, 0.46900177)
+size = Vector3(0.36044216, 0.4476725, 0.46900177)
 
 [node name="enemy2" type="CharacterBody3D" unique_id=1964270170]
 collision_layer = 4
-collision_mask = 11
+collision_mask = 9
 script = ExtResource("1_rc5f6")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1840250616]
 visible = false
 mesh = SubResource("CapsuleMesh_yx762")
 
-[node name="hitbox" type="CollisionShape3D" parent="." unique_id=53676020]
-transform = Transform3D(1, 0, 0, 0, 0.741915, 0, 0, 0, 1, 0.005340576, -0.046390567, 0)
+[node name="collision with platform" type="CollisionShape3D" parent="." unique_id=53676020]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.005340576, -0.033813987, 0)
 shape = SubResource("BoxShape3D_l38k5")
 
 [node name="damage_area" type="Area3D" parent="." unique_id=607254981]
-transform = Transform3D(1.3947728, 0, 0, 0, 0.22502948, 0, 0, 0, 1, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 0.225, 0, 0, 0, 1, 0, 0, 0)
 collision_layer = 4
 collision_mask = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="damage_area" unique_id=1445843279]
-transform = Transform3D(0.9999999, 0, 0, 0, 0.99999964, 0, 0, 0, 1, 0.009375571, -0.11021749, 0.0024604797)
+transform = Transform3D(0.9999999, 0, 0, 0, 0.99999976, 0, 0, 0, 1, 0.032157417, 0.10979386, 0.0024604797)
 shape = SubResource("BoxShape3D_aiiog")
 
 [node name="dmg_timer" type="Timer" parent="." unique_id=1826850215]
+one_shot = true
 
 [node name="attack_healthbar_timer" type="Timer" parent="." unique_id=77721192]
 wait_time = 0.1
@@ -55,7 +56,7 @@ transform = Transform3D(0.62117934, 0, 0, 0, 0.46559662, 0, 0, 0, 1, 0.17655583,
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
 texture = ExtResource("2_dscxd")
 
-[connection signal="body_entered" from="damage_area" to="." method="_on_area_3d_body_entered"]
-[connection signal="body_exited" from="damage_area" to="." method="_on_area_3d_body_exited"]
+[connection signal="body_entered" from="damage_area" to="." method="_on_damage_area_body_entered"]
+[connection signal="body_exited" from="damage_area" to="." method="_on_damage_area_body_exited"]
 [connection signal="timeout" from="dmg_timer" to="." method="_on_dmg_timer_timeout"]
 [connection signal="timeout" from="attack_healthbar_timer" to="." method="_on_attack_healthbar_timer_timeout"]
