@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://blhupxhdf8pg1" path="res://assets/tsns_file/capsule.tscn" id="1_f7fx0"]
 [ext_resource type="PackedScene" uid="uid://bvekdtu8dpq5l" path="res://assets/tsns_file/capsule_smoll.tscn" id="2_0a2ok"]
 [ext_resource type="PackedScene" uid="uid://1w4j06345h57" path="res://assets/objects/Door.tscn" id="3_qiwse"]
-[ext_resource type="Script" uid="uid://ccopo4qkviydo" path="res://assets/objects/door_to_new_lvl.gd" id="5_peyxv"]
+[ext_resource type="Script" path="res://assets/objects/door_to_new_lvl.gd" id="5_peyxv"]
 [ext_resource type="PackedScene" uid="uid://cw86i1wgw62jl" path="res://assets/enteties/player/player.tscn" id="5_tw7do"]
 
 [node name="room_3" type="Node3D" unique_id=1155999814]
