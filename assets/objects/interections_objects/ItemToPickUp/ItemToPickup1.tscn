@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cemji6ptfi277"]
 
 [ext_resource type="Script" uid="uid://b03lui8xqrgdj" path="res://assets/objects/interections_objects/ItemToPickUp/item_to_pickup.gd" id="1_0gg1j"]
-[ext_resource type="Texture2D" uid="uid://bgs2x7gthr872" path="res://assets/icons_png/items_icons/balt 1.png" id="2_v4lvd"]
+[ext_resource type="Texture2D" uid="uid://db5iox8bqx48f" path="res://assets/icons_png/items_icons/png-clipart-formas-gray-gear-illustration-thumbnail.png" id="2_v4lvd"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_inft3"]
 size = Vector3(0.9920044, 1, 1)

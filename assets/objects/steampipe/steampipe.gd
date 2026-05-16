@@ -14,7 +14,7 @@ var damage_interval := 1.0
 var knockback_force := 50.0
 var knockback_up := 2.0
 
-var steam_sound = "res://assets/audios/sfx/steam.wav"
+var steam_sounds = "res://assets/audios/sfx/steam.wav"
 
 # дистаниция ожидания
 @export var activation_distance := 15.0 
@@ -33,7 +33,7 @@ func _on_inactive_timer_timeout():
 		return
 	_set_steam_state(true)
 	active_timer.start()
-	SoundManager.play_sfx(steam_sound)
+	SoundManager.play_sfx(steam_sounds)
 
 func _on_active_timer_timeout():
 	_set_steam_state(false)
