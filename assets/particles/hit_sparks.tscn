@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://cgktpibgr3qvg"]
+
+[ext_resource type="Script" uid="uid://b2vbuxv83ku0d" path="res://assets/particles/hit_sparks.gd" id="1_41qfa"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_sparks"]
+direction = Vector3(0, 1, 0)
+spread = 40.0
+initial_velocity_min = 0.79999995
+initial_velocity_max = 1.8
+gravity = Vector3(0, -2, 0)
+scale_min = 0.01
+scale_max = 0.03
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sparks"]
+shading_mode = 0
+albedo_color = Color(1, 0.75, 0.2, 1)
+billboard_mode = 1
+
+[sub_resource type="QuadMesh" id="QuadMesh_sparks"]
+material = SubResource("StandardMaterial3D_sparks")
+size = Vector2(0.025, 0.025)
+
+[node name="HitSparks" type="Node3D" unique_id=796406755]
+script = ExtResource("1_41qfa")
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="." unique_id=1884586832]
+emitting = false
+amount = 10
+lifetime = 0.18000000000000002
+one_shot = true
+explosiveness = 1.0
+randomness = 0.1
+visibility_aabb = AABB(-2, -2, -2, 4, 4, 4)
+process_material = SubResource("ParticleProcessMaterial_sparks")
+draw_pass_1 = SubResource("QuadMesh_sparks")

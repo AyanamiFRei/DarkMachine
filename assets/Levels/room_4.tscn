@@ -3,9 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://blhupxhdf8pg1" path="res://assets/tsns_file/capsule.tscn" id="1_f7fx0"]
 [ext_resource type="PackedScene" uid="uid://bvekdtu8dpq5l" path="res://assets/tsns_file/capsule_smoll.tscn" id="2_0a2ok"]
 [ext_resource type="PackedScene" uid="uid://1w4j06345h57" path="res://assets/objects/Door.tscn" id="3_qiwse"]
-[ext_resource type="Script" uid="uid://ch65grv8hfdhg" path="res://assets/objects/scripts doors/door_toto_3.gd" id="4_tw7do"]
+[ext_resource type="Script" path="res://assets/objects/door_to_new_lvl.gd" id="5_peyxv"]
 [ext_resource type="PackedScene" uid="uid://cw86i1wgw62jl" path="res://assets/enteties/player/player.tscn" id="5_tw7do"]
-[ext_resource type="Script" uid="uid://dfp5rklrgbwby" path="res://assets/objects/scripts doors/door_to_5.gd" id="6_peyxv"]
 
 [node name="room_3" type="Node3D" unique_id=1155999814]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, -0.4698391)
@@ -121,9 +120,9 @@ use_collision = true
 size = Vector3(1.9904633, 3.8645782, 0.08984375)
 
 [node name="CSGBox3D15" type="CSGBox3D" parent="platform" unique_id=1701498346]
-transform = Transform3D(1, 0, -2.2168933e-12, 0, 1, 0, 2.2168933e-12, 0, 1, 0.7646494, 2.2158678, -0.06170293)
+transform = Transform3D(1, 0, -2.209788e-12, 0, 1, 0, 2.209788e-12, 0, 1, 0.46719837, 2.2158678, -0.06170293)
 use_collision = true
-size = Vector3(8.132011, 0.41190338, 0.08984375)
+size = Vector3(8.726913, 0.41190338, 0.08984375)
 
 [node name="CSGBox3D12" type="CSGBox3D" parent="platform" unique_id=1309717289]
 transform = Transform3D(1, 0, -3.4816594e-12, 0, 1, 0, 3.4816594e-12, 0, 1, -0.16129056, -1.1544135, -0.06170117)
@@ -158,12 +157,10 @@ light_energy = 0.52
 light_specular = 0.0
 
 [node name="player" parent="." unique_id=1722918080 instance=ExtResource("5_tw7do")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0044487, -0.18519501, 0.025186568)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.843331, -0.18519501, 0.07903379)
 
 [node name="Door" parent="." unique_id=1730044608 instance=ExtResource("3_qiwse")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2610939, -0.13149993, 0.04446803)
-script = ExtResource("4_tw7do")
-
-[node name="Door2" parent="." unique_id=2044207141 instance=ExtResource("3_qiwse")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2770656, -0.010155034, 0.044468027)
-script = ExtResource("6_peyxv")
+transform = Transform3D(0.99999946, -0.00094854925, -0.00048898946, 0.00094867696, 0.9999995, 0.0002646669, 0.00048874173, -0.0002651241, 0.99999994, -2.235, -0.131, 0.015)
+script = ExtResource("5_peyxv")
+target_scene = "res://assets/Levels/room_3.tscn"
+spawn_point = Vector3(-2, 2, 0.015)

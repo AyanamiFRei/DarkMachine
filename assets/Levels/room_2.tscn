@@ -3,9 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://chdo85q6n5mnm" path="res://assets/enteties/enemies/enemy_ezh/enemy_ezh.tscn" id="1_edu5m"]
 [ext_resource type="PackedScene" uid="uid://c62ray5n8eeir" path="res://assets/objects/breakable_wall/breakable_wall.tscn" id="1_w1lfr"]
 [ext_resource type="PackedScene" uid="uid://1w4j06345h57" path="res://assets/objects/Door.tscn" id="1_yqu6b"]
-[ext_resource type="Script" uid="uid://cb5xrcymeftw1" path="res://assets/objects/scripts doors/door_to_1.gd" id="2_edu5m"]
 [ext_resource type="PackedScene" uid="uid://cw86i1wgw62jl" path="res://assets/enteties/player/player.tscn" id="4_8g1g7"]
-[ext_resource type="Script" uid="uid://ee0vpnjhrjbj" path="res://assets/objects/scripts doors/door_to_3.gd" id="5_8g1g7"]
+[ext_resource type="Script" uid="uid://ccopo4qkviydo" path="res://assets/objects/door_to_new_lvl.gd" id="5_8g1g7"]
 [ext_resource type="ArrayMesh" uid="uid://cdpm7wvle3tyy" path="res://assets/gltf_file/mesh/AP1_╤Б╤В╨╡╨╜╨░2.res" id="5_qhxw8"]
 [ext_resource type="ArrayMesh" uid="uid://4ap5lq0f1dlt" path="res://assets/gltf_file/mesh/AP1_╤В╤А╤Г╨▒╤Л2.res" id="6_tb6r3"]
 [ext_resource type="PackedScene" uid="uid://blhupxhdf8pg1" path="res://assets/tsns_file/capsule.tscn" id="7_tlyya"]
@@ -28,11 +27,19 @@ transform = Transform3D(0.3, 0, 2.1316283e-15, 0, 0.3, 0, -2.1316283e-15, 0, 0.3
 
 [node name="Door2" parent="." unique_id=1888440396 instance=ExtResource("1_yqu6b")]
 transform = Transform3D(0.5609136, 0, 0.8278744, 0, 1, 0, -0.8278744, 0, 0.5609136, -1.7947693, 0.46303082, -1.5690375e-07)
-script = ExtResource("2_edu5m")
+script = ExtResource("5_8g1g7")
+target_scene = "res://assets/Levels/room_1.tscn"
+spawn_point = Vector3(-12, 0, 0)
 
 [node name="Door_to_lvl3" parent="." unique_id=1730044608 instance=ExtResource("1_yqu6b")]
+
 transform = Transform3D(-0.55388594, 0, 0.83259284, 0, 1, 0, -0.83259284, 0, -0.55388594, 0.9848625, 0.07153858, 8.6099384e-08)
+
+
+
 script = ExtResource("5_8g1g7")
+target_scene = "res://assets/Levels/room_3.tscn"
+spawn_point = Vector3(1, 0.5, 0)
 
 [node name="environment" type="Node3D" parent="." unique_id=1855846647]
 transform = Transform3D(0.07032423, 0, 0.8526946, 0, 0.11356157, 0, -0.11478572, 0, 0.522409, 0.90580446, 0.47635204, 0.0066092964)
@@ -49,7 +56,7 @@ mesh = ExtResource("5_qhxw8")
 skeleton = NodePath("../../..")
 
 [node name="Ap1Трубы2" type="MeshInstance3D" parent="background" unique_id=2112220516]
-transform = Transform3D(1, 0, -4.2632564e-14, 0, 1, 0, 4.2632564e-14, 0, 1, -0.00078419596, -0.0017879808, -0.0032541156)
+transform = Transform3D(1, 0, -4.2632564e-14, 0, 1, 0, 4.2632564e-14, 0, 1, -0.0007892991, -0.00021468103, -0.0032299757)
 mesh = ExtResource("6_tb6r3")
 skeleton = NodePath("../../..")
 
@@ -113,6 +120,7 @@ size = Vector3(2.3231812, 2.5668716, 0.08984375)
 
 [node name="capsules" type="Node3D" parent="." unique_id=2070847471]
 transform = Transform3D(-1, 0, 8.742276e-08, 0, 1, 0, -8.742276e-08, 0, -1, 0.56033117, 0, -0.32000083)
+visible = false
 
 [node name="capsula" parent="capsules" unique_id=1963404115 instance=ExtResource("7_tlyya")]
 transform = Transform3D(-1.1999997, 0.0008377579, 1.8119493e-07, 0.0008377579, 1.1999997, -5.3258786e-11, -1.8119493e-07, 7.3239144e-11, -1.1999999, 0.87950146, -0.8905797, 0.41127366)
