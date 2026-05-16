@@ -146,6 +146,16 @@ func tick(delta: float) -> void:
 
 	if Input.is_action_just_released("ui_accept") and player.velocity.y > 0:
 		player.velocity.y *= short_jump_multiplier
+		
+	if Input.is_action_just_pressed("Crouch"):
+		if on_floor:
+			is_crouching = true
+			collision.scale = Vector3(0.1, 0.05, 0.1)
+	
+	if Input.is_action_just_released("Crouch"):
+		if is_crouching:
+			is_crouching = false
+			collision.scale = Vector3(0.1, 0.1, 0.1)
 
 	was_on_floor = on_floor
 
