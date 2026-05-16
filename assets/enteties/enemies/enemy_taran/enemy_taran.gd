@@ -81,10 +81,10 @@ func start_attack_cycle() -> void:
 		current_velocity_x = direction * SPEED
 		can_damage = true
 		is_dashing = true
-
+		dash_sfx_player = play_local_sfx(rides_sound)
 		anim.play("attack")
 
-		dash_sfx_player = play_local_sfx(rides_sound)
+		
 
 		var dash_timer = get_tree().create_timer(2.0)
 
