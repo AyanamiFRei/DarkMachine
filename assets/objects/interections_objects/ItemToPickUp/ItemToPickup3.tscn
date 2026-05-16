@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://xex607ecgggx"]
 
 [ext_resource type="Script" uid="uid://b03lui8xqrgdj" path="res://assets/objects/interections_objects/ItemToPickUp/item_to_pickup.gd" id="1_bndsg"]
-[ext_resource type="Texture2D" uid="uid://ejeuk6xvfrx1" path="res://assets/icons_png/items_icons/balt 3.png" id="2_g5xxg"]
+[ext_resource type="Texture2D" uid="uid://isxvhthb1lmj" path="res://assets/icons_png/items_icons/shesttt.png" id="2_g5xxg"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_inft3"]
 size = Vector3(0.9920044, 1, 1)

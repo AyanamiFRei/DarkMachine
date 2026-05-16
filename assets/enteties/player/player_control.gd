@@ -5,17 +5,15 @@ extends CharacterBody3D
 @onready var movement = $Components/MovementComponent
 @onready var animation_component = $Components/AnimationComponent
 @onready var heal_timer: Timer = $Components/HealthComponent/Timers/heal_timer
-@export var menu_button: Node3D
 @onready var progress_bar = get_tree().get_nodes_in_group("healthbar")
 
-@onready var anim: AnimatedSprite3D = $Visual/AnimatedSprite3D/StockModel
+@export var menu_button: Node3D
 
 var type = "player"
 var spawn_point = Vector3.ZERO
 var death = false
 var can_move = true
 var taking_dmg = false
-var is_attacking = false
 
 
 func _ready() -> void:
@@ -33,6 +31,30 @@ func _ready() -> void:
 	$Components/CombatComponent/Area_dmg/CollisionShape3D2.disabled = false
 
 	SoundManager.play_level_music()
+
+
+func _physics_process(delta: float) -> void:
+	position.z = clamp(position.z, 0, 0)
+
+	if death or not can_move:
+		return
+
+	movement.tick(delta)
+
+	if Input.is_action_just_pressed("attack") and not movement.is_hanging:
+		combat.attack()
+
+	if Input.is_action_just_pressed("ui_cancel"):
+		var player = get_tree().get_first_node_in_group("player")
+		if player:
+			GameManager.save_player(player)
+		get_tree().change_scene_to_file("res://assets/menus/ingamemenu.tscn")
+
+	if Input.is_action_just_pressed("heal"):
+		heal_timer.start()
+
+	animation_component.update_animation()
+	move_and_slide()
 
 
 func _on_player_died():
@@ -78,36 +100,10 @@ func _on_attack_finished():
 	pass
 
 
-func _physics_process(delta: float) -> void:
-	position.z = clamp(position.z, 0, 0)
-
-	if death or not can_move:
-		return
-
-	movement.tick(delta)
-
-	# Нельзя атаковать, когда игрок держится за уступ
-	if Input.is_action_just_pressed("attack") and not movement.is_hanging:
-		combat.attack()
-
-	if Input.is_action_just_pressed("ui_cancel"):
-		print("ESC нажата!")
-		var player = get_tree().get_first_node_in_group("player")
-		if player:
-			GameManager.save_player(player)
-		get_tree().change_scene_to_file("res://assets/menus/ingamemenu.tscn")
-
-	if Input.is_action_just_pressed("heal"):
-		heal_timer.start()
-
-	animation_component.update_animation()
-	move_and_slide()
-
-
 func set_checkpoint(pos):
 	spawn_point = pos
 
 
 func _on_checkpoint_body_entered(body: Node3D) -> void:
 	set_checkpoint(global_position)
-	print("chechkpoint_entered")
+	print("checkpoint_entered")
