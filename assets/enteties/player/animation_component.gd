@@ -8,7 +8,8 @@ extends Node3D
 
 var is_attacking := false
 var is_dead := false
-
+var crawl_offset := 100
+var default_offset := 0
 
 func _ready() -> void:
 	anim.animation_finished.connect(_on_animation_finished)
@@ -58,7 +59,16 @@ func update_animation() -> void:
 			anim.play("jump")
 		else:
 			anim.play("fall")
-	elif abs(player.velocity.x) > 0.05:
+		return
+
+	if movement.is_crouching:
+		anim.offset.y = crawl_offset
+		anim.play("crawl")
+		return
+	else:
+		anim.offset.y = default_offset
+
+	if abs(player.velocity.x) > 0.05:
 		anim.play("run")
 	else:
 		anim.play("idle")
@@ -82,6 +92,9 @@ func _on_ledge_climb_started() -> void:
 
 func play_attack() -> void:
 	if movement.is_hanging:
+		return
+
+	if movement.is_crouching:
 		return
 
 	is_attacking = true
