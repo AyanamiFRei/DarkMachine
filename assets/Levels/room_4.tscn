@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://blhupxhdf8pg1" path="res://assets/tsns_file/capsule.tscn" id="1_f7fx0"]
 [ext_resource type="PackedScene" uid="uid://bvekdtu8dpq5l" path="res://assets/tsns_file/capsule_smoll.tscn" id="2_0a2ok"]
 [ext_resource type="PackedScene" uid="uid://1w4j06345h57" path="res://assets/objects/Door.tscn" id="3_qiwse"]
-[ext_resource type="Script" path="res://assets/objects/door_to_new_lvl.gd" id="5_peyxv"]
+[ext_resource type="Script" uid="uid://ccopo4qkviydo" path="res://assets/objects/door_to_new_lvl.gd" id="5_peyxv"]
 [ext_resource type="PackedScene" uid="uid://cw86i1wgw62jl" path="res://assets/enteties/player/player.tscn" id="5_tw7do"]
 
 [node name="room_3" type="Node3D" unique_id=1155999814]
@@ -11,7 +11,6 @@ transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, -0.4698391)
 
 [node name="environment" type="Node3D" parent="." unique_id=944680908]
 transform = Transform3D(0.07032423, 0, 0.8526946, 0, 0.11356157, 0, -0.11478572, 0, 0.522409, 0.90580446, 0.47635204, 0.0066092964)
-visible = false
 
 [node name="background" type="Node3D" parent="." unique_id=445858907]
 transform = Transform3D(-9.48, 0, 8.2876755e-07, 0, 9.48, 0, -8.2876755e-07, 0, -9.48, 4.712677e-07, 0.75562096, -5.390674)
@@ -131,7 +130,6 @@ size = Vector3(5.6445823, 0.5766907, 0.08984375)
 
 [node name="capsules" type="Node3D" parent="." unique_id=1500476003]
 transform = Transform3D(-1, 0, 8.742276e-08, 0, 1, 0, -8.742276e-08, 0, -1, 0.56033117, 0, -0.32000083)
-visible = false
 
 [node name="capsula" parent="capsules" unique_id=480636668 instance=ExtResource("1_f7fx0")]
 transform = Transform3D(1.1999999, 0, -7.62876e-08, 0, 1.1999999, 0, 7.62876e-08, 0, 1.1999999, 0.539219, -0.8905797, 0.22707844)

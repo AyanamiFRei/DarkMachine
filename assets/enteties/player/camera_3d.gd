@@ -1,7 +1,7 @@
 extends Camera3D
 
 @export var player_path: NodePath
-@export var normal_offset := Vector3(0, 0, -5)
+@export var normal_offset := Vector3(0, 0, -3.5)
 @export var follow_smooth: float = 5.0
 @export var catch_up_smooth: float = 2.0
 

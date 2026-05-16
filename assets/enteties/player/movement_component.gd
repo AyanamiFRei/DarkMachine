@@ -13,10 +13,10 @@ signal ledge_dropped
 @onready var ledge_clear_ray: RayCast3D = $LedgeClearRay
 @onready var ledge_top_ray: RayCast3D = $LedgeTopRay
 
-@export var speed := 10.0
+@export var speed := 3.5
 @export var crouch_speed := 1.5
-@export var jump_velocity := 10.0
-@export var gravity := 10.0
+@export var jump_velocity := 7.0
+@export var gravity := 20.0
 @export var coyote_time := 0.12
 @export var jump_buffer_time := 0.12
 @export var short_jump_multiplier := 0.5

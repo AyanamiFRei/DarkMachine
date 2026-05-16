@@ -925,7 +925,7 @@ shape = SubResource("CapsuleShape3D_ratu8")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1840779735]
 physics_interpolation_mode = 1
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, -0.087646425, -0.26609683)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0.014592908, 0.0009726137, -0.26609683)
 top_level = true
 script = ExtResource("11_u84jc")
 player_path = NodePath("..")
