@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://bvekdtu8dpq5l" path="res://assets/tsns_file/capsule_smoll.tscn" id="8_p4ip1"]
 [ext_resource type="PackedScene" uid="uid://clkyrfe3ub4tj" path="res://assets/enteties/enemies/enemy_taran/enemy_taran.tscn" id="9_edu5m"]
 [ext_resource type="MeshLibrary" uid="uid://cir0fu0ba5c2k" path="res://assets/tscn_assets/Stove.meshlib" id="12_qhxw8"]
+[ext_resource type="ArrayMesh" uid="uid://bou42kol7x08s" path="res://assets/gltf_file/mesh/AP1_wall1.res" id="13_tb6r3"]
 
 [node name="room_2" type="Node3D" unique_id=1939086906]
 transform = Transform3D(-5, 0, -4.371139e-07, 0, 5, 0, 4.371139e-07, 0, -5, 0, 0, 0)
@@ -151,3 +152,7 @@ cell_size = Vector3(0.805, 2, 0.69)
 data = {
 "cells": PackedInt32Array(0, 65531, 1441792, 0, 65530, 1441793, 0, 65529, 1441801, 65535, 65532, 1441794, 65535, 65533, 1441793, 65535, 65534, 1441794, 0, 65535, 1441795, 65535, 0, 1441796, 65535, 1, 1441797, 65535, 2, 1441797, 65535, 65535, 1441798)
 }
+
+[node name="Ap1Wall1" type="MeshInstance3D" parent="." unique_id=1712453503]
+transform = Transform3D(-0.2, -1.7484556e-08, -1.7763568e-15, -3.5527137e-16, 0, 0.2, -1.7484556e-08, 0.2, -1.5529405e-22, -1.414505, -0.36672425, 0.15574376)
+mesh = ExtResource("13_tb6r3")

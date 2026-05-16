@@ -1,7 +1,8 @@
 extends Node3D
+class_name DoorToLevel
 
-@export var target_scene: String = "res://assets/Levels/room_6.tscn"
-var spawn_point: Vector3 = Vector3(-2.099, 3.102,0.255)
+@export var target_scene: String 
+@export var spawn_point: Vector3
 
 var can_trigger: bool = false  # ← по умолчанию выключена!
 

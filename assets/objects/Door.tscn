@@ -1,14 +1,12 @@
 [gd_scene format=3 uid="uid://1w4j06345h57"]
 
-[ext_resource type="Script" uid="uid://s0dl6cwd42ld" path="res://assets/objects/scripts doors/door_to_2.gd" id="1_1vvux"]
-
-
+[ext_resource type="Script" uid="uid://dn1knvyxvijb4" path="res://assets/objects/scripts doors/door_to_level.gd" id="1_ig6di"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_iu8q0"]
 size = Vector3(0.21820068, 0.2835083, 0.091674805)
 
 [node name="Door" type="Node3D" unique_id=1730044608]
-script = ExtResource("1_1vvux")
+script = ExtResource("1_ig6di")
 
 [node name="door" type="CSGBox3D" parent="." unique_id=2130273925]
 transform = Transform3D(0.13461523, 0, 0, 0, 0.11356157, 0, 0, 0, 0.9999999, 0, 0, -0.009)
