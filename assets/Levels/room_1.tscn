@@ -158,7 +158,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9593636, -0.020511007, 2.95
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.30427366, 0, -4.5944045e-08)
 
 [node name="ItemToPickup1" parent="Node3D2" unique_id=1630323016 instance=ExtResource("14_mygdh")]
-transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -0.72620577, 0.021092976, -1.09654025e-07)
+transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -0.8251446, 0.021092976, -1.2459337e-07)
 
 [node name="ItemToPickup2" parent="Node3D2" unique_id=889442345 instance=ExtResource("15_0i1kf")]
 transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -0.49930978, 0.020105267, -7.539367e-08)
@@ -167,10 +167,10 @@ transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -0.49930978, 0.02010
 transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -0.5611394, 0.02047429, -8.472969e-08)
 
 [node name="ItemToPickup4" parent="Node3D2" unique_id=1827365161 instance=ExtResource("14_mygdh")]
-transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -0.42364368, 0.021013975, -6.39684e-08)
+transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -0.6395891, 0.021013975, -9.657525e-08)
 
 [node name="ItemToPickup5" parent="Node3D2" unique_id=1952762453 instance=ExtResource("16_0i1kf")]
-transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -0.63871676, 0.02357372, -9.644357e-08)
+transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -0.71993476, 0.02357372, -1.0870714e-07)
 
 [node name="bonfire" parent="." unique_id=32593710 instance=ExtResource("12_2x6ot")]
 transform = Transform3D(0.54051757, 0, 0, 0, 0.54051757, 0, 0, 0, 0.54051757, 1.6707779, -0.290374, 2.5228044e-07)

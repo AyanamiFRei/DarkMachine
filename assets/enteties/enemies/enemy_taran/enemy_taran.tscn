@@ -388,7 +388,7 @@ animations = [{
 }]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ip601"]
-size = Vector3(1.4785156, 0.26792908, 0.13122559)
+size = Vector3(1.9013672, 0.34286118, 0.13122559)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_a6mbk"]
 size = Vector3(1.2360954, 0.6484375, 1)
@@ -431,7 +431,7 @@ collision_layer = 4
 collision_mask = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D2" unique_id=420845754]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.060203552, -0.0017700195)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0976696, -0.0017700195)
 shape = SubResource("BoxShape3D_ip601")
 
 [node name="Area3D3" type="Area3D" parent="." unique_id=1495902093]

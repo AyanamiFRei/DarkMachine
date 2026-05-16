@@ -11,6 +11,7 @@ var is_dead := false
 var crawl_offset := 100
 var default_offset := 0
 
+
 func _ready() -> void:
 	anim.animation_finished.connect(_on_animation_finished)
 
@@ -24,7 +25,8 @@ func _on_animation_finished() -> void:
 		is_attacking = false
 
 	elif anim.animation == "grabs ledge":
-		movement.finish_ledge_grab()
+		if movement.ledge_state == "grabbing":
+			movement.finish_ledge_grab()
 
 	elif anim.animation == "pulls on ledge":
 		movement.finish_ledge_climb()
@@ -37,11 +39,17 @@ func update_animation() -> void:
 	if is_attacking:
 		return
 
+	if movement.ledge_state == "grabbing":
+		return
+
+	if movement.ledge_state == "holding":
+		return
+
 	if movement.ledge_state == "climbing":
 		return
 
-	if movement.is_hanging:
-		return
+	if not movement.is_crouching:
+		anim.offset.y = default_offset
 
 	var input_dir := Input.get_axis("ui_left", "ui_right")
 
@@ -65,8 +73,6 @@ func update_animation() -> void:
 		anim.offset.y = crawl_offset
 		anim.play("crawl")
 		return
-	else:
-		anim.offset.y = default_offset
 
 	if abs(player.velocity.x) > 0.05:
 		anim.play("run")
@@ -76,18 +82,16 @@ func update_animation() -> void:
 
 func _on_ledge_grab_started() -> void:
 	is_attacking = false
-	if anim.animation != "grabs ledge":
-		anim.play("grabs ledge")
+	anim.play("grabs ledge")
 
 
 func _on_ledge_hold_started() -> void:
-	if anim.animation != "holds on ledge":
+	if movement.ledge_state == "holding":
 		anim.play("holds on ledge")
 
 
 func _on_ledge_climb_started() -> void:
-	if anim.animation != "pulls on ledge":
-		anim.play("pulls on ledge")
+	anim.play("pulls on ledge")
 
 
 func play_attack() -> void:

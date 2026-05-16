@@ -154,10 +154,14 @@ func tick(delta: float) -> void:
 		collision.scale = Vector3(0.1, 0.05, 0.1)
 
 	if Input.is_action_just_released("Crouch") and is_crouching:
-		is_crouching = false
-		collision.scale = Vector3(0.1, 0.1, 0.1)
+		stop_crouch()
 
 	was_on_floor = on_floor
+
+
+func stop_crouch() -> void:
+	is_crouching = false
+	collision.scale = Vector3(0.1, 0.1, 0.1)
 
 
 func update_ledge_rays_direction() -> void:
@@ -190,8 +194,11 @@ func start_ledge_hang(ledge_top_position: Vector3) -> void:
 	if is_hanging:
 		return
 
+	stop_crouch()
+
 	is_hanging = true
 	ledge_state = "grabbing"
+
 	jump_buffer_timer = 0.0
 	coyote_timer = 0.0
 	player.velocity = Vector3.ZERO
@@ -228,9 +235,6 @@ func finish_ledge_grab() -> void:
 func handle_ledge_hang() -> void:
 	player.velocity = Vector3.ZERO
 
-	if ledge_state == "grabbing":
-		return
-
 	if ledge_state == "climbing":
 		return
 
@@ -244,6 +248,8 @@ func handle_ledge_hang() -> void:
 
 
 func drop_from_ledge() -> void:
+	stop_crouch()
+
 	is_hanging = false
 	ledge_state = "none"
 	ledge_cooldown = 0.45
@@ -259,27 +265,28 @@ func climb_ledge() -> void:
 	if not is_hanging:
 		return
 
-	if ledge_state != "holding":
+	if ledge_state == "climbing":
 		return
+
+	stop_crouch()
 
 	ledge_state = "climbing"
 	player.velocity = Vector3.ZERO
-
-	# Сразу переносим игрока наверх
-	is_hanging = false
-	ledge_cooldown = 0.45
-	player.global_position = ledge_climb_position
 
 	ledge_climb_started.emit()
 
 
 func finish_ledge_climb() -> void:
-	# Теперь эта функция больше не двигает игрока,
-	# она просто завершает состояние подъема после анимации.
 	if ledge_state != "climbing":
 		return
 
-	ledge_state = "none"
+	stop_crouch()
+
+	player.global_position = ledge_climb_position
 	player.velocity = Vector3.ZERO
+
+	is_hanging = false
+	ledge_state = "none"
+	ledge_cooldown = 0.45
 
 	ledge_climb_finished.emit()
