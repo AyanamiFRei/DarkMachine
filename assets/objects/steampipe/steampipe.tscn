@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" uid="uid://budpjq8tyeatv" path="res://assets/objects/steampipe/steampipe.gd" id="1_gp55g"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_j7bv3"]
+[sub_resource type="PrismMesh" id="PrismMesh_3xrlx"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_ao7uy"]
-size = Vector3(0.73150635, 0.61987305, 1)
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_a5jby"]
+points = PackedVector3Array(0, 0.5, 0.5, 0.5, -0.5, 0.5, 0, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
 
 [node name="Steampipe" type="StaticBody3D" unique_id=514883721]
 script = ExtResource("1_gp55g")
@@ -14,15 +14,15 @@ script = ExtResource("1_gp55g")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=291460477]
 transform = Transform3D(0.191, 0, 0, 0, 0.164, 0, 0, 0, 0.3, 0, 0, 0)
-mesh = SubResource("BoxMesh_j7bv3")
+mesh = SubResource("PrismMesh_3xrlx")
 
 [node name="Area3D" type="Area3D" parent="." unique_id=1311020673]
 collision_layer = 0
 collision_mask = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1962173461]
-transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
-shape = SubResource("BoxShape3D_ao7uy")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=282881074]
+transform = Transform3D(0.191, 0, 0, 0, 0.164, 0, 0, 0, 0.3, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_a5jby")
 
 [node name="active_timer" type="Timer" parent="." unique_id=657151872]
 wait_time = 3.0

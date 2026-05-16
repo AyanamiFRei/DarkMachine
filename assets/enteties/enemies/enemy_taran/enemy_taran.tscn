@@ -3,7 +3,9 @@
 [ext_resource type="Script" uid="uid://cv72qw8vxlxm1" path="res://assets/enteties/enemies/enemy_taran/enemy_taran.gd" id="1_bj487"]
 [ext_resource type="Texture2D" uid="uid://cqowx4ltgye00" path="res://assets/sprite/enemy2_upper_smoke.png" id="2_a4i3p"]
 [ext_resource type="Texture2D" uid="uid://brj3oy2bxfju8" path="res://assets/sprite/enemy2_litle_smoke_wheels.png" id="2_fua05"]
+[ext_resource type="AudioStream" uid="uid://dijny7k6tyx82" path="res://assets/enteties/enemies/enemy_taran/audio/omaewa.wav" id="2_ppfxl"]
 [ext_resource type="Texture2D" uid="uid://bqpu8vrw3kvcn" path="res://assets/sprite/enemy2_more_smoke_and_wheels.png" id="3_3sljv"]
+[ext_resource type="AudioStream" uid="uid://d2fpbia5vhr3p" path="res://assets/enteties/enemies/enemy_taran/audio/taranrides.wav" id="3_8y3i8"]
 [ext_resource type="Texture2D" uid="uid://dssfpkv37yaxr" path="res://assets/sprite/enemy2_eye2.png" id="5_p7jsi"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_pfx3c"]
@@ -395,6 +397,8 @@ size = Vector3(1.2360954, 0.6484375, 1)
 collision_layer = 4
 collision_mask = 11
 script = ExtResource("1_bj487")
+detect_sound = ExtResource("2_ppfxl")
+rides_sound = ExtResource("3_8y3i8")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=535774728]
 transform = Transform3D(0.06319272, 0, 0, 0, 0.07799195, 0, 0, 0, 0.0990774, -0.009297222, -0.020378694, 0.010707311)
