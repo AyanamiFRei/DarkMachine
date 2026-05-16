@@ -519,6 +519,7 @@ script = ExtResource("9_033l5")
 
 [node name="MovementComponent" type="Node3D" parent="Components" unique_id=1871850941]
 script = ExtResource("7_plybv")
+crouch_height = 0.1
 
 [node name="Timers" type="Timer" parent="Components/MovementComponent" unique_id=793934519]
 
