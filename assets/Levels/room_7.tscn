@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://clkyrfe3ub4tj" path="res://assets/enteties/enemies/enemy_taran/enemy_taran.tscn" id="4_0oq7d"]
 [ext_resource type="PackedScene" uid="uid://chdo85q6n5mnm" path="res://assets/enteties/enemies/enemy_ezh/enemy_ezh.tscn" id="5_rr8nf"]
 [ext_resource type="PackedScene" uid="uid://1w4j06345h57" path="res://assets/objects/Door.tscn" id="6_hrnbl"]
-[ext_resource type="Script" uid="uid://47ov1jb64yuk" path="res://assets/objects/scripts doors/door_toto_4.gd" id="7_vkyh1"]
+[ext_resource type="Script" path="res://assets/objects/scripts doors/door_toto_4.gd" id="7_vkyh1"]
 [ext_resource type="MeshLibrary" uid="uid://cir0fu0ba5c2k" path="res://assets/tscn_assets/Stove.meshlib" id="8_xt15y"]
 [ext_resource type="MeshLibrary" uid="uid://cgd6m63eer5cl" path="res://assets/tscn_assets/wall.meshlib" id="9_h43hd"]
 
@@ -217,7 +217,7 @@ transform = Transform3D(-0.2, 0, -1.7484558e-08, 0, 0.2, 0, 1.7484558e-08, 0, -0
 transform = Transform3D(-0.2, 0, -1.7484558e-08, 0, 0.2, 0, 1.7484558e-08, 0, -0.2, -1.1280097, 2.4056957, -0.022409773)
 
 [node name="enemy6" parent="." unique_id=230244710 instance=ExtResource("5_rr8nf")]
-transform = Transform3D(-0.2, 0, -1.7484558e-08, 0, 0.2, 0, 1.7484558e-08, 0, -0.2, -3.739046, 4.1108623, -0.022409773)
+transform = Transform3D(-0.5, 0, -7.54979e-08, 0, 0.5, 0, 7.54979e-08, 0, -0.5, -3.739046, 4.1492863, -0.022409773)
 
 [node name="enemy7" parent="." unique_id=83316444 instance=ExtResource("5_rr8nf")]
 transform = Transform3D(-0.2, 0, -1.7484558e-08, 0, 0.2, 0, 1.7484558e-08, 0, -0.2, -2.3624797, 5.0611377, -0.022409773)
