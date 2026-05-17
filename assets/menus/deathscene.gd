@@ -5,10 +5,10 @@ extends Node3D
 
 func _ready():
 	
-	var player = get_tree().get_first_node_in_group("player")
-	if player:
-		print("fffffffffffffffffffffffffffff")
-		GameManager.save_player(player)
+	#var player = get_tree().get_first_node_in_group("player")
+	#if player:
+		#print("fffffffffffffffffffffffffffff")
+		#GameManager.save_player(player)
 	
 	if respawn_button:
 		var respawn_area = respawn_button.get_node("Area3D")
@@ -80,9 +80,16 @@ func _on_menu_input_event(_camera: Camera3D, event: InputEvent, position: Vector
 
 # ---------- ДЕЙСТВИЯ ----------
 func respawn():
-	if GameManager.has_save():
-		get_tree().change_scene_to_file(GameManager.saved_scene)
+	GameManager.coming_from_death = true  # ← ключевой флаг
+	GameManager.has_custom_spawn = false  # ← явно сбрасываем ESC-позицию
+	if GameManager.has_respawn_point:
+		print("[Death] → чекпоинт: ", GameManager.respawn_scene)
+		get_tree().change_scene_to_file(GameManager.respawn_scene)
+	elif GameManager.has_save():
+		print("[Death] → текущий уровень: ", GameManager.current_game_scene)
+		get_tree().change_scene_to_file(GameManager.current_game_scene)
 	else:
+		print("[Death] → room_1 (нет сохранения)")
 		get_tree().change_scene_to_file("res://assets/Levels/room_1.tscn")
 
 func return_to_menu():

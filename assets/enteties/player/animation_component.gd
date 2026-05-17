@@ -13,6 +13,7 @@ var default_offset := 0
 
 
 func _ready() -> void:
+	anim.flip_h = false
 	anim.animation_finished.connect(_on_animation_finished)
 
 	movement.ledge_grab_started.connect(_on_ledge_grab_started)

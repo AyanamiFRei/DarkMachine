@@ -17,19 +17,29 @@ var taking_dmg = false
 
 
 func _ready() -> void:
-	if GameManager.has_custom_spawn:
+	if GameManager.coming_from_death:
+		# Пришли с экрана смерти — ESC-спавн игнорируем
+		GameManager.coming_from_death = false
+		GameManager.has_custom_spawn = false
+		if GameManager.has_respawn_point:
+			global_position = GameManager.respawn_position
+			print("[Respawn] Чекпоинт: ", global_position)
+		else:
+			print("[Respawn] Нет чекпоинта — дефолт сцены")
+	elif GameManager.has_custom_spawn:
+		# Дверь или возврат после паузы
 		global_position = GameManager.spawn_position
 		GameManager.has_custom_spawn = false
+		print("[Spawn] Дверь/пауза: ", global_position)
+	else:
+		print("[Spawn] Дефолт сцены")
 
 	health_component.died.connect(_on_player_died)
 	health_component.health_changed.connect(_on_health_changed)
-
 	combat.attack_started.connect(_on_attack_started)
 	combat.attack_finished.connect(_on_attack_finished)
-
 	$Components/CombatComponent/Area_dmg/CollisionShape3D.disabled = false
 	$Components/CombatComponent/Area_dmg/CollisionShape3D2.disabled = false
-
 	SoundManager.play_level_music()
 
 
@@ -61,11 +71,12 @@ func _on_player_died():
 	death = true
 	can_move = false
 	velocity = Vector3.ZERO
-
-	GameManager.save_player(self)
+	# save_player НЕ вызываем — не перезаписываем spawn_position смертью
 	animation_component.play_death()
 	await animation_component.wait_for_death_animation()
 	get_tree().change_scene_to_file("res://assets/menus/deathscene.tscn")
+
+
 
 
 func _on_heal_timer_timeout():

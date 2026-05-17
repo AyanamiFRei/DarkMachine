@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://clkyrfe3ub4tj" path="res://assets/enteties/enemies/enemy_taran/enemy_taran.tscn" id="7_hiqnp"]
 [ext_resource type="PackedScene" uid="uid://chdo85q6n5mnm" path="res://assets/enteties/enemies/enemy_ezh/enemy_ezh.tscn" id="8_n1ghn"]
 [ext_resource type="MeshLibrary" uid="uid://cir0fu0ba5c2k" path="res://assets/tscn_assets/Stove.meshlib" id="9_br6ea"]
+[ext_resource type="PackedScene" uid="uid://c0da202lvw8sg" path="res://assets/objects/fire/bonfire.tscn" id="10_5l80r"]
 [ext_resource type="MeshLibrary" uid="uid://cgd6m63eer5cl" path="res://assets/tscn_assets/wall.meshlib" id="10_ivewg"]
 
 [node name="room_3" type="Node3D" unique_id=601273248]
@@ -242,3 +243,6 @@ data = {
 script = ExtResource("4_x10y4")
 target_scene = "res://assets/Levels/room_4.tscn"
 spawn_point = Vector3(-10, 0.5, 4)
+
+[node name="bonfire" parent="." unique_id=32593710 instance=ExtResource("10_5l80r")]
+transform = Transform3D(0.5021877, 0, 0, 0, 0.5021877, 0, 0, 0, 1, -1.7358055, 0.20287704, -0.009401935)

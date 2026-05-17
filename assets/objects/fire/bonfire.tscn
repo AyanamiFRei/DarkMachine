@@ -1,9 +1,8 @@
 [gd_scene format=3 uid="uid://c0da202lvw8sg"]
 
-[ext_resource type="Texture2D" uid="uid://cobsxttebb455" path="res://assets/objects/fire/fireyellow.png" id="1_067iu"]
+[ext_resource type="Texture2D" uid="uid://b06qnbgllrvsh" path="res://assets/objects/fire/fireyellow.png" id="1_067iu"]
 [ext_resource type="Script" uid="uid://ca2h2s4x0655m" path="res://assets/Levels/checkpoint.gd" id="1_wfoe5"]
-[ext_resource type="Texture2D" uid="uid://e6jlpx0my756" path="res://assets/objects/fire/firepurple.png" id="3_b8r8p"]
-
+[ext_resource type="Texture2D" uid="uid://b23hpdwwp1v60" path="res://assets/objects/fire/firepurple.png" id="3_b8r8p"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rrxl2"]
 atlas = ExtResource("1_067iu")

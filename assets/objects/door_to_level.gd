@@ -20,5 +20,7 @@ func _on_area_3d_body_entered(body: Node3D) -> void:
 func change_lvl():
 	print("spawn_point двери: ", spawn_point)
 	GameManager.spawn_position = spawn_point
+	GameManager.current_game_scene = target_scene  # ← ДОБАВИТЬ ЭТУ СТРОКУ
+	GameManager.saved_rotation = Vector3.ZERO
 	GameManager.has_custom_spawn = true
 	get_tree().change_scene_to_file(target_scene)
