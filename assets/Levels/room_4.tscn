@@ -161,4 +161,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.843331, -0.18519501, 0.079
 transform = Transform3D(0.99999946, -0.00094854925, -0.00048898946, 0.00094867696, 0.9999995, 0.0002646669, 0.00048874173, -0.0002651241, 0.99999994, -2.235, -0.131, 0.015)
 script = ExtResource("5_peyxv")
 target_scene = "res://assets/Levels/room_3.tscn"
-spawn_point = Vector3(-2, 2, 0.015)
+spawn_point = Vector3(-15, 16, 0.015)

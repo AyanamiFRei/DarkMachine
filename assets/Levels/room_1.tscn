@@ -111,6 +111,7 @@ skeleton = NodePath("../..")
 
 [node name="capsules" type="Node3D" parent="." unique_id=1043108948]
 transform = Transform3D(-0.93, 0, 7.86221e-08, 0, 0.93, 0, -1.404261e-07, 0, -0.5206906, 1.01005915e-08, -0.14667216, -0.0668932)
+visible = false
 
 [node name="capsula" parent="capsules" unique_id=869758886 instance=ExtResource("8_8wjio")]
 transform = Transform3D(-1.2, 0, 1.8119496e-07, 0, 1.2, 0, -1.81195e-07, 0, -1.2, 0.8786816, -0.97658706, 0.408921)

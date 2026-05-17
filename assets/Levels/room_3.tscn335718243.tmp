@@ -202,13 +202,13 @@ target_scene = "res://assets/Levels/room_2.tscn"
 spawn_point = Vector3(-4, -0.18, 0)
 
 [node name="player" parent="." unique_id=1722918080 instance=ExtResource("5_3n1ja")]
-transform = Transform3D(1, 0, 1.7484557e-07, 0, 1, 0, -1.7484557e-07, 0, 1, 1.0745679, 0.46573368, 0.023787295)
+transform = Transform3D(1, 0, 1.7484557e-07, 0, 1, 0, -1.7484557e-07, 0, 1, 1.0997009, 0.46573368, 0.013298154)
 
 [node name="Door" parent="." unique_id=980097522 instance=ExtResource("3_cuxx3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.800296, 3.2989259, -6.970167e-05)
 script = ExtResource("4_x10y4")
 target_scene = "res://assets/Levels/room_4.tscn"
-spawn_point = Vector3(-10, 1, 0)
+spawn_point = Vector3(9, 1, 0)
 
 [node name="enemy1" parent="." unique_id=1785802915 instance=ExtResource("7_hiqnp")]
 transform = Transform3D(-1, 0, -8.7422784e-08, 0, 1, 0, 8.7422784e-08, 0, -1, -0.8190485, 0.14943524, -0.0057077887)
