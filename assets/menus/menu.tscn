@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://do2shunhcuxr3" path="res://assets/menus/menu.gd" id="1_8omcj"]
 [ext_resource type="Texture2D" uid="uid://b4vacssietjov" path="res://assets/png/photo_2026-02-14_14-25-24.jpg" id="2_8aat6"]
+[ext_resource type="Texture2D" uid="uid://ndqw22j53m18" path="res://assets/menus/main_menu_png.png" id="3_qp3vo"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_s7dtb"]
 size = Vector3(0.5, 0.5, 3)
@@ -15,17 +16,21 @@ size = Vector3(0.5, 0.5, 3)
 [sub_resource type="BoxShape3D" id="BoxShape3D_ugn2o"]
 size = Vector3(0.5830078, 0.46398926, 3.0736694)
 
-[node name="Menu" type="Node3D" unique_id=2031328553 node_paths=PackedStringArray("play_button", "play_button_sbox", "exit_button")]
+[sub_resource type="BoxShape3D" id="BoxShape3D_12r6k"]
+size = Vector3(0.41253662, 0.36853027, 3.1147156)
+
+[node name="Menu" type="Node3D" unique_id=2031328553 node_paths=PackedStringArray("play_button", "play_button_sbox", "exit_button", "settings_button")]
 script = ExtResource("1_8omcj")
 play_button = NodePath("Play_button")
 play_button_sbox = NodePath("Play_button_sbox")
 exit_button = NodePath("Exit_button")
+settings_button = NodePath("settings_button")
 
 [node name="Play_button" type="Node3D" parent="." unique_id=152715757]
-transform = Transform3D(0.77916306, 0, -0.62682146, -0.11880838, 0.9818728, -0.14768334, 0.61545897, 0.18954106, 0.76503897, 0, 0, -2.287521)
+transform = Transform3D(0.7777141, -0.1209655, -0.61686975, 0.067521356, 0.99170816, -0.109342635, 0.62498164, 0.043385427, 0.7794332, 0, -0.89264846, -2.118504)
 
 [node name="play_button_mesh" type="MeshInstance3D" parent="Play_button" unique_id=310745183]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8696003, 0)
+transform = Transform3D(0.76809555, 0.06771186, 0.6367452, -0.12259204, 0.99154925, 0.042438842, -0.6284906, -0.11065701, 0.76990575, 1.3835586, 2.4018042, 1.6407013)
 mesh = SubResource("BoxMesh_s7dtb")
 
 [node name="Label3D" type="Label3D" parent="Play_button/play_button_mesh" unique_id=1143979922]
@@ -35,13 +40,14 @@ text = "Play
 font_size = 100
 
 [node name="Area3D" type="Area3D" parent="Play_button" unique_id=782831239]
+transform = Transform3D(1.0000001, 7.450581e-09, 5.9604645e-08, -7.450581e-09, 1, 0, 0, -1.4901161e-08, 1.0000001, -0.12568271, 1.0386839, -0.15622854)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Play_button/Area3D" unique_id=1749740415]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0087890625, 1.862242, 0.081207275)
+transform = Transform3D(0.7748531, 0.0666286, 0.62862027, -0.12059626, 0.99174654, 0.043532923, -0.6205317, -0.10954092, 0.77649295, 1.47719, 1.3761951, 1.8504364)
 shape = SubResource("BoxShape3D_8omcj")
 
 [node name="Play_button_sbox" type="Node3D" parent="." unique_id=792337189]
-transform = Transform3D(0.8777429, 0.35436368, 0.3224811, -0.29662922, 0.93045974, -0.21507283, -0.37626958, 0.09312134, 0.92181885, -0.096132874, 0, 1.3515563)
+transform = Transform3D(0.8777429, 0.35436368, 0.3224811, -0.29662922, 0.93045974, -0.21507283, -0.37626958, 0.09312134, 0.92181885, -0.096132874, 0, 14.658527)
 
 [node name="sbox_button_mesh" type="MeshInstance3D" parent="Play_button_sbox" unique_id=259116629]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8696003, 0)
@@ -60,10 +66,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0087890625, 1.862242, 0.08
 shape = SubResource("BoxShape3D_8omcj")
 
 [node name="Exit_button" type="Node3D" parent="." unique_id=950028045]
-transform = Transform3D(0.8135679, 0, -0.58146995, 0, 1, 0, 0.58146995, 0, 0.8135679, 0, -1.4499404, -2.4297066)
+transform = Transform3D(0.8747, 0.47184777, 0.11072506, -0.47903067, 0.80693364, 0.34552583, 0.073687844, -0.35527205, 0.93185425, -1.0767119, -0.5776018, -0.08195639)
 
 [node name="exit_button_mesh" type="MeshInstance3D" parent="Exit_button" unique_id=732361697]
-transform = Transform3D(0.8733859, -0.4785477, 0.09049305, 0.47854772, 0.80870914, -0.3420257, 0.09049305, 0.34202567, 0.93532324, 0.40702546, 1.12221, 0.6591419)
+transform = Transform3D(0.8733859, -0.47854772, 0.090493046, 0.47854772, 0.80870926, -0.34202573, 0.09049305, 0.34202573, 0.93532336, 0.28618836, 1.0570258, 0.6438456)
 mesh = SubResource("BoxMesh_8aat6")
 
 [node name="Label3D" type="Label3D" parent="Exit_button/exit_button_mesh" unique_id=1211884059]
@@ -76,19 +82,47 @@ font_size = 100
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.08118, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Exit_button/Area3D" unique_id=170911712]
-transform = Transform3D(0.8705175, -0.48335785, 0.092543095, 0.48335785, 0.80437565, -0.34546357, 0.09254295, 0.34546357, 0.93385804, 0.85010403, -0.7737628, 0.6421317)
+transform = Transform3D(0.87051755, -0.48335788, 0.092543125, 0.48335794, 0.8043757, -0.34546363, 0.09254295, 0.34546354, 0.9338581, 0.37752575, -0.9723025, 0.6325843)
 shape = SubResource("BoxShape3D_ugn2o")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=258690795]
-transform = Transform3D(-0.023489945, 0, 0.9997241, 0, 1, 0, -0.9997241, 0, -0.023489945, 2.8247523, 1.0574675, 0)
+transform = Transform3D(-0.023489945, 0, 0.9997241, 0, 1, 0, -0.9997241, 0, -0.023489945, 3.2886066, 1.0574675, 0)
+projection = 1
 fov = 100.0
+size = 6.3
+near = 0.119
 
 [node name="Node3D" type="Node3D" parent="." unique_id=224457207]
 transform = Transform3D(0.045432735, 0, 0.9989674, 0, 1, 0, -0.9989674, 0, 0.045432735, -3.8602626, 0, 0)
 
 [node name="Sprite3D" type="Sprite3D" parent="Node3D" unique_id=542470831]
-transform = Transform3D(0.80643433, 0, 0.5913237, 0, 1, 0, -0.5913237, 0, 0.80643433, -3.5169764, 0, 0.15995097)
+transform = Transform3D(0.80643433, 0, 0.5913237, 0, 1, 0, -0.5913237, 0, 0.80643433, -2.8094728, 0, 15.716423)
 texture = ExtResource("2_8aat6")
+
+[node name="Sprite3D2" type="Sprite3D" parent="Node3D" unique_id=1206875324]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11266785, 0, 2.477322)
+texture = ExtResource("3_qp3vo")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=500156854]
 transform = Transform3D(0.1410454, 0.0011043238, 0.9900025, 0.09502278, 0.9953673, -0.014648172, -0.9854323, 0.09613884, 0.14028701, 1.667755, -3.6937828, -2.4359446)
+
+[node name="settings_button" type="Node3D" parent="." unique_id=2088356464]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.74843013, 0.24394703)
+
+[node name="settings_button_mesh" type="MeshInstance3D" parent="settings_button" unique_id=701861245]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07336259, 0)
+mesh = SubResource("BoxMesh_s7dtb")
+
+[node name="Label3D" type="Label3D" parent="settings_button/settings_button_mesh" unique_id=2136895769]
+transform = Transform3D(-0.013246669, 0, 0.99991226, 0, 1, 0, -0.99991226, 0, -0.013246669, 0.52829075, 0.06834149, 0)
+text = "Settings
+
+"
+font_size = 100
+
+[node name="Area3D" type="Area3D" parent="settings_button" unique_id=1988975525]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3237077, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="settings_button/Area3D" unique_id=620282852]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11228639, 0.121520996, -0.1634674)
+shape = SubResource("BoxShape3D_12r6k")
