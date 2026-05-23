@@ -130,6 +130,7 @@ size = Vector3(5.6445823, 0.5766907, 0.08984375)
 
 [node name="capsules" type="Node3D" parent="." unique_id=1500476003]
 transform = Transform3D(-1, 0, 8.742276e-08, 0, 1, 0, -8.742276e-08, 0, -1, 0.56033117, 0, -0.32000083)
+visible = false
 
 [node name="capsula" parent="capsules" unique_id=480636668 instance=ExtResource("1_f7fx0")]
 transform = Transform3D(1.1999999, 0, -7.62876e-08, 0, 1.1999999, 0, 7.62876e-08, 0, 1.1999999, 0.539219, -0.8905797, 0.22707844)
@@ -162,3 +163,9 @@ transform = Transform3D(0.99999946, -0.00094854925, -0.00048898946, 0.0009486769
 script = ExtResource("5_peyxv")
 target_scene = "res://assets/Levels/room_3.tscn"
 spawn_point = Vector3(-15, 16, 0.015)
+
+[node name="Door2" parent="." unique_id=258871582 instance=ExtResource("3_qiwse")]
+transform = Transform3D(0.72215885, 0, 0.6917272, 0, 1, 0, -0.6917272, 0, 0.72215885, 1.3083434, -1.4781952e-05, -0.011244059)
+script = ExtResource("5_peyxv")
+target_scene = "res://assets/Levels/room_5.tscn"
+spawn_point = Vector3(-11, 2, 0)

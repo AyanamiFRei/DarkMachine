@@ -15,7 +15,7 @@ signal ledge_dropped
 
 @export var speed := 3.5
 @export var crouch_speed := 1.5
-@export var jump_velocity := 7.0
+@export var jump_velocity := 1.0
 @export var gravity := 20.0
 @export var coyote_time := 0.12
 @export var jump_buffer_time := 0.12
