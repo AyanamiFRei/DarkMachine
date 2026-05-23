@@ -13,8 +13,29 @@
 [ext_resource type="MeshLibrary" uid="uid://cir0fu0ba5c2k" path="res://assets/tscn_assets/Stove.meshlib" id="12_qhxw8"]
 [ext_resource type="MeshLibrary" uid="uid://cgd6m63eer5cl" path="res://assets/tscn_assets/wall.meshlib" id="12_tb6r3"]
 
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_qhxw8"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_tb6r3"]
+sky_material = SubResource("ProceduralSkyMaterial_qhxw8")
+
+[sub_resource type="Environment" id="Environment_tlyya"]
+background_mode = 2
+sky = SubResource("Sky_tb6r3")
+tonemap_mode = 2
+glow_enabled = true
+fog_enabled = true
+fog_light_energy = 0.1
+fog_sun_scatter = 0.1
+fog_density = 0.1
+fog_aerial_perspective = 0.1
+
 [node name="room_2" type="Node3D" unique_id=1939086906]
 transform = Transform3D(-5, 0, -4.371139e-07, 0, 5, 0, 4.371139e-07, 0, -5, 0, 0, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1813169976]
+environment = SubResource("Environment_tlyya")
 
 [node name="breakable_wall2" parent="." unique_id=275318760 instance=ExtResource("1_w1lfr")]
 transform = Transform3D(0.25, 0, 1.7763568e-15, 0, 0.25, 0, -1.7763568e-15, 0, 0.25, 0.041846264, 0.23227243, 3.658316e-09)

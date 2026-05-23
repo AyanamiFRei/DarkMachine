@@ -6,8 +6,29 @@
 [ext_resource type="Script" uid="uid://ccopo4qkviydo" path="res://assets/objects/door_to_new_lvl.gd" id="5_peyxv"]
 [ext_resource type="PackedScene" uid="uid://cw86i1wgw62jl" path="res://assets/enteties/player/player.tscn" id="5_tw7do"]
 
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_tw7do"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_peyxv"]
+sky_material = SubResource("ProceduralSkyMaterial_tw7do")
+
+[sub_resource type="Environment" id="Environment_ucalo"]
+background_mode = 2
+sky = SubResource("Sky_peyxv")
+tonemap_mode = 2
+glow_enabled = true
+fog_enabled = true
+fog_light_energy = 0.1
+fog_density = 0.3103
+fog_aerial_perspective = 0.1
+fog_height = 0.1
+
 [node name="room_3" type="Node3D" unique_id=1155999814]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, -0.4698391)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1733349019]
+environment = SubResource("Environment_ucalo")
 
 [node name="environment" type="Node3D" parent="." unique_id=944680908]
 transform = Transform3D(0.07032423, 0, 0.8526946, 0, 0.11356157, 0, -0.11478572, 0, 0.522409, 0.90580446, 0.47635204, 0.0066092964)
