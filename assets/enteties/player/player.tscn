@@ -923,6 +923,10 @@ target_position = Vector3(-0.15, 0, 0)
 transform = Transform3D(0.8, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.11117322, 0)
 target_position = Vector3(-0.15, 0, 0)
 
+[node name="LedgeBlockRay" type="RayCast3D" parent="Components/MovementComponent" unique_id=951833690]
+transform = Transform3D(0.8, 0, 0, 0, 0.5243132, 0, 0, 0, 1, 0, 0.082067944, 0)
+target_position = Vector3(0, 0.15, 0)
+
 [node name="LedgeTopRay" type="RayCast3D" parent="Components/MovementComponent" unique_id=404347426]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.14026263, 0.12, 5.5879354e-09)
 target_position = Vector3(0, -0.18, 0)

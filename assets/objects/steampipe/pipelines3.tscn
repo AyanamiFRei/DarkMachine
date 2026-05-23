@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bjoeecuu5eekr"]
+
+[ext_resource type="Texture2D" uid="uid://bn156px1kjpl" path="res://assets/objects/steampipe/pipe_broken_top.png" id="1_1elod"]
+[ext_resource type="Texture2D" uid="uid://vq4p2xtdnfrb" path="res://assets/objects/steampipe/pipe_connector_small.png" id="2_86gsf"]
+[ext_resource type="Texture2D" uid="uid://cemlk2f7ffgx5" path="res://assets/objects/steampipe/pipe_corner_top_right.png" id="3_1opis"]
+[ext_resource type="Texture2D" uid="uid://bjsus546rrmjr" path="res://assets/objects/steampipe/pipe_corner_bottom_left.png" id="4_kgbr1"]
+
+[node name="Pipelines3" type="Node3D" unique_id=1586197332]
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1579276766]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.30904126, 0)
+texture = ExtResource("1_1elod")
+
+[node name="Sprite3D6" type="Sprite3D" parent="." unique_id=1943908234]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.1794057, 0.29855537, 0)
+texture = ExtResource("2_86gsf")
+
+[node name="Sprite3D7" type="Sprite3D" parent="." unique_id=1647279741]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.37227, 0.6753285, 0)
+texture = ExtResource("3_1opis")
+
+[node name="Sprite3D8" type="Sprite3D" parent="." unique_id=1396966006]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.550321, 0.656036, 0)
+texture = ExtResource("4_kgbr1")

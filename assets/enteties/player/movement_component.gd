@@ -12,6 +12,7 @@ signal ledge_dropped
 @onready var ledge_wall_ray: RayCast3D = $LedgeWallRay
 @onready var ledge_clear_ray: RayCast3D = $LedgeClearRay
 @onready var ledge_top_ray: RayCast3D = $LedgeTopRay
+@onready var ledge_block_ray: RayCast3D = $LedgeBlockRay
 
 @export var speed := 3.5
 @export var crouch_speed := 1.5
@@ -83,6 +84,8 @@ func _ready() -> void:
 			sound_player.volume_db = -16.0
 			add_child(sound_player)
 			step_sounds.append(sound_player)
+
+	update_ledge_rays_direction()
 
 
 func tick(delta: float) -> void:
@@ -168,6 +171,7 @@ func update_ledge_rays_direction() -> void:
 	ledge_wall_ray.target_position.x = abs(ledge_wall_ray.target_position.x) * facing_x
 	ledge_clear_ray.target_position.x = abs(ledge_clear_ray.target_position.x) * facing_x
 	ledge_top_ray.position.x = abs(ledge_top_ray.position.x) * facing_x
+	ledge_block_ray.position.x = abs(ledge_block_ray.position.x) * facing_x
 
 
 func check_ledge_grab() -> void:
@@ -177,6 +181,7 @@ func check_ledge_grab() -> void:
 	ledge_wall_ray.force_raycast_update()
 	ledge_clear_ray.force_raycast_update()
 	ledge_top_ray.force_raycast_update()
+	ledge_block_ray.force_raycast_update()
 
 	if not ledge_wall_ray.is_colliding():
 		return
@@ -185,6 +190,9 @@ func check_ledge_grab() -> void:
 		return
 
 	if not ledge_top_ray.is_colliding():
+		return
+
+	if ledge_block_ray.is_colliding():
 		return
 
 	start_ledge_hang(ledge_top_ray.get_collision_point())
@@ -266,6 +274,10 @@ func climb_ledge() -> void:
 		return
 
 	if ledge_state == "climbing":
+		return
+
+	ledge_block_ray.force_raycast_update()
+	if ledge_block_ray.is_colliding():
 		return
 
 	stop_crouch()
