@@ -1,17 +1,18 @@
 extends CharacterBody3D
 
-var agr = false
-var is_cycling = false
-var can_damage = false
-var is_dashing = false
+var agr := false
+var is_cycling := false
+var can_damage := false
+var is_dashing := false
 
-var direction = 1
-var current_velocity_x = 0.0
-var type = "enemy"
+var direction := 1
+var locked_dash_direction := 1
+var current_velocity_x := 0.0
+var type := "enemy"
 
-@export var SPEED = 6.0
-@export var hp = 200
-@export var dmg = 25
+@export var SPEED := 6.0
+@export var hp := 200
+@export var dmg := 25
 
 @export var detect_sound: AudioStream
 @export var rides_sound: AudioStream
@@ -23,25 +24,26 @@ var type = "enemy"
 var prep_sfx_player: AudioStreamPlayer = null
 var dash_sfx_player: AudioStreamPlayer = null
 
-var knockback_force = 50.0
-var knockback_up = 2.0
+var knockback_force := 50.0
+var knockback_up := 2.0
 
 
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 
+	if is_dashing:
+		current_velocity_x = locked_dash_direction * SPEED
+
 	velocity.x = current_velocity_x
 	move_and_slide()
 
-	# Проверка столкновения со стеной во время рывка
 	if is_dashing:
 		for i in range(get_slide_collision_count()):
 			var col := get_slide_collision(i)
 			var normal := col.get_normal()
 			var body := col.get_collider()
 
-			# Только боковое столкновение, не пол
 			if body and not body.is_in_group("player") and abs(normal.x) > 0.7:
 				print("Впился в стену!")
 				end_dash()
@@ -61,15 +63,15 @@ func start_attack_cycle() -> void:
 		print("Разгон...")
 		current_velocity_x = 0
 
+		# Направление выбирается ТОЛЬКО перед подготовкой
 		if playerNode.global_position.x > global_position.x:
-			anim.flip_h = false
 			direction = 1
+			anim.flip_h = false
 		else:
-			anim.flip_h = true
 			direction = -1
+			anim.flip_h = true
 
 		anim.play("attack_prep")
-
 		prep_sfx_player = play_local_sfx(detect_sound)
 
 		await get_tree().create_timer(1.2).timeout
@@ -82,18 +84,23 @@ func start_attack_cycle() -> void:
 
 		print("Рывок!")
 
-		current_velocity_x = direction * SPEED
+		# Фиксируем направление рывка
+		locked_dash_direction = direction
+		current_velocity_x = locked_dash_direction * SPEED
+
 		can_damage = true
 		is_dashing = true
 
-		# На всякий случай останавливаем старый звук тарана
+		# Во время рывка НЕ менять flip_h
+		anim.flip_h = locked_dash_direction < 0
+
 		stop_player(dash_sfx_player)
 		dash_sfx_player = null
 
 		dash_sfx_player = play_local_sfx(rides_sound)
 		anim.play("attack")
 
-		var dash_timer = get_tree().create_timer(2.0)
+		var dash_timer := get_tree().create_timer(2.0)
 
 		while is_inside_tree() and dash_timer.time_left > 0 and is_dashing:
 			await get_tree().process_frame
@@ -125,6 +132,9 @@ func start_attack_cycle() -> void:
 
 
 func end_dash() -> void:
+	if not is_dashing and current_velocity_x == 0:
+		return
+
 	print("END DASH")
 
 	is_dashing = false
@@ -136,8 +146,6 @@ func end_dash() -> void:
 		print("Останавливаю звук тарана")
 		dash_sfx_player.stop()
 		dash_sfx_player.queue_free()
-	else:
-		print("dash_sfx_player пустой")
 
 	dash_sfx_player = null
 
@@ -147,7 +155,7 @@ func play_local_sfx(sound: AudioStream, volume_db: float = 0.0):
 		print("Звук не назначен!")
 		return null
 
-	var player = AudioStreamPlayer.new()
+	var player := AudioStreamPlayer.new()
 	add_child(player)
 
 	player.stream = sound
@@ -173,10 +181,14 @@ func stop_player(player) -> void:
 # АГР
 func _on_area_3d_2_body_entered(body) -> void:
 	if body.is_in_group("player") and not agr:
-		if playerNode.global_position.x > global_position.x:
-			anim.flip_h = false
-		else:
-			anim.flip_h = true
+		# Не поворачиваем врага во время рывка
+		if not is_dashing:
+			if playerNode.global_position.x > global_position.x:
+				anim.flip_h = false
+				direction = 1
+			else:
+				anim.flip_h = true
+				direction = -1
 
 		anim.play("player_detect")
 		agr = true
@@ -203,7 +215,7 @@ func _on_area_3d_body_entered(body) -> void:
 		if body.has_method("take_dmg"):
 			body.take_dmg(dmg)
 
-		var dir = 1 if body.global_position.x > global_position.x else -1
+		var dir := 1 if body.global_position.x > global_position.x else -1
 
 		if body is CharacterBody3D:
 			body.velocity = Vector3(
@@ -215,7 +227,7 @@ func _on_area_3d_body_entered(body) -> void:
 		end_dash()
 
 
-# Запасной вариант через Area3D
+# Стена через Area3D
 func _on_area_3d_3_body_entered(body: Node3D) -> void:
 	if not body.is_in_group("player") and is_dashing:
 		print("Впился в стену через Area3D!")
