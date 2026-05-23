@@ -46,11 +46,10 @@ use_collision = true
 size = Vector3(2.2361088, 1.2193794, 0.17358398)
 
 [node name="CSGBox3D5" type="CSGBox3D" parent="platform" unique_id=1613971120]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3511143, 0.20426784, -0.02004183)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3511143, 0.27560624, -0.02004183)
 use_collision = true
-collision_layer = 0
-collision_mask = 0
-size = Vector3(0.4076264, 0.68506336, 0.17358398)
+collision_mask = 2
+size = Vector3(0.4076264, 1.1804223, 0.17358398)
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="platform" unique_id=1492874972]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9834466, -0.21817307, -0.0070000007)
@@ -111,7 +110,6 @@ skeleton = NodePath("../..")
 
 [node name="capsules" type="Node3D" parent="." unique_id=1043108948]
 transform = Transform3D(-0.93, 0, 7.86221e-08, 0, 0.93, 0, -1.404261e-07, 0, -0.5206906, 1.01005915e-08, -0.14667216, -0.0668932)
-visible = false
 
 [node name="capsula" parent="capsules" unique_id=869758886 instance=ExtResource("8_8wjio")]
 transform = Transform3D(-1.2, 0, 1.8119496e-07, 0, 1.2, 0, -1.81195e-07, 0, -1.2, 0.8786816, -0.97658706, 0.408921)
