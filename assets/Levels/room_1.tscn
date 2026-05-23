@@ -18,11 +18,32 @@
 [ext_resource type="MeshLibrary" uid="uid://cgd6m63eer5cl" path="res://assets/tscn_assets/wall.meshlib" id="18_3i5v1"]
 [ext_resource type="PackedScene" uid="uid://n5baokfdqyrn" path="res://assets/objects/steampipe/steanpipe1.tscn" id="18_as3hc"]
 
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_aa08t"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_3i5v1"]
+sky_material = SubResource("ProceduralSkyMaterial_aa08t")
+
+[sub_resource type="Environment" id="Environment_as3hc"]
+background_mode = 2
+sky = SubResource("Sky_3i5v1")
+tonemap_mode = 2
+glow_enabled = true
+fog_enabled = true
+fog_light_energy = 0.1
+fog_density = 0.1
+fog_aerial_perspective = 0.1
+fog_height_density = -0.445
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_tlxyd"]
 size = Vector3(0.23687744, 0.27172852, 0.15917969)
 
 [node name="room_1" type="Node3D" unique_id=851865280]
 transform = Transform3D(-5, 0, -7.54979e-07, 0, 5, 0, 7.54979e-07, 0, -5, 0, 0, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1719486476]
+environment = SubResource("Environment_as3hc")
 
 [node name="platform" type="Node3D" parent="." unique_id=1193555060]
 

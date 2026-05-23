@@ -11,8 +11,30 @@
 [ext_resource type="PackedScene" uid="uid://c0da202lvw8sg" path="res://assets/objects/fire/bonfire.tscn" id="10_5l80r"]
 [ext_resource type="MeshLibrary" uid="uid://cgd6m63eer5cl" path="res://assets/tscn_assets/wall.meshlib" id="10_ivewg"]
 
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ivewg"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_5l80r"]
+sky_material = SubResource("ProceduralSkyMaterial_ivewg")
+
+[sub_resource type="Environment" id="Environment_35ev0"]
+background_mode = 2
+sky = SubResource("Sky_5l80r")
+tonemap_mode = 2
+glow_enabled = true
+fog_enabled = true
+fog_light_energy = 0.1
+fog_sun_scatter = 0.1
+fog_density = 0.1794
+fog_aerial_perspective = 0.1
+fog_sky_affect = 0.1
+
 [node name="room_3" type="Node3D" unique_id=601273248]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=789494862]
+environment = SubResource("Environment_35ev0")
 
 [node name="environment" type="Node3D" parent="." unique_id=2018625493]
 transform = Transform3D(0.07032423, 0, 0.8526946, 0, 0.11356157, 0, -0.11478572, 0, 0.522409, 0.90580446, 0.47635204, 0.0066092964)
