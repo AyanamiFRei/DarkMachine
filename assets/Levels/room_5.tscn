@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://clkyrfe3ub4tj" path="res://assets/enteties/enemies/enemy_taran/enemy_taran.tscn" id="2_1ip5v"]
 [ext_resource type="PackedScene" uid="uid://chdo85q6n5mnm" path="res://assets/enteties/enemies/enemy_ezh/enemy_ezh.tscn" id="3_25cub"]
 [ext_resource type="PackedScene" uid="uid://1w4j06345h57" path="res://assets/objects/Door.tscn" id="4_vqnyr"]
-[ext_resource type="Script" uid="uid://cr8prb2418nuh" path="res://assets/objects/scripts doors/door_to_4.gd" id="6_3kwde"]
+[ext_resource type="Script" uid="uid://dnu3abcwp2v1y" path="res://assets/objects/scripts doors/door_to_4.gd" id="6_3kwde"]
 [ext_resource type="MeshLibrary" uid="uid://cir0fu0ba5c2k" path="res://assets/tscn_assets/Stove.meshlib" id="6_sa3xk"]
 [ext_resource type="MeshLibrary" uid="uid://cgd6m63eer5cl" path="res://assets/tscn_assets/wall.meshlib" id="7_v046a"]
 
@@ -162,14 +162,14 @@ use_collision = true
 size = Vector3(4.633972, 2.8810163, 0.09277344)
 
 [node name="CSGBox3D72" type="CSGBox3D" parent="CSGCombiner3D" unique_id=321000274]
-transform = Transform3D(6.244484e-08, -1.4285716, -2.1570828e-07, -1.4285716, -6.244484e-08, 2.9436772e-13, -3.037966e-13, 2.1570828e-07, -1.4285716, 7.682365, 9.9763975, 2.0895832)
+transform = Transform3D(6.244484e-08, -1.4285716, -2.1570828e-07, -1.4285716, -6.244484e-08, 2.9436772e-13, -3.037966e-13, 2.1570828e-07, -1.4285716, 8.825417, 9.9763975, 2.0895827)
 use_collision = true
-size = Vector3(4.7454834, 0.39972782, 0.09277344)
+size = Vector3(4.7454834, 2, 0.09277344)
 
 [node name="CSGBox3D44" type="CSGBox3D" parent="CSGCombiner3D" unique_id=624083781]
-transform = Transform3D(6.244484e-08, -1.4285716, -2.1570828e-07, -1.4285716, -6.244484e-08, 2.9436772e-13, -3.037966e-13, 2.1570828e-07, -1.4285716, 8.923733, 3.6640184, 2.0895827)
+transform = Transform3D(6.244484e-08, -1.4285716, -2.1570828e-07, -1.4285716, -6.244484e-08, 2.9436772e-13, -3.037966e-13, 2.1570828e-07, -1.4285716, 9.000002, 3.6640184, 2.0895822)
 use_collision = true
-size = Vector3(7.1791077, 2.8932233, 0.09277344)
+size = Vector3(7.1791077, 3, 0.09277344)
 
 [node name="CSGBox3D45" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1012889629]
 transform = Transform3D(6.244484e-08, -1.4285716, -2.1570828e-07, -1.4285715, -6.244484e-08, 2.9436772e-13, -3.037966e-13, 2.1570828e-07, -1.4285716, 6.60198, 3.2784326, 2.0895832)
