@@ -221,7 +221,7 @@ light_specular = 0.0
 transform = Transform3D(1, 0, 5.684342e-15, 0, 1, 0, -5.684342e-15, 0, 1, -1.2107127, 0.8526295, -0.20666276)
 
 [node name="enemy1" parent="." unique_id=1785802915 instance=ExtResource("2_1ip5v")]
-transform = Transform3D(-1, 0, -8.7422784e-08, 0, 1, 0, 8.7422784e-08, 0, -1, -0.7103401, 0.3187588, -0.016275788)
+transform = Transform3D(-1.1, 0, -1.6609539e-07, 0, 1.1, 0, 1.6609539e-07, 0, -1.1, -0.7103401, 0.3187588, -0.016275788)
 
 [node name="enemy8" parent="." unique_id=1848699070 instance=ExtResource("2_1ip5v")]
 transform = Transform3D(-1, 0, -8.7422784e-08, 0, 1, 0, 8.7422784e-08, 0, -1, 0.6784188, 2.0085297, -0.016275788)
@@ -233,22 +233,22 @@ transform = Transform3D(-1, 0, -8.7422784e-08, 0, 1, 0, 8.7422784e-08, 0, -1, -2
 transform = Transform3D(-1, 0, -8.7422784e-08, 0, 1, 0, 8.7422784e-08, 0, -1, 0.5210716, 4.096332, -0.016275788)
 
 [node name="enemy2" parent="." unique_id=1964270170 instance=ExtResource("3_25cub")]
-transform = Transform3D(-0.2, 0, 1.7484558e-08, 0, 0.2, 0, -1.7484558e-08, 0, -0.2, 0.30965778, 1.1004704, -0.023512041)
+transform = Transform3D(-0.3, 0, 4.5298744e-08, 0, 0.3, 0, -4.5298744e-08, 0, -0.3, 0.24304354, 1.1004704, -0.023512041)
 
 [node name="enemy3" parent="." unique_id=1328853826 instance=ExtResource("3_25cub")]
-transform = Transform3D(-0.2, 0, 1.7484558e-08, 0, 0.2, 0, -1.7484558e-08, 0, -0.2, -1.0874581, 1.7743677, -0.023512041)
+transform = Transform3D(-0.3, 0, 4.5298744e-08, 0, 0.3, 0, -4.5298744e-08, 0, -0.3, -1.0874581, 1.7743677, -0.023512041)
 
 [node name="enemy4" parent="." unique_id=616636397 instance=ExtResource("3_25cub")]
-transform = Transform3D(-0.2, 0, 1.7484558e-08, 0, 0.2, 0, -1.7484558e-08, 0, -0.2, -1.2611737, 2.1704612, -0.023512041)
+transform = Transform3D(-0.3, 0, 4.5298744e-08, 0, 0.3, 0, -4.5298744e-08, 0, -0.3, -1.2611737, 2.2310386, -0.023512041)
 
 [node name="enemy5" parent="." unique_id=763285238 instance=ExtResource("3_25cub")]
-transform = Transform3D(-0.2, 0, 1.7484558e-08, 0, 0.2, 0, -1.7484558e-08, 0, -0.2, -2.3626034, 3.3289483, -0.023512041)
+transform = Transform3D(-0.3, 0, 4.5298744e-08, 0, 0.3, 0, -4.5298744e-08, 0, -0.3, -2.3626034, 3.3289483, -0.023512041)
 
 [node name="enemy6" parent="." unique_id=690027752 instance=ExtResource("3_25cub")]
-transform = Transform3D(-0.2, 0, 1.7484558e-08, 0, 0.2, 0, -1.7484558e-08, 0, -0.2, -1.9042447, 4.8680053, -0.011453569)
+transform = Transform3D(-0.3, 0, 4.5298744e-08, 0, 0.3, 0, -4.5298744e-08, 0, -0.3, -1.9042447, 4.8680053, -0.011453569)
 
 [node name="enemy7" parent="." unique_id=394542135 instance=ExtResource("3_25cub")]
-transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -0.9738445, 5.068303, 0.15249024)
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 1.3959916, 4.486995, -0.026021851)
 
 [node name="Door2" parent="." unique_id=1730044608 instance=ExtResource("4_vqnyr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3908176, 0.33369708, 0.044468027)
