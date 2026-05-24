@@ -65,20 +65,29 @@ func update_animation() -> void:
 
 	if not player.is_on_floor():
 		if player.velocity.y > 0:
-			anim.play("jump")
+			if anim.animation != "jump":
+				anim.play("jump")
 		else:
-			anim.play("fall")
+			if anim.animation != "fall":
+				anim.play("fall")
 		return
 
 	if movement.is_crouching:
 		anim.offset.y = crawl_offset
-		anim.play("crawl")
+		if abs(player.velocity.x) > 0.05:
+			if anim.animation != "crawl":
+				anim.play("crawl")
+		else:
+			if anim.animation != "squat":
+				anim.play("squat")
 		return
 
 	if abs(player.velocity.x) > 0.05:
-		anim.play("run")
+		if anim.animation != "run":
+			anim.play("run")
 	else:
-		anim.play("idle")
+		if anim.animation != "idle":
+			anim.play("idle")
 
 
 func _on_ledge_grab_started() -> void:

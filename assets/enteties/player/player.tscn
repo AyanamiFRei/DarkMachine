@@ -22,6 +22,7 @@
 [ext_resource type="Texture2D" uid="uid://bdlm6o5i24dl4" path="res://assets/sprite/player/gg walking.png" id="15_ofn87"]
 [ext_resource type="Texture2D" uid="uid://cysarlu4r65et" path="res://assets/sprite/player/grab pull up.png" id="17_0su24"]
 [ext_resource type="PackedScene" uid="uid://cmprbe0brauae" path="res://assets/enteties/player/inventory_ui.tscn" id="19_3gcdb"]
+[ext_resource type="Texture2D" uid="uid://drfl0g6japxfq" path="res://assets/sprite/player/sit_down (1).png" id="19_d5b3v"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_hyvrl"]
 radius = 0.14367676
@@ -78,17 +79,9 @@ region = Rect2(0, 0, 500, 500)
 atlas = ExtResource("11_d5b3v")
 region = Rect2(500, 0, 500, 500)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_1nnjb"]
-atlas = ExtResource("11_d5b3v")
-region = Rect2(1000, 0, 500, 500)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_g03m2"]
 atlas = ExtResource("11_d5b3v")
 region = Rect2(1500, 0, 500, 500)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_dk3h0"]
-atlas = ExtResource("11_d5b3v")
-region = Rect2(2000, 0, 500, 500)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fijyl"]
 atlas = ExtResource("11_d5b3v")
@@ -102,10 +95,6 @@ region = Rect2(3000, 0, 500, 500)
 atlas = ExtResource("11_d5b3v")
 region = Rect2(3500, 0, 500, 500)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_uqbyb"]
-atlas = ExtResource("11_d5b3v")
-region = Rect2(4000, 0, 500, 500)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_wlhgm"]
 atlas = ExtResource("11_d5b3v")
 region = Rect2(4500, 0, 500, 500)
@@ -117,10 +106,6 @@ region = Rect2(5000, 0, 500, 500)
 [sub_resource type="AtlasTexture" id="AtlasTexture_nxqav"]
 atlas = ExtResource("11_d5b3v")
 region = Rect2(5500, 0, 500, 500)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gmvkh"]
-atlas = ExtResource("11_d5b3v")
-region = Rect2(6000, 0, 500, 500)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_it407"]
 atlas = ExtResource("11_d5b3v")
@@ -374,6 +359,10 @@ region = Rect2(2340, 0, 390, 500)
 atlas = ExtResource("15_ofn87")
 region = Rect2(2730, 0, 390, 500)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_y5n3o"]
+atlas = ExtResource("19_d5b3v")
+region = Rect2(7500, 0, 500, 500)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_ujg58"]
 atlas = ExtResource("17_0su24")
 region = Rect2(2500, 0, 500, 500)
@@ -484,13 +473,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_6ebdq")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_1nnjb")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_g03m2")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_dk3h0")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_fijyl")
@@ -502,9 +485,6 @@ animations = [{
 "texture": SubResource("AtlasTexture_555g7")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_uqbyb")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_wlhgm")
 }, {
 "duration": 1.0,
@@ -514,14 +494,11 @@ animations = [{
 "texture": SubResource("AtlasTexture_nxqav")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_gmvkh")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_it407")
 }],
 "loop": true,
 "name": &"crawl",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -623,7 +600,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"grabs ledge",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -643,7 +620,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"holds on ledge",
-"speed": 15.0
+"speed": 2.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -748,6 +725,14 @@ animations = [{
 "loop": true,
 "name": &"run",
 "speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y5n3o")
+}],
+"loop": true,
+"name": &"squat",
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -958,13 +943,13 @@ transform = Transform3D(-0.29999784, 0, 0.0011414477, 0, 0.3, 0, -0.0011414477, 
 visible = false
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_u84jc")
-animation = &"grabs ledge"
+animation = &"holds on ledge"
 
 [node name="StockModel" type="AnimatedSprite3D" parent="Visual/AnimatedSprite3D" unique_id=115799517]
 transform = Transform3D(-0.039999712, 0, 0.00015219301, 0, 0.04, 0, -0.00015219301, 0, -0.039999712, -0.0010425597, -0.0004287511, -0.00010418892)
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_u84jc")
-animation = &"attack1"
+animation = &"crawl"
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=394563763]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.019559145)

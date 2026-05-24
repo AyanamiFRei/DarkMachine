@@ -22,8 +22,8 @@ signal ledge_dropped
 @export var jump_buffer_time := 0.12
 @export var short_jump_multiplier := 0.5
 
-@export var ledge_hang_x_offset := 0.05
-@export var ledge_hang_y_offset := 0.10
+@export var ledge_hang_x_offset := 0.1
+@export var ledge_hang_y_offset := 0.2
 @export var ledge_climb_x_offset := 0.12
 @export var ledge_climb_y_offset := 0.15
 
