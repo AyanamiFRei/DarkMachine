@@ -875,7 +875,8 @@ script = ExtResource("9_033l5")
 
 [node name="MovementComponent" type="Node3D" parent="Components" unique_id=1871850941]
 script = ExtResource("7_plybv")
-jump_velocity = 10.0
+speed = 10.0
+jump_velocity = 20.0
 
 [node name="Timers" type="Timer" parent="Components/MovementComponent" unique_id=793934519]
 

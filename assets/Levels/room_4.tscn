@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://1w4j06345h57" path="res://assets/objects/Door.tscn" id="3_qiwse"]
 [ext_resource type="Script" uid="uid://ccopo4qkviydo" path="res://assets/objects/door_to_new_lvl.gd" id="5_peyxv"]
 [ext_resource type="PackedScene" uid="uid://cw86i1wgw62jl" path="res://assets/enteties/player/player.tscn" id="5_tw7do"]
+[ext_resource type="Texture2D" uid="uid://dff655i6mc5j2" path="res://assets/objects/door_sprite.png" id="6_peyxv"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_tw7do"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -185,8 +186,16 @@ script = ExtResource("5_peyxv")
 target_scene = "res://assets/Levels/room_3.tscn"
 spawn_point = Vector3(-15, 16, 0.015)
 
+[node name="Sprite3D" type="Sprite3D" parent="Door" unique_id=1948461934]
+transform = Transform3D(0.014941345, -2.224887e-12, -7.275958e-12, -1.4865886e-12, 0.0136761265, 1.8189894e-12, -4.6611603e-10, -2.2737368e-13, 0.09073507, 0.004657984, -1.1920929e-06, -0.022534452)
+texture = ExtResource("6_peyxv")
+
 [node name="Door2" parent="." unique_id=258871582 instance=ExtResource("3_qiwse")]
 transform = Transform3D(0.72215885, 0, 0.6917272, 0, 1, 0, -0.6917272, 0, 0.72215885, 1.3083434, -1.4781952e-05, -0.011244059)
 script = ExtResource("5_peyxv")
 target_scene = "res://assets/Levels/room_5.tscn"
 spawn_point = Vector3(-11, 2, 0)
+
+[node name="Sprite3D" type="Sprite3D" parent="Door2" unique_id=1787525538]
+transform = Transform3D(0.014941344, 0, 0, 0, 0.013676127, 0, -4.656613e-10, 0, 0.09073507, 0.004655719, 0, -0.027052045)
+texture = ExtResource("6_peyxv")

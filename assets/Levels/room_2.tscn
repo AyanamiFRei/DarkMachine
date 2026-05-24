@@ -48,7 +48,7 @@ transform = Transform3D(0.25, 0, 1.7763568e-15, 0, 0.25, 0, -1.7763568e-15, 0, 0
 transform = Transform3D(0.3, 0, 3.5527137e-15, 0, 0.3, 0, -3.5527137e-15, 0, 0.3, -0.3707608, 0.51196796, -3.2412938e-08)
 
 [node name="Door2" parent="." unique_id=1888440396 instance=ExtResource("1_yqu6b")]
-transform = Transform3D(0.5609136, 0, 0.8278744, 0, 1, 0, -0.8278744, 0, 0.5609136, -1.7947693, 0.46303082, -1.5690375e-07)
+transform = Transform3D(0.61010367, 0, 0.7923217, 0, 1, 0, -0.7923217, 0, 0.61010367, -1.7947693, 0.46303082, -1.5690375e-07)
 script = ExtResource("5_8g1g7")
 target_scene = "res://assets/Levels/room_1.tscn"
 spawn_point = Vector3(-12, 0, 0)
@@ -58,7 +58,7 @@ transform = Transform3D(0.014941344, 0, 0, 0, 0.013676128, 0, 0, 0, 0.09073507, 
 texture = ExtResource("5_tb6r3")
 
 [node name="Door_to_lvl3" parent="." unique_id=1730044608 instance=ExtResource("1_yqu6b")]
-transform = Transform3D(-0.55388606, 0, 0.83259284, 0, 1, 0, -0.83259284, 0, -0.55388606, 1.2236835, 0.08542501, 1.0697779e-07)
+transform = Transform3D(-0.6720959, 0, 0.7404647, 0, 1, 0, -0.7404647, 0, -0.6720959, 1.2318705, 0.06601455, 1.07693516e-07)
 script = ExtResource("5_8g1g7")
 target_scene = "res://assets/Levels/room_3.tscn"
 spawn_point = Vector3(5.5, 2, -0.01)

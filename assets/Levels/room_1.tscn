@@ -90,7 +90,7 @@ transform = Transform3D(-1, 0, 8.7422784e-08, 0, 1, 0, -8.7422784e-08, 0, -1, -0
 transform = Transform3D(9.82, 0, -2.3412704e-06, 0, 9.82, 0, 2.3412704e-06, 0, 9.82, 0.36842975, 0.16644956, 4.9530764)
 
 [node name="Door" parent="envirement" unique_id=1846143250 instance=ExtResource("4_wj57p")]
-transform = Transform3D(0.052010003, 0, -0.087549515, 0, 0.101833, 0, 0.087549515, 0, 0.052010003, 0.2648499, -0.046895266, -0.504)
+transform = Transform3D(0.06423466, 0, -0.07901813, 0, 0.101833, 0, 0.07901813, 0, 0.06423466, 0.2648499, -0.046895266, -0.504)
 script = ExtResource("6_0i1kf")
 target_scene = "res://assets/Levels/room_2.tscn"
 spawn_point = Vector3(8, 2, 0)
