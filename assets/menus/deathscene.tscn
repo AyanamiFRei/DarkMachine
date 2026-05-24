@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://tgbmve8ykas1"]
 
 [ext_resource type="Script" uid="uid://7xm7luhwgsex" path="res://assets/menus/deathscene.gd" id="1_xwja3"]
-
+[ext_resource type="Texture2D" uid="uid://b2p0rbxnoamiw" path="res://assets/menus/фон3.png" id="2_stuo8"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_pkdbu"]
 size = Vector3(0.5, 0.5, 3)
@@ -13,7 +13,7 @@ size = Vector3(0.5878906, 0.43188477, 3.0386353)
 script = ExtResource("1_xwja3")
 
 [node name="respawn_button" type="Node3D" parent="." unique_id=2113769394]
-transform = Transform3D(0.42732552, 0.07022519, 0.08651313, -0.031850204, 0.8774791, -0.04520175, -0.048547566, 0.042454526, 0.79116184, 0.17722154, -0.79967374, -0.47538877)
+transform = Transform3D(0.52743626, -0.004549506, -0.0038133615, 0.002724944, 0.88032246, -0.00034411033, 0.0024129227, 0.00034271833, 0.8339248, 0.1410265, -2.0305448, 0.62265646)
 
 [node name="respawn_button_mesh" type="MeshInstance3D" parent="respawn_button" unique_id=1663434972]
 transform = Transform3D(1, 8.381903e-09, -1.4901161e-08, -1.3969839e-09, 1.0000001, -7.450581e-09, -3.7252903e-09, 7.450581e-09, 1.0000001, 0.17090678, 1.8338139, -0.815133)
@@ -32,7 +32,7 @@ transform = Transform3D(1, 8.381903e-09, -1.4901161e-08, -1.3969839e-09, 1.00000
 shape = SubResource("BoxShape3D_fyaj3")
 
 [node name="menu_button" type="Node3D" parent="." unique_id=1100572928]
-transform = Transform3D(0.5837958, 0.070078954, 0.089221895, -0.043512523, 0.875652, -0.04661703, -0.066323824, 0.042366125, 0.8159334, 0.17722154, -1.5771818, -0.48055625)
+transform = Transform3D(0.58914363, -0.0015036613, 0.005999841, 0.00097437785, 0.8794458, 0.0063129575, -0.0043073455, -0.006742294, 0.82207376, 0.17722154, -3.002409, 0.5821078)
 
 [node name="menu_button_mesh" type="MeshInstance3D" parent="menu_button" unique_id=860293214]
 transform = Transform3D(1, -4.656613e-09, 0, -6.9849193e-10, 1, 3.7252903e-09, 0, -3.7252903e-09, 1, 0.12509996, 1.833739, -0.7903857)
@@ -51,12 +51,21 @@ transform = Transform3D(1, -4.656613e-09, 0, -6.9849193e-10, 1, 3.7252903e-09, 0
 shape = SubResource("BoxShape3D_fyaj3")
 
 [node name="Label3D" type="Label3D" parent="." unique_id=1443138034]
-transform = Transform3D(-0.050784715, 0, 0.9987096, 0, 1, 0, -0.9987096, 0, -0.050784715, 1.0754728, 1.9972357, -1.5584393)
+transform = Transform3D(-0.050784715, 0, 0.9987096, 0, 1, 0, -0.9987096, 0, -0.050784715, -0.3675933, 3.3111017, -0.07531059)
 pixel_size = 0.05
-text = "DEAD"
+modulate = Color(0.7058824, 0, 0, 1)
+text = "DEATH"
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1246580550]
-transform = Transform3D(0.026473604, 0, 0.9996495, 0, 1, 0, -0.9996495, 0, 0.026473604, 4.131825, 1.0185702, -1.1467215)
+transform = Transform3D(0.026473604, 0, 0.9996495, 0, 1, 0, -0.9996495, 0, 0.026473604, 4.131825, 0.055710673, 0.36675286)
+projection = 1
+size = 9.0
+
+[node name="background" type="Node3D" parent="." unique_id=701613649]
+
+[node name="Sprite3D" type="Sprite3D" parent="background" unique_id=413923926]
+transform = Transform3D(-0.0013264492, 0, -0.9999991, 0, 1, 0, 0.9999991, 0, -0.0013264492, -1.2301245, 0, -0.015570641)
+texture = ExtResource("2_stuo8")
 
 [connection signal="input_event" from="respawn_button/Area3D" to="." method="_on_respawn_input_event"]
 [connection signal="mouse_entered" from="respawn_button/Area3D" to="." method="_on_respawn_mouse_entered"]

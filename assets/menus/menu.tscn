@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://do2shunhcuxr3" path="res://assets/menus/menu.gd" id="1_8omcj"]
 [ext_resource type="Texture2D" uid="uid://b4vacssietjov" path="res://assets/png/photo_2026-02-14_14-25-24.jpg" id="2_8aat6"]
-[ext_resource type="Texture2D" uid="uid://ndqw22j53m18" path="res://assets/menus/main_menu_png.png" id="3_qp3vo"]
+[ext_resource type="Texture2D" uid="uid://d1e5cdwjbl308" path="res://assets/menus/фон111.png" id="3_qp3vo"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_s7dtb"]
 size = Vector3(0.5, 0.5, 3)
@@ -86,10 +86,10 @@ transform = Transform3D(0.87051755, -0.48335788, 0.092543125, 0.48335794, 0.8043
 shape = SubResource("BoxShape3D_ugn2o")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=258690795]
-transform = Transform3D(-0.023489945, 0, 0.9997241, 0, 1, 0, -0.9997241, 0, -0.023489945, 3.2886066, 1.0574675, 0)
+transform = Transform3D(-0.023489945, 0, 0.9997241, 0, 1, 0, -0.9997241, 0, -0.023489945, 1.4590163, 1.0574675, -0.02462864)
 projection = 1
 fov = 100.0
-size = 6.3
+size = 9.0
 near = 0.119
 
 [node name="Node3D" type="Node3D" parent="." unique_id=224457207]
@@ -100,7 +100,7 @@ transform = Transform3D(0.80643433, 0, 0.5913237, 0, 1, 0, -0.5913237, 0, 0.8064
 texture = ExtResource("2_8aat6")
 
 [node name="Sprite3D2" type="Sprite3D" parent="Node3D" unique_id=1206875324]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11266785, 0, 2.477322)
+transform = Transform3D(0.99832165, 0, 0.057912517, 0, 1, 0, -0.057912517, 0, 0.99832165, 0.012561902, 0.87622976, 0.27620816)
 texture = ExtResource("3_qp3vo")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=500156854]
