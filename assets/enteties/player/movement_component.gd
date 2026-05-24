@@ -121,7 +121,7 @@ func tick(delta: float) -> void:
 		if step_timer <= 0.0:
 			if step_sounds.size() > 0:
 				step_sounds[randi() % step_sounds.size()].play()
-			step_timer = 0.5
+			step_timer = 0.65
 	else:
 		step_timer = 0.0
 
