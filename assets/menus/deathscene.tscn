@@ -9,8 +9,14 @@ size = Vector3(0.5, 0.5, 3)
 [sub_resource type="BoxShape3D" id="BoxShape3D_o7o66"]
 size = Vector3(0.41253662, 0.36853027, 3.1147156)
 
-[node name="deathscene" type="Node3D" unique_id=972608451]
+[node name="deathscene" type="Node3D" unique_id=972608451 node_paths=PackedStringArray("respawn_button", "menu_button")]
 script = ExtResource("1_xwja3")
+respawn_button = NodePath("respawn_button")
+menu_button = NodePath("menu_button")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=380683602]
+transform = Transform3D(-0.12648505, -0.022823304, 0.99170595, 0.79458266, 0.59615356, 0.11506334, -0.5938352, 0.80254596, -0.057269543, 2.7408519, 0.57893085, 0)
+shadow_enabled = true
 
 [node name="Label3D" type="Label3D" parent="." unique_id=1443138034]
 transform = Transform3D(-0.050784715, 0, 0.9987096, 0, 1, 0, -0.9987096, 0, -0.050784715, -0.3675933, 3.3111017, -0.07531059)
@@ -50,22 +56,22 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3237077, 0, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11228639, 0.121520996, -0.1634674)
 shape = SubResource("BoxShape3D_o7o66")
 
-[node name="exit_button" type="Node3D" parent="." unique_id=728418751]
+[node name="menu_button" type="Node3D" parent="." unique_id=728418751]
 
-[node name="exit_button_mesh" type="MeshInstance3D" parent="exit_button" unique_id=495274644]
+[node name="menu_button_mesh" type="MeshInstance3D" parent="menu_button" unique_id=495274644]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07336259, 0)
 mesh = SubResource("BoxMesh_stuo8")
 
-[node name="Label3D" type="Label3D" parent="exit_button/exit_button_mesh" unique_id=370441093]
+[node name="Label3D" type="Label3D" parent="menu_button/menu_button_mesh" unique_id=370441093]
 transform = Transform3D(-0.013246669, 0, 0.99991226, 0, 1, 0, -0.99991226, 0, -0.013246669, 0.52829075, 0.06834149, 0)
 text = "Exit
 
 "
 font_size = 100
 
-[node name="Area3D" type="Area3D" parent="exit_button" unique_id=696078939]
+[node name="Area3D" type="Area3D" parent="menu_button" unique_id=696078939]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3237077, 0, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="exit_button/Area3D" unique_id=1575253495]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="menu_button/Area3D" unique_id=1575253495]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11228639, 0.121520996, -0.1634674)
 shape = SubResource("BoxShape3D_o7o66")
