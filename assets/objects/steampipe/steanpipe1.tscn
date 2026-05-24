@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://n5baokfdqyrn"]
+
+[ext_resource type="PackedScene" uid="uid://b42gsssf66oaq" path="res://assets/objects/steampipe/pipelines1.tscn" id="1_yj5fc"]
+[ext_resource type="PackedScene" uid="uid://c4vgkihwh2bxu" path="res://assets/objects/steampipe/steampipe.tscn" id="2_gd7vk"]
+
+[node name="Node3D" type="Node3D" unique_id=994641650]
+
+[node name="Pipelines1" parent="." unique_id=1586197332 instance=ExtResource("1_yj5fc")]
+transform = Transform3D(0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, 0.0071595907, 0.14974108, -0.004760742)
+
+[node name="Steampipe" parent="." unique_id=514883721 instance=ExtResource("2_gd7vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.052330792, 0)

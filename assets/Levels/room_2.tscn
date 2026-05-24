@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cw86i1wgw62jl" path="res://assets/enteties/player/player.tscn" id="4_8g1g7"]
 [ext_resource type="Script" uid="uid://ccopo4qkviydo" path="res://assets/objects/door_to_new_lvl.gd" id="5_8g1g7"]
 [ext_resource type="ArrayMesh" uid="uid://cdpm7wvle3tyy" path="res://assets/gltf_file/mesh/AP1_╤Б╤В╨╡╨╜╨░2.res" id="5_qhxw8"]
+[ext_resource type="Texture2D" uid="uid://dff655i6mc5j2" path="res://assets/objects/door_sprite.png" id="5_tb6r3"]
 [ext_resource type="ArrayMesh" uid="uid://4ap5lq0f1dlt" path="res://assets/gltf_file/mesh/AP1_╤В╤А╤Г╨▒╤Л2.res" id="6_tb6r3"]
 [ext_resource type="PackedScene" uid="uid://blhupxhdf8pg1" path="res://assets/tsns_file/capsule.tscn" id="7_tlyya"]
 [ext_resource type="PackedScene" uid="uid://bvekdtu8dpq5l" path="res://assets/tsns_file/capsule_smoll.tscn" id="8_p4ip1"]
@@ -29,8 +30,29 @@ volumetric_fog_density = 0.0543
 volumetric_fog_albedo = Color(0.6566101, 0.66178834, 0.3812104, 1)
 volumetric_fog_length = 14.7
 
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_qhxw8"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_tb6r3"]
+sky_material = SubResource("ProceduralSkyMaterial_qhxw8")
+
+[sub_resource type="Environment" id="Environment_tlyya"]
+background_mode = 2
+sky = SubResource("Sky_tb6r3")
+tonemap_mode = 2
+glow_enabled = true
+fog_enabled = true
+fog_light_energy = 0.1
+fog_sun_scatter = 0.1
+fog_density = 0.1
+fog_aerial_perspective = 0.1
+
 [node name="room_2" type="Node3D" unique_id=1939086906]
 transform = Transform3D(-5, 0, -4.371139e-07, 0, 5, 0, 4.371139e-07, 0, -5, 0, 0, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1813169976]
+environment = SubResource("Environment_tlyya")
 
 [node name="breakable_wall2" parent="." unique_id=275318760 instance=ExtResource("1_w1lfr")]
 transform = Transform3D(0.25, 0, 1.7763568e-15, 0, 0.25, 0, -1.7763568e-15, 0, 0.25, 0.041846264, 0.23227243, 3.658316e-09)
@@ -42,16 +64,24 @@ transform = Transform3D(0.25, 0, 1.7763568e-15, 0, 0.25, 0, -1.7763568e-15, 0, 0
 transform = Transform3D(0.3, 0, 3.5527137e-15, 0, 0.3, 0, -3.5527137e-15, 0, 0.3, -0.3707608, 0.51196796, -3.2412938e-08)
 
 [node name="Door2" parent="." unique_id=1888440396 instance=ExtResource("1_yqu6b")]
-transform = Transform3D(0.5609136, 0, 0.8278744, 0, 1, 0, -0.8278744, 0, 0.5609136, -1.7947693, 0.46303082, -1.5690375e-07)
+transform = Transform3D(0.61010367, 0, 0.7923217, 0, 1, 0, -0.7923217, 0, 0.61010367, -1.7947693, 0.46303082, -1.5690375e-07)
 script = ExtResource("5_8g1g7")
 target_scene = "res://assets/Levels/room_1.tscn"
 spawn_point = Vector3(-12, 0, 0)
 
+[node name="Sprite3D" type="Sprite3D" parent="Door2" unique_id=580308490]
+transform = Transform3D(0.014941344, 0, 0, 0, 0.013676128, 0, 0, 0, 0.09073507, -0.0015956163, 0, -0.00094771385)
+texture = ExtResource("5_tb6r3")
+
 [node name="Door_to_lvl3" parent="." unique_id=1730044608 instance=ExtResource("1_yqu6b")]
-transform = Transform3D(-0.55388606, 0, 0.83259284, 0, 1, 0, -0.83259284, 0, -0.55388606, 1.2236835, 0.08542501, 1.0697779e-07)
+transform = Transform3D(-0.6720959, 0, 0.7404647, 0, 1, 0, -0.7404647, 0, -0.6720959, 1.2318705, 0.06601455, 1.07693516e-07)
 script = ExtResource("5_8g1g7")
 target_scene = "res://assets/Levels/room_3.tscn"
 spawn_point = Vector3(5.5, 2, -0.01)
+
+[node name="Sprite3D" type="Sprite3D" parent="Door_to_lvl3" unique_id=963048539]
+transform = Transform3D(0.01494134, 0, 7.450581e-09, 0, 0.013676127, 0, -1.3969839e-09, 0, 0.090735056, -0.0026661158, 0, -0.02724886)
+texture = ExtResource("5_tb6r3")
 
 [node name="environment" type="Node3D" parent="." unique_id=1855846647]
 transform = Transform3D(0.07032423, 0, 0.8526946, 0, 0.11356157, 0, -0.11478572, 0, 0.522409, 0.90580446, 0.47635204, 0.0066092964)

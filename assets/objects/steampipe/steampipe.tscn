@@ -8,6 +8,7 @@
 points = PackedVector3Array(0, 0.5, 0.5, 0.5, -0.5, 0.5, 0, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
 
 [node name="Steampipe" type="StaticBody3D" unique_id=514883721]
+transform = Transform3D(0.193, 0, 0, 0, 0.193, 0, 0, 0, 0.193, 0, 0, 0)
 script = ExtResource("1_gp55g")
 
 [node name="dmg_timer" type="Timer" parent="." unique_id=1429904525]

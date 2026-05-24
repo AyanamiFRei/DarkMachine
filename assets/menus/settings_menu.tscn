@@ -1,0 +1,117 @@
+[gd_scene format=3 uid="uid://cmvyxe0m10c1p"]
+
+[ext_resource type="Script" uid="uid://b342b5koh5cda" path="res://settings_menu.gd" id="1_6mcme"]
+[ext_resource type="Texture2D" uid="uid://b1uy5vgxopprm" path="res://assets/menus/фон2.png" id="2_6mcme"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_6mcme"]
+size = Vector3(0.5, 0.5, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pq3j7"]
+size = Vector3(0.41253662, 0.36853027, 3.1147156)
+
+[node name="settings_menu" type="Node3D" unique_id=972608451 node_paths=PackedStringArray("volumeup_button", "volumedown_button", "display_button", "menu_button")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0416384, 0, 0)
+script = ExtResource("1_6mcme")
+volumeup_button = NodePath("volumeup_button")
+volumedown_button = NodePath("volumedown_button")
+display_button = NodePath("display_button")
+menu_button = NodePath("menu_button")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1297105752]
+transform = Transform3D(-0.7749414, -0.16426258, 0.61031437, 0.38660803, 0.6407167, 0.66333735, -0.50000006, 0.75, -0.43301266, 3.2446055, 1.6070437, 0)
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1246580550]
+transform = Transform3D(0.026473604, 0, 0.9996495, 0, 1, 0, -0.9996495, 0, 0.026473604, 4.131825, 0.1687411, 0.001912117)
+projection = 1
+size = 9.0
+
+[node name="background" type="Node3D" parent="." unique_id=701613649]
+
+[node name="Sprite3D" type="Sprite3D" parent="background" unique_id=413923926]
+transform = Transform3D(-0.0013264492, 0, -0.9999991, 0, 1, 0, 0.9999991, 0, -0.0013264492, -1.2301245, 0, -0.014631748)
+texture = ExtResource("2_6mcme")
+
+[node name="display_button" type="Node3D" parent="." unique_id=178172859]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, -0.22600001)
+
+[node name="display_button_mesh" type="MeshInstance3D" parent="display_button" unique_id=379522057]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07336259, 0)
+mesh = SubResource("BoxMesh_6mcme")
+
+[node name="Label3D" type="Label3D" parent="display_button/display_button_mesh" unique_id=1713990404]
+transform = Transform3D(-0.013246669, 0, 0.99991226, 0, 1, 0, -0.99991226, 0, -0.013246669, 0.52829075, 0.06834149, 0)
+text = "Display
+
+"
+font_size = 100
+
+[node name="Area3D" type="Area3D" parent="display_button" unique_id=774320922]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3237077, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="display_button/Area3D" unique_id=1312968020]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11228639, 0.121520996, -0.1634674)
+shape = SubResource("BoxShape3D_pq3j7")
+
+[node name="menu_button" type="Node3D" parent="." unique_id=1764725310]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.4, -0.22600001)
+
+[node name="menu_button_mesh" type="MeshInstance3D" parent="menu_button" unique_id=793722601]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07336259, 0)
+mesh = SubResource("BoxMesh_6mcme")
+
+[node name="Label3D" type="Label3D" parent="menu_button/menu_button_mesh" unique_id=1435837079]
+transform = Transform3D(-0.013246669, 0, 0.99991226, 0, 1, 0, -0.99991226, 0, -0.013246669, 0.52829075, 0.06834149, 0)
+text = "Menu
+
+"
+font_size = 100
+
+[node name="Area3D" type="Area3D" parent="menu_button" unique_id=491164202]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3237077, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="menu_button/Area3D" unique_id=1996253811]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11228639, 0.121520996, -0.1634674)
+shape = SubResource("BoxShape3D_pq3j7")
+
+[node name="volumeup_button" type="Node3D" parent="." unique_id=1666915737]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, -0.22600001)
+
+[node name="volumeup_button_mesh" type="MeshInstance3D" parent="volumeup_button" unique_id=1672712829]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07336259, 0)
+mesh = SubResource("BoxMesh_6mcme")
+
+[node name="Label3D" type="Label3D" parent="volumeup_button/volumeup_button_mesh" unique_id=2040003858]
+transform = Transform3D(-0.013246669, 0, 0.99991226, 0, 1, 0, -0.99991226, 0, -0.013246669, 0.52829075, 0.06834149, 0)
+text = "volume+
+
+"
+font_size = 100
+
+[node name="Area3D" type="Area3D" parent="volumeup_button" unique_id=1151765136]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3237077, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="volumeup_button/Area3D" unique_id=2073516738]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11228639, 0.121520996, -0.1634674)
+shape = SubResource("BoxShape3D_pq3j7")
+
+[node name="volumedown_button" type="Node3D" parent="." unique_id=957116227]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.39999998, -0.22600001)
+
+[node name="volumedown_button_mesh" type="MeshInstance3D" parent="volumedown_button" unique_id=95218433]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07336259, 0)
+mesh = SubResource("BoxMesh_6mcme")
+
+[node name="Label3D" type="Label3D" parent="volumedown_button/volumedown_button_mesh" unique_id=1427637452]
+transform = Transform3D(-0.013246669, 0, 0.99991226, 0, 1, 0, -0.99991226, 0, -0.013246669, 0.52829075, 0.06834149, 0)
+text = "volume-
+
+"
+font_size = 100
+
+[node name="Area3D" type="Area3D" parent="volumedown_button" unique_id=431490805]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3237077, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="volumedown_button/Area3D" unique_id=935645584]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11228639, 0.121520996, -0.1634674)
+shape = SubResource("BoxShape3D_pq3j7")
