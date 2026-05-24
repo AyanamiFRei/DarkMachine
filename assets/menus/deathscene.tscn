@@ -30,7 +30,7 @@ transform = Transform3D(-0.0013264492, 0, -0.9999991, 0, 1, 0, 0.9999991, 0, -0.
 texture = ExtResource("2_stuo8")
 
 [node name="respawn_button" type="Node3D" parent="." unique_id=183355798]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)
 
 [node name="respawn_button_mesh" type="MeshInstance3D" parent="respawn_button" unique_id=823732604]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07336259, 0)

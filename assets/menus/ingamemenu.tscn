@@ -52,7 +52,7 @@ texture = ExtResource("4_8gj4p")
 transform = Transform3D(-0.31693277, 0.10837696, 0.9422357, -0.6700963, 0.6774721, -0.30331865, -0.6712113, -0.7275202, -0.1420901, 1.8458816, -2.3918934, -2.4359446)
 
 [node name="Continue_button" type="Node3D" parent="." unique_id=766935063]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.2717314, 0.77357435)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.2, 0.774)
 
 [node name="continue_button_mesh" type="MeshInstance3D" parent="Continue_button" unique_id=1952902427]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07336259, 0)
@@ -73,7 +73,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11228639, 0.121520996, -0.1
 shape = SubResource("BoxShape3D_nk626")
 
 [node name="Exit_button" type="Node3D" parent="." unique_id=946535921]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.408846, 0.77357435)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4, 0.774)
 
 [node name="exit_button_mesh" type="MeshInstance3D" parent="Exit_button" unique_id=1023820033]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07336259, 0)
@@ -136,7 +136,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11228639, 0.121520996, -0.1
 shape = SubResource("BoxShape3D_nk626")
 
 [node name="settings_button" type="Node3D" parent="." unique_id=746318018]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.36703157, 0.7733369)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0.774)
 
 [node name="settings_button_mesh" type="MeshInstance3D" parent="settings_button" unique_id=1430677947]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07336259, 0)
