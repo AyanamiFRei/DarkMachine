@@ -5,6 +5,9 @@ extends Node3D
 @export var exit_button: Node3D
 @export var verify_button: Node3D
 @export var verify_button2: Node3D
+@export var settings_button: Node3D
+
+
 @onready var happy: Sprite3D = $Sprite3D2
 @onready var unhappy: Sprite3D = $Sprite3D
 
@@ -19,6 +22,16 @@ func _ready():
 		GameManager.save_player(player)
 	
 	# Подключаем сигналы для кнопки Play
+	
+	if settings_button:
+		var settings_area = settings_button.get_node("Area3D")
+		if settings_area:
+			settings_area.mouse_entered.connect(_on_settings_mouse_entered)
+			settings_area.mouse_exited.connect(_on_settings_mouse_exited)
+			settings_area.input_event.connect(_on_settings_input_event)
+	
+	
+	
 	if continue_button:
 		var continue_area = continue_button.get_node("Area3D")
 		if continue_area:
@@ -318,10 +331,64 @@ func show_secret_button():
 		if label:
 			tween.parallel().tween_property(label, "modulate", Color.YELLOW, 0.5).from(Color.TRANSPARENT)
 
+func _on_settings_mouse_entered():
+	# Навели курсор на Play
+	print("Курсор на settings")
+	
+	# Увеличиваем кнопку
+	var mesh = $settings_button/settings_button_mesh
+	if mesh:
+		mesh.scale = Vector3(1.2, 1.2, 1.2)
+	
+	# Меняем цвет текста на желтый
+	var label = $settings_button/settings_button_mesh/Label3D
+	if label:
+		label.modulate = Color.YELLOW
+
+func _on_settings_mouse_exited():
+	# Убрали курсор с Play
+	print("Курсор ушел с settings")
+	
+	# Возвращаем размер
+	var mesh = $settings_button/settings_button_mesh
+	if mesh:
+		mesh.scale = Vector3(1.0, 1.0, 1.0)
+	
+	# Возвращаем цвет текста на белый
+	var label = $settings_button/settings_button_mesh/Label3D
+	if label:
+		label.modulate = Color.WHITE
+
+func _on_settings_input_event(_camera: Camera3D, event: InputEvent, position: Vector3, _normal: Vector3, _shape_idx: int):
+	# Проверяем клик левой кнопкой мыши
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+		print("Клик по settings!")
+		
+		# Анимация нажатия (кнопка уходит вниз и возвращается)
+		var mesh = $settings_button/settings_button_mesh
+		if mesh:
+			# Запоминаем позицию
+			var original_y = mesh.position.y
+			# Сдвигаем вниз
+			mesh.position.y = original_y - 0.2
+			# Ждем 0.1 секунды
+			await get_tree().create_timer(0.1).timeout
+			# Возвращаем обратно
+			mesh.position.y = original_y
+		
+		# Запускаем игру
+		settings();
+		
 
 func hide_button():
 	$Continue_button.visible = false
 	$Exit_button.visible = false
+	
+func settings():
+	print("настройки")
+	get_tree().change_scene_to_file("res://assets/menus/settings_menu.tscn")
+
+
 
 # Показать кнопку (пока что не нужно)
 #func show_button():

@@ -5,104 +5,28 @@
 [ext_resource type="Texture2D" uid="uid://cc8ty5k2b1olx" path="res://assets/png/photo_2026-02-18_23-50-51.jpg" id="3_vmggn"]
 [ext_resource type="Texture2D" uid="uid://bf6kg3gxud0ga" path="res://assets/png/photo_2026-02-18_23-51-22.jpg" id="4_8gj4p"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_s7dtb"]
+[sub_resource type="BoxMesh" id="BoxMesh_hi0bf"]
 size = Vector3(0.5, 0.5, 3)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_8omcj"]
-size = Vector3(0.5878906, 0.43188477, 3.0386353)
+[sub_resource type="BoxShape3D" id="BoxShape3D_nk626"]
+size = Vector3(0.41253662, 0.36853027, 3.1147156)
 
-[sub_resource type="BoxMesh" id="BoxMesh_8aat6"]
+[sub_resource type="BoxMesh" id="BoxMesh_nk626"]
 size = Vector3(0.5, 0.5, 3)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_ugn2o"]
-size = Vector3(0.5830078, 0.46398926, 3.0736694)
+[sub_resource type="BoxShape3D" id="BoxShape3D_yl7ya"]
+size = Vector3(0.41253662, 0.36853027, 3.1147156)
 
-[node name="ingamemenu" type="Node3D" unique_id=2031328553 node_paths=PackedStringArray("continue_button", "exit_button", "verify_button", "verify_button2")]
+[node name="ingamemenu" type="Node3D" unique_id=2031328553 node_paths=PackedStringArray("continue_button", "exit_button", "verify_button", "verify_button2", "settings_button")]
 script = ExtResource("1_xyuba")
 continue_button = NodePath("Continue_button")
 exit_button = NodePath("Exit_button")
 verify_button = NodePath("verify_button")
 verify_button2 = NodePath("verify_button2")
-
-[node name="verify_button2" type="Node3D" parent="." unique_id=1120754031]
-transform = Transform3D(0.9995634, -0.026266096, 0.013559991, 0.026172072, 0.9996328, 0.007080459, -0.013741028, -0.0067221727, 0.9998837, 0.17722154, 0.0016577244, 3.1803927)
-
-[node name="verify2_button_mesh" type="MeshInstance3D" parent="verify_button2" unique_id=488959513]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8696003, 0)
-mesh = SubResource("BoxMesh_s7dtb")
-
-[node name="Label3D" type="Label3D" parent="verify_button2/verify2_button_mesh" unique_id=113333795]
-transform = Transform3D(-0.013246669, 0, 0.99991226, 0, 1, 0, -0.99991226, 0, -0.013246669, 0.52829075, 0.06834149, 0)
-text = "leave
-"
-font_size = 100
-
-[node name="Area3D" type="Area3D" parent="verify_button2" unique_id=843669653]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="verify_button2/Area3D" unique_id=319209828]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0087890625, 1.862242, 0.081207275)
-shape = SubResource("BoxShape3D_8omcj")
-
-[node name="verify_button" type="Node3D" parent="." unique_id=332237191]
-transform = Transform3D(0.998797, -0.043390535, -0.02285299, 0.04341556, 0.9990569, 0.0005959496, 0.02280556, -0.0015872587, 0.999739, 0.24088097, -0.030057192, -3.1825197)
-
-[node name="verify_button_mesh" type="MeshInstance3D" parent="verify_button" unique_id=299056558]
-transform = Transform3D(0.99999994, 0, 0, -4.656613e-10, 1, 0, 3.7252903e-09, -1.8626451e-09, 1, 0, 1.8696003, 0)
-mesh = SubResource("BoxMesh_s7dtb")
-
-[node name="Label3D" type="Label3D" parent="verify_button/verify_button_mesh" unique_id=737471276]
-transform = Transform3D(-0.013246668, 2.6921043e-10, 0.99991226, -2.3283064e-10, 0.99999994, -3.0586307e-09, -0.99991214, 0, -0.01324667, 0.5301622, 0.068211436, 0.082042456)
-text = "menu
-"
-font_size = 100
-
-[node name="Area3D" type="Area3D" parent="verify_button" unique_id=1983404127]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="verify_button/Area3D" unique_id=1141004798]
-transform = Transform3D(0.99999994, 0, 0, -4.656613e-10, 1, 0, 3.7252903e-09, -1.8626451e-09, 1, -0.008789092, 1.862242, 0.081207275)
-shape = SubResource("BoxShape3D_8omcj")
-
-[node name="Continue_button" type="Node3D" parent="." unique_id=152715757]
-transform = Transform3D(0.99996763, 0.007999961, -0.0006790534, -0.007994014, 0.9999333, 0.00837418, 0.0007461, -0.0083684595, 0.99996495, 0, 0, -0.012190342)
-
-[node name="continue_button_mesh" type="MeshInstance3D" parent="Continue_button" unique_id=310745183]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8696003, 0)
-mesh = SubResource("BoxMesh_s7dtb")
-
-[node name="Label3D" type="Label3D" parent="Continue_button/continue_button_mesh" unique_id=1143979922]
-transform = Transform3D(-0.013246669, 0, 0.99991226, 0, 1, 0, -0.99991226, 0, -0.013246669, 0.52829075, 0.06834149, 0)
-text = "continue
-"
-font_size = 100
-
-[node name="Area3D" type="Area3D" parent="Continue_button" unique_id=782831239]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Continue_button/Area3D" unique_id=1749740415]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0087890625, 1.862242, 0.081207275)
-shape = SubResource("BoxShape3D_8omcj")
-
-[node name="Exit_button" type="Node3D" parent="." unique_id=950028045]
-transform = Transform3D(0.88547355, 0.4602421, 0.06413795, -0.4508354, 0.81740063, 0.3586134, 0.11262258, -0.34645832, 0.9312801, -0.8532294, -0.39658475, -0.18641198)
-
-[node name="exit_button_mesh" type="MeshInstance3D" parent="Exit_button" unique_id=732361697]
-transform = Transform3D(0.8733858, -0.47854763, 0.09049305, 0.4785477, 0.80870914, -0.34202567, 0.09049305, 0.34202567, 0.93532324, 0.40702537, 1.12221, 0.65914184)
-mesh = SubResource("BoxMesh_8aat6")
-
-[node name="Label3D" type="Label3D" parent="Exit_button/exit_button_mesh" unique_id=1211884059]
-transform = Transform3D(-0.013246669, 0, 0.99991226, 0, 1, 0, -0.99991226, 0, -0.013246669, 0.52829075, 0.06834149, 0.036303043)
-text = "exit
-"
-font_size = 100
-
-[node name="Area3D" type="Area3D" parent="Exit_button" unique_id=1583512658]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.08118, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Exit_button/Area3D" unique_id=170911712]
-transform = Transform3D(0.8705175, -0.48335788, 0.0925431, 0.48335788, 0.8043757, -0.34546357, 0.09254293, 0.3454636, 0.9338581, 0.42769277, -0.9933193, 0.611535)
-shape = SubResource("BoxShape3D_ugn2o")
+settings_button = NodePath("settings_button")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=258690795]
-transform = Transform3D(-0.023489945, 0, 0.9997241, 0, 1, 0, -0.9997241, 0, -0.023489945, 2.4625406, 1.0574675, 0.5434848)
+transform = Transform3D(-0.023489945, 0, 0.9997241, 0, 1, 0, -0.9997241, 0, -0.023489945, 2.4625406, 1.8848937, 1.1429802)
 projection = 1
 fov = 100.0
 size = 9.0
@@ -111,7 +35,7 @@ size = 9.0
 transform = Transform3D(0.045432735, 0, 0.9989674, 0, 1, 0, -0.9989674, 0, 0.045432735, -3.8602626, 0, 0)
 
 [node name="Sprite3D" type="Sprite3D" parent="Node3D" unique_id=542470831]
-transform = Transform3D(0.99941766, 0, 0.03413195, 0, 1, 0, -0.03413195, 0, 0.99941766, -0.567381, 0.981966, 0.025804281)
+transform = Transform3D(0.9994178, 0, 0.03413195, 0, 1, 0, -0.03413195, 0, 0.9994178, -1.1168487, 1.7358274, 0.050793886)
 texture = ExtResource("2_hi0bf")
 
 [node name="Sprite3D" type="Sprite3D" parent="." unique_id=1795418244]
@@ -126,3 +50,108 @@ texture = ExtResource("4_8gj4p")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=74644155]
 transform = Transform3D(-0.31693277, 0.10837696, 0.9422357, -0.6700963, 0.6774721, -0.30331865, -0.6712113, -0.7275202, -0.1420901, 1.8458816, -2.3918934, -2.4359446)
+
+[node name="Continue_button" type="Node3D" parent="." unique_id=766935063]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.2717314, 0.77357435)
+
+[node name="continue_button_mesh" type="MeshInstance3D" parent="Continue_button" unique_id=1952902427]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07336259, 0)
+mesh = SubResource("BoxMesh_hi0bf")
+
+[node name="Label3D" type="Label3D" parent="Continue_button/continue_button_mesh" unique_id=193048860]
+transform = Transform3D(-0.013246669, 0, 0.99991226, 0, 1, 0, -0.99991226, 0, -0.013246669, 0.52829075, 0.06834149, 0)
+text = "Continue
+
+"
+font_size = 100
+
+[node name="Area3D" type="Area3D" parent="Continue_button" unique_id=2012488966]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3237077, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Continue_button/Area3D" unique_id=1046010190]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11228639, 0.121520996, -0.1634674)
+shape = SubResource("BoxShape3D_nk626")
+
+[node name="Exit_button" type="Node3D" parent="." unique_id=946535921]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.408846, 0.77357435)
+
+[node name="exit_button_mesh" type="MeshInstance3D" parent="Exit_button" unique_id=1023820033]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07336259, 0)
+mesh = SubResource("BoxMesh_hi0bf")
+
+[node name="Label3D" type="Label3D" parent="Exit_button/exit_button_mesh" unique_id=1010705660]
+transform = Transform3D(-0.013246669, 0, 0.99991226, 0, 1, 0, -0.99991226, 0, -0.013246669, 0.52829075, 0.06834149, 0)
+text = "Exit
+
+"
+font_size = 100
+
+[node name="Area3D" type="Area3D" parent="Exit_button" unique_id=1022831724]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3237077, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Exit_button/Area3D" unique_id=640368203]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11228639, 0.121520996, -0.1634674)
+shape = SubResource("BoxShape3D_nk626")
+
+[node name="verify_button" type="Node3D" parent="." unique_id=1310524190]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.408846, -1.2264256)
+
+[node name="verify_button_mesh" type="MeshInstance3D" parent="verify_button" unique_id=531812559]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07336259, 0)
+mesh = SubResource("BoxMesh_hi0bf")
+
+[node name="Label3D" type="Label3D" parent="verify_button/verify_button_mesh" unique_id=1097330771]
+transform = Transform3D(-0.013246669, 0, 0.99991226, 0, 1, 0, -0.99991226, 0, -0.013246669, 0.52829075, 0.06834149, 0)
+text = "Menu
+
+"
+font_size = 100
+
+[node name="Area3D" type="Area3D" parent="verify_button" unique_id=290680267]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3237077, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="verify_button/Area3D" unique_id=1113130233]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11228639, 0.121520996, -0.1634674)
+shape = SubResource("BoxShape3D_nk626")
+
+[node name="verify_button2" type="Node3D" parent="." unique_id=932657436]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.408846, 2.7735744)
+
+[node name="verify2_button_mesh" type="MeshInstance3D" parent="verify_button2" unique_id=1487411939]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07336259, 0)
+mesh = SubResource("BoxMesh_hi0bf")
+
+[node name="Label3D" type="Label3D" parent="verify_button2/verify2_button_mesh" unique_id=262811010]
+transform = Transform3D(-0.013246669, 0, 0.99991226, 0, 1, 0, -0.99991226, 0, -0.013246669, 0.52829075, 0.06834149, 0)
+text = "Leave
+
+"
+font_size = 100
+
+[node name="Area3D" type="Area3D" parent="verify_button2" unique_id=1675839400]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3237077, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="verify_button2/Area3D" unique_id=509143583]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11228639, 0.121520996, -0.1634674)
+shape = SubResource("BoxShape3D_nk626")
+
+[node name="settings_button" type="Node3D" parent="." unique_id=746318018]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.36703157, 0.7733369)
+
+[node name="settings_button_mesh" type="MeshInstance3D" parent="settings_button" unique_id=1430677947]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07336259, 0)
+mesh = SubResource("BoxMesh_nk626")
+
+[node name="Label3D" type="Label3D" parent="settings_button/settings_button_mesh" unique_id=633945274]
+transform = Transform3D(-0.013246669, 0, 0.99991226, 0, 1, 0, -0.99991226, 0, -0.013246669, 0.52829075, 0.06834149, 0)
+text = "Settings
+
+"
+font_size = 100
+
+[node name="Area3D" type="Area3D" parent="settings_button" unique_id=993415942]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3237077, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="settings_button/Area3D" unique_id=904038665]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11228639, 0.121520996, -0.1634674)
+shape = SubResource("BoxShape3D_yl7ya")

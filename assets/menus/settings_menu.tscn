@@ -3,18 +3,26 @@
 [ext_resource type="Script" uid="uid://b342b5koh5cda" path="res://settings_menu.gd" id="1_6mcme"]
 [ext_resource type="Texture2D" uid="uid://b1uy5vgxopprm" path="res://assets/menus/фон2.png" id="2_6mcme"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6mcme"]
+
 [sub_resource type="BoxMesh" id="BoxMesh_pkdbu"]
+material = SubResource("StandardMaterial3D_6mcme")
 size = Vector3(0.5, 0.5, 3)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_fyaj3"]
 size = Vector3(0.5878906, 0.43188477, 3.0386353)
 
 [node name="settings_menu" type="Node3D" unique_id=972608451 node_paths=PackedStringArray("volumeup_button", "volumedown_button", "display_button", "menu_button")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0416384, 0, 0)
 script = ExtResource("1_6mcme")
 volumeup_button = NodePath("volumeup_button")
 volumedown_button = NodePath("volumedown_button")
 display_button = NodePath("display_button")
 menu_button = NodePath("menu_button")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1297105752]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 1.732403, 2.831013, 0)
+shadow_enabled = true
 
 [node name="display_button" type="Node3D" parent="." unique_id=2113769394]
 transform = Transform3D(0.52743626, -0.004549506, -0.0038133615, 0.002724944, 0.88032246, -0.00034411033, 0.0024129227, 0.00034271833, 0.8339248, 0.1410265, -2.0305448, 0.62265646)
@@ -67,7 +75,7 @@ transform = Transform3D(-0.0013264492, 0, -0.9999991, 0, 1, 0, 0.9999991, 0, -0.
 texture = ExtResource("2_6mcme")
 
 [node name="volumeup_button" type="Node3D" parent="." unique_id=826243384]
-transform = Transform3D(0.2781673, -0.0064059175, -0.005189796, 0.0038352343, 0.7749551, -0.0006002815, 0.0032857917, 0.00057652633, 0.6954211, 0.80709594, -2.5835178, 0.5748904)
+transform = Transform3D(0.2781673, -0.0064059175, -0.005189796, 0.0038352343, 0.7749551, -0.0006002815, 0.0032857917, 0.00057652633, 0.6954211, 0.21025437, -2.5835178, 0.5748904)
 
 [node name="volumeup_button_mesh" type="MeshInstance3D" parent="volumeup_button" unique_id=1353118001]
 transform = Transform3D(1, 8.381903e-09, -1.4901161e-08, -1.3969839e-09, 1.0000001, -7.450581e-09, -3.7252903e-09, 7.450581e-09, 1.0000001, 0.17090678, 1.8338139, -0.815133)
@@ -87,7 +95,7 @@ transform = Transform3D(1, 8.381903e-09, -1.4901161e-08, -1.3969839e-09, 1.00000
 shape = SubResource("BoxShape3D_fyaj3")
 
 [node name="volumedown_button" type="Node3D" parent="." unique_id=129208168]
-transform = Transform3D(0.2781673, -0.0064059193, -0.005189796, 0.003835235, 0.7749551, -0.00060028175, 0.0032857917, 0.00057652633, 0.6954211, 0.8070959, -3.1938863, 0.582221)
+transform = Transform3D(0.2781673, -0.0064059193, -0.005189796, 0.003835235, 0.7749551, -0.00060028175, 0.0032857917, 0.00057652633, 0.6954211, 0.21025431, -3.1938863, 0.582221)
 
 [node name="volumedown_button_mesh" type="MeshInstance3D" parent="volumedown_button" unique_id=943272244]
 transform = Transform3D(1, 8.381903e-09, -1.4901161e-08, -1.3969839e-09, 1.0000001, -7.450581e-09, -3.7252903e-09, 7.450581e-09, 1.0000001, 0.17090678, 1.8338139, -0.815133)
