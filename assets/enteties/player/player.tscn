@@ -979,6 +979,8 @@ shape = SubResource("CapsuleShape3D_ratu8")
 physics_interpolation_mode = 1
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0.014592908, 0.0009726137, -0.26609683)
 top_level = true
+projection = 1
+size = 5.0
 script = ExtResource("11_u84jc")
 player_path = NodePath("..")
 
