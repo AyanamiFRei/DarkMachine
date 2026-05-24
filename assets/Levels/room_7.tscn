@@ -6,7 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://clkyrfe3ub4tj" path="res://assets/enteties/enemies/enemy_taran/enemy_taran.tscn" id="4_0oq7d"]
 [ext_resource type="PackedScene" uid="uid://chdo85q6n5mnm" path="res://assets/enteties/enemies/enemy_ezh/enemy_ezh.tscn" id="5_rr8nf"]
 [ext_resource type="PackedScene" uid="uid://1w4j06345h57" path="res://assets/objects/Door.tscn" id="6_hrnbl"]
-[ext_resource type="Script" uid="uid://47ov1jb64yuk" path="res://assets/objects/door_toto_4.gd" id="7_vkyh1"]
 [ext_resource type="Texture2D" uid="uid://dff655i6mc5j2" path="res://assets/objects/door_sprite.png" id="8_h43hd"]
 [ext_resource type="MeshLibrary" uid="uid://cir0fu0ba5c2k" path="res://assets/tscn_assets/Stove.meshlib" id="8_xt15y"]
 [ext_resource type="MeshLibrary" uid="uid://cgd6m63eer5cl" path="res://assets/tscn_assets/wall.meshlib" id="9_h43hd"]
@@ -27,29 +26,8 @@ volumetric_fog_density = 0.0543
 volumetric_fog_albedo = Color(0.6566101, 0.66178834, 0.3812104, 1)
 volumetric_fog_length = 14.7
 
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_xt15y"]
-sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
-ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
-
-[sub_resource type="Sky" id="Sky_h43hd"]
-sky_material = SubResource("ProceduralSkyMaterial_xt15y")
-
-[sub_resource type="Environment" id="Environment_blblj"]
-background_mode = 2
-sky = SubResource("Sky_h43hd")
-tonemap_mode = 2
-glow_enabled = true
-fog_enabled = true
-fog_light_energy = 0.1
-fog_sun_scatter = 0.1
-fog_density = 0.1
-fog_aerial_perspective = 0.1
-
 [node name="room_7" type="Node3D" unique_id=1281034891]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1758410505]
-environment = SubResource("Environment_blblj")
 
 [node name="platform" type="Node3D" parent="." unique_id=992098714]
 transform = Transform3D(-0.5, 0, -2.2045388e-07, 0, 0.5, 0, 7.54979e-08, 0, -1.46, 0.43832627, 0.47211763, 1.8192776)

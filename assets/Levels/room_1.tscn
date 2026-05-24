@@ -40,9 +40,6 @@ volumetric_fog_length = 14.7
 [node name="room_1" type="Node3D" unique_id=851865280]
 transform = Transform3D(-5, 0, -7.54979e-07, 0, 5, 0, 7.54979e-07, 0, -5, 0, 0, 0)
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1719486476]
-environment = SubResource("Environment_as3hc")
-
 [node name="platform" type="Node3D" parent="." unique_id=1193555060]
 
 [node name="pl1_2" parent="platform" unique_id=252848716 instance=ExtResource("10_a0ryf")]
