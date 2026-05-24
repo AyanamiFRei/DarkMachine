@@ -1,0 +1,114 @@
+[gd_scene format=3 uid="uid://cmvyxe0m10c1p"]
+
+[ext_resource type="Script" uid="uid://b342b5koh5cda" path="res://settings_menu.gd" id="1_6mcme"]
+[ext_resource type="Texture2D" uid="uid://b1uy5vgxopprm" path="res://assets/menus/фон2.png" id="2_6mcme"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_pkdbu"]
+size = Vector3(0.5, 0.5, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fyaj3"]
+size = Vector3(0.5878906, 0.43188477, 3.0386353)
+
+[node name="settings_menu" type="Node3D" unique_id=972608451 node_paths=PackedStringArray("volumeup_button", "volumedown_button", "display_button", "menu_button")]
+script = ExtResource("1_6mcme")
+volumeup_button = NodePath("volumeup_button")
+volumedown_button = NodePath("volumedown_button")
+display_button = NodePath("display_button")
+menu_button = NodePath("menu_button")
+
+[node name="display_button" type="Node3D" parent="." unique_id=2113769394]
+transform = Transform3D(0.52743626, -0.004549506, -0.0038133615, 0.002724944, 0.88032246, -0.00034411033, 0.0024129227, 0.00034271833, 0.8339248, 0.1410265, -2.0305448, 0.62265646)
+
+[node name="display_button_mesh" type="MeshInstance3D" parent="display_button" unique_id=1663434972]
+transform = Transform3D(1, 8.381903e-09, -1.4901161e-08, -1.3969839e-09, 1.0000001, -7.450581e-09, -3.7252903e-09, 7.450581e-09, 1.0000001, 0.17090678, 1.8338139, -0.815133)
+mesh = SubResource("BoxMesh_pkdbu")
+
+[node name="Label3D" type="Label3D" parent="display_button/display_button_mesh" unique_id=1305557743]
+transform = Transform3D(-0.013246669, 0, 0.99991226, 0, 1, 0, -0.99991226, 0, -0.013246669, 0.52829075, 0.06834149, 0)
+text = "display
+
+"
+font_size = 100
+
+[node name="Area3D" type="Area3D" parent="display_button" unique_id=1828730619]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="display_button/Area3D" unique_id=502330372]
+transform = Transform3D(1, 8.381903e-09, -1.4901161e-08, -1.3969839e-09, 1.0000001, -7.450581e-09, -3.7252903e-09, 7.450581e-09, 1.0000001, 0.16211766, 1.8264556, -0.7339256)
+shape = SubResource("BoxShape3D_fyaj3")
+
+[node name="menu_button" type="Node3D" parent="." unique_id=1100572928]
+transform = Transform3D(0.58914363, -0.0015036613, 0.005999841, 0.00097437785, 0.8794458, 0.0063129575, -0.0043073455, -0.006742294, 0.82207376, 0.17722154, -4.251258, 0.6682116)
+
+[node name="menu_button_mesh" type="MeshInstance3D" parent="menu_button" unique_id=860293214]
+transform = Transform3D(1, -4.656613e-09, 0, -6.9849193e-10, 1, 3.7252903e-09, 0, -3.7252903e-09, 1, 0.12509996, 1.833739, -0.7903857)
+mesh = SubResource("BoxMesh_pkdbu")
+
+[node name="Label3D" type="Label3D" parent="menu_button/menu_button_mesh" unique_id=2004508519]
+transform = Transform3D(-0.013246669, 0, 0.99991226, 0, 1, 0, -0.99991226, 0, -0.013246669, 0.52829075, 0.06834149, 0)
+text = "menu
+"
+font_size = 100
+
+[node name="Area3D" type="Area3D" parent="menu_button" unique_id=622835794]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="menu_button/Area3D" unique_id=864011031]
+transform = Transform3D(1, -4.656613e-09, 0, -6.9849193e-10, 1, 3.7252903e-09, 0, -3.7252903e-09, 1, 0.116310894, 1.8263806, -0.7091783)
+shape = SubResource("BoxShape3D_fyaj3")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1246580550]
+transform = Transform3D(0.026473604, 0, 0.9996495, 0, 1, 0, -0.9996495, 0, 0.026473604, 4.131825, 0.055710673, 0.36675286)
+projection = 1
+size = 9.0
+
+[node name="background" type="Node3D" parent="." unique_id=701613649]
+
+[node name="Sprite3D" type="Sprite3D" parent="background" unique_id=413923926]
+transform = Transform3D(-0.0013264492, 0, -0.9999991, 0, 1, 0, 0.9999991, 0, -0.0013264492, -1.2301245, 0, -0.015570641)
+texture = ExtResource("2_6mcme")
+
+[node name="volumeup_button" type="Node3D" parent="." unique_id=826243384]
+transform = Transform3D(0.2781673, -0.0064059175, -0.005189796, 0.0038352343, 0.7749551, -0.0006002815, 0.0032857917, 0.00057652633, 0.6954211, 0.80709594, -2.5835178, 0.5748904)
+
+[node name="volumeup_button_mesh" type="MeshInstance3D" parent="volumeup_button" unique_id=1353118001]
+transform = Transform3D(1, 8.381903e-09, -1.4901161e-08, -1.3969839e-09, 1.0000001, -7.450581e-09, -3.7252903e-09, 7.450581e-09, 1.0000001, 0.17090678, 1.8338139, -0.815133)
+mesh = SubResource("BoxMesh_pkdbu")
+
+[node name="Label3D" type="Label3D" parent="volumeup_button/volumeup_button_mesh" unique_id=1810275821]
+transform = Transform3D(-0.013246669, 0, 0.99991226, 0, 1, 0, -0.99991226, 0, -0.013246669, 0.52829075, 0.06834149, 0)
+text = "volume+
+
+"
+font_size = 100
+
+[node name="Area3D" type="Area3D" parent="volumeup_button" unique_id=864245957]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="volumeup_button/Area3D" unique_id=1462620732]
+transform = Transform3D(1, 8.381903e-09, -1.4901161e-08, -1.3969839e-09, 1.0000001, -7.450581e-09, -3.7252903e-09, 7.450581e-09, 1.0000001, 0.16211766, 1.8264556, -0.7339256)
+shape = SubResource("BoxShape3D_fyaj3")
+
+[node name="volumedown_button" type="Node3D" parent="." unique_id=129208168]
+transform = Transform3D(0.2781673, -0.0064059193, -0.005189796, 0.003835235, 0.7749551, -0.00060028175, 0.0032857917, 0.00057652633, 0.6954211, 0.8070959, -3.1938863, 0.582221)
+
+[node name="volumedown_button_mesh" type="MeshInstance3D" parent="volumedown_button" unique_id=943272244]
+transform = Transform3D(1, 8.381903e-09, -1.4901161e-08, -1.3969839e-09, 1.0000001, -7.450581e-09, -3.7252903e-09, 7.450581e-09, 1.0000001, 0.17090678, 1.8338139, -0.815133)
+mesh = SubResource("BoxMesh_pkdbu")
+
+[node name="Label3D" type="Label3D" parent="volumedown_button/volumedown_button_mesh" unique_id=1224293051]
+transform = Transform3D(-0.013246669, 0, 0.99991226, 0, 1, 0, -0.99991226, 0, -0.013246669, 0.52829075, 0.06834149, 0)
+text = "volume-
+
+"
+font_size = 100
+
+[node name="Area3D" type="Area3D" parent="volumedown_button" unique_id=908736081]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="volumedown_button/Area3D" unique_id=215311074]
+transform = Transform3D(1, 8.381903e-09, -1.4901161e-08, -1.3969839e-09, 1.0000001, -7.450581e-09, -3.7252903e-09, 7.450581e-09, 1.0000001, 0.16211766, 1.8264556, -0.7339256)
+shape = SubResource("BoxShape3D_fyaj3")
+
+[connection signal="input_event" from="display_button/Area3D" to="." method="_on_respawn_input_event"]
+[connection signal="mouse_entered" from="display_button/Area3D" to="." method="_on_respawn_mouse_entered"]
+[connection signal="mouse_exited" from="display_button/Area3D" to="." method="_on_respawn_mouse_exited"]
+[connection signal="input_event" from="menu_button/Area3D" to="." method="_on_menu_input_event"]
+[connection signal="mouse_entered" from="menu_button/Area3D" to="." method="_on_menu_mouse_entered"]
+[connection signal="mouse_exited" from="menu_button/Area3D" to="." method="_on_menu_mouse_exited"]

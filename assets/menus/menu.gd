@@ -245,3 +245,4 @@ func quit_game():
 
 func settings():
 	print("настройки")
+	get_tree().change_scene_to_file("res://assets/menus/settings_menu.tscn")

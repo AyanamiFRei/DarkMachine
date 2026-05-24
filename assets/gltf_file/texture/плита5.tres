@@ -2,7 +2,6 @@
 
 [ext_resource type="Texture2D" uid="uid://21pr6i0rqurh" path="res://assets/png/AP1_плита5.png" id="1_plm3v"]
 
-
 [resource]
 resource_name = "плита5"
 transparency = 4
