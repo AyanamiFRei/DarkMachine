@@ -12,6 +12,12 @@
 [ext_resource type="Texture2D" uid="uid://geq2ujq6hi1s" path="res://assets/gltf_file/texture/NightEnvironmentHDRI007_4K_HDR.exr" id="8_v046a"]
 [ext_resource type="PackedScene" uid="uid://n5baokfdqyrn" path="res://assets/objects/steampipe/steanpipe1.tscn" id="11_xussb"]
 [ext_resource type="PackedScene" uid="uid://c62ray5n8eeir" path="res://assets/objects/breakable_wall/breakable_wall.tscn" id="12_xussb"]
+[ext_resource type="ArrayMesh" uid="uid://b8ydn7416b1cg" path="res://assets/gltf_file/mesh/background/back_background3_1.res" id="13_ilef0"]
+[ext_resource type="ArrayMesh" uid="uid://c8tq8uu6l87cy" path="res://assets/gltf_file/mesh/background/back_background3_2.res" id="14_2e1r4"]
+[ext_resource type="ArrayMesh" uid="uid://plomhl27yx1t" path="res://assets/gltf_file/mesh/background/back_background3_3.res" id="15_1yy2s"]
+[ext_resource type="ArrayMesh" uid="uid://bfmctblr42oos" path="res://assets/gltf_file/mesh/background/back_background3_4.res" id="16_wm6gn"]
+[ext_resource type="ArrayMesh" uid="uid://chtsaf1fuvcqo" path="res://assets/gltf_file/mesh/background/back_background3_5.res" id="17_3iqb3"]
+[ext_resource type="ArrayMesh" uid="uid://bgyoadx0vjj51" path="res://assets/gltf_file/mesh/background/back_background3_6.res" id="18_w727u"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_8m7sn"]
 panorama = ExtResource("8_v046a")
@@ -344,3 +350,36 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0733387, 5.291288, 0)
 
 [node name="ItemToPickup3" parent="Node3D4" unique_id=267127816 instance=ExtResource("4_1nci2")]
 transform = Transform3D(-0.05, 0, -4.371139e-09, 0, 0.05, 0, 4.371139e-09, 0, -0.05, 1.6983206, -0.47651434, -8.472969e-08)
+
+[node name="background" type="Node3D" parent="." unique_id=1597594999]
+transform = Transform3D(-9, 0, 1.3589623e-06, 0, 9, 0, -1.3589623e-06, 0, -9, 0.9136591, 2.477661, -6.574427)
+
+[node name="BackBackground31" type="MeshInstance3D" parent="background" unique_id=1886961201]
+transform = Transform3D(0.73839664, -2.1316282e-14, 1.0587912e-21, 0, -3.2276343e-08, -0.73839664, 2.1316282e-14, 0.73839664, -3.2276343e-08, 0.21466652, 0.046129026, -0.8451489)
+mesh = ExtResource("13_ilef0")
+skeleton = NodePath("../..")
+
+[node name="BackBackground32" type="MeshInstance3D" parent="background" unique_id=635128057]
+transform = Transform3D(0.73839664, -2.1316282e-14, 8.4703295e-22, 0, -3.2276343e-08, -0.73839664, 2.1316282e-14, 0.73839664, -3.2276343e-08, 0.21466655, 0.046129033, -0.75452346)
+mesh = ExtResource("14_2e1r4")
+skeleton = NodePath("../..")
+
+[node name="BackBackground33" type="MeshInstance3D" parent="background" unique_id=1803189541]
+transform = Transform3D(0.73839664, -2.1316282e-14, 1.0587912e-21, 0, -3.2276343e-08, -0.73839664, 2.1316282e-14, 0.73839664, -3.2276343e-08, 0.21466653, 0.046129026, -0.8238354)
+mesh = ExtResource("15_1yy2s")
+skeleton = NodePath("../..")
+
+[node name="BackBackground34" type="MeshInstance3D" parent="background" unique_id=1113661454]
+transform = Transform3D(0.73839664, -7.1054274e-15, 1.6940659e-21, 0, -3.2276343e-08, -0.73839664, 7.1054274e-15, 0.73839664, -3.2276343e-08, 0.21466653, 0.046129026, -0.84382534)
+mesh = ExtResource("16_wm6gn")
+skeleton = NodePath("../..")
+
+[node name="BackBackground35" type="MeshInstance3D" parent="background" unique_id=1220041009]
+transform = Transform3D(0.73839664, -2.1316282e-14, 1.0587912e-21, 0, -3.2276343e-08, -0.73839664, 2.1316282e-14, 0.73839664, -3.2276343e-08, 0.21466653, 0.046129026, -0.7947502)
+mesh = ExtResource("17_3iqb3")
+skeleton = NodePath("../..")
+
+[node name="BackBackground36" type="MeshInstance3D" parent="background" unique_id=56487796]
+transform = Transform3D(0.73839664, -2.1316282e-14, 1.0587912e-21, 0, -3.2276343e-08, -0.73839664, 2.1316282e-14, 0.73839664, -3.2276343e-08, 0.21466653, 0.046129026, -0.7947502)
+mesh = ExtResource("18_w727u")
+skeleton = NodePath("../..")
