@@ -12,12 +12,12 @@
 [ext_resource type="MeshLibrary" uid="uid://cir0fu0ba5c2k" path="res://assets/tscn_assets/Stove.meshlib" id="9_br6ea"]
 [ext_resource type="PackedScene" uid="uid://c0da202lvw8sg" path="res://assets/objects/fire/bonfire.tscn" id="10_5l80r"]
 [ext_resource type="MeshLibrary" uid="uid://cgd6m63eer5cl" path="res://assets/tscn_assets/wall.meshlib" id="10_ivewg"]
-[ext_resource type="ArrayMesh" uid="uid://odvu6qip773d" path="res://assets/gltf_file/mesh/background/back_background3_1.res" id="11_4yxis"]
-[ext_resource type="ArrayMesh" uid="uid://bbegf2yvksega" path="res://assets/gltf_file/mesh/background/back_background3_2.res" id="12_6wn8p"]
-[ext_resource type="ArrayMesh" uid="uid://hlv582u0kwcl" path="res://assets/gltf_file/mesh/background/back_background3_3.res" id="13_sqmjo"]
-[ext_resource type="ArrayMesh" uid="uid://g0k5vnlomehm" path="res://assets/gltf_file/mesh/background/back_background3_4.res" id="14_50mqj"]
-[ext_resource type="ArrayMesh" uid="uid://rhdor4v12tav" path="res://assets/gltf_file/mesh/background/back_background3_5.res" id="15_fyj8v"]
-[ext_resource type="ArrayMesh" uid="uid://cro11abvtp0x6" path="res://assets/gltf_file/mesh/background/back_background3_6.res" id="16_fjlww"]
+[ext_resource type="ArrayMesh" uid="uid://b8ydn7416b1cg" path="res://assets/gltf_file/mesh/background/back_background3_1.res" id="11_4yxis"]
+[ext_resource type="ArrayMesh" uid="uid://c8tq8uu6l87cy" path="res://assets/gltf_file/mesh/background/back_background3_2.res" id="12_6wn8p"]
+[ext_resource type="ArrayMesh" uid="uid://plomhl27yx1t" path="res://assets/gltf_file/mesh/background/back_background3_3.res" id="13_sqmjo"]
+[ext_resource type="ArrayMesh" uid="uid://bfmctblr42oos" path="res://assets/gltf_file/mesh/background/back_background3_4.res" id="14_50mqj"]
+[ext_resource type="ArrayMesh" uid="uid://chtsaf1fuvcqo" path="res://assets/gltf_file/mesh/background/back_background3_5.res" id="15_fyj8v"]
+[ext_resource type="ArrayMesh" uid="uid://bgyoadx0vjj51" path="res://assets/gltf_file/mesh/background/back_background3_6.res" id="16_fjlww"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_sqmjo"]
 panorama = ExtResource("1_6wn8p")
@@ -33,25 +33,6 @@ volumetric_fog_enabled = true
 volumetric_fog_density = 0.0543
 volumetric_fog_albedo = Color(0.6566101, 0.66178834, 0.3812104, 1)
 volumetric_fog_length = 14.7
-
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ivewg"]
-sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
-ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
-
-[sub_resource type="Sky" id="Sky_5l80r"]
-sky_material = SubResource("ProceduralSkyMaterial_ivewg")
-
-[sub_resource type="Environment" id="Environment_35ev0"]
-background_mode = 2
-sky = SubResource("Sky_5l80r")
-tonemap_mode = 2
-glow_enabled = true
-fog_enabled = true
-fog_light_energy = 0.1
-fog_sun_scatter = 0.1
-fog_density = 0.1794
-fog_aerial_perspective = 0.1
-fog_sky_affect = 0.1
 
 [node name="room_3" type="Node3D" unique_id=601273248]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
@@ -71,7 +52,7 @@ mesh = ExtResource("11_4yxis")
 skeleton = NodePath("../..")
 
 [node name="BackBackground32" type="MeshInstance3D" parent="background" unique_id=1926645439]
-transform = Transform3D(0.73839664, -2.1316282e-14, 1.0587912e-21, 0, -3.2276343e-08, -0.73839664, 2.1316282e-14, 0.73839664, -3.2276343e-08, 0.21466653, 0.046129026, -0.7545234)
+transform = Transform3D(0.73839664, -2.1316282e-14, 9.317643e-22, 0, -3.2276343e-08, -0.73839664, 2.1316282e-14, 0.73839664, -3.2276343e-08, 0.21466653, 0.046129026, -0.7545234)
 mesh = ExtResource("12_6wn8p")
 skeleton = NodePath("../..")
 
