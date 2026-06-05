@@ -43,7 +43,7 @@ transform = Transform3D(0.25, 0, 1.7763568e-15, 0, 0.25, 0, -1.7763568e-15, 0, 0
 transform = Transform3D(0.25, 0, 1.7763568e-15, 0, 0.25, 0, -1.7763568e-15, 0, 0.25, -0.07353908, 0.4069018, -6.4289916e-09)
 
 [node name="enemy2" parent="." unique_id=1186801125 instance=ExtResource("1_edu5m")]
-transform = Transform3D(0.3, 0, 3.5527137e-15, 0, 0.3, 0, -3.5527137e-15, 0, 0.3, -0.3707608, 0.51196796, -3.2412938e-08)
+transform = Transform3D(0.3, 0, 3.5527137e-15, 0, 0.3, 0, -3.5527137e-15, 0, 0.3, -0.3060065, 0.51196796, -2.6751938e-08)
 
 [node name="enemy3" parent="." unique_id=1964270170 instance=ExtResource("1_edu5m")]
 transform = Transform3D(0.3, 0, 3.5527137e-15, 0, 0.3, 0, -3.5527137e-15, 0, 0.3, 0.7059397, 0.39196452, 6.1715205e-08)

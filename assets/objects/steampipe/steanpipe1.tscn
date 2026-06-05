@@ -9,4 +9,4 @@
 transform = Transform3D(0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, 0.0071595907, 0.14974108, -0.004760742)
 
 [node name="Steampipe" parent="." unique_id=514883721 instance=ExtResource("2_gd7vk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.052330792, 0)
+transform = Transform3D(0.9564516, 0, 0, 0, 1.6757636, 0, 0, 0, 0.018042333, 0, 0.008365452, -0.008056641)

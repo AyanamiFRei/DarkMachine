@@ -16,7 +16,9 @@
 [ext_resource type="ArrayMesh" uid="uid://c8tq8uu6l87cy" path="res://assets/gltf_file/mesh/background/back_background3_2.res" id="12_6wn8p"]
 [ext_resource type="ArrayMesh" uid="uid://plomhl27yx1t" path="res://assets/gltf_file/mesh/background/back_background3_3.res" id="13_sqmjo"]
 [ext_resource type="ArrayMesh" uid="uid://bfmctblr42oos" path="res://assets/gltf_file/mesh/background/back_background3_4.res" id="14_50mqj"]
+[ext_resource type="PackedScene" uid="uid://n5baokfdqyrn" path="res://assets/objects/steampipe/steanpipe1.tscn" id="14_fyj8v"]
 [ext_resource type="ArrayMesh" uid="uid://chtsaf1fuvcqo" path="res://assets/gltf_file/mesh/background/back_background3_5.res" id="15_fyj8v"]
+[ext_resource type="PackedScene" uid="uid://cemji6ptfi277" path="res://assets/objects/interections_objects/ItemToPickUp/ItemToPickup1.tscn" id="16_50mqj"]
 [ext_resource type="ArrayMesh" uid="uid://bgyoadx0vjj51" path="res://assets/gltf_file/mesh/background/back_background3_6.res" id="16_fjlww"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_sqmjo"]
@@ -44,7 +46,7 @@ transform = Transform3D(-1.4, 1.2239188e-07, -5.34992e-15, 0, -6.119594e-08, -1.
 environment = SubResource("Environment_fyj8v")
 
 [node name="background" type="Node3D" parent="." unique_id=962921703]
-transform = Transform3D(-9.48, 0, 8.2876755e-07, 0, 9.48, 0, -8.2876755e-07, 0, -9.48, 4.712677e-07, 0.75562096, -5.390674)
+transform = Transform3D(-7.265, 0, 1.0969845e-06, 0, 7.265, 0, -1.0969845e-06, 0, -7.265, -0.28, 0.991, -4.681)
 
 [node name="BackBackground31" type="MeshInstance3D" parent="background" unique_id=975627263]
 transform = Transform3D(0.73839664, -2.1316282e-14, 1.0587912e-21, 0, -3.2276343e-08, -0.73839664, 2.1316282e-14, 0.73839664, -3.2276343e-08, 0.21466652, 0.046129026, -0.8451489)
@@ -52,7 +54,7 @@ mesh = ExtResource("11_4yxis")
 skeleton = NodePath("../..")
 
 [node name="BackBackground32" type="MeshInstance3D" parent="background" unique_id=1926645439]
-transform = Transform3D(0.73839664, -2.1316282e-14, 9.317643e-22, 0, -3.2276343e-08, -0.73839664, 2.1316282e-14, 0.73839664, -3.2276343e-08, 0.21466653, 0.046129026, -0.7545234)
+transform = Transform3D(0.73839664, -2.1316282e-14, 8.4703295e-22, 0, -3.2276343e-08, -0.73839664, 2.1316282e-14, 0.73839664, -3.2276343e-08, 0.21466655, 0.046129033, -0.75452346)
 mesh = ExtResource("12_6wn8p")
 skeleton = NodePath("../..")
 
@@ -284,17 +286,38 @@ spawn_point = Vector3(-10, 1, 0)
 transform = Transform3D(0.014941344, 0, 0, 0, 0.013676128, 0, 0, 0, 0.09073507, -0.0015957355, 0, -0.024860049)
 texture = ExtResource("5_5l80r")
 
+[node name="Node3D" parent="." unique_id=994641650 instance=ExtResource("14_fyj8v")]
+transform = Transform3D(-1, 0, -8.7422784e-08, 0, 1, 0, 8.7422784e-08, 0, -1, -1.0966476, 0.8611272, -0.0057077906)
+
+[node name="Node3D2" parent="." unique_id=790539555 instance=ExtResource("14_fyj8v")]
+transform = Transform3D(-1, 0, -8.7422784e-08, 0, 1, 0, 8.7422784e-08, 0, -1, -2.9701765, 0.74465114, -0.0057077906)
+
+[node name="Node3D3" parent="." unique_id=2112137371 instance=ExtResource("14_fyj8v")]
+transform = Transform3D(-1, 0, -8.7422784e-08, 0, 1, 0, 8.7422784e-08, 0, -1, -4.059512, 2.2901704, -0.0057077906)
+
+[node name="enemy4" parent="." unique_id=1964270170 instance=ExtResource("8_n1ghn")]
+transform = Transform3D(-0.2688, 0, 4.0587725e-08, 0, 0.2688, 0, -4.0587725e-08, 0, -0.2688, -0.55357915, 0.49511692, -0.008199311)
+
+[node name="enemy5" parent="." unique_id=2032441914 instance=ExtResource("8_n1ghn")]
+transform = Transform3D(-0.2688, 0, 4.0587725e-08, 0, 0.2688, 0, -4.0587725e-08, 0, -0.2688, -3.1231077, 1.0824379, -0.008199311)
+
+[node name="enemy6" parent="." unique_id=1064456221 instance=ExtResource("8_n1ghn")]
+transform = Transform3D(-0.2688, 0, 4.0587725e-08, 0, 0.2688, 0, -4.0587725e-08, 0, -0.2688, -3.1231077, 2.9591112, -0.008199311)
+
 [node name="enemy1" parent="." unique_id=1785802915 instance=ExtResource("7_hiqnp")]
-transform = Transform3D(-1, 0, -8.7422784e-08, 0, 1, 0, 8.7422784e-08, 0, -1, -0.8190485, 0.14943524, -0.0057077887)
+transform = Transform3D(-1, 0, -8.7422784e-08, 0, 1, 0, 8.7422784e-08, 0, -1, -1.2701224, 0.0854465, -0.0057077887)
+
+[node name="enemy7" parent="." unique_id=253043723 instance=ExtResource("7_hiqnp")]
+transform = Transform3D(-1, 0, -8.7422784e-08, 0, 1, 0, 8.7422784e-08, 0, -1, -4.786185, -0.04756236, -0.0057077887)
 
 [node name="enemy2" parent="." unique_id=1538247284 instance=ExtResource("7_hiqnp")]
 transform = Transform3D(-1, 0, -8.7422784e-08, 0, 1, 0, 8.7422784e-08, 0, -1, -2.0477629, 1.5766481, -0.0057077887)
 
 [node name="enemy3" parent="." unique_id=1560430552 instance=ExtResource("7_hiqnp")]
-transform = Transform3D(-1, 0, -8.7422784e-08, 0, 1, 0, 8.7422784e-08, 0, -1, -4.5242906, 2.2634456, -0.0057077887)
+transform = Transform3D(-1, 0, -8.7422784e-08, 0, 1, 0, 8.7422784e-08, 0, -1, -4.7917337, 2.2319822, -0.0057077887)
 
-[node name="enemy5" parent="." unique_id=790571043 instance=ExtResource("8_n1ghn")]
-transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -4.466192, -0.075828366, -0.007045567)
+[node name="ItemToPickup1" parent="." unique_id=304441225 instance=ExtResource("16_50mqj")]
+transform = Transform3D(-0.05, 0, -4.3711395e-09, 0, 0.05, 0, 4.3711395e-09, 0, -0.05, -4.9325843, -0.116105855, -0.0057077366)
 
 [node name="gridmap2" type="Node3D" parent="." unique_id=1440267824]
 
@@ -353,4 +376,4 @@ target_scene = "res://assets/Levels/room_4.tscn"
 spawn_point = Vector3(-10, 0.5, 4)
 
 [node name="bonfire" parent="." unique_id=32593710 instance=ExtResource("10_5l80r")]
-transform = Transform3D(0.5021877, 0, 0, 0, 0.5021877, 0, 0, 0, 1, -1.7358055, 0.20287704, -0.009401935)
+transform = Transform3D(0.5021877, 0, 0, 0, 0.5021877, 0, 0, 0, 1, -1.9789387, 0.20287704, -0.009401935)

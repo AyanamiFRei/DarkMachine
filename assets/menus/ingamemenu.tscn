@@ -76,7 +76,7 @@ shape = SubResource("BoxShape3D_nk626")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4, 0.774)
 
 [node name="exit_button_mesh" type="MeshInstance3D" parent="Exit_button" unique_id=1023820033]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07336259, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.7493913, 0)
 mesh = SubResource("BoxMesh_hi0bf")
 
 [node name="Label3D" type="Label3D" parent="Exit_button/exit_button_mesh" unique_id=1010705660]
@@ -87,10 +87,10 @@ text = "Exit
 font_size = 100
 
 [node name="Area3D" type="Area3D" parent="Exit_button" unique_id=1022831724]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3237077, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3237077, -0.83843994, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Exit_button/Area3D" unique_id=640368203]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11228639, 0.121520996, -0.1634674)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11228639, 0.035324097, -0.1634674)
 shape = SubResource("BoxShape3D_nk626")
 
 [node name="verify_button" type="Node3D" parent="." unique_id=1310524190]
@@ -136,7 +136,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11228639, 0.121520996, -0.1
 shape = SubResource("BoxShape3D_nk626")
 
 [node name="settings_button" type="Node3D" parent="." unique_id=746318018]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0.774)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4149414, 0.774)
 
 [node name="settings_button_mesh" type="MeshInstance3D" parent="settings_button" unique_id=1430677947]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07336259, 0)

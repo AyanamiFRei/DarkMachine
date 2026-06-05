@@ -21,6 +21,9 @@
 [ext_resource type="ArrayMesh" uid="uid://dp5ask54vbkb0" path="res://assets/gltf_file/mesh/background/back_background4_10.res" id="11_267ws"]
 [ext_resource type="ArrayMesh" uid="uid://hoarx4ckn7ic" path="res://assets/gltf_file/mesh/background/back_background4_11.res" id="12_vi1rw"]
 [ext_resource type="ArrayMesh" uid="uid://ckg6rbjv802h0" path="res://assets/gltf_file/mesh/background/back_background4_12.res" id="13_dykbv"]
+[ext_resource type="PackedScene" uid="uid://c62ray5n8eeir" path="res://assets/objects/breakable_wall/breakable_wall.tscn" id="22_j7wbv"]
+[ext_resource type="PackedScene" uid="uid://clkyrfe3ub4tj" path="res://assets/enteties/enemies/enemy_taran/enemy_taran.tscn" id="23_5qjp7"]
+[ext_resource type="PackedScene" uid="uid://chdo85q6n5mnm" path="res://assets/enteties/enemies/enemy_ezh/enemy_ezh.tscn" id="24_u3xrt"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_8op44"]
 panorama = ExtResource("8_v7lme")
@@ -105,7 +108,7 @@ mesh = ExtResource("12_vi1rw")
 skeleton = NodePath("../..")
 
 [node name="BackBackground412" type="MeshInstance3D" parent="background" unique_id=1121814490]
-transform = Transform3D(0.31529486, -1.7763568e-15, 6.352747e-22, 0, -1.3781974e-08, -0.31529486, 1.7763568e-15, 0.31529486, -1.3781974e-08, 0.040041704, -0.006789349, -0.64433074)
+transform = Transform3D(0.31529486, -3.5527137e-15, 6.352747e-22, 0, -1.3781974e-08, -0.31529486, 3.5527137e-15, 0.31529486, -1.3781974e-08, 0.0400417, -0.006789349, -0.64433074)
 mesh = ExtResource("13_dykbv")
 skeleton = NodePath("../..")
 
@@ -116,9 +119,9 @@ transform = Transform3D(-0.7, 0, -1.0569706e-07, 0, 0.7, 0, 1.0569706e-07, 0, -0
 use_collision = true
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="platform/CSGCombiner3D" unique_id=1926584055]
-transform = Transform3D(1, 0, -7.1054274e-14, 0, 1, 0, 7.1054274e-14, 0, 1, 1.1518332, -0.48742652, -0.061702095)
+transform = Transform3D(1, 0, -7.1054274e-14, 0, 1, 0, 7.1054274e-14, 0, 1, 1.66921, -0.4874267, -0.061702013)
 use_collision = true
-size = Vector3(0.5042267, 1.1781921, 0.09277344)
+size = Vector3(0.5098038, 1.1781921, 0.09277344)
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="platform/CSGCombiner3D" unique_id=1659752950]
 transform = Transform3D(1, 0, -7.1054274e-14, 0, 1, 0, 7.1054274e-14, 0, 1, -0.12849665, -0.9794026, -0.061702438)
@@ -186,9 +189,9 @@ use_collision = true
 size = Vector3(0.9944382, 3.8241653, 0.09277344)
 
 [node name="CSGBox3D13" type="CSGBox3D" parent="platform/CSGCombiner3D" unique_id=1008996016]
-transform = Transform3D(1, 0, -2.1316282e-13, 0, 1, 0, 2.1316282e-13, 0, 1, 0.44817716, -0.9559083, -0.061702274)
+transform = Transform3D(1, 0, -2.1316282e-13, 0, 1, 0, 2.1316282e-13, 0, 1, 1.4267884, -0.9559084, -0.06170228)
 use_collision = true
-size = Vector3(0.96739197, 0.9737015, 0.09277344)
+size = Vector3(2.924614, 0.9737015, 0.09277344)
 
 [node name="CSGBox3D14" type="CSGBox3D" parent="platform/CSGCombiner3D" unique_id=1519423181]
 transform = Transform3D(1, 0, -2.9842795e-13, 0, 1, 0, 2.9842795e-13, 0, 1, 0.12818891, -0.24967477, -0.061701924)
@@ -196,7 +199,7 @@ use_collision = true
 size = Vector3(0.5002098, 0.70381355, 0.09277344)
 
 [node name="CSGBox3D9" type="CSGBox3D" parent="platform/CSGCombiner3D" unique_id=743153124]
-transform = Transform3D(1, 0, -2.1316282e-13, 0, 1, 0, 2.1316282e-13, 0, 1, 1.6796527, -0.95531523, -0.06170205)
+transform = Transform3D(1, 0, -2.1316282e-13, 0, 1, 0, 2.1316282e-13, 0, 1, 1.6796527, -0.95531535, -0.061702043)
 use_collision = true
 size = Vector3(0.96739197, 0.97488785, 0.09277344)
 
@@ -258,7 +261,7 @@ transform = Transform3D(0.014941345, -2.224887e-12, -7.275958e-12, -1.4865886e-1
 texture = ExtResource("6_peyxv")
 
 [node name="Door2" parent="." unique_id=258871582 instance=ExtResource("3_qiwse")]
-transform = Transform3D(0.72215885, 0, 0.6917272, 0, 1, 0, -0.6917272, 0, 0.72215885, 1.3083434, -0.1448149, -0.011244059)
+transform = Transform3D(0.72215885, 0, 0.6917272, 0, 1, 0, -0.6917272, 0, 0.72215885, 1.4890075, -0.1448149, -0.011244059)
 script = ExtResource("5_peyxv")
 target_scene = "res://assets/Levels/room_5.tscn"
 spawn_point = Vector3(-11, 2, 0)
@@ -275,7 +278,7 @@ transform = Transform3D(0.5, 0, -2.1855696e-08, -2.1855696e-08, 9.553427e-16, -0
 mesh_library = ExtResource("6_ucalo")
 cell_size = Vector3(0.715, 2, 0.805)
 data = {
-"cells": PackedInt32Array(65531, 1, 2, 65530, 1, 0, 65529, 1, 6, 65532, 1, 0, 65533, 1, 0, 65533, 0, 6, 65534, 1, 7, 65534, 0, 0, 65535, 1, 8, 65535, 0, 5, 0, 0, 1, 0, 1, 0, 0, 65535, 0, 1, 0, 0, 2, 0, 2, 2, 1, 6, 3, 0, 0, 3, 1, 9, 4, 1, 0, 5, 1, 4, 2, 65535, 4, 1, 1, 0, 65529, 2, 0, 65530, 2, 0, 65531, 2, 0, 65532, 2, 0, 65533, 2, 0, 65534, 2, 0, 65535, 2, 0, 0, 2, 0, 1, 2, 0, 2, 2, 0)
+"cells": PackedInt32Array(65531, 1, 2, 65530, 1, 0, 65529, 1, 6, 65532, 1, 0, 65533, 1, 0, 65533, 0, 6, 65534, 1, 7, 65534, 0, 0, 65535, 1, 8, 65535, 0, 5, 0, 0, 1, 0, 1, 0, 1, 0, 0, 2, 0, 2, 2, 1, 6, 3, 0, 0, 3, 1, 9, 4, 1, 0, 5, 1, 4, 2, 65535, 4, 1, 1, 0, 65529, 2, 0, 65530, 2, 0, 65531, 2, 0, 65532, 2, 0, 65533, 2, 0, 65534, 2, 0, 65535, 2, 0, 0, 2, 0, 1, 2, 0, 2, 2, 0, 65535, 65535, 131076)
 }
 
 [node name="wall" type="GridMap" parent="gridmap2" unique_id=972283169]
@@ -288,3 +291,18 @@ data = {
 
 [node name="player" parent="." unique_id=1722918080 instance=ExtResource("5_tw7do")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0577402, -0.1758484, 0.013298154)
+
+[node name="breakable_wall_4" parent="." unique_id=1833233406 instance=ExtResource("22_j7wbv")]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, -0.9788023, 0.21186578, -0.0057523847)
+
+[node name="breakable_wall_5" parent="." unique_id=2040815915 instance=ExtResource("22_j7wbv")]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, -0.979348, 0.33901906, -0.0057523847)
+
+[node name="breakable_wall_6" parent="." unique_id=2065124362 instance=ExtResource("22_j7wbv")]
+transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, -1.6827179, -0.19351558, -0.0057523847)
+
+[node name="enemy1" parent="." unique_id=1785802915 instance=ExtResource("23_5qjp7")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.29499245, 0.23638539, -0.006398976)
+
+[node name="enemy4" parent="." unique_id=1964270170 instance=ExtResource("24_u3xrt")]
+transform = Transform3D(-0.267385, 0, 4.0374008e-08, 0, 0.267385, 0, -4.0374008e-08, 0, -0.267385, 0.4041151, 0.58398205, -0.007925205)
