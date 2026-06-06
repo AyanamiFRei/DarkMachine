@@ -1,0 +1,109 @@
+[gd_scene format=3 uid="uid://vrneqpcxscyb"]
+
+[ext_resource type="Script" uid="uid://do2shunhcuxr3" path="res://assets/menus/menu.gd" id="1_26dla"]
+[ext_resource type="Texture2D" uid="uid://d1e5cdwjbl308" path="res://assets/menus/фон111.png" id="2_tx5tj"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_s7dtb"]
+size = Vector3(0.5, 0.5, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_12r6k"]
+size = Vector3(0.41253662, 0.36853027, 3.1147156)
+
+[node name="Menu" type="Node3D" unique_id=2031328553 node_paths=PackedStringArray("play_button", "play_button_sbox", "exit_button", "settings_button")]
+script = ExtResource("1_26dla")
+play_button = NodePath("Play_button")
+play_button_sbox = NodePath("Play_button_sbox")
+exit_button = NodePath("Exit_button")
+settings_button = NodePath("settings_button")
+
+[node name="Label3D" type="Label3D" parent="." unique_id=1624125820]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 3.4039474, -0.27883482)
+text = "Конец демо-фрагмента
+
+"
+font_size = 100
+
+[node name="Play_button_sbox" type="Node3D" parent="." unique_id=792337189]
+transform = Transform3D(0.8777429, 0.35436368, 0.3224811, -0.29662922, 0.93045974, -0.21507283, -0.37626958, 0.09312134, 0.92181885, -0.096132874, 0, 14.658527)
+
+[node name="Area3D" type="Area3D" parent="Play_button_sbox" unique_id=1365124306]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=258690795]
+transform = Transform3D(-0.023489945, 0, 0.9997241, 0, 1, 0, -0.9997241, 0, -0.023489945, 1.4590163, 1.0574675, -0.02462864)
+projection = 1
+fov = 100.0
+size = 9.0
+near = 0.119
+
+[node name="Node3D" type="Node3D" parent="." unique_id=224457207]
+transform = Transform3D(0.045432735, 0, 0.9989674, 0, 1, 0, -0.9989674, 0, 0.045432735, -3.8602626, 0, 0)
+
+[node name="Sprite3D2" type="Sprite3D" parent="Node3D" unique_id=1206875324]
+transform = Transform3D(1.1380867, 0, 0.066020265, 0, 1.14, 0, -0.066020265, 0, 1.1380867, 0.012561902, 0.87622976, 0.27620816)
+texture = ExtResource("2_tx5tj")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=500156854]
+transform = Transform3D(0.1410454, 0.0011043238, 0.9900025, 0.09502278, 0.9953673, -0.014648172, -0.9854323, 0.09613884, 0.14028701, 1.667755, -3.6937828, -2.4359446)
+
+[node name="settings_button" type="Node3D" parent="." unique_id=2088356464]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3576946, -0.22666311)
+
+[node name="settings_button_mesh" type="MeshInstance3D" parent="settings_button" unique_id=701861245]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07336259, 0)
+mesh = SubResource("BoxMesh_s7dtb")
+
+[node name="Label3D" type="Label3D" parent="settings_button/settings_button_mesh" unique_id=2136895769]
+transform = Transform3D(-0.013246669, 0, 0.99991226, 0, 1, 0, -0.99991226, 0, -0.013246669, 0.52829075, 0.06834149, 0)
+text = "Settings
+
+"
+font_size = 100
+
+[node name="Area3D" type="Area3D" parent="settings_button" unique_id=1988975525]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3237077, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="settings_button/Area3D" unique_id=620282852]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11228639, 0.121520996, -0.1634674)
+shape = SubResource("BoxShape3D_12r6k")
+
+[node name="Play_button" type="Node3D" parent="." unique_id=232056825]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.408846, -0.22642565)
+
+[node name="play_button_mesh" type="MeshInstance3D" parent="Play_button" unique_id=1453392991]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07336259, 0)
+mesh = SubResource("BoxMesh_s7dtb")
+
+[node name="Label3D" type="Label3D" parent="Play_button/play_button_mesh" unique_id=1154701612]
+transform = Transform3D(-0.013246669, 0, 0.99991226, 0, 1, 0, -0.99991226, 0, -0.013246669, 0.52829075, 0.06834149, 0)
+text = "Play again
+
+"
+font_size = 100
+
+[node name="Area3D" type="Area3D" parent="Play_button" unique_id=223495454]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3237077, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Play_button/Area3D" unique_id=542956191]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11228639, 0.121520996, -0.1634674)
+shape = SubResource("BoxShape3D_12r6k")
+
+[node name="Exit_button" type="Node3D" parent="." unique_id=1634214385]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.36387515, -0.22642565)
+
+[node name="exit_button_mesh" type="MeshInstance3D" parent="Exit_button" unique_id=1302382403]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07336259, 0)
+mesh = SubResource("BoxMesh_s7dtb")
+
+[node name="Label3D" type="Label3D" parent="Exit_button/exit_button_mesh" unique_id=261235930]
+transform = Transform3D(-0.013246669, 0, 0.99991226, 0, 1, 0, -0.99991226, 0, -0.013246669, 0.52829075, 0.06834149, 0)
+text = "Exit
+
+"
+font_size = 100
+
+[node name="Area3D" type="Area3D" parent="Exit_button" unique_id=1117934465]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3237077, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Exit_button/Area3D" unique_id=1931312096]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11228639, 0.121520996, -0.1634674)
+shape = SubResource("BoxShape3D_12r6k")

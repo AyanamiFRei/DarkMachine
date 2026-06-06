@@ -908,7 +908,7 @@ shape = SubResource("CapsuleShape3D_hyvrl")
 [node name="Timers" type="Timer" parent="Components/CombatComponent" unique_id=302823536]
 
 [node name="Attack_CoolDown_Timer" type="Timer" parent="Components/CombatComponent/Timers" unique_id=2073264899]
-wait_time = 0.1
+wait_time = 0.4
 
 [node name="HealthComponent" type="Node3D" parent="Components" unique_id=1930401922]
 script = ExtResource("5_3gcdb")
@@ -943,7 +943,7 @@ transform = Transform3D(-0.29999784, 0, 0.0011414477, 0, 0.3, 0, -0.0011414477, 
 visible = false
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_u84jc")
-animation = &"holds on ledge"
+animation = &"attack1"
 
 [node name="StockModel" type="AnimatedSprite3D" parent="Visual/AnimatedSprite3D" unique_id=115799517]
 transform = Transform3D(-0.039999712, 0, 0.00015219301, 0, 0.04, 0, -0.00015219301, 0, -0.039999712, -0.0010425597, -0.0004287511, -0.00010418892)

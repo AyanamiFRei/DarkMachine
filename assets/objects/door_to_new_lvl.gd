@@ -17,8 +17,12 @@ func _on_area_3d_body_entered(body: Node3D) -> void:
 		call_deferred("change_lvl")
 
 func change_lvl():
-	print("spawn_point двери: ", spawn_point)
-	GameManager.spawn_position = spawn_point
-	GameManager.saved_rotation = Vector3.ZERO  # ← сбрасываем ротацию
-	GameManager.has_custom_spawn = true
+	var player = get_tree().get_first_node_in_group("player")
+	if player:
+		print("[Door] HP перед сохранением: ", player.get_node("Components/HealthComponent").health)
+		GameManager.save_player(player)
+		print("[Door] GameManager.saved_health после save: ", GameManager.saved_health)
+		GameManager.spawn_position = spawn_point
+		GameManager.current_game_scene = target_scene
+		GameManager.has_custom_spawn = true
 	get_tree().change_scene_to_file(target_scene)

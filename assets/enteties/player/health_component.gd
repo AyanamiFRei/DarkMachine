@@ -1,7 +1,6 @@
 extends Node3D
 
 @export var max_health := 100
-@onready var progress_bar = get_tree().get_nodes_in_group("healthbar")
 var health := 100
 
 var hit_sound: AudioStreamPlayer
@@ -40,5 +39,12 @@ func die():
 	GameManager.save_player(self)
 	get_tree().change_scene_to_file("res://deathscene.tscn")
 	
+func update_healthbar():
+	var bars = get_tree().get_nodes_in_group("healthbar")
+	if bars.size() > 0:
+		bars[0].value = health
+	
 func _on_health_changed(new_health):
-	progress_bar.value = new_health
+	var bars = get_tree().get_nodes_in_group("healthbar")
+	if bars.size() > 0:
+		bars[0].value = health

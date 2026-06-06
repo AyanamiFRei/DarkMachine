@@ -6,7 +6,7 @@ extends Node
 @onready var cooldown_timer: Timer = $Timers/Attack_CoolDown_Timer
 
 var can_attack = true
-var dmg = 50
+var dmg = 30
 
 var attack_sound =["res://assets/enteties/player/audios/attack1.wav",
 					"res://assets/enteties/player/audios/attack2.wav",

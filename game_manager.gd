@@ -20,6 +20,8 @@ var coming_from_death: bool = false
 var inventory_items: Array[Dictionary] = []
 var money: int = 0
 
+var saved_health: int = 100
+
 func save_player(player: Node3D) -> void:
 	var scene := player.get_tree().current_scene.scene_file_path
 	saved_scene = scene
@@ -27,6 +29,8 @@ func save_player(player: Node3D) -> void:
 	spawn_position = player.global_position
 	saved_rotation = player.rotation
 	has_custom_spawn = true
+	if player.has_node("Components/HealthComponent"):
+		saved_health = player.get_node("Components/HealthComponent").health
 
 func set_respawn_point(pos: Vector3, scene_path: String) -> void:
 	respawn_position = pos

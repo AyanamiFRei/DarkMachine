@@ -27,10 +27,11 @@ func _ready() -> void:
 		else:
 			print("[Respawn] Нет чекпоинта — дефолт сцены")
 	elif GameManager.has_custom_spawn:
-		# Дверь или возврат после паузы
 		global_position = GameManager.spawn_position
 		GameManager.has_custom_spawn = false
-		print("[Spawn] Дверь/пауза: ", global_position)
+		health_component.health = GameManager.saved_health
+		await get_tree().process_frame
+		health_component.update_healthbar()
 	else:
 		print("[Spawn] Дефолт сцены")
 
